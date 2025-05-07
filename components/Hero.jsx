@@ -1,6 +1,11 @@
 "use client";
 import React, { useEffect, useState } from 'react';
+import { Cinzel } from 'next/font/google'
 
+const cinzel = Cinzel({
+  weight: '400',
+  subsets: ['latin'],
+})
 
 
 const images = [
@@ -43,7 +48,7 @@ export default function Hero() {
     <div className="relative w-full h-[80vh]  overflow-hidden md:mt-[125px] mt-[80px]">
 
     <div className='bg-[rgba(255,255,255,0.6)] p-5 z-10 absolute top-1/3 left[300px] md:block hidden w-[400px] transition-transform duration-700 ease-in-out'>
-        <h2 className='text-5xl font-medium text-end font-cinzel'>{images[currentIndex].heading}</h2>
+        <h2 className={`text-5xl font-medium text-end font-cinzel`}>{images[currentIndex].heading}</h2>
         <p className='text-end text-2xl font-cinzel'>{images[currentIndex].para}</p>
         <div className='text-end'>
 
