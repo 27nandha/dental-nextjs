@@ -1,5 +1,3 @@
-'use client';
-import MotionWrapper from '@/components/MotionWrapper';
 import Book from "@/components/Book";
 import Dots from "@/components/Dots";
 import Footer from "@/components/Footer";
@@ -12,11 +10,11 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <MotionWrapper><Hero /></MotionWrapper>
-      <MotionWrapper delay={0.2}><Welcome /></MotionWrapper>
-      <MotionWrapper delay={0.4}><Dots /></MotionWrapper>
-      <MotionWrapper delay={0.6}><Map /></MotionWrapper>
-      <MotionWrapper delay={0.8}><Book /></MotionWrapper>
+      <Hero />
+      <Welcome />
+      <Dots />
+      <Map />
+      <Book />
       <Footer />
     </>
   );
