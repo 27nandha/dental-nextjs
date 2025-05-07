@@ -12,56 +12,13 @@ import {
 } from "react-icons/fa";
 import { BiPhoneCall } from "react-icons/bi";
 
-
-
-
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
-  const [activeDropdown, setActiveDropdown] = useState(null); // Single state for dropdowns
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false); // Single state for dropdowns
   const [activeserv, setActiveserv] = useState(false);
   const [activeedu, setActiveedu] = useState(false);
 
-  const servicesRef = useRef(null);
   const educationRef = useRef(null);
-  const [isScrolled, setIsScrolled] = useState(false);
-
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) { // Change threshold as needed
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-
-    // Attach scroll event listener
-    window.addEventListener('scroll', handleScroll);
-
-    // Cleanup the event listener when the component unmounts
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (
-        servicesRef.current &&
-        !servicesRef.current.contains(event.target) &&
-        educationRef.current &&
-        !educationRef.current.contains(event.target)
-      ) {
-        setActiveDropdown(null);
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
-
-
 
   function activateservices() {
     setActiveserv(true);
@@ -134,7 +91,6 @@ const Navbar = () => {
                 </a>
               </div>
 
-
               {/* Navigation */}
               <ul className="flex text-base font-normal text-gray-800 relative">
                 <li className="hover:text-orange-600 transform p-3 hover:bg-gray-200 transition-all duration-300 ease-in-out cursor-pointer">
@@ -146,9 +102,7 @@ const Navbar = () => {
                 <li className="hover:text-orange-600 transform p-3 hover:bg-gray-200 transition-all duration-300 ease-in-out cursor-pointer">
                   Patient Information
                 </li>
-                <li
-                  className="relative p-2 m-1 hover:bg-gray-200"
-                >
+                <li className="relative p-2 m-1 hover:bg-gray-200">
                   <button
                     className="hover:text-orange-600 transform   transition-all duration-300 ease-in-out cursor-pointer"
                     onMouseOver={activateservices}
@@ -182,9 +136,7 @@ const Navbar = () => {
                     </div>
                   </div>
                 </li>
-                <li
-                  className="relative p-3 hover:bg-gray-200 cursor-pointer"
-                >
+                <li className="relative p-3 hover:bg-gray-200 cursor-pointer">
                   <button
                     className="hover:text-primary transform   transition-all duration-300 ease-in-out "
                     onMouseOver={activateeducation}
