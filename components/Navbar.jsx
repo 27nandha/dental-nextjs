@@ -10,6 +10,10 @@ import {
   FaChevronDown,
   FaChevronUp,
 } from "react-icons/fa";
+import { BiPhoneCall } from "react-icons/bi";
+
+
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,6 +24,26 @@ const Navbar = () => {
 
   const servicesRef = useRef(null);
   const educationRef = useRef(null);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) { // Change threshold as needed
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    // Attach scroll event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -37,18 +61,7 @@ const Navbar = () => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  const handleMouseEnter = (dropdown) => {
-    if (timeoutId) {
-      clearTimeout(timeoutId);
-      setTimeoutId(null);
-    }
-    setActiveDropdown(dropdown); // Immediately set the active dropdown
-  };
 
-  const handleMouseLeave = () => {
-    const id = setTimeout(() => setActiveDropdown(null), 200); // 200ms delay
-    setTimeoutId(id);
-  };
 
   function activateservices() {
     setActiveserv(true);
@@ -99,22 +112,28 @@ const Navbar = () => {
                   href="https://maps.google.com/?q=4311 S 31st Ste 145 Temple, TX 76502"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-orange-500 flex text-white px-4 py-2 justify-center items-center text-center rounded-full text-sm font-medium transition-all duration-300 ease-in-out hover:bg-orange-600 hover:scale-105"
+                  className="bg-orange-500 flex  text-white hover:border hover:text-orange-600 hover:border-orange-500 px-4 py-2 justify-center items-center text-center rounded-full text-sm font-medium transition-all duration-300 ease-in-out hover:bg-white hover:scale-101"
                 >
                   <div className="flex items-center space-x-2 pr-2 text-xl">
                     <FaLocationDot />
                   </div>
-                  <div>4311 S 31st Ste 145 Temple, TX</div>
+                  <div>4311 S 31st Ste 145 Temple, TX 76502</div>
                 </a>
                 <a
                   href="tel:2547737777"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-white text-orange-500 border border-orange-500 px-4 py-2 justify-center text-center rounded-full text-sm font-medium transition-all duration-300 ease-in-out hover:bg-orange-600 hover:text-white hover:border-orange-600 hover:scale-105"
+                  className="bg-white text-orange-500 border border-orange-500 px-4 py-2 justify-center text-center rounded-full text-sm font-medium transition-all duration-300 ease-in-out hover:bg-orange-600 hover:text-white hover:border-orange-600 hover:scale-103"
                 >
-                  (254) 773-7777
+                  <div className="flex">
+                    <div className="items-center space-x-2 pr-2 text-xl">
+                      <BiPhoneCall />
+                    </div>
+                    <div>(254) 773-7777</div>
+                  </div>
                 </a>
               </div>
+
 
               {/* Navigation */}
               <ul className="flex text-base font-normal text-gray-800 relative">
@@ -129,8 +148,6 @@ const Navbar = () => {
                 </li>
                 <li
                   className="relative p-2 m-1 hover:bg-gray-200"
-                  onMouseEnter={() => handleMouseEnter("services")}
-                  onMouseLeave={handleMouseLeave}
                 >
                   <button
                     className="hover:text-orange-600 transform   transition-all duration-300 ease-in-out cursor-pointer"
@@ -167,8 +184,6 @@ const Navbar = () => {
                 </li>
                 <li
                   className="relative p-3 hover:bg-gray-200 cursor-pointer"
-                  onMouseEnter={() => handleMouseEnter("education")}
-                  onMouseLeave={handleMouseLeave}
                 >
                   <button
                     className="hover:text-primary transform   transition-all duration-300 ease-in-out "
