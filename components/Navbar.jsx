@@ -1,16 +1,14 @@
 "use client";
-import React, { useState, useRef, useEffect } from "react";
+
+import React, { useState, useRef } from "react";
+import Link from "next/link";
+import Image from "next/image";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { FaLocationDot } from "react-icons/fa6";
-("react-icons/fa");
-import { services, educationLinks } from "./data/NavData"; // adjust path as needed
-import {
-  FaMapMarkerAlt,
-  FaTimes,
-  FaChevronDown,
-  FaChevronUp,
-} from "react-icons/fa";
+import { FaTimes, FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { BiPhoneCall } from "react-icons/bi";
+
+import { services, educationLinks } from "./data/NavData";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,11 +42,16 @@ const Navbar = () => {
           <div className="flex justify-between items-center">
             {/* Logo */}
             <div>
-              <img
-                src="/logo.png"
-                alt="Revital Dental Logo"
-                className="h-12 sm:h-14 md:h-16 w-auto cursor-pointer"
-              />
+              <Link href="/">
+                <Image
+                  src="/logo.png"
+                  alt="Revital Dental Logo"
+                  width={120}
+                  height={64}
+                  className="h-12 sm:h-14 md:h-16 w-auto cursor-pointer"
+                  priority
+                />
+              </Link>
             </div>
 
             {/* Hamburger Icon */}
@@ -94,13 +97,13 @@ const Navbar = () => {
               {/* Navigation */}
               <ul className="flex text-base font-normal text-gray-800 relative">
                 <li className="hover:text-orange-600 transform p-3 hover:bg-gray-200 transition-all duration-300 ease-in-out cursor-pointer">
-                  Home
+                  <Link href="/">Home</Link>
                 </li>
                 <li className="hover:text-orange-600 transform p-3 hover:bg-gray-200 transition-all duration-300 ease-in-out cursor-pointer">
-                  About
+                  <Link href="/about">About</Link>
                 </li>
                 <li className="hover:text-orange-600 transform p-3 hover:bg-gray-200 transition-all duration-300 ease-in-out cursor-pointer">
-                  Patient Information
+                  <Link href="/patient-information">Patient Information</Link>
                 </li>
                 <li className="relative p-2 m-1 hover:bg-gray-200">
                   <button
@@ -123,13 +126,13 @@ const Navbar = () => {
                             {section.title}
                           </h4>
                           {section.items.map((item, idx) => (
-                            <a
+                            <Link
                               key={idx}
                               href={`/${section.title}`}
                               className="block hover:underline hover:scale-105 transition-transform duration-300 ease-in-out"
                             >
                               {item}
-                            </a>
+                            </Link>
                           ))}
                         </div>
                       ))}
@@ -141,7 +144,7 @@ const Navbar = () => {
                     className="hover:text-primary transform   transition-all duration-300 ease-in-out "
                     onMouseOver={activateeducation}
                   >
-                    Patient Education
+                    <Link href="/PatientEducation">Patient Education</Link>
                   </button>
 
                   <div
@@ -155,13 +158,13 @@ const Navbar = () => {
                       {educationLinks.map((column, columnIndex) => (
                         <div key={columnIndex} className="space-y-2">
                           {column.items.map((item, index) => (
-                            <a
+                            <Link
                               key={index}
                               href="#"
                               className="block hover:underline hover:scale-105 transition-transform duration-300 ease-in-out"
                             >
                               {item}
-                            </a>
+                            </Link>
                           ))}
                         </div>
                       ))}
@@ -169,7 +172,7 @@ const Navbar = () => {
                   </div>
                 </li>
                 <li className="hover:text-orange-600 px-1 transform p-3 hover:bg-gray-200 transition-all duration-300 ease-in-out cursor-pointer">
-                  Contact Us
+                  <Link href="/contact">Contact Us</Link>
                 </li>
               </ul>
             </div>
