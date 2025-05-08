@@ -119,24 +119,26 @@ const Navbar = () => {
                       activeserv ? "block" : "hidden"
                     }`}
                   >
-                    <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                      {services.map((section, index) => (
-                        <div key={index} className="space-y-2">
-                          <h4 className="text-lg font-bold mb-2">
-                            {section.title}
-                          </h4>
-                          {section.items.map((item, idx) => (
+              
+                      
+                        <div  className="space-y-2  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 max-w-7xl mx-auto px-6">
+
+                         {services.map((item,i)=>(
+
                             <Link
-                              key={idx}
-                              href={`/${section.title}`}
+                              key={i}
+                              href={`temple-tx/${item.link}`}
                               className="block hover:underline hover:scale-105 transition-transform duration-300 ease-in-out"
                             >
-                              {item}
+                              {item.name}
                             </Link>
-                          ))}
+                         ))}
+
+
+                     
                         </div>
-                      ))}
-                    </div>
+                  
+                   
                   </div>
                 </li>
                 <li className="relative p-3 hover:bg-gray-200 cursor-pointer">
