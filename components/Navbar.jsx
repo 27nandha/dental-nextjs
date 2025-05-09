@@ -119,27 +119,19 @@ const Navbar = () => {
                       activeserv ? "block" : "hidden"
                     }`}
                   >
-              
-                      
-                          <h2 className="text-center">All Services</h2>
-                          <hr  className="w-[80%] mx-auto my-5"/>
-                        <div  className="space-y-2  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 max-w-7xl mx-auto px-6">
-
-
-                         {services.map((item,i)=>(
-
-                            <Link
-                              key={i}
-                              href={`/temple-tx/${item.link}`}
-                              className="block hover:underline hover:scale-105 transition-transform duration-300 ease-in-out"
-                            >
-                              {item.name}
-                            </Link>
-                         ))}
-                     
-                        </div>
-                  
-                   
+                    <h2 className="text-center">All Services</h2>
+                    <hr className="w-[80%] mx-auto my-5" />
+                    <div className="space-y-2  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 max-w-7xl mx-auto px-6">
+                      {services.map((item, i) => (
+                        <Link
+                          key={i}
+                          href={`/temple-tx/${item.link}`}
+                          className="block hover:underline hover:scale-105 transition-transform duration-300 ease-in-out"
+                        >
+                          {item.name}
+                        </Link>
+                      ))}
+                    </div>
                   </div>
                 </li>
                 <li className="relative p-3 hover:bg-gray-200 cursor-pointer">
@@ -198,10 +190,10 @@ const Navbar = () => {
               {/* Mobile Navigation */}
               <ul className="flex flex-col w-full text-base font-semibold">
                 <li className="px-6 py-4 border-b border-white hover:bg-primary cursor-pointer">
-                  Home
+                  <Link href="/">Home</Link>
                 </li>
                 <li className="px-6 py-4 border-b border-white hover:bg-primary cursor-pointer">
-                  About
+                  <Link href="/about">About</Link>
                 </li>
                 <li className="px-6 py-4 border-b border-white hover:bg-primary cursor-pointer">
                   Patient Information
@@ -224,60 +216,16 @@ const Navbar = () => {
                   {mobileServicesOpen && (
                     <ul className="bg-primary text-white">
                       {/* General Services */}
-                      <li className="px-8 py-3 font-bold border-t border-white">
-                        General
-                      </li>
                       <li className="px-8 py-3 border-t border-white hover:bg-primary cursor-pointer">
-                        Dental Checkup
-                      </li>
-                      <li className="px-8 py-3 border-t border-white hover:bg-primary cursor-pointer">
-                        Dental Veneers
-                      </li>
-                      <li className="px-8 py-3 border-t border-white hover:bg-primary cursor-pointer">
-                        Full Mouth Reconstruction
-                      </li>
-                      <li className="px-8 py-3 border-t border-white hover:bg-primary cursor-pointer">
-                        Root Canal Treatment
-                      </li>
-                      <li className="px-8 py-3 border-t border-white hover:bg-primary cursor-pointer">
-                        TeethXpress
-                      </li>
-
-                      {/* Restorative Services */}
-                      <li className="px-8 py-3 font-bold border-t border-white">
-                        Restorative
-                      </li>
-                      <li className="px-8 py-3 border-t border-white hover:bg-primary cursor-pointer">
-                        Dental Crowns
-                      </li>
-                      <li className="px-8 py-3 border-t border-white hover:bg-primary cursor-pointer">
-                        Dentures
-                      </li>
-                      <li className="px-8 py-3 border-t border-white hover:bg-primary cursor-pointer">
-                        Invisalign
-                      </li>
-                      <li className="px-8 py-3 border-t border-white hover:bg-primary cursor-pointer">
-                        Smile Makeover
-                      </li>
-                      <li className="px-8 py-3 border-t border-white hover:bg-primary cursor-pointer">
-                        Zoom Whitening
-                      </li>
-
-                      {/* Specialty Services */}
-                      <li className="px-8 py-3 font-bold border-t border-white">
-                        Specialty
-                      </li>
-                      <li className="px-8 py-3 border-t border-white hover:bg-primary cursor-pointer">
-                        Dental Implants
-                      </li>
-                      <li className="px-8 py-3 border-t border-white hover:bg-primary cursor-pointer">
-                        Emergency Dentist
-                      </li>
-                      <li className="px-8 py-3 border-t border-white hover:bg-primary cursor-pointer">
-                        Kid Friendly Dentist
-                      </li>
-                      <li className="px-8 py-3 border-t border-white hover:bg-primary cursor-pointer">
-                        Teeth Whitening
+                        {services.map((item, i) => (
+                          <Link
+                            key={i}
+                            href={`/temple-tx/${item.link}`}
+                            className="block hover:underline hover:scale-105 transition-transform duration-300 ease-in-out"
+                          >
+                            {item.name}
+                          </Link>
+                        ))}
                       </li>
                     </ul>
                   )}
@@ -287,7 +235,7 @@ const Navbar = () => {
                   Patient Education
                 </li>
                 <li className="px-6 py-4 border-b border-white hover:bg-primary cursor-pointer">
-                  Contact Us
+                  <Link href="/contact">Contact</Link>
                 </li>
               </ul>
             </div>
