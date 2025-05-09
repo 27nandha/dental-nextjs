@@ -15,6 +15,7 @@ const Navbar = () => {
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false); // Single state for dropdowns
   const [activeserv, setActiveserv] = useState(false);
   const [activeedu, setActiveedu] = useState(false);
+  const [showMobileNav, setShowMobileNav] = useState(false);
 
   const educationRef = useRef(null);
 
@@ -215,18 +216,22 @@ const Navbar = () => {
 
                   {mobileServicesOpen && (
                     <ul className="bg-primary text-white">
-                      {/* General Services */}
-                      <li className="px-8 py-3 border-t border-white hover:bg-primary cursor-pointer">
-                        {services.map((item, i) => (
+                      {services.map((item, i) => (
+                        <li
+                          key={i}
+                          className="px-8 py-3 border-t border-white hover:bg-primary cursor-pointer"
+                        >
                           <Link
-                            key={i}
                             href={`/temple-tx/${item.link}`}
+                            onClick={() => {
+                              setIsOpen(false); // Close dropdown // Hide entire mobile menu
+                            }}
                             className="block hover:underline hover:scale-105 transition-transform duration-300 ease-in-out"
                           >
                             {item.name}
                           </Link>
-                        ))}
-                      </li>
+                        </li>
+                      ))}
                     </ul>
                   )}
                 </li>
