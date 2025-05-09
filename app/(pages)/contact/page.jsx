@@ -53,7 +53,9 @@ const Page = () => {
       <div className="mb-20 relative z-10 max-w-6xl mx-auto -mt-24 bg-white rounded-xl shadow-xl p-8 flex flex-col md:flex-row">
         {/* Left Side - Form */}
         <div className="w-full  md:w-2/3 p-8">
-          <h2 className={`text-4xl ${cinzel.className} text-orange-500 font-semibold mb-6 pb-10`}>
+          <h2
+            className={`text-4xl ${cinzel.className} text-orange-500 font-semibold mb-6 pb-10`}
+          >
             Get In Touch
           </h2>
 
@@ -61,7 +63,7 @@ const Page = () => {
             {/* Name & Phone */}
             <div className="flex flex-col md:flex-row gap-4">
               <div className="w-full flex items-center border-b border-gray-400">
-                <FaUser className="text-xl mr-2 text-gray-700" />
+                <FaUser className="text-xl mr-2 text-gray-800" />
                 <input
                   type="text"
                   placeholder="First & Last Name (Required)"
@@ -69,7 +71,7 @@ const Page = () => {
                 />
               </div>
               <div className="w-full flex items-center border-b border-gray-400">
-                <FaPhoneAlt className="text-xl mr-2 text-gray-700" />
+                <FaPhoneAlt className="text-xl mr-2 text-gray-800" />
                 <input
                   type="text"
                   placeholder="Phone Number (Required)"
@@ -80,7 +82,7 @@ const Page = () => {
 
             {/* Email */}
             <div className="flex items-center border-b border-gray-400">
-              <FaEnvelope className="text-xl mr-2 text-gray-700" />
+              <FaEnvelope className="text-xl mr-2 text-gray-800" />
               <input
                 type="email"
                 placeholder="Email (Required)"
@@ -90,7 +92,7 @@ const Page = () => {
 
             {/* Message */}
             <div className="flex items-start border-b border-gray-400">
-              <FaComment className="text-xl mr-2 text-gray-700 mt-2" />
+              <FaComment className="text-xl mr-2 text-gray-800 mt-2" />
               <textarea
                 placeholder="How can we help you?"
                 className="w-full focus:outline-none py-2 resize-none"
@@ -153,8 +155,8 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <Book/>
-      <Footer/>
+      <Book />
+      <Footer />
     </div>
   );
 };
