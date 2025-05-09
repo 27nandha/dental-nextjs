@@ -1,14 +1,17 @@
 "use client";
-
-import React, { useState, useRef } from "react";
-import Link from "next/link";
-import Image from "next/image";
+import React, { useState, useRef, useEffect } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { FaLocationDot } from "react-icons/fa6";
-import { FaTimes, FaChevronDown, FaChevronUp } from "react-icons/fa";
+("react-icons/fa");
+import { services, educationLinks } from "./data/NavData"; // adjust path as needed
+import {
+  FaMapMarkerAlt,
+  FaTimes,
+  FaChevronDown,
+  FaChevronUp,
+} from "react-icons/fa";
 import { BiPhoneCall } from "react-icons/bi";
-
-import { services, educationLinks } from "./data/NavData";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,16 +45,11 @@ const Navbar = () => {
           <div className="flex justify-between items-center">
             {/* Logo */}
             <div>
-              <Link href="/">
-                <Image
-                  src="/logo.png"
-                  alt="Revital Dental Logo"
-                  width={120}
-                  height={64}
-                  className="h-12 sm:h-14 md:h-16 w-auto cursor-pointer"
-                  priority
-                />
-              </Link>
+              <img
+                src="/logo.png"
+                alt="Revital Dental Logo"
+                className="h-12 sm:h-14 md:h-16 w-auto cursor-pointer"
+              />
             </div>
 
             {/* Hamburger Icon */}
@@ -96,14 +94,18 @@ const Navbar = () => {
 
               {/* Navigation */}
               <ul className="flex text-base font-normal text-gray-800 relative">
+              <Link href="/" passHref>
+                  <li className="hover:text-orange-600 px-1 transform p-3 hover:bg-gray-200 transition-all duration-300 ease-in-out cursor-pointer list-none">
+                    Home
+                  </li>
+                </Link>
+                <Link href="/about" passHref>
+                  <li className="hover:text-orange-600 px-1 transform p-3 hover:bg-gray-200 transition-all duration-300 ease-in-out cursor-pointer list-none">
+                    About
+                  </li>
+                </Link>
                 <li className="hover:text-orange-600 transform p-3 hover:bg-gray-200 transition-all duration-300 ease-in-out cursor-pointer">
-                  <Link href="/">Home</Link>
-                </li>
-                <li className="hover:text-orange-600 transform p-3 hover:bg-gray-200 transition-all duration-300 ease-in-out cursor-pointer">
-                  <Link href="/about">About</Link>
-                </li>
-                <li className="hover:text-orange-600 transform p-3 hover:bg-gray-200 transition-all duration-300 ease-in-out cursor-pointer">
-                  <Link href="/patient-information">Patient Information</Link>
+                  Patient Information
                 </li>
                 <li className="relative p-2 m-1 hover:bg-gray-200">
                   <button
@@ -126,13 +128,13 @@ const Navbar = () => {
                             {section.title}
                           </h4>
                           {section.items.map((item, idx) => (
-                            <Link
+                            <a
                               key={idx}
                               href={`/${section.title}`}
                               className="block hover:underline hover:scale-105 transition-transform duration-300 ease-in-out"
                             >
                               {item}
-                            </Link>
+                            </a>
                           ))}
                         </div>
                       ))}
@@ -144,7 +146,7 @@ const Navbar = () => {
                     className="hover:text-primary transform   transition-all duration-300 ease-in-out "
                     onMouseOver={activateeducation}
                   >
-                    <Link href="/PatientEducation">Patient Education</Link>
+                    Patient Education
                   </button>
 
                   <div
@@ -158,22 +160,24 @@ const Navbar = () => {
                       {educationLinks.map((column, columnIndex) => (
                         <div key={columnIndex} className="space-y-2">
                           {column.items.map((item, index) => (
-                            <Link
+                            <a
                               key={index}
                               href="#"
                               className="block hover:underline hover:scale-105 transition-transform duration-300 ease-in-out"
                             >
                               {item}
-                            </Link>
+                            </a>
                           ))}
                         </div>
                       ))}
                     </div>
                   </div>
                 </li>
-                <li className="hover:text-orange-600 px-1 transform p-3 hover:bg-gray-200 transition-all duration-300 ease-in-out cursor-pointer">
-                  <Link href="/contact">Contact Us</Link>
-                </li>
+                <Link href="/contact" passHref>
+                  <li className="hover:text-orange-600 px-1 transform p-3 hover:bg-gray-200 transition-all duration-300 ease-in-out cursor-pointer list-none">
+                    Contact Us
+                  </li>
+                </Link>
               </ul>
             </div>
           </div>
