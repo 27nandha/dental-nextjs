@@ -16,7 +16,7 @@ const Services = () => {
         </div>
         <div className="py-10">
 
-        <form action="" className='w-full mx-auto mt-10 md:mt-0'>
+        <form action="" className='w-full mx-auto mt-10 md:mt-0 max-w-[400px]'>
           <div className='text-2xl text-center font-cinzel text-white bg-[#192c2f] py-3'>REQUEST AN APPOINMENT</div>
           <div className='text-center font-cinzel text-white bg-[#284b50] px-4 py-5'> 
 
@@ -235,7 +235,6 @@ const Services = () => {
                     <h2 className="italic text-xl">Tooth Enamel</h2>
                     <p>Tooth enamel is the protective visible outer surface of a tooth that contains the dentin and dental pulp.</p>
                     <hr className="mt-4"/>
-
                   </div>
 
               </div>

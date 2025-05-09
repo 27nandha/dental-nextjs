@@ -8,7 +8,7 @@ const Footer = () => {
         <div className='grid md:grid-cols-2 grid-cols-1 gap-1 my-20'>
 
             <div className='flex justify-center items-center flex-col'>
-                <img src="./ll.png" alt="" className='w-[70%] '  />
+                <img src="/ll.png" alt="" className='w-[70%] '  />
                 <p className='text-[10px] lowercase'>https://revitaldentaltx.com</p>
             </div>
 
