@@ -13,12 +13,12 @@ const Services = () => {
     <>
       {/* intro section */}
       <section className="grid md:grid-cols-[1fr_1fr_1fr] grid-cols-1 md:gap-2  mt-[125px] border-y-[10px] border-dark mx-2">
-        <div className="bg-[url(/dental-checkup.webp)] bg-cover"></div>
+        <div className="bg-[url(/dental-checkup.webp)] bg-cover my-10"></div>
 
         <div className="px-10 py-10 space-y-3">
           <h2 className="text-5xl font-cinzel">Dental Checkup</h2>
           <p className="font-cinzel">Temple, TX</p>
-          <p className="font-tinos">
+          <p className="font-tinos  text-justify">
             If a patient is having a dental checkup for the first time, or if
             they have not been to the dentist in a while, they often find
             themselves wondering what a dental checkup is. During this routine
@@ -26,7 +26,7 @@ const Services = () => {
             gums for infection, decay, and disease, such as cavities or
             periodontitis (gum disease).
           </p>
-          <p className="font-tinos">
+          <p className="font-tinos  text-justify">
             At some point during the checkup, they will also be given guidance
             on home care. This allows them to keep their smile in the best shape
             possible between checkups. Scheduling your checkup is as easy as
