@@ -22,6 +22,6 @@
 }
 
 html {
-    scroll-padding-top: 125px; /* Adjust to your navbar height */
+    scroll-padding-top: 130px; /* Adjust to your navbar height */
     scroll-behavior: smooth; /* Optional */
   }

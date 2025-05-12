@@ -95,7 +95,7 @@ const Services = () => {
       {/* explanation */}
       <section className="md:grid md:grid-cols-[3fr_1fr]  md:w-[90%] w-[100%] md:mx-auto px-2 mt-3 gap-2">
         {/* left section */}
-        <div className="left-section " id="why-dentures-preferred">
+        <div className="left-section " id="emergency-difference">
           {/* dark section */}
           <div className="bg-dark p-5 text-white">
             <h2 className="text-2xl font-cinzel mb-3">
@@ -121,7 +121,7 @@ const Services = () => {
           </div>
 
           {/* Q & A */}
-          <div className="mt-10" id="how-dentures-made">
+          <div className="mt-10" id="when-to-seek">
             <h2 className="font-cinzel text-2xl text-primary">
               When To Visit an Emergency Dentist
             </h2>
@@ -176,7 +176,7 @@ const Services = () => {
           </div>
 
           {/* Q & A */}
-          <div className="mt-10" id="types-of-dentures">
+          <div className="mt-10" id="why-seek">
             <h2 className="font-cinzel text-2xl text-primary">
               Benefits of Emergency Dental Care
             </h2>
@@ -190,59 +190,12 @@ const Services = () => {
               By taking control of dental emergencies and visiting the dentist
               immediately, patients can drastically improve their oral health.
             </p>
-            <ol className="font-tinos text-justify list-disc pl-4 mt-2">
-              <li>
-                <span className="font-bold">Full Dentures.</span> Most commonly
-                used by seniors, these dentures replace a complete set of teeth.
-                They sit directly on top of the gums. Some patients are good
-                candidates for immediate placement. In this instance, the
-                dentist places the previously made dentures immediately after
-                the extraction of the teeth. For everyone else, the dentist may
-                recommend waiting eight to 12 weeks after teeth removal.
-              </li>
-              <li>
-                <span className="font-bold">Partial Dentures.</span> If the
-                patient still has a number of healthy teeth left, the dentist
-                may recommend partial dentures. This usually requires the use of
-                a metal piece to which a pink-colored base is attached. The
-                metal helps to anchor the false teeth to the natural teeth to
-                prevent movement.
-              </li>
-              <li>
-                <span className="font-bold">Implant-Supported Dentures.</span>{" "}
-                This method blends dental implants with dentures. Instead of
-                anchoring all the teeth in place individually, the dentist may
-                add several dental implants that hold the full upper and/or
-                lower set in place. Dentists may use this for partial dentures
-                too. These dentures are not removable once in place. Please note
-                that not all patients are good candidates for these.
-              </li>
-              <li>
-                <span className="font-bold">
-                  Overdentures or Snap-In Dentures.
-                </span>{" "}
-                When patients prefer to retain the ability to remove dentures,
-                but like the stability of implants, they may opt for
-                overdentures. These are handy in instances where a person has no
-                teeth, as the dental implants provide an anchor that the teeth
-                can sit on. For even more excellent stability, patients may opt
-                for snap-in dentures. In this case, the implants have locator
-                receptors, and the dentures have attachments. These work
-                together to snap the dentures into place for a snug fit.
-              </li>
-            </ol>
-            <p className="font-tinos mt-2">
-              The option a patient chooses will depend on that patient's unique
-              situation and health. Our team is available to discuss all the
-              options. We will help you determine the right one for you.
-            </p>
 
             {/* quotes */}
             <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “In fact, over the past few years, dentists created hybrids with
-                other dental treatments to provide patients with even more
-                options.”
+                “Seeking immediate care when a problem occurs prevents it from
+                becoming a more extensive issue requiring harsher treatments.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
@@ -263,59 +216,27 @@ const Services = () => {
               </h2>
             </div>
 
-            <div className="mt-10" id="cleaning-dentures">
+            <div className="mt-10" id="types-of-treatment">
               <h2 className="font-cinzel text-2xl text-primary">
-                How to Care for Dentures
+                Treatments for Dental Emergencies
               </h2>
               <hr />
               <p className="font-tinos mt-2 text-justify">
-                The Canadian Dental Association explains that good dental
-                hygiene is essential to maintain the appearance and function of
-                new veneers. Brushing and flossing after meals and visiting the
-                dentist for regular check-ups are critical aspects of proper
-                maintenance. Skipping these steps can cause decay and cavities
-                to develop between or under the veneer shells.
-              </p>
-
-              <p className="font-tinos mt-2 text-justify">
-                Dentures do require ongoing maintenance outside of the typical
-                oral hygiene routine. Many people believe they can set dentures
-                down by the side of the bed. However, this can lead to warping
-                and cracking over time.
-              </p>
-
-              <p className="font-tinos mt-2 text-justify">
-                Patients should soak dentures overnight. Avoid hot water, as
-                this may also cause warping. Never use a denture solution
-                directly in the mouth. Patients who use denture solutions should
-                rinse thoroughly before placing dentures in the mouth because
-                denture solutions should not be ingested. Our team can help you
-                determine if a solution is right for your regimen.
-              </p>
-
-              <p className="font-tinos mt-2 text-justify">
-                It is also important to note that dentures require cleaning,
-                just like regular teeth do. Whenever possible, remove dentures
-                after eating or drinking and rinse them to get rid of food
-                particles. Patients should brush dentures at least once per day.
-                Dentists recommend a soft-bristled brush as a more abrasive
-                brush may cause damage over time.
-              </p>
-
-              <p className="font-tinos mt-2 text-justify">
-                Even if no teeth remain, continued dental hygiene is essential.
-                Brush the teeth and gums and floss any remaining teeth. Patients
-                may use gauze or a soft bristled toothbrush to clean the cheeks,
-                roof of the mouth, and the tongue. Finally, people who use
-                adhesives should take care to remove it.
+                Since there are many types of dental emergencies, treatment
+                options vary. The dentist will first examine the problem to
+                determine the best course of treatment. After diagnosing the
+                issue, the dentist can either treat the infection, remove the
+                infected tooth, or replace missing tooth fragments. The dentist
+                may also prescribe pain medication or antibiotics to aid in
+                recovery.
               </p>
             </div>
 
             {/* quotes */}
             <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “Dentures do require ongoing maintenance outside of the typical
-                oral hygiene routine.”
+                “Since there are many types of dental emergencies, treatment
+                options vary.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
@@ -328,45 +249,46 @@ const Services = () => {
               <div className="flex flex-col">
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#why-dentures-preferred"
+                  href="#what-makes-different"
                 >
                   Q.{" "}
                   <span className="underline">
-                    Why are dentures a preferred treatment?
+                    What makes emergency dentistry different?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#how-dentures-made"
-                >
-                  Q. <span className="underline">How are dentures made?</span>
-                </a>
-                <a
-                  className="text-justify font-tinos mt-3"
-                  href="#types-of-dentures"
+                  href="#when-to-seek"
                 >
                   Q.{" "}
                   <span className="underline">
-                    What are the different types of dentures?
+                    When should I seek emergency dental care?
+                  </span>
+                </a>
+                <a className="text-justify font-tinos mt-3" href="#why-seek">
+                  Q.{" "}
+                  <span className="underline">
+                    Why should I seek emergency dental care?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#cleaning-dentures"
+                  href="#types-of-treatment"
                 >
                   Q.{" "}
                   <span className="underline">
-                    How should I clean my dentures?
+                    What are the different types of dental emergency treatments?
                   </span>
                 </a>
-                <a
-                  className="text-justify font-tinos mt-3"
-                  href="#dentures-longevity"
-                >
+                <a className="text-justify font-tinos mt-3" href="#what-to-do">
                   Q.{" "}
-                  <span className="underline">How long do dentures last?</span>
+                  <span className="underline">
+                    What should I do while waiting to get to the emergency
+                    dentist?
+                  </span>
                 </a>
               </div>
+
               <h2 className="text-4xl text-center font-cinzel mb-3 mt-3">
                 People Also Ask
               </h2>
@@ -403,39 +325,27 @@ const Services = () => {
               </div>
             </div>
 
-            <div className="mt-10" id="dentures-longevity">
+            <div className="mt-10" id="what-to-do">
               <h2 className="font-cinzel text-2xl text-primary">
-                Common Myths and Misconceptions
+                What To Do While Waiting For Emergency Dental Treatment
               </h2>
               <hr />
               <p className="font-tinos mt-2 text-justify">
-                One of the most common myths we hear about dentures is that once
-                a patient gets their dentures created and placed, they are set
-                for life. Dentures typically last for five to 10 years. Since
-                this is a long time, patients may wonder how to know when they
-                need new dentures. If the color has changed dramatically or
-                there is physical damage, dentures may need replacement. A
-                common telling sign is when they no longer fit securely.
-              </p>
-
-              <p className="font-tinos mt-2 text-justify">
-                Some people believe that if they remove all their teeth and get
-                full dentures, they will never need to set foot in a dentist’s
-                office again.This is not true and regular dental visits are
-                still necessary. Dentists are in the best position to tell
-                patients whether or not they need to get their dentures repaired
-                or replaced. In fact, the dentist may adjust dentures during
-                annual or bi-annual visits to keep them fitting correctly.
-                Dentists also pay keen attention to gum health especially if the
-                patient smokes or suffers from an illness affecting the gums.
+                If a patient is suffering from any kind of dental trauma, the
+                first thing to do is contact the dentist for instructions.
+                Treatment options vary depending upon the type of problem. For a
+                lost filling or crown, patients can use a small piece of
+                sugarless gum to cover the opening temporarily. Mouth pain can
+                sometimes be alleviated with over-the-counter medications, while
+                extensive dental trauma may require patients to pack their
+                mouths with gauze.
               </p>
             </div>
 
             <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “Some people may also believe that if they remove all their
-                teeth and get full dentures, they’ll never need to set foot in a
-                dentist’s office again.”
+                “If a patient is suffering from any kind of dental trauma, the
+                first thing to do is contact the dentist for instructions.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
@@ -451,83 +361,93 @@ const Services = () => {
                 <h2 className="text-justify text-primary font-tinos mt-3">
                   Q.{" "}
                   <span className="underline">
-                    Will dentures change my appearance?
+                    Does emergency dental care hurt?
                   </span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. When patients lose their teeth, the bone loss may begin to
-                  cause the cheek to look hollow and sunken. Dentures can help
-                  to fill out space and retain the face’s original shape. Having
-                  a full set of teeth that look beautiful and healthy also
-                  improves a person’s appearance and overall confidence.
+                  A. While many emergency dental treatments are uncomfortable,
+                  dentists will try to keep patients comfortable as possible.
+                  More pain may occur during the recovery period. The dentist
+                  can provide pain medication to keep patients comfortable
+                  during the recovery process.
                 </p>
+
                 <h2 className="text-justify text-primary font-tinos mt-3">
                   Q.{" "}
                   <span className="underline">
-                    Is it difficult to eat with dentures?
+                    Is emergency dental care preventable?
                   </span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Eating with dentures may feel uncomfortable for a few
-                  weeks, just as when people get braces for the first time.
-                  However, over time, it becomes easier. In the beginning, try
-                  to stay away from foods that meet any of the following
-                  criteria:
+                  A. According to the Texas A&M University Health Science
+                  Center, most dental emergencies are preventable with proper
+                  preventative care. If patients neglect regular oral care,
+                  minor issues can quickly escalate into major problems that
+                  require extensive intervention. However, unpreventable
+                  accidents do happen occasionally.
                 </p>
-                <div className="list-disc pl-6 font-tinos mt-2">
-                  <ul>
-                    <li>Sharp-edged</li>
-                    <li>Tough</li>
-                    <li>Sticky</li>
-                    <li>Hot</li>
-                  </ul>
-                </div>
+
                 <h2 className="text-justify text-primary font-tinos mt-3">
                   Q.{" "}
                   <span className="underline">
-                    Are there any risks associated with dentures?
+                    How can a displaced tooth be preserved during a dental
+                    emergency?
                   </span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. A 2015 study published by the National Institute of Health
-                  found that seniors who wore dentures while they slept
-                  long-term faced a higher risk of developing pneumonia. The CDC
-                  also believes dentures may negatively affect nutrition. They
-                  attribute this to denture wearers avoiding fruits and
-                  vegetables because they are more difficult to chew.
+                  A. The American Academy of Endodontists states that a
+                  dislodged tooth can be preserved and restored with proper
+                  medical care. After locating the fragment or whole tooth, the
+                  patient should place it in a glass of milk or warm saltwater.
+                  This preserves the tooth until the dentist can replace it.
                 </p>
-                <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q. <span className="underline">Are Adhesives Necessary?</span>
-                </h2>
-                <p className="font-tinos md:ps-4 mt-2">
-                  A. Patients who have lost all their natural teeth may require
-                  adhesives, while others may not. Even so, patients with only
-                  partial tooth loss may choose to use adhesives for additional
-                  support. It may also assist people suffering from neurological
-                  disabilities, dry mouth, or who take certain medications.
-                </p>
+
                 <h2 className="text-justify text-primary font-tinos mt-3">
                   Q.{" "}
-                  <span className="underline">How Much Do Dentures Cost?</span>
+                  <span className="underline">
+                    How is a restorative emergency different from another dental
+                    emergency?
+                  </span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Dentures tend to be more affordable than other tooth
-                  replacement options. Each case is different, and the
-                  individual selections a patient makes can affect the cost.
-                  Generally speaking, dentures offer the most cost-effective
-                  full tooth replacement. When patients choose hybrid options
-                  that involve implants, the price may increase for each implant
-                  added.
+                  A. Restorative emergencies are often cosmetic and functional
+                  in nature, while other dental emergencies typically result in
+                  more pain. A chipped tooth may be uncomfortable, but depending
+                  upon its placement, cosmetic appearance or functionality may
+                  be a bigger concern than pain. Because of this, the dentist
+                  may use dental cement or glue to fasten the fragment back in
+                  place before restoring its appearance.
                 </p>
+
                 <h2 className="text-justify text-primary font-tinos mt-3">
                   Q.{" "}
-                  <span className="underline">How Can I Pay for Dentures?</span>
+                  <span className="underline">
+                    What qualifies as a dental emergency?
+                  </span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Dental insurance may cover the cost of dentures. However,
-                  there may be a waiting period due to a pre-existing condition.
-                  Some patients rely on dental savings plans. Your insurance
-                  provider can discuss with you the details.
+                  A. Any type of dental trauma can require emergency dental
+                  care. Whether it is caused by an infected tooth, diseased
+                  gums, or an accident, a dental emergency needs quick
+                  intervention to relieve pain. Therefore, any oral health
+                  problem that demands immediate attention qualifies as a dental
+                  emergency.
+                </p>
+
+                <h2 className="text-justify text-primary font-tinos mt-3">
+                  Q.{" "}
+                  <span className="underline">
+                    How does emergency dental treatment benefit oral health?
+                  </span>
+                </h2>
+                <p className="font-tinos md:ps-4 mt-2">
+                  A. Ignoring dental problems can lead to deteriorating oral
+                  health. While preventative care is the first line of defense
+                  against major dental problems, emergency dental procedures may
+                  eliminate the issue once it occurs. By making patients aware
+                  of the contributing factors that led to the problem, emergency
+                  dental treatment may prevent the issue from recurring and lead
+                  to better overall health.
                 </p>
               </div>
             </div>
@@ -589,88 +509,64 @@ const Services = () => {
               <h2 className="text-4xl font-cinzel mb-3">Dental Terminology</h2>
               <hr />
               <div className="space-y-10">
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Alveolar Bone</h2>
-                  <p>
-                    The alveolar bone is the bone surrounding the root of the
-                    tooth that keeps the tooth in place.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Clasp</h2>
-                  <p>
-                    A clasp is a device that holds a removable partial denture
-                    prosthesis to the teeth.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Denture Base</h2>
-                  <p>
-                    The denture base is the part of the denture that connects
-                    the artificial teeth with the soft tissue of the gums.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Edentulous</h2>
-                  <p>
-                    Edentulous is a term that applies to people who do not have
-                    any teeth.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Periodontal Disease</h2>
-                  <p>
-                    Periodontal disease is a condition that causes inflammation
-                    of the gingival tissues and membrane of the teeth, leading
-                    to tooth loss without professional treatment.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Pontic</h2>
-                  <p>
-                    Pontic is another term for an artificial tooth on a fixed
-                    partial denture.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Rebase</h2>
-                  <p>
-                    Rebase is the process of refitting denture prosthesis by
-                    replacing the base material.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Reline</h2>
-                  <p>
-                    Reline is when a professional resurfaces the surface of the
-                    prosthesis with a new base material.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Resin/Acrylic</h2>
-                  <p>
-                    Resin and Acrylic are resinous materials that can be
-                    components in a denture base.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Stomatitis</h2>
-                  <p>
-                    Stomatitis is the inflammation of the tissue that is
-                    underlying a denture that does not fit properly. It can also
-                    result from other oral health factors.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
+                {[
+                  {
+                    term: "Abscess",
+                    definition:
+                      "A dental abscess is a pocket of pus that forms in the tooth root from a bacterial infection.",
+                  },
+                  {
+                    term: "Dentist",
+                    definition:
+                      "A dentist, also known as a dental surgeon, is a doctor who specializes in the diagnosis, prevention, and treatment of diseases and conditions of the oral cavity.",
+                  },
+                  {
+                    term: "Dental Filling",
+                    definition:
+                      "A dental filling involves restoring the structure of the tooth by using metal, alloy, porcelain, or plastic to fill the tooth.",
+                  },
+                  {
+                    term: "Facial Cellulitis",
+                    definition:
+                      "Facial cellulitis is a condition in which an infection from an abscess or plaque in the teeth causes pain and spreads throughout the face.",
+                  },
+                  {
+                    term: "Impacted Wisdom Tooth",
+                    definition:
+                      "An impacted wisdom tooth is a tooth that does not erupt from the gums properly and can cause pain and become infected without professional extraction.",
+                  },
+                  {
+                    term: "Irreversible Pulpitis",
+                    definition:
+                      "Irreversible pulpitis is when the pain in the tooth occurs spontaneously or continues after removing the hot/cold substance. Normal pulpitis stops hurting once the stimulus is removed.",
+                  },
+                  {
+                    term: "Lateral Luxation",
+                    definition:
+                      "Lateral luxation is the displacement of a tooth that moves it in the wrong direction while it is still attached to the gums.",
+                  },
+                  {
+                    term: "Pericoronitis",
+                    definition:
+                      "Pericoronitis is the inflammation of soft tissues surrounding a tooth that does not fully erupt from the gums and causes pain.",
+                  },
+                  {
+                    term: "Tooth Avulsion",
+                    definition:
+                      "Tooth avulsion is when the tooth completely displaces from the socket due to an accident or other health issues. The tooth can be replanted if immediate care is provided.",
+                  },
+                  {
+                    term: "Tooth Fracture",
+                    definition:
+                      "A tooth fracture can result from multiple sources including an accidental elbow to the face, biting on something hard, or falling face first.",
+                  },
+                ].map((item, idx) => (
+                  <div key={idx} className="mt-5 font-tinos">
+                    <h2 className="italic text-xl">{item.term}</h2>
+                    <p>{item.definition}</p>
+                    <hr className="mt-4" />
+                  </div>
+                ))}
               </div>
             </div>
 

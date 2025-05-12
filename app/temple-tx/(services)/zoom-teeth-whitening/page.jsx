@@ -2,6 +2,8 @@ import React from "react";
 import { FaCaretDown } from "react-icons/fa";
 import { Cinzel } from "next/font/google";
 import Link from "next/link";
+import { FaYelp } from "react-icons/fa";
+import Image from "next/image";
 
 const cinzel = Cinzel({
   subsets: ["latin"], // you can add 'latin-ext' if needed
@@ -12,28 +14,31 @@ const Services = () => {
   return (
     <>
       {/* intro section */}
-      <section className="grid md:grid-cols-[1fr_1fr_1fr] grid-cols-1 md:gap-2  mt-[125px] border-y-[10px] border-dark mx-2">
-        <div className="bg-[url(/dental-checkup.webp)] bg-cover my-10"></div>
+      <section className="grid md:grid-cols-[1fr_1fr_1fr] grid-cols-1 md:gap-2  md:mt-[125px]  border-y-[10px] border-dark mx-2">
+        <div className="bg-[url(/zoom-teeth-whitening.webp)] bg-cover my-10"></div>
 
-        <div className="px-10 py-10 space-y-3">
-          <h2 className="text-5xl font-cinzel ">Dental Checkup</h2>
-          <p className="font-cinzel">Temple, TX</p>
+        <div className="px-10 py-5 space-y-3">
+          <h2 className="text-5xl font-cinzel text-primary">
+            Zoom Teeth Whitening
+          </h2>
+          <p className="font-cinzel text-primary">Temple, TX</p>
           <p className="font-tinos  text-justify">
-            If a patient is having a dental checkup for the first time, or if
-            they have not been to the dentist in a while, they often find
-            themselves wondering what a dental checkup is. During this routine
-            appointment, a dental professional will check the smile, teeth, and
-            gums for infection, decay, and disease, such as cavities or
-            periodontitis (gum disease).
+            Beautiful, bright, white teeth are a sign of good health and a
+            youthful appearance. Many people have teeth stained from coffee,
+            smoking, or other substances, making their smile appear dull or
+            yellow. ZOOM!® teeth whitening is a professional whitening system
+            administered by a dentist that brightens teeth several shades whiter
           </p>
           <p className="font-tinos  text-justify">
-            At some point during the checkup, they will also be given guidance
-            on home care. This allows them to keep their smile in the best shape
-            possible between checkups. Scheduling your checkup is as easy as
-            calling our Revital Dental team in Temple at (254) 207-0708.
+            Zoom teeth whitening is available at Revital Dental in Temple and
+            the surrounding area. Professional whitening treatment with a Zoom
+            whitening dentist gives patients better results and a gorgeous
+            smile. Patients with a big event coming up, such as a wedding, class
+            reunion, or party, can wow their friends and family with a dazzling
+            smile. Call us at (254) 207-0708 to find out more.
           </p>
         </div>
-        <div className="py-10">
+        <div className="py-5">
           <form
             action=""
             className="w-full mx-auto mt-10 md:mt-0 max-w-[400px]"
@@ -84,120 +89,172 @@ const Services = () => {
       {/* explanation */}
       <section className="md:grid md:grid-cols-[3fr_1fr]  md:w-[90%] w-[100%] md:mx-auto px-2 mt-3 gap-2">
         {/* left section */}
-        <div className="left-section " id="what-is-involved-dental-cleaning">
+        <div className="left-section " id="how-zoom-whitening-works">
           {/* dark section */}
           <div className="bg-dark p-5 text-white">
-            <h2 className="text-2xl font-cinzel mb-3">Dental Cleaning</h2>
+            <h2 className="text-2xl font-cinzel mb-3">
+              How Zoom Whitening Works
+            </h2>
             <hr />
             <p className="text-justify font-tinos mt-4">
-              During the dental cleaning, the dental professional will remove
-              the plaque — a buildup of bacteria that deposits onto the teeth.
-              To do this, the dental professional will scrape the teeth above
-              and below the gum line with special tools. The teeth may be rinsed
-              periodically during this process. Then, the dental professional
-              will floss between the teeth. If the patient does not floss
-              regularly, they may find this to be a little uncomfortable; but if
-              they include flossing as part of their daily oral care practice,
-              this discomfort will go away over time.
-            </p>
-            <p className="text-justify font-tinos mt-4 mb-5">
-              At the end of the dental cleaning, the dental professional will
-              polish the teeth. This polishing helps protect the teeth against
-              the buildup of plaque so they stay shiny and smoother longer. The
-              polish is applied with a spinning brush and a paste. This paste
-              resembles toothpaste but is slightly coarse so it can better
-              eliminate any residue that might have been missed. When the dental
-              professional is done cleaning the teeth, the patient may be asked
-              to rinse and gargle with mouthwash.
-            </p>
-          </div>
-
-          {/* question and answer section */}
-          {/* quote */}
-          <div className="relative inline-block mt-10">
-            <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-              “During the dental cleaning, the dental professional will remove
-              the plaque — a buildup of bacteria that deposits onto the teeth.”
-            </h2>
-            <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
-          </div>
-          {/* Q & A */}
-          <div className="mt-10" id="dentist-look-for-dental-examination">
-            <h2 className="font-cinzel text-2xl text-primary">
-              Dental Examination
-            </h2>
-            <hr />
-            <p className="font-tinos mt-2">
-              The dentist will speak to the patient about their dental history.
-              They may ask the patient about medications and illnesses, or
-              whether they have any allergies, concerns, or anxieties. Always be
-              honest with our dental team so they can provide the best care
-              possible.
-            </p>
-            <p className="font-tinos mt-2">
-              The dental professional will check the teeth for any signs of
-              concern by using a small mirror to look around the mouth. During
-              this examination, they will be looking for swelling, sores, cuts
-              or lesions, gum recession, and tooth decay. One of the most
-              important things they will look for is spaces between the gums and
-              teeth called dental pockets. Dental pockets pose a risk to health
-              and may indicate gum disease. The dental professional may
-              recommend home care and monitoring to protect the smile.
+              Zoom teeth whitening uses several powerful ingredients to reduce
+              staining and brighten smiles. It comes in a gel formula, made with
+              hydrogen peroxide. This formula is much more powerful and
+              effective than over-the-counter products. The dentist will coat
+              the teeth with this gel to start the whitening session. Then, the
+              dentist uses a special light to activate the gel and remove
+              staining on the teeth. The typical treatment session takes just
+              over an hour and includes a five-minute fluoride treatment. With
+              Zoom, patients will see whiter teeth after only a few visits.
             </p>
           </div>
 
           {/* quote */}
           <div className="relative inline-block mt-10">
             <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-              “These X-rays are important for your dental team to be able to
-              check the roots beneath your gum line, which could otherwise not
-              be seen during a routine checkup.”
+              “This formula is much more powerful and effective than
+              over-the-counter products.”
             </h2>
             <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
           </div>
+
           {/* Q & A */}
-          <div className="mt-10">
+          <div className="mt-10" id="zoom-vs-home-whitening">
             <h2 className="font-cinzel text-2xl text-primary">
-              The Importance of Regular Dental Care
+              Advantages of Zoom Over Home Teeth Whitening
             </h2>
             <hr />
-            <p className="font-tinos mt-2">
-              Our dental team recommends that all patients return to the office
-              for dental checkups at least once every six months. By scheduling
-              regular appointments and cleanings, our dental team will be able
-              to monitor the smile for any signs of concern. Waiting too long
-              between checkups gives more time for plaque to build up, which may
-              lead to cavities, tooth decay, receding gums, and more. Patients
-              will also be taught what they can do to prevent these issues
-              during checkups.
+            <p className="font-tinos mt-2 text-justify">
+              Deciding between at-home whitening versus professional whitening
+              depends on a variety of factors. Home whitening kits are popular
+              today, but professional whitening is much more effective, fast,
+              and safe for patients. The biggest reason patients prefer
+              professional whitening like Zoom is because of the quick results.
+              Whitening kits from the drugstore or supermarket may not be as
+              impressive as the results from Zoom whitening. Patients who want
+              whiter teeth faster and with more dramatic results should consider
+              professional teeth whitening.
             </p>
-            <p className="font-tinos mt-2">
-              Keeping oral health on track starts at home. To prevent oral
-              health issues between dental checkups, our dental team may make
-              several recommendations for at-home oral care. These oral hygiene
-              techniques may include:
+            <p className="font-tinos mt-2 text-justify">
+              Patients prefer Zoom because it is gentle enough for sensitive
+              teeth and has the added supervision of the dental provider during
+              application. Choosing a Zoom whitening dentist also helps make
+              sure the patient's teeth and gums do not experience enamel or
+              sensitivity issues. According to a study from the Journal of
+              Evidence Based Dental Practice, overaggressive tooth whitening at
+              home may cause tooth sensitivity.
             </p>
-            <ul className="font-tinos list-disc  pl-4 mt-2">
-              <li>
-                Brushing the teeth at least twice a day with a fluoride
-                toothpaste
-              </li>
-              <li>Flossing daily</li>
-              <li>Using a mouthwash</li>
-              <li>
-                Avoid smoking or other activities detrimental to oral health
-              </li>
-            </ul>
+          </div>
 
-            {/* Questions Answered on This Page */}
-            <div className="relative inline-block mt-10">
+          <div className="relative inline-block mt-10">
+            <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
+              “Home whitening kits are popular today, but professional whitening
+              is much more effective, fast, and safe for patients.”
+            </h2>
+            <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
+          </div>
+
+          {/* Q & A */}
+          <div className="mt-10" id="preparing-for-whitening">
+            <h2 className="font-cinzel text-2xl text-primary">
+              How To Prepare for Teeth Whitening
+            </h2>
+            <hr />
+
+            <p className="font-tinos mt-2">
+              Preparing for Zoom whitening is fairly simple and easy. Our team
+              recommends that patients start with a recent dental exam and
+              cleaning. Before coming into the office on the day of the
+              procedure, patients should brush and floss. It may also be more
+              comfortable to apply lip balm before the treatments so the lips do
+              not get too dry during the whitening process. Other than that,
+              there are no special things to do before treatment. Patients
+              should be able to drive themselves to and from the procedure as no
+              anesthesia is required.
+            </p>
+
+            {/* quotes */}
+            <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “To prevent oral health issues between dental checkups, our
-                dental team may make several recommendations for at-home oral
-                care.”
+                “It may also be more comfortable to apply lip balm before the
+                treatments so the lips do not get too dry during the whitening
+                process.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
+
+            <div className="relative inline-block mt-10 w-full">
+              <h2 className="flex flex-wrap justify-center text-lg font-cinzel bg-primary text-white p-5 mt-5 rounded-2xl">
+                <FaYelp className="text-2xl me-2" />
+                Check out what others are saying about our dental services on
+                Yelp:&nbsp;
+                <Link
+                  href="https://www.yelp.com/biz/revital-dental-temple"
+                  className="underline hover:text-gray-200"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Dental Crowns and Dental Bridges in Temple, TX
+                </Link>
+              </h2>
+            </div>
+
+            <div className="mt-10" id="during-treatment">
+              <h2 className="font-cinzel text-2xl text-primary">
+                What To Expect During Treatment
+              </h2>
+              <hr />
+              <p className="font-tinos mt-2 text-justify">
+                Before starting the treatment process, Our team will help
+                patients understand what happens at each appointment. At the
+                beginning, we will greet patients and bring them back to the
+                treatment area. Here are the steps in the Zoom whitening
+                process.
+              </p>
+
+              <ol className="font-tinos text-justify list-disc pl-4 mt-2">
+                <li>
+                  <span className="font-bold"> Setup:</span>
+                  The dental provider will take pictures of the current shade of
+                  teeth and give information on what type of results to expect.
+                  Next, the dentist places cheek retractors into the mouth to
+                  pull back the lips and expose the teeth for the whitening
+                  treatment.
+                </li>
+                <li>
+                  <span className="font-bold">Gel Application:</span> The next
+                  part of the process involves the proprietary Zoom gel. The
+                  dentist coats the patient's teeth with the whitening gel and
+                  uses Zoom light to activate the gel. Return Treatment: For
+                  optimal results, patients should return for additional
+                  whitening treatments. Many patients complete about three
+                  treatments.
+                </li>
+                <li>
+                  <span className="font-bold">Return Treatment:</span> For
+                  optimal results, patients should return for additional
+                  whitening treatments. Many patients complete about three
+                  treatments.
+                </li>
+                <li>
+                  <span className="font-bold">After Whitening:</span> Patients
+                  may get a home touch-up whitening kit to help maintain the
+                  results. When using the home trays, coat the tray with
+                  whitening gel and wear on the teeth for about two hours.
+                  Patients should store the touch-up kit in a cool, dry place.
+                </li>
+              </ol>
+            </div>
+
+            {/* quotes */}
+            <div className="relative inline-block mt-10 w-full">
+              <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
+                “For optimal results, patients should return for additional
+                whitening treatments.”
+              </h2>
+              <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
+            </div>
+
             <div className="bg-dark p-5 mt-10 text-white">
               <h2 className="text-4xl text-center font-cinzel mb-3">
                 Questions Answered on This Page
@@ -206,139 +263,188 @@ const Services = () => {
               <div className="flex flex-col">
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#what-is-involved-dental-cleaning"
+                  href="#how-zoom-whitening-works"
                 >
                   Q.{" "}
                   <span className="underline">
-                    What is involved in the dental cleaning portion of a
-                    checkup?
+                    How does Zoom Whitening work?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#dentist-look-for-dental-examination"
+                  href="#zoom-vs-home-whitening"
                 >
                   Q.{" "}
                   <span className="underline">
-                    What does the dentist look for in a dental examination?
+                    Why choose Zoom whitening over whitening at home?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#dentist-look-for-dental-examination"
-                >
-                  Q. <span className="underline">Why are x-rays taken?</span>
-                </a>
-                <a
-                  className="text-justify font-tinos mt-3"
-                  href="#dentist-look-for-dental-examination"
+                  href="#preparing-for-whitening"
                 >
                   Q.{" "}
                   <span className="underline">
-                    How often should someone have a dental checkup?
+                    What does a patient need to do to prepare for teeth
+                    whitening?
+                  </span>
+                </a>
+                <a
+                  className="text-justify font-tinos mt-3"
+                  href="#during-treatment"
+                >
+                  Q.{" "}
+                  <span className="underline">
+                    What happens during treatment?
                   </span>
                 </a>
               </div>
+
               <h2 className="text-4xl text-center font-cinzel mb-3 mt-3">
                 People Also Ask
               </h2>
               <hr />
               <div className="flex flex-col mb-4">
-                <a className="text-justify font-tinos mt-3" href="#">
-                  Q. <span className="underline">What is dental bonding?</span>
+                <a
+                  className="text-justify font-tinos mt-3"
+                  href="#benefits-of-dental-whitening"
+                >
+                  Q.{" "}
+                  <span className="underline">
+                    What are the benefits of teeth whitening at a dentist’s
+                    office?
+                  </span>
                 </a>
-                <a className="text-justify font-tinos mt-3" href="#">
-                  Q. <span className="underline">What is a deep cleaning?</span>
+                <a
+                  className="text-justify font-tinos mt-3"
+                  href="#reasons-for-bleaching"
+                >
+                  Q.{" "}
+                  <span className="underline">
+                    What are the top reasons for bleaching teeth?
+                  </span>
                 </a>
-                <a className="text-justify font-tinos mt-3" href="#">
-                  Q. <span className="underline">Why are x-rays taken?</span>
+                <a
+                  className="text-justify font-tinos mt-3"
+                  href="#who-should-get-whitening"
+                >
+                  Q.{" "}
+                  <span className="underline">
+                    Who should receive professional teeth whitening?
+                  </span>
                 </a>
               </div>
             </div>
 
-            {/* Q & A */}
-
-            <div className="bg-gray-100 p-5 mt-10 ">
+            <div className="bg-gray-100 p-5 mt-10">
               <h2 className="text-4xl text-center font-cinzel mb-3 text-primary">
-                Questions Answered on This Page
+                Frequently Asked Questions
               </h2>
               <hr />
               <div className="flex flex-col">
                 <h2
                   className="text-justify text-primary font-tinos mt-3"
-                  href="#what-is-involved-dental-cleaning"
+                  id="is-zoom-right"
                 >
-                  Q. What happens during a dental cleaning?
+                  Q.{" "}
+                  <span className="underline">
+                    Is Zoom teeth whitening right for me?
+                  </span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. During a dental cleaning, a dental professional will use
-                  specialized dental tools to clean the teeth. These tools
-                  include a scraping tool that looks like a small metal hook to
-                  remove buildup from the surface of the teeth and an electric
-                  toothbrush with coarse toothpaste to clean and shine the
-                  teeth. Together with a dental mouthwash, a dental cleaning
-                  will remove buildup from the teeth and protect them from
-                  bacteria.
+                  A. Patients who have healthy teeth and gums and commit to a
+                  solid oral health routine are good candidates for professional
+                  whitening. According to the American Dental Association,
+                  whitening does not work for patients with dental implants,
+                  crowns, or other restorations for the teeth. Whitening
+                  treatment is also not recommended for pregnant or
+                  breastfeeding women.
                 </p>
+
                 <h2
                   className="text-justify text-primary font-tinos mt-3"
-                  href="#dentist-look-for-dental-examination"
+                  id="does-whitening-hurt"
                 >
-                  Q. What is a dental exam?
+                  Q.{" "}
+                  <span className="underline">
+                    Does professional whitening hurt?
+                  </span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. A dental exam is very similar to a dental checkup. Just
-                  like a checkup, a dental professional checks the teeth for any
-                  sign of concern and cleans the teeth. The difference is that
-                  with a dental exam, the dental professional will also check
-                  other areas that may be affected by oral health, like the head
-                  and neck. This exam is usually only recommended for new
-                  patients.
+                  A. Zoom teeth whitening does not cause any pain or discomfort.
+                  The dentist coats the teeth with a gel, which is painless. The
+                  light to activate the product also does not cause discomfort.
+                  Patients with sensitive teeth should talk to their dentist
+                  about treatment.
                 </p>
+
                 <h2
                   className="text-justify text-primary font-tinos mt-3"
-                  href="#dentist-look-for-dental-examination"
+                  id="zoom-cost"
                 >
-                  Q. What is a dental X-ray?
+                  Q.{" "}
+                  <span className="underline">
+                    How much does a Zoom whitening dentist treatment cost?
+                  </span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. A dental X-ray is like other X-rays, but this one looks
-                  specifically at the mouth. More specifically, this X-ray looks
-                  at the roots and areas beneath the gum line where the dental
-                  professional otherwise would not be able to see. Dental X-rays
-                  are important for checking for signs of disease or other oral
-                  health concerns around the roots of the teeth.
+                  A. Before the treatment, the dentist will go over the costs
+                  with the patient. Professional whitening costs vary, depending
+                  on each individual situation. After whitening, it is important
+                  to protect the investment to avoid staining the teeth.
                 </p>
+
                 <h2
                   className="text-justify text-primary font-tinos mt-3"
-                  href="#dentist-look-for-dental-examination"
+                  id="is-whitening-permanent"
                 >
-                  Q. What happens if someone waits too long for a dental
-                  checkup?
+                  Q.{" "}
+                  <span className="underline">
+                    Is professional whitening permanent?
+                  </span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Bacteria naturally attach to the surface of the teeth as
-                  they are used to eat. While at-home oral care can help to
-                  remove much of this bacteria, it is next to impossible to
-                  remove all of it without professional dental tools. Waiting
-                  too long between dental checkups gives these bacteria time to
-                  settle onto the teeth and turn into plaque and tartar. If this
-                  buildup is not removed, it could lead to tooth decay or
-                  disease over time and create further oral health concerns.
+                  A. Zoom teeth whitening is not a permanent solution for white
+                  teeth. Patients may need to schedule repeat treatments
+                  depending on their eating habits. If patients avoid foods that
+                  stain the teeth, they may not need to return for another
+                  treatment until a year or two later.
                 </p>
+
                 <h2
                   className="text-justify text-primary font-tinos mt-3"
-                  href="#dentist-look-for-dental-examination"
+                  id="is-zoom-safe"
                 >
-                  Q. What at-home care should be done between dental checkups?
+                  Q.{" "}
+                  <span className="underline">
+                    Is Zoom teeth whitening treatment safe?
+                  </span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Recommended at-home dental care includes brushing twice a
-                  day and flossing at least once a day. Also, dental care
-                  professionals suggest patients use a mouthwash that includes
-                  fluoride. Patients may be advised to avoid smoking, eating
-                  sugary foods, and other activities that are known to be
-                  harmful to oral health.
+                  A. Visiting a dentist to get professional whitening in the
+                  office helps patients protect their gums and teeth enamel.
+                  Patients with sensitivity or gum irritation would benefit from
+                  treatments under their dentist's supervision. If patients opt
+                  for an over-the-counter product, they run the risk of using
+                  too much, which could cause irritation.
+                </p>
+
+                <h2
+                  className="text-justify text-primary font-tinos mt-3"
+                  id="maintain-results"
+                >
+                  Q.{" "}
+                  <span className="underline">
+                    What can I do to maintain my results from professional
+                    whitening?
+                  </span>
+                </h2>
+                <p className="font-tinos md:ps-4 mt-2">
+                  A. It is essential to keep up with excellent brushing and
+                  flossing habits after Zoom teeth whitening. The dentist may
+                  recommend a specific brand of toothpaste to help maintain
+                  results. It is also important to continue with regular dental
+                  check-ups.
                 </p>
               </div>
             </div>
@@ -399,112 +505,125 @@ const Services = () => {
             <div className="bg-dark p-5 mt-10 text-white">
               <h2 className="text-4xl font-cinzel mb-3">Dental Terminology</h2>
               <hr />
-              <div className="space-y-10 ">
+              <div className="space-y-10">
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Cosmetic Dentistry</h2>
+                  <h2 className="italic text-xl">Bleachorexia</h2>
                   <p>
-                    Cosmetic dentistry is generally used to refer to any dental
-                    work that improves the appearance (though not necessarily
-                    the function) of a person’s teeth, gums and/or bite.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Dental Caries</h2>
-                  <p>
-                    Dental caries are also known as cavities and result from a
-                    lack of proper oral hygiene leaving plaque that forms tiny
-                    holes in the teeth.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Dental Filling</h2>
-                  <p>
-                    A dental filling involves restoring the structure of the
-                    tooth by using metal, alloy, porcelain or plastic to fill
-                    the tooth.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Dental Sealants</h2>
-                  <p>
-                    Dental sealants contain a resinous material that we apply to
-                    the chewing surfaces of the posterior teeth to prevent
-                    dental caries.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Gingivitis</h2>
-                  <p>
-                    Gingivitis is the inflammation of gum tissue that results
-                    from plaque, other infections in the mouth and poor oral
-                    hygiene.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Tartar</h2>
-                  <p>
-                    Tartar forms when plaque builds up on the surface of the
-                    teeth and calcifies into a hard surface that is much more
-                    difficult to remove and will require professional treatment.
+                    Bleachorexia is the excessive and repeated use of teeth
+                    whitening products without professional guidance, often
+                    leading to enamel erosion and gum damage.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Decay</h2>
+                  <h2 className="italic text-xl">Carbamide Peroxide</h2>
                   <p>
-                    Tooth decay is when the enamel of the tooth begins to decay
-                    and cause erosion from plaque and tartar on the teeth.
+                    Carbamide peroxide is a bleaching agent that breaks down
+                    into hydrogen peroxide and urea, used in many professional
+                    and at-home teeth whitening treatments.
                   </p>
                   <hr className="mt-4" />
                 </div>
+
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Dental Checkup</h2>
+                  <h2 className="italic text-xl">Cosmetic Dentistry</h2>
                   <p>
-                    A dental checkup is an appointment that involves cleaning
-                    the teeth, identifying any signs of infection and removing
-                    said signs of infection at least once every six months in
-                    the office.
+                    Cosmetic dentistry focuses on enhancing the appearance of
+                    teeth, gums, and bites, including treatments like whitening,
+                    veneers, and reshaping.
                   </p>
                   <hr className="mt-4" />
                 </div>
+
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Dental Prophylaxis</h2>
+                  <h2 className="italic text-xl">Deeper Teeth Stains</h2>
                   <p>
-                    A dental prophylaxis is a professional and detailed cleaning
-                    that involves the removal of plaque, calculus and stains
-                    from the teeth.
+                    These are stains that penetrate beyond the enamel into the
+                    dentin layer, often caused by dark foods, drinks, or
+                    smoking, requiring professional whitening solutions.
                   </p>
                   <hr className="mt-4" />
                 </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Dentin Hypersensitivity</h2>
+                  <p>
+                    This condition causes sharp pain in teeth due to exposed
+                    dentin, typically triggered by hot, cold, or acidic stimuli
+                    as a result of enamel wear.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
                 <div className="mt-5 font-tinos">
                   <h2 className="italic text-xl">Dentist</h2>
                   <p>
-                    A dentist, also known as a dental surgeon, is a doctor who
-                    specializes in the diagnosis, prevention, and treatment of
-                    diseases and conditions of the oral cavity.
+                    A dentist is a licensed medical professional specializing in
+                    oral health, including diagnosis, prevention, and treatment
+                    of dental diseases and conditions.
                   </p>
                   <hr className="mt-4" />
                 </div>
+
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Preventive Dentistry</h2>
+                  <h2 className="italic text-xl">Hydrogen Peroxide</h2>
                   <p>
-                    Preventive dentistry is the dentistry that focuses on
-                    maintaining oral health in order to prevent the spread of
-                    plaque, the formation of tartar and infections in the mouth.
+                    Hydrogen peroxide is a common ingredient in teeth whitening
+                    solutions, known for its ability to break down stains and
+                    lighten tooth color.
                   </p>
                   <hr className="mt-4" />
                 </div>
+
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Tooth Enamel</h2>
+                  <h2 className="italic text-xl">Relief ACP</h2>
                   <p>
-                    Tooth enamel is the protective visible outer surface of a
-                    tooth that contains the dentin and dental pulp.
+                    Relief ACP, or amorphous calcium phosphate, is a dental gel
+                    that helps reduce tooth sensitivity and promote enamel
+                    repair during whitening treatments.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Stained Dentin</h2>
+                  <p>
+                    Stained dentin refers to discoloration within the inner
+                    layer of the tooth, usually requiring professional treatment
+                    to restore brightness.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Surface Enamel</h2>
+                  <p>
+                    Surface enamel is the outermost protective layer of the
+                    tooth, vulnerable to staining and erosion but crucial for
+                    tooth strength and appearance.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Surface Teeth Stains</h2>
+                  <p>
+                    Surface teeth stains occur on the enamel due to substances
+                    like coffee, tea, wine, or tobacco, and are typically
+                    treatable with whitening solutions.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">
+                    Teeth Whitening Concentrate
+                  </h2>
+                  <p>
+                    Teeth whitening concentrate is the active bleaching agent in
+                    whitening treatments, more potent and effective when
+                    administered professionally.
                   </p>
                   <hr className="mt-4" />
                 </div>
@@ -513,7 +632,9 @@ const Services = () => {
 
             {/* call section */}
             <div className="bg-primary p-5 mt-10 text-white rounded-2xl">
-              <h2 className="text-4xl font-cinzel mb-3">Call Us Today</h2>
+              <h2 className="text-4xl font-cinzel mb-3">
+                Call Us to Get More Details
+              </h2>
               <hr />
               <p className="font-tinos mt-5 text-justify">
                 Following through with dental checkups is how patients can
@@ -529,9 +650,10 @@ const Services = () => {
 
             {/* call qr */}
             {/* two call */}
-            <div className="bg-dark p-5 mt-10 text-white ">
-              <div className="grid md:grid-cols-[3fr_1fr] grid-cols-1 gap-5">
-                <div>
+            <div className="bg-dark p-5 mt-10 text-white">
+              <div className="flex flex-col md:flex-row gap-10">
+                {/* Left side content */}
+                <div className="flex-1">
                   <h2 className="text-4xl font-cinzel mb-3">
                     Helpful Related Links
                   </h2>
@@ -555,21 +677,8 @@ const Services = () => {
                       </Link>
                     </li>
                   </ul>
-                </div>
-                <div className="mt-12 flex flex-col justify-center items-center">
-                  <img
-                    src="/map-directions-qrcode.webp"
-                    className="w-[200px] h-[200px]"
-                    alt=""
-                  />
-                  <p className="font-tinos text-center mt-3">
-                    Scan here to open directions to Revital Dental on mobile
-                  </p>
-                </div>
-              </div>
-              <div className="grid grid-cols-[3fr_1fr] gap-5">
-                <div>
-                  <h2 className="text-4xl font-cinzel mb-3">
+
+                  <h2 className="text-4xl font-cinzel mb-3 mt-10">
                     About our business and website security
                   </h2>
                   <hr />
@@ -603,10 +712,23 @@ const Services = () => {
                     </li>
                   </ul>
                 </div>
+
+                {/* QR code on right */}
+                <div className="mt-12 flex flex-col justify-center items-center md:w-[250px]">
+                  <img
+                    src="/map-directions-qrcode.webp"
+                    className="w-[150px] h-[150px]"
+                    alt="Revital Dental Directions QR"
+                  />
+                  <p className="font-tinos text-center mt-3">
+                    Scan here to open directions to Revital Dental on mobile
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
         {/* Right section */}
         <div className="right-section ">
           <div className="bg-gray-100 px-8 p-5 w-[90%] mx-auto">

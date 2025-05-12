@@ -2,6 +2,8 @@ import React from "react";
 import { FaCaretDown } from "react-icons/fa";
 import { Cinzel } from "next/font/google";
 import Link from "next/link";
+import { FaYelp } from "react-icons/fa";
+import Image from "next/image";
 
 const cinzel = Cinzel({
   subsets: ["latin"], // you can add 'latin-ext' if needed
@@ -12,28 +14,30 @@ const Services = () => {
   return (
     <>
       {/* intro section */}
-      <section className="grid md:grid-cols-[1fr_1fr_1fr] grid-cols-1 md:gap-2  mt-[125px] border-y-[10px] border-dark mx-2">
-        <div className="bg-[url(/dental-checkup.webp)] bg-cover my-10"></div>
+      <section className="grid md:grid-cols-[1fr_1fr_1fr] grid-cols-1 md:gap-2  md:mt-[125px]  border-y-[10px] border-dark mx-2">
+        <div className="bg-[url(/full-mouth-reconstruction.webp)] bg-cover my-20"></div>
 
-        <div className="px-10 py-10 space-y-3">
-          <h2 className="text-5xl font-cinzel">Dental Checkup</h2>
-          <p className="font-cinzel">Temple, TX</p>
+        <div className="px-10 py-5 space-y-3">
+          <h2 className="text-5xl font-cinzel text-primary">
+            Full mouth reconstruction
+          </h2>
+          <p className="font-cinzel text-primary">Temple, TX</p>
           <p className="font-tinos  text-justify">
-            If a patient is having a dental checkup for the first time, or if
-            they have not been to the dentist in a while, they often find
-            themselves wondering what a dental checkup is. During this routine
-            appointment, a dental professional will check the smile, teeth, and
-            gums for infection, decay, and disease, such as cavities or
-            periodontitis (gum disease).
+            Full mouth reconstruction is the rebuilding or replacement of
+            damaged or missing teeth. This dental treatment can help patients
+            restore their mouths from extensive damage, pervasive decay, and
+            other comprehensive problems. Correcting such damage can help you
+            enjoy a healthier and happier life.
           </p>
           <p className="font-tinos  text-justify">
-            At some point during the checkup, they will also be given guidance
-            on home care. This allows them to keep their smile in the best shape
-            possible between checkups. Scheduling your checkup is as easy as
-            calling our Revital Dental team in Temple at (254) 207-0708.
+            Full mouth reconstruction is available from Revital Dental in Temple
+            and the surrounding area. There are numerous treatment options to
+            help restore teeth form and function. Contact us today at (254)
+            207-0708 to schedule an appointment or learn more about our
+            services.
           </p>
         </div>
-        <div className="py-10">
+        <div className="py-5">
           <form
             action=""
             className="w-full mx-auto mt-10 md:mt-0 max-w-[400px]"
@@ -84,120 +88,176 @@ const Services = () => {
       {/* explanation */}
       <section className="md:grid md:grid-cols-[3fr_1fr]  md:w-[90%] w-[100%] md:mx-auto px-2 mt-3 gap-2">
         {/* left section */}
-        <div className="left-section " id="what-is-involved-dental-cleaning">
+        <div className="left-section " id="candidate-for-reconstruction">
           {/* dark section */}
           <div className="bg-dark p-5 text-white">
-            <h2 className="text-2xl font-cinzel mb-3">Dental Cleaning</h2>
+            <h2 className="text-2xl font-cinzel mb-3">
+              Candidates for Full Mouth Reconstruction
+            </h2>
             <hr />
             <p className="text-justify font-tinos mt-4">
-              During the dental cleaning, the dental professional will remove
-              the plaque — a buildup of bacteria that deposits onto the teeth.
-              To do this, the dental professional will scrape the teeth above
-              and below the gum line with special tools. The teeth may be rinsed
-              periodically during this process. Then, the dental professional
-              will floss between the teeth. If the patient does not floss
-              regularly, they may find this to be a little uncomfortable; but if
-              they include flossing as part of their daily oral care practice,
-              this discomfort will go away over time.
+              Patients who have dental problems throughout their entire mouths
+              and require extensive restoration are good candidates for full
+              mouth reconstruction. These problems may result from significant
+              trauma during an accident, decay, wear from grinding, or
+              habit-based damage. Other treatment candidates include people with
+              severe dental conditions from birth, such as amelogenesis,
+              dentinogenesis imperfecta, and ectodermal dysplasia.
             </p>
-            <p className="text-justify font-tinos mt-4 mb-5">
-              At the end of the dental cleaning, the dental professional will
-              polish the teeth. This polishing helps protect the teeth against
-              the buildup of plaque so they stay shiny and smoother longer. The
-              polish is applied with a spinning brush and a paste. This paste
-              resembles toothpaste but is slightly coarse so it can better
-              eliminate any residue that might have been missed. When the dental
-              professional is done cleaning the teeth, the patient may be asked
-              to rinse and gargle with mouthwash.
-            </p>
-          </div>
-
-          {/* question and answer section */}
-          {/* quote */}
-          <div className="relative inline-block mt-10">
-            <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-              “During the dental cleaning, the dental professional will remove
-              the plaque — a buildup of bacteria that deposits onto the teeth.”
-            </h2>
-            <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
-          </div>
-          {/* Q & A */}
-          <div className="mt-10" id="dentist-look-for-dental-examination">
-            <h2 className="font-cinzel text-2xl text-primary">
-              Dental Examination
-            </h2>
-            <hr />
-            <p className="font-tinos mt-2">
-              The dentist will speak to the patient about their dental history.
-              They may ask the patient about medications and illnesses, or
-              whether they have any allergies, concerns, or anxieties. Always be
-              honest with our dental team so they can provide the best care
-              possible.
-            </p>
-            <p className="font-tinos mt-2">
-              The dental professional will check the teeth for any signs of
-              concern by using a small mirror to look around the mouth. During
-              this examination, they will be looking for swelling, sores, cuts
-              or lesions, gum recession, and tooth decay. One of the most
-              important things they will look for is spaces between the gums and
-              teeth called dental pockets. Dental pockets pose a risk to health
-              and may indicate gum disease. The dental professional may
-              recommend home care and monitoring to protect the smile.
+            <p className="text-justify font-tinos mt-4">
+              Some reconstruction treatments involve surgery, particularly
+              implants or procedures that necessitate bone grafting. This
+              typically requires that the patient is in good overall health.
+              Therefore, a full mouth reconstruction may not be an immediate
+              option for patients with other health issues.
             </p>
           </div>
 
           {/* quote */}
           <div className="relative inline-block mt-10">
             <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-              “These X-rays are important for your dental team to be able to
-              check the roots beneath your gum line, which could otherwise not
-              be seen during a routine checkup.”
+              “Patients who have dental problems throughout their entire mouths
+              and require extensive restoration are good candidates for full
+              mouth reconstruction.”
             </h2>
             <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
           </div>
+
           {/* Q & A */}
-          <div className="mt-10">
+          <div className="mt-10" id="why-need-reconstruction">
             <h2 className="font-cinzel text-2xl text-primary">
-              The Importance of Regular Dental Care
+              Reasons Someone May Want or Need a Complete Mouth Reconstruction
             </h2>
             <hr />
-            <p className="font-tinos mt-2">
-              Our dental team recommends that all patients return to the office
-              for dental checkups at least once every six months. By scheduling
-              regular appointments and cleanings, our dental team will be able
-              to monitor the smile for any signs of concern. Waiting too long
-              between checkups gives more time for plaque to build up, which may
-              lead to cavities, tooth decay, receding gums, and more. Patients
-              will also be taught what they can do to prevent these issues
-              during checkups.
+            <p className="font-tinos mt-2 text-justify">
+              Various functional and cosmetic conditions may justify a full
+              mouth reconstruction as a treatment. Patients should have a
+              consultation with our team to will discuss their options. Some
+              common reasons that people may want or need this procedure
+              include:
             </p>
-            <p className="font-tinos mt-2">
-              Keeping oral health on track starts at home. To prevent oral
-              health issues between dental checkups, our dental team may make
-              several recommendations for at-home oral care. These oral hygiene
-              techniques may include:
-            </p>
-            <ul className="font-tinos list-disc  pl-4 mt-2">
+            <ol className="font-tinos text-justify list-disc pl-4 mt-2">
               <li>
-                Brushing the teeth at least twice a day with a fluoride
-                toothpaste
+                <span className="font-bold">Aesthetic improvement: </span> It is
+                not uncommon for patients to seek a complete mouth
+                reconstruction for aesthetic reasons. Discoloration, wear,
+                missing teeth, and other issues may not impact function but can
+                have an adverse cosmetic effect. Full reconstruction can help
+                patients improve their self-esteem and enjoy the smiles they
+                have always wanted.
               </li>
-              <li>Flossing daily</li>
-              <li>Using a mouthwash</li>
               <li>
-                Avoid smoking or other activities detrimental to oral health
+                <span className="font-bold">Dental decay or disease: </span>{" "}
+                Dental decay and other disease affecting the teeth can also
+                necessitate reconstruction. In most cases, decay alone can be
+                treated with less extensive procedures. However, if left
+                untreated, tooth decay can put teeth at risk of needing
+                replacement.
               </li>
-            </ul>
+              <li>
+                <span className="font-bold">Gum disease: </span>
+                Oral health can play a big role in the necessity for a complete
+                mouth reconstruction. Gum disease can result in losing multiple
+                teeth. This is especially likely if a problem goes unaddressed
+                for too long.
+              </li>
+              <li>
+                <span className="font-bold">Oral trauma:</span> A full mouth
+                reconstruction may be necessary to restore the proper function
+                of the teeth after significant trauma. Extensive cracking,
+                chipping, and damage can require comprehensive treatment.
+                Long-term damage from wear can also cause a person to want or
+                need this treatment.
+              </li>
+            </ol>
+          </div>
 
-            {/* Questions Answered on This Page */}
-            <div className="relative inline-block mt-10">
+          <div className="relative inline-block mt-10">
+            <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
+              “Various functional and cosmetic conditions may justify a full
+              mouth reconstruction as a treatment.”
+            </h2>
+            <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
+          </div>
+
+          {/* Q & A */}
+          <div className="mt-10" id="types-of-reconstruction">
+            <h2 className="font-cinzel text-2xl text-primary">
+              Full Mouth Reconstruction Treatment Options
+            </h2>
+            <hr />
+
+            <p className="font-tinos mt-2">
+              The process of a full mouth reconstruction varies from patient to
+              patient, depending on their preferences and needs. Full mouth
+              reconstructions can include almost any dental procedure and
+              combination of treatments. Some of the most common procedures
+              performed during treatment include dental implants, dentures,
+              crowns, inlays, and onlays.
+            </p>
+            <p className="font-tinos mt-2">
+              Additionally, a complete mouth reconstruction may involve bone
+              grafting, especially when implants are chosen. Dental deep
+              cleanings are also an option to combat moderate to severe gum
+              disease. People with gaps of missing teeth can choose to receive a
+              dental bridge, while porcelain veneers are an option for people
+              with misaligned or discolored teeth in the front.
+            </p>
+
+            {/* quotes */}
+            <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “To prevent oral health issues between dental checkups, our
-                dental team may make several recommendations for at-home oral
-                care.”
+                “The process of a full mouth reconstruction varies from patient
+                to patient, depending on their preferences and needs.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
+
+            <div className="relative inline-block mt-10 w-full">
+              <h2 className="flex flex-wrap justify-center text-lg font-cinzel bg-primary text-white p-5 mt-5 rounded-2xl">
+                <FaYelp className="text-2xl me-2" />
+                Check out what others are saying about our dental services on
+                Yelp:&nbsp;
+                <Link
+                  href="https://www.yelp.com/biz/revital-dental-temple"
+                  className="underline hover:text-gray-200"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Dental Crowns and Dental Bridges in Temple, TX
+                </Link>
+              </h2>
+            </div>
+
+            <div className="mt-10" id="top-vs-bottom-reconstruction">
+              <h2 className="font-cinzel text-2xl text-primary">
+                Top Mouth and Bottom Mouth Reconstructions
+              </h2>
+              <hr />
+              <p className="font-tinos mt-2 text-justify">
+                A common alternative to full mouth reconstruction is a partial
+                treatment of just the upper or lower mouth. The treatments for
+                both parts of the mouth are similar. However, according to the
+                Mayo Clinic, the jawbone, which is at the bottom of the mouth,
+                may require bone grafting if it is overly weakened or damaged.
+              </p>
+              <p className="font-tinos mt-2 text-justify">
+                This can also happen with the top of the mouth but is less
+                common. Some reconstruction of the jawbone and gums may be
+                necessary to create a healthy smile even if implants are not
+                used.
+              </p>
+            </div>
+
+            {/* quotes */}
+            <div className="relative inline-block mt-10 w-full">
+              <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
+                “A common alternative to full mouth reconstruction is a partial
+                treatment of just the upper or lower teeth.”
+              </h2>
+              <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
+            </div>
+
             <div className="bg-dark p-5 mt-10 text-white">
               <h2 className="text-4xl text-center font-cinzel mb-3">
                 Questions Answered on This Page
@@ -206,139 +266,200 @@ const Services = () => {
               <div className="flex flex-col">
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#what-is-involved-dental-cleaning"
+                  href="#candidate-for-reconstruction"
                 >
                   Q.{" "}
                   <span className="underline">
-                    What is involved in the dental cleaning portion of a
-                    checkup?
+                    Who is a good candidate for full mouth reconstruction?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#dentist-look-for-dental-examination"
+                  href="#why-need-reconstruction"
                 >
                   Q.{" "}
                   <span className="underline">
-                    What does the dentist look for in a dental examination?
+                    Why would someone want or need a complete mouth
+                    reconstruction?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#dentist-look-for-dental-examination"
-                >
-                  Q. <span className="underline">Why are x-rays taken?</span>
-                </a>
-                <a
-                  className="text-justify font-tinos mt-3"
-                  href="#dentist-look-for-dental-examination"
+                  href="#types-of-reconstruction"
                 >
                   Q.{" "}
                   <span className="underline">
-                    How often should someone have a dental checkup?
+                    What are the different full mouth reconstruction treatments?
+                  </span>
+                </a>
+                <a
+                  className="text-justify font-tinos mt-3"
+                  href="#top-vs-bottom-reconstruction"
+                >
+                  Q.{" "}
+                  <span className="underline">
+                    What is the difference between top and bottom mouth
+                    reconstruction?
+                  </span>
+                </a>
+                <a
+                  className="text-justify font-tinos mt-3"
+                  href="#cosmetic-reconstruction"
+                >
+                  Q.{" "}
+                  <span className="underline">
+                    Do people get cosmetic full mouth reconstruction?
                   </span>
                 </a>
               </div>
+
               <h2 className="text-4xl text-center font-cinzel mb-3 mt-3">
                 People Also Ask
               </h2>
               <hr />
               <div className="flex flex-col mb-4">
-                <a className="text-justify font-tinos mt-3" href="#">
-                  Q. <span className="underline">What is dental bonding?</span>
+                <a
+                  className="text-justify font-tinos mt-3"
+                  href="#removable-partial-dentures"
+                >
+                  Q.{" "}
+                  <span className="underline">
+                    How do removable partial dentures work?
+                  </span>
                 </a>
-                <a className="text-justify font-tinos mt-3" href="#">
-                  Q. <span className="underline">What is a deep cleaning?</span>
+                <a
+                  className="text-justify font-tinos mt-3"
+                  href="#partial-dentures-one-tooth"
+                >
+                  Q.{" "}
+                  <span className="underline">
+                    What are the pros and cons of partial dentures for one
+                    missing tooth?
+                  </span>
                 </a>
-                <a className="text-justify font-tinos mt-3" href="#">
-                  Q. <span className="underline">Why are x-rays taken?</span>
+                <a
+                  className="text-justify font-tinos mt-3"
+                  href="#why-dentures-preferred"
+                >
+                  Q.{" "}
+                  <span className="underline">
+                    Why are dentures a preferred treatment?
+                  </span>
                 </a>
               </div>
             </div>
 
+            <div className="mt-10" id="cosmetic-reconstruction">
+              <h2 className="font-cinzel text-2xl text-primary">
+                Cosmetic Complete Mouth Reconstructions
+              </h2>
+              <hr />
+              <p className="font-tinos mt-2 text-justify">
+                Not all full mouth reconstructions are strictly functional.
+                While restoring the mouth can help with speech, comfort, and
+                eating, WebMD states that improving a smile’s appearance can
+                also boost self-esteem. Some procedures that a part of full
+                mouth reconstructions are also considered cosmetic, such as
+                tooth replacements, veneers, gum contouring, orthodontics,
+                whitening, and more.
+              </p>
+              <p className="font-tinos mt-2 text-justify">
+                Many people aspire to have a beautiful smile. While a full mouth
+                reconstruction is not always necessary to achieve this, it can
+                be a good option. Even when functional improvement is necessary,
+                patients can also choose to include some cosmetic treatments to
+                enhance their smiles’ appearance.
+              </p>
+            </div>
+
+            <div className="relative inline-block mt-10 w-full">
+              <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
+                “Cosmetic full mouth reconstructions can include tooth
+                replacements, veneers, gum contouring, orthodontics, whitening,
+                and more.”
+              </h2>
+              <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
+            </div>
+
             {/* Q & A */}
 
-            <div className="bg-gray-100 p-5 mt-10 ">
+            <div className="bg-gray-100 p-5 mt-10">
               <h2 className="text-4xl text-center font-cinzel mb-3 text-primary">
-                Questions Answered on This Page
+                Frequently Asked Questions
               </h2>
               <hr />
               <div className="flex flex-col">
-                <h2
-                  className="text-justify text-primary font-tinos mt-3"
-                  href="#what-is-involved-dental-cleaning"
-                >
-                  Q. What happens during a dental cleaning?
+                <h2 className="text-justify text-primary font-tinos mt-3">
+                  Q.{" "}
+                  <span className="underline">
+                    How long does a full mouth reconstruction take?
+                  </span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. During a dental cleaning, a dental professional will use
-                  specialized dental tools to clean the teeth. These tools
-                  include a scraping tool that looks like a small metal hook to
-                  remove buildup from the surface of the teeth and an electric
-                  toothbrush with coarse toothpaste to clean and shine the
-                  teeth. Together with a dental mouthwash, a dental cleaning
-                  will remove buildup from the teeth and protect them from
-                  bacteria.
+                  A. The length of the procedure can vary depending on how
+                  extensive the treatment needs to be. We typically perform full
+                  mouth reconstructions over multiple sessions that can span
+                  anywhere from a few weeks to a year. Our team will provide
+                  patients with a time estimate before starting the treatment
+                  process.
                 </p>
-                <h2
-                  className="text-justify text-primary font-tinos mt-3"
-                  href="#dentist-look-for-dental-examination"
-                >
-                  Q. What is a dental exam?
+
+                <h2 className="text-justify text-primary font-tinos mt-3">
+                  Q.{" "}
+                  <span className="underline">
+                    How much does a full mouth reconstruction cost?
+                  </span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. A dental exam is very similar to a dental checkup. Just
-                  like a checkup, a dental professional checks the teeth for any
-                  sign of concern and cleans the teeth. The difference is that
-                  with a dental exam, the dental professional will also check
-                  other areas that may be affected by oral health, like the head
-                  and neck. This exam is usually only recommended for new
-                  patients.
+                  A. A full mouth reconstruction is a comprehensive treatment
+                  that involves multiple procedures. The cost will vary for each
+                  patient depending on their treatment process and insurance
+                  coverage. People should contact their insurance provider for
+                  more information before seeking treatment.
                 </p>
-                <h2
-                  className="text-justify text-primary font-tinos mt-3"
-                  href="#dentist-look-for-dental-examination"
-                >
-                  Q. What is a dental X-ray?
+
+                <h2 className="text-justify text-primary font-tinos mt-3">
+                  Q.{" "}
+                  <span className="underline">
+                    Are there functional benefits to a complete mouth
+                    reconstruction?
+                  </span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. A dental X-ray is like other X-rays, but this one looks
-                  specifically at the mouth. More specifically, this X-ray looks
-                  at the roots and areas beneath the gum line where the dental
-                  professional otherwise would not be able to see. Dental X-rays
-                  are important for checking for signs of disease or other oral
-                  health concerns around the roots of the teeth.
+                  A. Yes, having a complete and healthy set of teeth can improve
+                  eating, speaking, comfort, and more. Patients with extensive
+                  dental damage or other issues may benefit functionally from a
+                  complete mouth reconstruction. Additionally, reconstruction
+                  can help with long-term oral hygiene.
                 </p>
-                <h2
-                  className="text-justify text-primary font-tinos mt-3"
-                  href="#dentist-look-for-dental-examination"
-                >
-                  Q. What happens if someone waits too long for a dental
-                  checkup?
+
+                <h2 className="text-justify text-primary font-tinos mt-3">
+                  Q.{" "}
+                  <span className="underline">
+                    Which is the best type of full mouth reconstruction?
+                  </span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Bacteria naturally attach to the surface of the teeth as
-                  they are used to eat. While at-home oral care can help to
-                  remove much of this bacteria, it is next to impossible to
-                  remove all of it without professional dental tools. Waiting
-                  too long between dental checkups gives these bacteria time to
-                  settle onto the teeth and turn into plaque and tartar. If this
-                  buildup is not removed, it could lead to tooth decay or
-                  disease over time and create further oral health concerns.
+                  A. There is no best type of full mouth reconstruction. Every
+                  patient’s situation and needs are different. The best
+                  treatment process for one patient will not be the best for
+                  another. We will talk about all a patient’s options during
+                  their consultation.
                 </p>
-                <h2
-                  className="text-justify text-primary font-tinos mt-3"
-                  href="#dentist-look-for-dental-examination"
-                >
-                  Q. What at-home care should be done between dental checkups?
+
+                <h2 className="text-justify text-primary font-tinos mt-3">
+                  Q.{" "}
+                  <span className="underline">
+                    Are X-rays a part of full mouth reconstructions?
+                  </span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Recommended at-home dental care includes brushing twice a
-                  day and flossing at least once a day. Also, dental care
-                  professionals suggest patients use a mouthwash that includes
-                  fluoride. Patients may be advised to avoid smoking, eating
-                  sugary foods, and other activities that are known to be
-                  harmful to oral health.
+                  A. X-rays are an important part of many dental treatments,
+                  including full mouth reconstructions. They allow us to
+                  identify and diagnose issues so we can provide the best
+                  treatment options. Today’s X-ray technology is safe and
+                  advanced, so patients do not have to worry about getting them
+                  done.
                 </p>
               </div>
             </div>
@@ -513,7 +634,9 @@ const Services = () => {
 
             {/* call section */}
             <div className="bg-primary p-5 mt-10 text-white rounded-2xl">
-              <h2 className="text-4xl font-cinzel mb-3">Call Us Today</h2>
+              <h2 className="text-4xl font-cinzel mb-3">
+                Call Us to Get More Details
+              </h2>
               <hr />
               <p className="font-tinos mt-5 text-justify">
                 Following through with dental checkups is how patients can
@@ -529,9 +652,10 @@ const Services = () => {
 
             {/* call qr */}
             {/* two call */}
-            <div className="bg-dark p-5 mt-10 text-white ">
-              <div className="grid md:grid-cols-[3fr_1fr] grid-cols-1 gap-5">
-                <div>
+            <div className="bg-dark p-5 mt-10 text-white">
+              <div className="flex flex-col md:flex-row gap-10">
+                {/* Left side content */}
+                <div className="flex-1">
                   <h2 className="text-4xl font-cinzel mb-3">
                     Helpful Related Links
                   </h2>
@@ -555,21 +679,8 @@ const Services = () => {
                       </Link>
                     </li>
                   </ul>
-                </div>
-                <div className="mt-12 flex flex-col justify-center items-center">
-                  <img
-                    src="/map-directions-qrcode.webp"
-                    className="w-[200px] h-[200px]"
-                    alt=""
-                  />
-                  <p className="font-tinos text-center mt-3">
-                    Scan here to open directions to Revital Dental on mobile
-                  </p>
-                </div>
-              </div>
-              <div className="grid grid-cols-[3fr_1fr] gap-5">
-                <div>
-                  <h2 className="text-4xl font-cinzel mb-3">
+
+                  <h2 className="text-4xl font-cinzel mb-3 mt-10">
                     About our business and website security
                   </h2>
                   <hr />
@@ -603,10 +714,23 @@ const Services = () => {
                     </li>
                   </ul>
                 </div>
+
+                {/* QR code on right */}
+                <div className="mt-12 flex flex-col justify-center items-center md:w-[250px]">
+                  <img
+                    src="/map-directions-qrcode.webp"
+                    className="w-[150px] h-[150px]"
+                    alt="Revital Dental Directions QR"
+                  />
+                  <p className="font-tinos text-center mt-3">
+                    Scan here to open directions to Revital Dental on mobile
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
         {/* Right section */}
         <div className="right-section ">
           <div className="bg-gray-100 px-8 p-5 w-[90%] mx-auto">
