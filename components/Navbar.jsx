@@ -153,17 +153,14 @@ const Navbar = () => {
                       activeedu ? "block" : "hidden"
                     }`}
                   >
-                    <h2 className="text-center">Blog</h2>
-                    <hr className="w-[80%] mx-auto my-5" />
                     <div className="space-y-2  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 max-w-7xl mx-auto px-6">
-                    {educationLinks.map((item, i) => (
+                      {educationLinks.map((item, i) => (
                         <Link
                           key={i}
                           href={`/temple-tx/${item.link}`}
                           onClick={() => {
                             setActiveedu(false); // Close dropdown // Hide entire mobile menu
                           }}
-                          
                           className="block hover:underline hover:scale-105 transition-transform duration-300 ease-in-out"
                         >
                           {item.name}
