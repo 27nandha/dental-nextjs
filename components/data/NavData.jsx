@@ -29,20 +29,45 @@ export const services = [
 // data/educationData.ts
 
 export const educationLinks = [
+  { name: "Dental Anxiety", link: "dental-anxiety" },
+
+  { name: "Do I Have Sleep Apnea", link: "do-i-have-sleep-apnea" },
   { name: "Do I Need a Root Canal", link: "do-i-need-a-root-canal" },
-  { name: "I Think My Gums Are Receding", link: "i-think-my-gums-are-receding" },
-  { name: "Improve Your Smile for Senior Pictures", link: "improve-your-smile-for-senior-pictures" },
-  { name: "Options For Replacing Missing Teeth", link: "options-for-replacing-missing-teeth" },
+  {
+    name: "I Think My Gums Are Receding",
+    link: "i-think-my-gums-are-receding",
+  },
+  {
+    name: "Improve Your Smile for Senior Pictures",
+    link: "improve-your-smile-for-senior-pictures",
+  },
+  {
+    name: "Options For Replacing Missing Teeth",
+    link: "options-for-replacing-missing-teeth",
+  },
   { name: "Oral Cancer Screening", link: "oral-cancer-screening" },
   { name: "Oral Hygiene Basics", link: "oral-hygiene-basics" },
-  { name: "What Can I Do to Improve My Smile", link: "what-can-i-do-to-improve-my-smile" },
-  { name: "What Do I Do If I Damage My Dentures", link: "what-do-i-do-if-i-damage-my-dentures" },
-  { name: "What Should I Do If I Chip My Tooth", link: "what-should-i-do-if-i-chip-my-tooth" },
-  { name: "When Is a Tooth Extraction Necessary", link: "when-is-a-tooth-extraction-necessary" },
+  {
+    name: "What Can I Do to Improve My Smile",
+    link: "what-can-i-do-to-improve-my-smile",
+  },
+  {
+    name: "What Do I Do If I Damage My Dentures",
+    link: "what-do-i-do-if-i-damage-my-dentures",
+  },
+  {
+    name: "What Should I Do If I Chip My Tooth",
+    link: "what-should-i-do-if-i-chip-my-tooth",
+  },
+  {
+    name: "When Is a Tooth Extraction Necessary",
+    link: "when-is-a-tooth-extraction-necessary",
+  },
   { name: "Why Are My Gums Bleeding", link: "why-are-my-gums-bleeding" },
-  { name: "Will I Need a Bone Graft for Dental Implants", link: "will-i-need-a-bone-graft-for-dental-implants" },
+  {
+    name: "Will I Need a Bone Graft for Dental Implants",
+    link: "will-i-need-a-bone-graft-for-dental-implants",
+  },
   { name: "Wisdom Teeth Extraction", link: "wisdom-teeth-extraction" },
   { name: "Dental Anxiety", link: "dental-anxiety" },
-  { name: "Do I Have Sleep Apnea", link: "do-i-have-sleep-apnea" },
 ];
-

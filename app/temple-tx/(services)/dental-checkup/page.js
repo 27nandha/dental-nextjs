@@ -529,9 +529,10 @@ const Services = () => {
 
             {/* call qr */}
             {/* two call */}
-            <div className="bg-dark p-5 mt-10 text-white ">
-              <div className="grid md:grid-cols-[3fr_1fr] grid-cols-1 gap-5">
-                <div>
+            <div className="bg-dark p-5 mt-10 text-white">
+              <div className="flex flex-col md:flex-row gap-10">
+                {/* Left side content */}
+                <div className="flex-1">
                   <h2 className="text-4xl font-cinzel mb-3">
                     Helpful Related Links
                   </h2>
@@ -555,21 +556,8 @@ const Services = () => {
                       </Link>
                     </li>
                   </ul>
-                </div>
-                <div className="mt-12 flex flex-col justify-center items-center">
-                  <img
-                    src="/map-directions-qrcode.webp"
-                    className="w-[200px] h-[200px]"
-                    alt=""
-                  />
-                  <p className="font-tinos text-center mt-3">
-                    Scan here to open directions to Revital Dental on mobile
-                  </p>
-                </div>
-              </div>
-              <div className="grid grid-cols-[3fr_1fr] gap-5">
-                <div>
-                  <h2 className="text-4xl font-cinzel mb-3">
+
+                  <h2 className="text-4xl font-cinzel mb-3 mt-10">
                     About our business and website security
                   </h2>
                   <hr />
@@ -602,6 +590,18 @@ const Services = () => {
                       </Link>
                     </li>
                   </ul>
+                </div>
+
+                {/* QR code on right */}
+                <div className="mt-12 flex flex-col justify-center items-center md:w-[250px]">
+                  <img
+                    src="/map-directions-qrcode.webp"
+                    className="w-[150px] h-[150px]"
+                    alt="Revital Dental Directions QR"
+                  />
+                  <p className="font-tinos text-center mt-3">
+                    Scan here to open directions to Revital Dental on mobile
+                  </p>
                 </div>
               </div>
             </div>

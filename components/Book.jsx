@@ -1,10 +1,16 @@
 "use client";
 import React from 'react'
+import { Cinzel } from "next/font/google";
+
+const cinzel = Cinzel({
+  subsets: ["latin"], // you can add 'latin-ext' if needed
+  display: "swap",
+});
 
 const Book = () => {
   return (
     <>
-        <div className='grid md:grid-cols-3 grid-cols-1 mt-0 gap-0.25 text-lg'>
+        <div className='grid md:grid-cols-3 font-cinzel grid-cols-1 mt-0 gap-0.25 text-lg'>
             <div className='flex justify-center items-center py-10 flex-col  bg-dark text-white'>
                 <p>4311 31st Ste 145</p>
                 <p>Temple, TX 76502</p>
