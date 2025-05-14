@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Map from "@/components/Map";
 import Navbar from "@/components/Navbar";
+import ScrollAppointmentBanner from "@/components/ScrollAppointmentBanner";
 import Welcome from "@/components/Welcome";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <Map />
       <Book />
       <Footer />
+      <ScrollAppointmentBanner/>
     </>
   );
 }

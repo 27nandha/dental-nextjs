@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -18,6 +18,21 @@ const Navbar = () => {
   const [showMobileNav, setShowMobileNav] = useState(false);
 
   const educationRef = useRef(null);
+
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   function activateservices() {
     setActiveserv(true);
@@ -38,7 +53,11 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <nav className="bg-white  font-tinos w-[100%] top-0 z-50  py-1 fixed shadow-black shadow-sm">
+      <nav
+        className={`bg-white font-tinos w-full top-0 z-50 fixed transition-all duration-300 shadow-black shadow-sm ${
+          scrolled ? "py-1 md:py-0" : "py-3 md:py-4"
+        }`}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
           <div className="flex justify-between items-center">
             {/* Logo */}
@@ -47,10 +66,9 @@ const Navbar = () => {
                 <Image
                   src="/logo.png"
                   alt="Revital Dental Logo"
-                  width={120}
-                  height={64}
-                  className="h-12 sm:h-14 md:h-16 w-auto cursor-pointer"
-                  priority
+                  width={scrolled ? 100 : 120} // change size on scroll
+                  height={scrolled ? 48 : 64}
+                  className="transition-all duration-300 h-auto w-auto cursor-pointer"
                 />
               </Link>
             </div>

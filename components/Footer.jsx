@@ -9,7 +9,7 @@ const Footer = () => {
 
             <div className='flex justify-center items-center flex-col'>
                 <img src="/ll.png" alt="" className='w-[70%] '  />
-                <p className='text-[10px] lowercase'>https://revitaldentaltx.com</p>
+                <p className='text-[15px] text-tinos  lowercase'>https://revitaldentaltx.com</p>
             </div>
 
             <div className='flex md:justify-start  justify-center items-center'>

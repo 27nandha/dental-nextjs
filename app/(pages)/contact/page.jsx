@@ -12,6 +12,7 @@ import {
 } from "react-icons/fa";
 import Book from "@/components/Book";
 import Footer from "@/components/Footer";
+import Link from "next/link";
 
 const cinzel = Cinzel({
   weight: "400",
@@ -111,24 +112,26 @@ const Page = () => {
         </div>
 
         {/* Right Side - Contact Info */}
-        <div className="w-full md:w-1/3 bg-[#12343b] text-white p-5 m-0 flex flex-col gap-6">
+        <div className="w-full md:w-1/3 bg-[#12343b] text-white p-0 m-0 flex flex-col ">
           <img
             src="/contact-us.jpg"
             alt="Contact"
-            className="w-full h-40 object-cover rounded mb-4"
+            className="w-full h-60 object-cover mb-4"
           />
-          <h3 className="text-lg font-semibold border-b border-gray-400 pb-2">
+          <h3 className="text-2xl text-center font-cinzel font-semibold border-b border-gray-400">
             Contact Information
           </h3>
-          <div className="space-y-4 text-sm">
-            <div className="flex items-start gap-3 border-b border-gray-400 py-2">
-              <FaMapMarkerAlt className="mt-1" />
-              <span>
-                4311 S 31st Ste 145
-                <br />
-                Temple, TX 76502
-              </span>
-            </div>
+          <div className="space-y-4 font-tinos text-md p-5">
+            <Link href="https://maps.google.com/?q=4311%20S%2031st%20Ste%20145%20Temple,%20TX%2076502">
+              <div className="flex text-md items-start  gap-3 border-b border-gray-400 py-2">
+                <FaMapMarkerAlt className="mt-1" />
+                <span>
+                  4311 S 31st Ste 145
+                  <br />
+                  Temple, TX 76502
+                </span>
+              </div>
+            </Link>
             <div className="border-b border-gray-400 py-2 flex items-center gap-3">
               <FaMobileAlt />
               <span>(254) 207-0708</span>
