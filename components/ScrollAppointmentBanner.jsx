@@ -30,11 +30,11 @@ export default function ScrollBanner() {
         }`}
       >
         <div className="max-w-fit mx-auto">
-          <div className="bg-white shadow-lg rounded-full flex items-center px-6 py-3 space-x-4">
+          <div className="bg-white shadow-xl rounded-4xl flex items-center px-6 py-3 space-x-4">
             <div className="text-center">
               <p className="text-lg font-serif">Book Your Appointment Today!</p>
             </div>
-            <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-full px-5 py-2 flex items-center space-x-2">
+            <button className="bg-orange-400 hover:bg-white hover:text-orange-400 border text-white font-semibold rounded-full px-5 py-2 flex items-center space-x-2">
               <FaCalendarAlt />
               <span>Request Appointment</span>
             </button>

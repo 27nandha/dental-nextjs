@@ -23,10 +23,12 @@ const Welcome = () => {
             the time to truly understand each person's needs, goals, and
             lifestyle. By understanding our patients' objectives we can provide
             solutions that will improve their health while transforming their
-            smile into something bright and beautiful. Revital Dental is located
-            at 4311 S 31st Ste 145, Temple, TX. We are currently accepting new
-            patients, and you can schedule an appointment by calling
-            254-207-0708.
+            smile into something bright and beautiful
+          </p>
+          <p className="text-justify pt-2">
+            Revital Dental is located at 4311 S 31st Ste 145, Temple, TX. We are
+            currently accepting new patients, and you can schedule an
+            appointment by calling 254-207-0708.
           </p>
         </div>
 
@@ -65,7 +67,7 @@ const Welcome = () => {
             alt=""
           />
           <h3 className="uppercase font-cinzel text-center text-2xl mt-3">
-            Our team
+            Our Services
           </h3>
           <p className="text-justify">
             Revital Dental provides a wide variety of dental services and
@@ -93,7 +95,7 @@ const Welcome = () => {
             alt=""
           />
           <h3 className="uppercase font-cinzel text-center text-2xl mt-3">
-            Our team
+            Patient Information
           </h3>
           <p className="text-justify">
             When you walk into the office of Revital Dental you will be

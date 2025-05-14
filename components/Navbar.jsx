@@ -68,7 +68,7 @@ const Navbar = () => {
             {/* Desktop Menu */}
             <div className="hidden md:flex flex-col items-end space-y-2">
               {/* Location & Phone */}
-              <div className="flex space-x-4 mb-4">
+              <div className="flex font-tinos space-x-4 mb-4">
                 <a
                   href="https://maps.google.com/?q=4311 S 31st Ste 145 Temple, TX 76502"
                   target="_blank"
@@ -90,7 +90,7 @@ const Navbar = () => {
                     <div className="items-center space-x-2 pr-2 text-xl">
                       <BiPhoneCall />
                     </div>
-                    <div>(254) 773-7777</div>
+                    <div>Call Us! (254)207-0708</div>
                   </div>
                 </a>
               </div>

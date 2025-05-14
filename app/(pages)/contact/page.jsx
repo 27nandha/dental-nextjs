@@ -151,7 +151,7 @@ const Page = () => {
                   <span>{time}</span>
                 </div>
               ))}
-              <p className="text-xs pt-2 italic text-center">
+              <p className="text-md pt-2 italic text-center">
                 Saturday by Appointment Only
               </p>
             </div>
