@@ -13,6 +13,7 @@ import {
 import Book from "@/components/Book";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import ScrollAppointmentBanner from "@/components/ScrollAppointmentBanner";
 
 const cinzel = Cinzel({
   weight: "400",
@@ -160,6 +161,7 @@ const Page = () => {
       </div>
       <Book />
       <Footer />
+      <ScrollAppointmentBanner />
     </div>
   );
 };

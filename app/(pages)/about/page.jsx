@@ -5,6 +5,7 @@ import Employee from "@/components/about/Employee";
 import GallerySection from "@/components/about/Gallery";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import ScrollAppointmentBanner from "@/components/ScrollAppointmentBanner";
 import React from "react";
 
 const page = () => {
@@ -19,6 +20,7 @@ const page = () => {
         <Employee/>
     </div>
     <Footer/>
+    <ScrollAppointmentBanner/>
   </div>;
 };
 
