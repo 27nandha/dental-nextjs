@@ -100,62 +100,144 @@ const page = () => {
             It is easy to make an appointment for your initial examination and
             dental treatments. Call 254-207-0708 to speak with a team member.
           </p>
-          <p className="mt-6 text-gray-200 text-justify">
-            Payment Methods – Check or Cash Accepted
+          <p className="mt-6 text-gray-200 font-cinzel text-justify">
+            Payment Methods – Cheque or Cash Accepted
           </p>
           <div className="flex flex-row mt-3">
             <Image
-              src="/payment/icon-payment-visa.png"
+              src="/patient-info/icon-payment-visa.png"
               alt="Payment Methods"
               width={50}
               height={20}
               className="mt-4  md:mt-0"
             />
             <Image
-              src="/payment/icon-payment-discover.png"
+              src="/patient-info/icon-payment-discover.png"
               alt="Payment Methods"
               width={50}
               height={20}
               className="mt-4 ml-4 md:mt-0"
             />
             <Image
-              src="/payment/icon-payment-american-express.png"
+              src="/patient-info/icon-payment-american-express.png"
               alt="Payment Methods"
               width={50}
               height={20}
               className="mt-4 ml-4 md:mt-0"
             />
             <Image
-              src="/payment/icon-payment-master-card.png"
+              src="/patient-info/icon-payment-master-card.png"
               alt="Payment Methods"
               width={50}
               height={20}
               className="mt-4 ml-4 md:mt-0"
             />
             <Image
-              src="/payment/icon-payment-check.png"
+              src="/patient-info/icon-payment-check.png"
               alt="Payment Methods"
               width={50}
               height={20}
               className="mt-4 ml-4 md:mt-0"
             />
             <Image
-              src="/payment/icon-payment-cash.png"
+              src="/patient-info/icon-payment-cash.png"
               alt="Payment Methods"
               width={50}
               height={20}
               className="mt-4 ml-4 md:mt-0"
             />
             <Image
-              src="/payment/icon-payment-carecredit.png"
+              src="/patient-info/icon-payment-carecredit.png"
               alt="Payment Methods"
               width={200}
               height={10}
               className="mt-4 ml-4 md:mt-0"
             />
           </div>
+          <hr className="m-10" />
         </div>
+        <div></div>
       </section>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4 md:px-10 py-10">
+        {/* Card Template */}
+        {[
+          {
+            src: "/patient-info/making-an-appointment.jpg",
+            title: "Making an Appointment",
+            description:
+              "It is easy to make an appointment for your initial examination and dental treatments with Revital Dental. Simply call 254-207-0708 and one of our friendly team members will assist you. If something comes up, please call and cancel 24 hours in advance.",
+          },
+          {
+            src: "/patient-info/c9.jpg",
+            title: "What to Expect",
+            description:
+              "Walk into our lobby where you will be greeted by our friendly team. We will provide you with new patient paperwork that includes a health questionnaire, request for your insurance information and contact information. We will also provide you with information to familiarize you with our office and how we handle things like patient privacy.",
+          },
+          {
+            src: "/patient-info/e1.jpg",
+            title: "Initial Examination",
+            description:
+              "Your initial dental exam will take around one hour. The experienced team at Revital Dental will ask you questions, get to know your oral hygiene routine, and listen to your health concerns. We believe in educating patients and empowering them to make good choices to improve their oral health. We will demonstrate how to properly care for your teeth and make additional suggestions as needed. Our dental hygienist will clean your teeth then The Doctor and Associates will complete your examination and make recommendations for proposed dental treatments.",
+          },
+          {
+            src: "/patient-info/pain-concerns-1.jpg",
+            title: "Pain Concerns",
+            description:
+              "We work to ensure our patients feel comfortable, and that includes minimizing their pain as much as possible. If you are undergoing a dental procedure, The Doctor and Associates will meet with you to discuss your pain tolerance and create a plan for pain management. Working together, we will treat your dental health problems in a way that minimizes pain and enables you to get back to your life faster.",
+          },
+          {
+            src: "/patient-info/dental-insurance-1.jpg",
+            title: "Dental Insurance",
+            description: (
+              <>
+                We accept a variety of insurance providers and endeavor to
+                accommodate our patients' request. Please call our office at
+                254-207-0708 to see if we are currently working with your
+                insurance provider.
+                <br />
+                <p className="pt-5">
+                  {" "}
+                  Our pricing structure is designed to ensure that patients are
+                  able to receive the high quality dental care they deserve. If
+                  your dental insurance will not cover all of your dental
+                  treatments, we will work with you to identify a payment
+                  solution. We are health care professionals first and will work
+                  with you to make sure you receive the treatment you need.
+                </p>
+              </>
+            ),
+          },
+          {
+            src: "/patient-info/financial-policy.jpg",
+            title: "Financial Policy",
+            description:
+              "Revital Dental provides high quality dental care to families throughout the Temple area. We understand that every dental patient has different financial needs. We will work with you to find a solution that enables you to get the dental care you need, with or without insurance. Call our office to ask about our different payment options that may include cash, check, financing, and credit cards. We provide budget friendly dental care so call today and learn how Revital Dental is the solution to all of your oral health needs.",
+          },
+        ].map((card, index) => (
+          <div
+            key={index}
+            className="bg-white text-black rounded shadow-md hover:shadow-xl hover:scale-[1.02] transition-all duration-300 ease-in-out overflow-hidden flex flex-col h-full min-h-[500px]"
+          >
+            <div className="relative w-full h-64">
+              <Image
+                src={card.src}
+                alt={card.title}
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
+                className="object-cover"
+              />
+            </div>
+            <div className="p-5 flex flex-col  flex-1">
+              <h2 className="text-xl text-primary font-cinzel mb-2">
+                {card.title}
+              </h2>
+              <p className="text-md text-justify font-tinos text-gray-700">
+                {card.description}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
       <Book />
       <Footer />
       <ScrollBanner />
