@@ -13,21 +13,21 @@ const images = [
     path: "./bg1.png",
     heading: "Full dental implant",
     para: "Low cost Limited time special offer",
-    btn: "read me",
+    btn: "read me About Thsis offer",
   },
   {
     id: 2,
     path: "./bg2.jpg",
     heading: "invisalign",
     para: "Why wait to smile ?",
-    btn: "read me",
+    btn: "read more",
   },
   {
     id: 3,
     path: "./bg1.png",
     heading: "Teeth Whitening",
     para: "Reclaim a youthful smile",
-    btn: "read me",
+    btn: "read more about the treatment", 
   },
 ];
 
