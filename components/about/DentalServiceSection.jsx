@@ -37,7 +37,7 @@ const DentalServiceSection = () => {
           <h2 className="text-5xl  text-black">REVITAL</h2>
           <h2 className="text-5xl text-black">DENTAL</h2>
 
-          <p className={`text-black mt-4 ${tinos.className}`}>
+          <p className={`text-black mt-4 text-justify ${tinos.className}`}>
             Revital Dental is a Temple based family dentist practice that treats
             patients of all ages. We are committed to delivering the highest
             quality dental care and do so using advanced dental equipment. We
@@ -48,7 +48,7 @@ const DentalServiceSection = () => {
 
         {/* Right Column */}
         <div
-          className={`md:w-1/2 md:pl-6 mt-6 md:mt-11 flex items-start ${tinos.className}`}
+          className={`md:w-1/2 md:pl-6 mt-6 text-justify md:mt-11 flex items-start ${tinos.className}`}
         >
           <p className="text-black font-medium">
             We also perform emergency dentist services that include bonding,

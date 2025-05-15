@@ -86,7 +86,7 @@ const Services = () => {
       {/* explanation */}
       <section className="md:grid md:grid-cols-[3fr_1fr]  md:w-[90%] w-[100%] md:mx-auto px-2 mt-3 gap-2">
         {/* left section */}
-        <div className="left-section " id="importance-oral-hygiene">
+        <div className="left-section " id="reasons-improve-smile">
           {/* dark section */}
           <div className="bg-dark p-5 text-white">
             <h2 className="text-2xl font-cinzel mb-3">Improving Smiles</h2>
@@ -109,13 +109,6 @@ const Services = () => {
               there is a treatment that can help patients achieve the smile
               results they want.
             </p>
-            <p className="text-justify font-tinos mt-4">
-              Once the bacteria can enter the bloodstream, the entire body may
-              be at risk. Starting and following an oral hygiene routine will
-              help prevent the buildup of bacteria and plaque on the teeth and
-              keep the body safe. To protect the health of the smile is to
-              protect the overall health of the body.
-            </p>
           </div>
 
           {/* question and answer section */}
@@ -128,7 +121,7 @@ const Services = () => {
             <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
           </div>
           {/* Q & A */}
-          <div className="mt-10" id="family-oral-health-education">
+          <div className="mt-10" id="importance-understanding-dentist">
             <h2 className="font-cinzel text-2xl text-primary">
               Addressing Concerns
             </h2>
@@ -140,14 +133,7 @@ const Services = () => {
               research and consideration. Communication throughout the treatment
               process is an important part of ensuring that the patient is
               comfortable throughout the process and satisfied with their
-              results.Since oral health can affect body health, it is important
-              to teach children and others about oral hygiene. Someone should
-              talk to family members about the importance of dental care. If any
-              family member has anxiety about visiting the dentist, speak to the
-              dental team about options to make the experience less
-              intimidating. Either way, every member of the family should learn
-              about oral hygiene and what they can do to take care of their
-              smile.
+              results.
             </p>
             <p className="font-tinos mt-2 text-justify">
               Patients should seek treatment from a dentist who values their
@@ -168,7 +154,7 @@ const Services = () => {
             <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
           </div>
           {/* Q & A */}
-          <div className="mt-10" id="home-care-routine">
+          <div className="mt-10" id="smile-care-techniques">
             <h2 className="font-cinzel text-2xl text-primary">
               Maintaining a Healthy Smile
             </h2>
@@ -213,7 +199,7 @@ const Services = () => {
               </h2>
             </div>
 
-            <div className="mt-10" id="diet-and-tooth-decay">
+            <div className="mt-10" id="restorative-methods">
               <h2 className="font-cinzel text-2xl text-primary">
                 Restorative Methods
               </h2>
@@ -334,51 +320,34 @@ const Services = () => {
               </div>
             </div>
 
-            <div className="mt-10" id="maintaining-healthy-smile">
+            <div className="mt-10" id="cosmetic-treatments">
               <h2 className="font-cinzel text-2xl text-primary">
-                Health Practices for a Healthy Smile
+                Cosmetic Treatments
               </h2>
               <hr />
               <p className="font-tinos mt-2 text-justify">
-                If the goal is to have a healthy smile for life, then there are
-                a number of things anyone can do to achieve that goal. The first
-                and quite possibly most important thing to do is to stay in
-                touch with the dental team. The dental professionals on this
-                team will come to know each individual and their smile over
-                time. They can provide guidance as the mouth ages and changes.
-                To build and maintain this connection, regular dental checkups
-                are important.
+                Cosmetic treatments can help patients improve the appearance of
+                stained, discolored, worn, chipped, broken, or misshapen teeth.
+                The most common cosmetic dental treatment is teeth whitening.
+                This procedure can brighten and whiten teeth quickly and
+                effectively. Dental veneers are a cosmetic treatment that
+                consists of placing thin shells over teeth to fix crookedness,
+                chips, or discoloration.
               </p>
               <p className="font-tinos mt-2 text-justify">
-                Dental checkups are normally recommended every six months,
-                though some individuals may need them more often if they have a
-                history of oral health concerns or gum disease. Between
-                checkups, everyone should continue their at-home oral hygiene
-                routine. While a checkup is a great way to remove the buildup of
-                plaque and polish the teeth to protect them from bacteria,
-                everyone needs to remove particles and bacteria daily to keep
-                their smile healthy.
+                Other popular cosmetic treatments include dental bonding and
+                enamel shaping. Dental bonding involves adhering tooth-colored
+                composite material to the surface of badly stained, broken, or
+                chipped teeth. During enamel shaping, the tooth is reshaped by
+                filing or removing the enamel. Patients interested in receiving
+                cosmetic treatment should talk to our dentist to find the right
+                one for their needs.
               </p>
-              <p className="font-tinos mt-2 text-justify">
-                A daily routine should include brushing, flossing, and rinsing
-                with a mouthwash. The dentist may also recommend different or
-                additional steps depending on the smile’s health. Additional
-                recommendations may include:
-              </p>
-              <ul className="font-tinos text-justify list-disc  pl-4 mt-2">
-                <li>Drinking fluoridated water</li>
-                <li>Quitting smoking and other tobacco products</li>
-                <li>Limiting alcoholic, caffeinated or sugary drinks</li>
-                <li>Controlling other diseases that may affect the teeth</li>
-                <li>Deep cleaning</li>
-              </ul>
             </div>
             <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “While a checkup is a great way to remove the buildup of plaque
-                and polish the teeth to protect them from bacteria, everyone
-                needs to remove particles and bacteria daily to keep their smile
-                healthy.”
+                “Cosmetic treatments can help patients improve the appearance of
+                stained, discolored, worn, chipped, broken, or misshapen teeth.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
@@ -390,82 +359,62 @@ const Services = () => {
               </h2>
               <hr />
               <div className="flex flex-col">
-                <h2
-                  id="importance-oral-hygiene"
-                  className="text-justify text-primary font-tinos mt-3"
-                >
-                  Q. Why is oral hygiene important?
+                <h2 className="text-justify text-primary font-tinos mt-3">
+                  Q. Is teeth whitening a safe procedure?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Aside from being one of the first things people notice
-                  about others, the smile is important to the body's overall
-                  health. Maintaining oral hygiene helps protect the body from
-                  disease. By keeping the smile healthy and attending regular
-                  dental checkups, everyone can support their overall health.
+                  A. When done properly, teeth whitening is a safe procedure
+                  that does not damage the tooth’s nerves or affect the enamel’s
+                  mineral content. Although it is a minimally invasive
+                  treatment, some people may experience side effects like teeth
+                  sensitivity or gum irritation. Both of these side effects
+                  should diminish over time.
                 </p>
 
-                <h2
-                  id="oral-care-children"
-                  className="text-justify text-primary font-tinos mt-3"
-                >
-                  Q. Is oral care important for children?
+                <h2 className="text-justify text-primary font-tinos mt-3">
+                  Q. Is teeth whitening permanent?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Yes. While baby teeth are temporary, how they are cared for
-                  affects future oral health. Good habits early in life can lead
-                  to a lifetime of healthy smiles.
+                  A. Teeth whitening is not permanent. The effects vary for each
+                  person but may last anywhere between three months to three
+                  years. Patients who receive this procedure will need to
+                  receive additional treatments to whiten intrinsic and
+                  extrinsic tooth discoloration every so often.
                 </p>
 
-                <h2
-                  id="dental-care-routine"
-                  className="text-justify text-primary font-tinos mt-3"
-                >
-                  Q. What should be included in a dental care routine?
+                <h2 className="text-justify text-primary font-tinos mt-3">
+                  Q. When are dental crowns necessary?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. A complete routine typically includes brushing at least
-                  twice daily, flossing once a day, rinsing with
-                  dentist-approved mouthwash, and attending regular dental
-                  checkups. Individual needs may vary slightly.
+                  A. Dental crowns may be necessary for various situations to
+                  restore tooth appearance and function after a restorative
+                  dental procedure. Crowns can protect and reinforce cracked,
+                  worn down, or broken teeth. These dental restorations can also
+                  hold a dental bridge in place, cover misshapen or discolored
+                  teeth, or support a tooth with a large filling.
                 </p>
 
-                <h2
-                  id="what-is-dental-checkup"
-                  className="text-justify text-primary font-tinos mt-3"
-                >
-                  Q. What is a dental checkup?
+                <h2 className="text-justify text-primary font-tinos mt-3">
+                  Q. Does teeth whitening work on crowns or veneers?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. A dental checkup usually includes a cleaning and
-                  examination. The dental professional removes plaque and tartar
-                  and checks for any signs of decay, gum disease, or other oral
-                  health issues.
+                  A. Teeth whitening solution removes stains from the tooth
+                  enamel. Dental restorations such as crowns and veneers do not
+                  consist of enamel but consist of strong materials designed to
+                  be stain-resistant. Crowns and veneers do not respond to teeth
+                  whitening. However, they should not stain or require whitening
+                  in the first place.
                 </p>
 
-                <h2
-                  id="maintain-healthy-smile"
-                  className="text-justify text-primary font-tinos mt-3"
-                >
-                  Q. How can anyone keep their smile healthy?
+                <h2 className="text-justify text-primary font-tinos mt-3">
+                  Q. What are veneers used to treat?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Healthy habits such as quitting smoking, limiting dark
-                  drinks like coffee or tea, and practicing consistent oral care
-                  at home — along with regular dental visits — help maintain a
-                  clean, bright smile.
-                </p>
-
-                <h2
-                  id="cleaning-vs-deep-cleaning"
-                  className="text-justify text-primary font-tinos mt-3"
-                >
-                  Q. Are dental cleanings and deep cleanings different?
-                </h2>
-                <p className="font-tinos md:ps-4 mt-2">
-                  A. Yes. Both involve cleaning the teeth, but deep cleanings
-                  also include scaling and root planing below the gum line. Deep
-                  cleaning is usually recommended for those with gum disease or
-                  heavy buildup.
+                  A. Veneers are a versatile dental restoration that can treat
+                  many dental issues. Typically, veneers protect and improve the
+                  appearance of teeth that have chipped, cracked, minor breaks,
+                  or have thin enamel. They can also cover stained or misshapen
+                  teeth.
                 </p>
               </div>
             </div>
@@ -528,91 +477,51 @@ const Services = () => {
               <hr />
               <div className="space-y-10">
                 <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Bleachorexia</h2>
+                  <p>
+                    Bleachorexia is a condition where individuals excessively
+                    use teeth whitening products without professional guidance,
+                    leading to enamel erosion and gum damage.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Carbamide Peroxide</h2>
+                  <p>
+                    Carbamide peroxide is a bleaching agent containing hydrogen
+                    peroxide, commonly used in teeth whitening treatments for
+                    its effectiveness in breaking down stains.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
                   <h2 className="italic text-xl">Cosmetic Dentistry</h2>
                   <p>
-                    Cosmetic dentistry refers to dental procedures that enhance
-                    the appearance of the teeth, gums, or bite. Common
-                    treatments include teeth whitening, veneers, and bonding.
+                    Cosmetic dentistry includes dental procedures aimed at
+                    improving the aesthetic appearance of teeth, gums, and
+                    smile, such as whitening, veneers, and reshaping.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Tooth Decay</h2>
+                  <h2 className="italic text-xl">Deeper Teeth Stains</h2>
                   <p>
-                    Tooth decay occurs when bacteria in plaque produce acid that
-                    erodes tooth enamel, leading to cavities and infection if
-                    left untreated.
+                    Deeper teeth stains are discolorations that affect the
+                    internal layers of the tooth and often require professional
+                    treatment due to resistance to surface whitening products.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Dental Checkup</h2>
+                  <h2 className="italic text-xl">Dentin Hypersensitivity</h2>
                   <p>
-                    A dental checkup is a routine appointment where a dentist
-                    examines oral health, removes plaque and tartar, and checks
-                    for signs of gum disease or cavities.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Dental Filling</h2>
-                  <p>
-                    A dental filling is used to restore a tooth damaged by
-                    decay. It involves cleaning the cavity and filling it with
-                    materials like composite, porcelain, or amalgam.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Prophylaxis</h2>
-                  <p>
-                    Dental prophylaxis is a professional cleaning procedure that
-                    removes plaque, tartar, and stains from teeth to prevent
-                    oral diseases.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Sealants</h2>
-                  <p>
-                    Dental sealants are thin protective coatings applied to the
-                    chewing surfaces of molars to prevent cavities by blocking
-                    bacteria and food.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Gingivitis</h2>
-                  <p>
-                    Gingivitis is a mild form of gum disease that causes
-                    redness, swelling, and bleeding gums. It is reversible with
-                    proper oral hygiene and professional care.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Tartar</h2>
-                  <p>
-                    Tartar, also known as calculus, is hardened plaque that
-                    sticks to the teeth and can only be removed by a dental
-                    professional during cleanings.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Tooth Enamel</h2>
-                  <p>
-                    Tooth enamel is the hard, outermost layer of a tooth that
-                    protects it from decay and damage. It cannot regenerate once
-                    worn down.
+                    Dentin hypersensitivity occurs when the protective enamel
+                    layer is worn down, exposing the dentin and causing sharp
+                    pain in response to temperature or pressure changes.
                   </p>
                   <hr className="mt-4" />
                 </div>
@@ -620,9 +529,71 @@ const Services = () => {
                 <div className="mt-5 font-tinos">
                   <h2 className="italic text-xl">Dentist</h2>
                   <p>
-                    A dentist is a licensed medical professional who diagnoses,
-                    treats, and helps prevent diseases and conditions affecting
-                    the oral cavity.
+                    A dentist is a healthcare professional specializing in the
+                    prevention, diagnosis, and treatment of oral diseases and
+                    conditions involving the teeth and gums.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Hydrogen Peroxide</h2>
+                  <p>
+                    Hydrogen peroxide is an active ingredient in many whitening
+                    products that breaks down stains and lightens the natural
+                    color of teeth.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Relief ACP</h2>
+                  <p>
+                    Relief ACP (Amorphous Calcium Phosphate) is a dental gel
+                    used to reduce sensitivity and promote enamel
+                    remineralization after teeth whitening or irritation.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Stained Dentin</h2>
+                  <p>
+                    Stained dentin refers to discoloration that affects the
+                    layer beneath enamel, often requiring in-office treatments
+                    to effectively brighten and restore tooth color.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Surface Enamel</h2>
+                  <p>
+                    Surface enamel is the visible, outermost layer of a tooth
+                    that provides protection and aesthetic appeal. It is highly
+                    mineralized and can be stained by dietary habits.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Surface Teeth Stains</h2>
+                  <p>
+                    Surface teeth stains affect the enamel and are commonly
+                    caused by dark-colored foods, beverages, or smoking. These
+                    stains can often be removed with whitening products.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">
+                    Teeth Whitening Concentrate
+                  </h2>
+                  <p>
+                    Teeth whitening concentrate refers to the professional-grade
+                    bleaching agents used in dental offices, offering stronger
+                    and more consistent results than over-the-counter options.
                   </p>
                   <hr className="mt-4" />
                 </div>

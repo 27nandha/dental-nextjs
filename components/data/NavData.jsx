@@ -69,5 +69,4 @@ export const educationLinks = [
     link: "will-i-need-a-bone-graft-for-dental-implants",
   },
   { name: "Wisdom Teeth Extraction", link: "wisdom-teeth-extraction" },
-  { name: "Dental Anxiety", link: "dental-anxiety" },
 ];
