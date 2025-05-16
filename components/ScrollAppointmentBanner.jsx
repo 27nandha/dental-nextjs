@@ -1,16 +1,11 @@
 "use client";
 import { useEffect, useState } from "react";
-import {
-  FaWheelchair,
-  FaGlobe,
-  FaCalendarAlt,
-  FaHome,
-  FaPhone,
-  FaMapMarkerAlt,
-} from "react-icons/fa";
+import { FaCalendarAlt, FaGlobe } from "react-icons/fa";
+import { LanguageSwitcher } from "@/components/language-switcher"; // adjust import as needed
 
 export default function ScrollBanner() {
   const [showBanner, setShowBanner] = useState(false);
+  const [showLanguages, setShowLanguages] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,11 +16,15 @@ export default function ScrollBanner() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const toggleLanguageMenu = () => {
+    setShowLanguages((prev) => !prev);
+  };
+
   return (
     <>
       {/* Desktop Banner */}
       <div
-        className={`fixed bottom-4 left-1/2 w-full transform -translate-x-1/2 transition-opacity duration-500 z-50 hidden md:block ${
+        className={`fixed bottom-4 left-1/2 w-full transform -translate-x-1/2 transition-opacity duration-500 z-40 hidden md:block ${
           showBanner ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
       >
@@ -42,25 +41,23 @@ export default function ScrollBanner() {
         </div>
       </div>
 
-      {/* Mobile Footer Icons
-      {showBanner && (
-        <div className="fixed bottom-0 w-full bg-white shadow-md flex justify-around py-3 z-50 md:hidden">
-          {[
-            { icon: <FaHome />, href: "#home" },
-            { icon: <FaPhone />, href: "tel:+1234567890" },
-            { icon: <FaCalendarAlt />, href: "#appointment" },
-            { icon: <FaMapMarkerAlt />, href: "#location" },
-          ].map((item, index) => (
-            <a
-              key={index}
-              href={item.href}
-              className="bg-orange-500 rounded-full p-3 text-white shadow-md"
-            >
-              {item.icon}
-            </a>
-          ))}
-        </div>
-      )} */}
+      {/* Floating Language Button */}
+      <div className="fixed bottom-10 right-4 z-50">
+        <button
+          onClick={toggleLanguageMenu}
+          className="bg-orange-500 text-white rounded-full p-4 shadow-xl hover:bg-orange-600 focus:outline-none"
+          aria-label="Change Language"
+        >
+          <FaGlobe className="text-xl" />
+        </button>
+
+        {/* Language Dropdown */}
+        {showLanguages && (
+          <div className="absolute bottom-16 right-0 bg-white rounded-lg shadow-xl p-3 w-48 z-50">
+            <LanguageSwitcher />
+          </div>
+        )}
+      </div>
     </>
   );
 }

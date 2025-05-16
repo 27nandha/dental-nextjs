@@ -95,7 +95,7 @@ const page = () => {
         className={`flex flex-col md:flex-row items-center justify-center bg-dark text-white md:p-15 p-6 ${tinos.className} shadow-lg gap-6`}
       >
         <div className="flex-1">
-          <h1 className="font-cinzel text-3xl">New Patients</h1>
+          <h1 className="font-cinzel text-center md:text-left text-3xl">New Patients</h1>
           <p className="mt-4 text-gray-200 text-justify">
             It is easy to make an appointment for your initial examination and
             dental treatments. Call 254-207-0708 to speak with a team member.

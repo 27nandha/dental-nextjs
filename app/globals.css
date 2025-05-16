@@ -11,6 +11,10 @@
     --color-dark: #172c2f;
 }
 
+.skiptranslate {
+  display: none !important;
+}
+
 .font-cinzel{
     font-family: "Cinzel", serif;
 }
