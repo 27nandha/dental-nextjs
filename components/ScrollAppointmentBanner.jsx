@@ -39,25 +39,25 @@ export default function ScrollBanner() {
             </button>
           </div>
         </div>
+        <div className="fixed bottom-10 right-4 z-50">
+          <button
+            onClick={toggleLanguageMenu}
+            className="bg-orange-500 text-white rounded-full p-4 shadow-5xl hover:bg-orange-600 focus:outline-none"
+            aria-label="Change Language"
+          >
+            <FaGlobe className="text-xl" />
+          </button>
+
+          {/* Language Dropdown */}
+          {showLanguages && (
+            <div className="absolute bottom-16 right-0 bg-white rounded-lg shadow-xl p-3 w-48 z-50">
+              <LanguageSwitcher />
+            </div>
+          )}
+        </div>
       </div>
 
       {/* Floating Language Button */}
-      <div className="fixed bottom-10 right-4 z-50">
-        <button
-          onClick={toggleLanguageMenu}
-          className="bg-orange-500 text-white rounded-full p-4 shadow-xl hover:bg-orange-600 focus:outline-none"
-          aria-label="Change Language"
-        >
-          <FaGlobe className="text-xl" />
-        </button>
-
-        {/* Language Dropdown */}
-        {showLanguages && (
-          <div className="absolute bottom-16 right-0 bg-white rounded-lg shadow-xl p-3 w-48 z-50">
-            <LanguageSwitcher />
-          </div>
-        )}
-      </div>
     </>
   );
 }

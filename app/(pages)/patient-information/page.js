@@ -95,7 +95,9 @@ const page = () => {
         className={`flex flex-col md:flex-row items-center justify-center bg-dark text-white md:p-15 p-6 ${tinos.className} shadow-lg gap-6`}
       >
         <div className="flex-1">
-          <h1 className="font-cinzel text-center md:text-left text-3xl">New Patients</h1>
+          <h1 className="font-cinzel text-center md:text-left text-3xl">
+            New Patients
+          </h1>
           <p className="mt-4 text-gray-200 text-justify">
             It is easy to make an appointment for your initial examination and
             dental treatments. Call 254-207-0708 to speak with a team member.
@@ -195,15 +197,14 @@ const page = () => {
                 254-207-0708 to see if we are currently working with your
                 insurance provider.
                 <br />
-                <p className="pt-5">
-                  {" "}
+                <div className="pt-5">
                   Our pricing structure is designed to ensure that patients are
                   able to receive the high quality dental care they deserve. If
                   your dental insurance will not cover all of your dental
                   treatments, we will work with you to identify a payment
                   solution. We are health care professionals first and will work
                   with you to make sure you receive the treatment you need.
-                </p>
+                </div>
               </>
             ),
           },
