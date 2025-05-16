@@ -3,6 +3,7 @@ import { FaCaretDown } from "react-icons/fa";
 import { Cinzel } from "next/font/google";
 import Link from "next/link";
 import { FaYelp } from "react-icons/fa";
+import Image from "next/image";
 
 const cinzel = Cinzel({
   subsets: ["latin"], // you can add 'latin-ext' if needed
@@ -13,29 +14,31 @@ const Services = () => {
   return (
     <>
       {/* intro section */}
-      <section className="grid md:grid-cols-[1fr_1fr_1fr] grid-cols-1 md:gap-2  md:mt-[85px]  border-y-[10px] border-dark mx-2">
-        <div className="bg-[url(/chip-my-tooth.webp)] bg-cover my-10"></div>
+      <section className="grid md:grid-cols-[1fr_1fr_1fr] grid-cols-1 md:gap-2  md:mt-[125px]  border-y-[10px] border-dark mx-2">
+        <div className="bg-[url(/zoom-teeth-whitening.webp)] bg-cover my-10"></div>
 
-        <div className="px-10 py-10 space-y-3">
+        <div className="px-10 py-5 space-y-3">
           <h2 className="text-5xl font-cinzel text-primary">
-            What Should I Do If I Chip My Tooth
+            Zoom Teeth Whitening
           </h2>
           <p className="font-cinzel text-primary">Temple, TX</p>
           <p className="font-tinos  text-justify">
-            There are many reasons why a chipped tooth can occur, from an
-            accident to merely chewing. If a chipped tooth occurs, professional
-            dental care is necessary to receive proper evaluation and treatment.
-            It is essential to seek prompt treatment to prevent the problem from
-            worsening.
+            Beautiful, bright, white teeth are a sign of good health and a
+            youthful appearance. Many people have teeth stained from coffee,
+            smoking, or other substances, making their smile appear dull or
+            yellow. ZOOM!® teeth whitening is a professional whitening system
+            administered by a dentist that brightens teeth several shades whiter
           </p>
           <p className="font-tinos  text-justify">
-            If you have a chipped tooth, do not hesitate to seek treatment.
-            Revital Dental in Temple and the surrounding area is here to help.
-            Call us today at (254) 207-0708 to schedule an appointment or learn
-            more about our services.
+            Zoom teeth whitening is available at Revital Dental in Temple and
+            the surrounding area. Professional whitening treatment with a Zoom
+            whitening dentist gives patients better results and a gorgeous
+            smile. Patients with a big event coming up, such as a wedding, class
+            reunion, or party, can wow their friends and family with a dazzling
+            smile. Call us at (254) 207-0708 to find out more.
           </p>
         </div>
-        <div className="py-10">
+        <div className="py-5">
           <form
             action=""
             className="w-full mx-auto mt-10 md:mt-0 max-w-[400px]"
@@ -86,101 +89,96 @@ const Services = () => {
       {/* explanation */}
       <section className="md:grid md:grid-cols-[3fr_1fr]  md:w-[90%] w-[100%] md:mx-auto px-2 mt-3 gap-2">
         {/* left section */}
-        <div className="left-section " id="chipped-tooth-common">
+        <div className="left-section " id="how-zoom-whitening-works">
           {/* dark section */}
           <div className="bg-dark p-5 text-white">
             <h2 className="text-2xl font-cinzel mb-3">
-              Chipped Teeth Are Common
+              How Zoom Whitening Works
             </h2>
             <hr />
             <p className="text-justify font-tinos mt-4">
-              A chipped tooth is a common dental injury. According to the
-              American Association of Endodontists, chipped teeth account for a
-              majority of dental injuries. Although a chipped tooth can induce
-              panic and anxiety, it is typically a mild problem that we can fix
-              through various methods.
-            </p>
-            <p className="text-justify font-tinos mt-4">
-              People should remain calm so they can take the proper steps to fix
-              this problem. The best thing for patients to do after chipping a
-              tooth is to focus on their breath and slow it down. While not all
-              chipped teeth will require treatment, patients should visit our
-              dentist to ensure that they receive the necessary treatment to
-              restore and protect their teeth.
+              Zoom teeth whitening uses several powerful ingredients to reduce
+              staining and brighten smiles. It comes in a gel formula, made with
+              hydrogen peroxide. This formula is much more powerful and
+              effective than over-the-counter products. The dentist will coat
+              the teeth with this gel to start the whitening session. Then, the
+              dentist uses a special light to activate the gel and remove
+              staining on the teeth. The typical treatment session takes just
+              over an hour and includes a five-minute fluoride treatment. With
+              Zoom, patients will see whiter teeth after only a few visits.
             </p>
           </div>
 
-          {/* question and answer section */}
           {/* quote */}
+          <div className="relative inline-block mt-10">
+            <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
+              “This formula is much more powerful and effective than
+              over-the-counter products.”
+            </h2>
+            <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
+          </div>
+
+          {/* Q & A */}
+          <div className="mt-10" id="zoom-vs-home-whitening">
+            <h2 className="font-cinzel text-2xl text-primary">
+              Advantages of Zoom Over Home Teeth Whitening
+            </h2>
+            <hr />
+            <p className="font-tinos mt-2 text-justify">
+              Deciding between at-home whitening versus professional whitening
+              depends on a variety of factors. Home whitening kits are popular
+              today, but professional whitening is much more effective, fast,
+              and safe for patients. The biggest reason patients prefer
+              professional whitening like Zoom is because of the quick results.
+              Whitening kits from the drugstore or supermarket may not be as
+              impressive as the results from Zoom whitening. Patients who want
+              whiter teeth faster and with more dramatic results should consider
+              professional teeth whitening.
+            </p>
+            <p className="font-tinos mt-2 text-justify">
+              Patients prefer Zoom because it is gentle enough for sensitive
+              teeth and has the added supervision of the dental provider during
+              application. Choosing a Zoom whitening dentist also helps make
+              sure the patient's teeth and gums do not experience enamel or
+              sensitivity issues. According to a study from the Journal of
+              Evidence Based Dental Practice, overaggressive tooth whitening at
+              home may cause tooth sensitivity.
+            </p>
+          </div>
+
           <div className="relative inline-block mt-10">
             <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-              “According to the American Association of Endodontists, chipped
-              teeth account for a majority of dental injuries.”
+              “Home whitening kits are popular today, but professional whitening
+              is much more effective, fast, and safe for patients.”
             </h2>
             <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
           </div>
+
           {/* Q & A */}
-          <div className="mt-10" id="after-chipping-tooth">
+          <div className="mt-10" id="preparing-for-whitening">
             <h2 className="font-cinzel text-2xl text-primary">
-              What To Do About a Chipped Tooth
+              How To Prepare for Teeth Whitening
             </h2>
             <hr />
-            <p className="font-tinos mt-2 text-justify">
-              People suffering from a chipped tooth should schedule a dental
-              appointment since professional treatment is the only way to fix it
-              permanently. It is important to immediately take certain steps
-              after chipping a tooth to address pain and protect the tooth and
-              inside of the mouth from further injury. According to the American
-              Dental Association, people should rinse their mouth with warm
-              water right away to clean it.
-            </p>
-
-            <p className="font-tinos mt-2 text-justify">
-              After rinsing, they should apply pressure to stop any bleeding and
-              apply a cold compress to reduce swelling. People should be sure to
-              save any pieces of the chipped tooth and wrap them in wet gauze to
-              bring to our dentist. While waiting to see our dentist, people can
-              use over-the-counter pain medication to manage pain and
-              discomfort.
-            </p>
-          </div>
-
-          {/* quote */}
-          <div className="relative inline-block mt-10 w-full">
-            <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-              “It is important to immediately take certain steps after chipping
-              a tooth to address pain and protect the tooth and inside of the
-              mouth from further injury.”
-            </h2>
-            <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
-          </div>
-          {/* Q & A */}
-          <div className="mt-10" id="child-vs-adult-chip">
-            <h2 className="font-cinzel text-2xl text-primary">
-              Chipped Tooth in a Child vs. Adult
-            </h2>
-            <hr />
-            <p className="font-tinos mt-2">
-              Although chipping a tooth is common for both adults and children,
-              there are different concerns for each. Chipped primary teeth are
-              especially common in children. We recommend treatments to repair
-              the damaged tooth based on the patient’s age and how badly the
-              tooth is injured.
-            </p>
 
             <p className="font-tinos mt-2">
-              When treating chipped primary teeth in children, the main concern
-              is to prevent damage to the underlying permanent tooth. Unlike an
-              adult, a child’s permanent teeth are not fully developed and will
-              require immediate attention if a chip occurs. Regardless of
-              whether the chipped tooth occurs in a child or adult, it is
-              important to see our dentist as quickly as possible for treatment.
+              Preparing for Zoom whitening is fairly simple and easy. Our team
+              recommends that patients start with a recent dental exam and
+              cleaning. Before coming into the office on the day of the
+              procedure, patients should brush and floss. It may also be more
+              comfortable to apply lip balm before the treatments so the lips do
+              not get too dry during the whitening process. Other than that,
+              there are no special things to do before treatment. Patients
+              should be able to drive themselves to and from the procedure as no
+              anesthesia is required.
             </p>
+
             {/* quotes */}
             <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “When treating chipped primary teeth in children, the main
-                concern is to prevent damage to the underlying permanent tooth.”
+                “It may also be more comfortable to apply lip balm before the
+                treatments so the lips do not get too dry during the whitening
+                process.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
@@ -201,35 +199,58 @@ const Services = () => {
               </h2>
             </div>
 
-            <div className="mt-10" id="repair-methods-chip">
+            <div className="mt-10" id="during-treatment">
               <h2 className="font-cinzel text-2xl text-primary">
-                Repairing a Chipped Tooth
+                What To Expect During Treatment
               </h2>
               <hr />
               <p className="font-tinos mt-2 text-justify">
-                There are various methods to repair a chipped tooth, depending
-                on the state of the patient’s tooth and the type of injury. In
-                some cases, our dentist can reattach the broken piece of a
-                tooth. If the damage is minimal, our dentist may only need to
-                use cosmetic contouring to polish the tooth’s surface or smooth
-                a jagged edge. Other options include veneers to cover a chip or
-                dental bonding to fill in missing tooth structure.
+                Before starting the treatment process, Our team will help
+                patients understand what happens at each appointment. At the
+                beginning, we will greet patients and bring them back to the
+                treatment area. Here are the steps in the Zoom whitening
+                process.
               </p>
-              <p className="font-tinos mt-2 text-justify">
-                Chips that go below the tooth’s surface may require more
-                extensive repair, such as a root canal or extraction. A root
-                canal is necessary when the damage enters the pulp and infects
-                it. Extraction is the last resort when a root canal is not
-                enough to save a tooth. Patients should contact us to find out
-                what repair options are available.
-              </p>
+
+              <ol className="font-tinos text-justify list-disc pl-4 mt-2">
+                <li>
+                  <span className="font-bold"> Setup:</span>
+                  The dental provider will take pictures of the current shade of
+                  teeth and give information on what type of results to expect.
+                  Next, the dentist places cheek retractors into the mouth to
+                  pull back the lips and expose the teeth for the whitening
+                  treatment.
+                </li>
+                <li>
+                  <span className="font-bold">Gel Application:</span> The next
+                  part of the process involves the proprietary Zoom gel. The
+                  dentist coats the patient's teeth with the whitening gel and
+                  uses Zoom light to activate the gel. Return Treatment: For
+                  optimal results, patients should return for additional
+                  whitening treatments. Many patients complete about three
+                  treatments.
+                </li>
+                <li>
+                  <span className="font-bold">Return Treatment:</span> For
+                  optimal results, patients should return for additional
+                  whitening treatments. Many patients complete about three
+                  treatments.
+                </li>
+                <li>
+                  <span className="font-bold">After Whitening:</span> Patients
+                  may get a home touch-up whitening kit to help maintain the
+                  results. When using the home trays, coat the tray with
+                  whitening gel and wear on the teeth for about two hours.
+                  Patients should store the touch-up kit in a cool, dry place.
+                </li>
+              </ol>
             </div>
 
             {/* quotes */}
             <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “There are various methods to repair a chipped tooth, depending
-                on the state of the patient’s tooth and the type of injury.”
+                “For optimal results, patients should return for additional
+                whitening treatments.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
@@ -242,47 +263,39 @@ const Services = () => {
               <div className="flex flex-col">
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#chipped-tooth-common"
+                  href="#how-zoom-whitening-works"
                 >
                   Q.{" "}
                   <span className="underline">
-                    How common is a chipped tooth?
+                    How does Zoom Whitening work?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#after-chipping-tooth"
+                  href="#zoom-vs-home-whitening"
                 >
                   Q.{" "}
                   <span className="underline">
-                    What steps should happen after chipping a tooth?
+                    Why choose Zoom whitening over whitening at home?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#child-vs-adult-chip"
+                  href="#preparing-for-whitening"
                 >
                   Q.{" "}
                   <span className="underline">
-                    How is a child’s chipped tooth different from an adult’s?
+                    What does a patient need to do to prepare for teeth
+                    whitening?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#repair-methods-chip"
+                  href="#during-treatment"
                 >
                   Q.{" "}
                   <span className="underline">
-                    What methods are available to repair a chipped tooth?
-                  </span>
-                </a>
-                <a
-                  className="text-justify font-tinos mt-3"
-                  href="#maintain-treated-tooth"
-                >
-                  Q.{" "}
-                  <span className="underline">
-                    How should a treated chipped tooth be maintained?
+                    What happens during treatment?
                   </span>
                 </a>
               </div>
@@ -294,59 +307,33 @@ const Services = () => {
               <div className="flex flex-col mb-4">
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#emergency-dental-care"
+                  href="#benefits-of-dental-whitening"
                 >
                   Q.{" "}
                   <span className="underline">
-                    When should I seek emergency dental care?
+                    What are the benefits of teeth whitening at a dentist’s
+                    office?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#what-is-dental-restoration"
+                  href="#reasons-for-bleaching"
                 >
                   Q.{" "}
-                  <span className="underline">What is dental restoration?</span>
+                  <span className="underline">
+                    What are the top reasons for bleaching teeth?
+                  </span>
                 </a>
-                <a className="text-justify font-tinos mt-3" href="#go-to-er">
+                <a
+                  className="text-justify font-tinos mt-3"
+                  href="#who-should-get-whitening"
+                >
                   Q.{" "}
                   <span className="underline">
-                    When should I go straight to the emergency room?
+                    Who should receive professional teeth whitening?
                   </span>
                 </a>
               </div>
-            </div>
-
-            <div className="mt-10" id="maintain-treated-tooth">
-              <h2 className="font-cinzel text-2xl text-primary">
-                Maintaining a Treated Chipped Tooth
-              </h2>
-              <hr />
-              <p className="font-tinos mt-2 text-justify">
-                After treatment for a chipped tooth, patients must maintain a
-                regular oral care routine. This maintenance includes brushing
-                twice a day and flossing at least once. Patients should also
-                follow all after-care instructions to take care of the repaired
-                tooth and protect it from further damage.
-              </p>
-              <p className="font-tinos mt-2 text-justify">
-                Other maintenance tips include not biting down on the treated
-                tooth and refining from chewing on hard foods and objects.
-                Following the repair, patients should also attend all follow-up
-                appointments and schedule regular dental check-ups. These
-                appointments will allow our dentist to check the repair and
-                protect patients’ overall oral health to prevent a chip from
-                happening again.
-              </p>
-            </div>
-
-            {/* quotes */}
-            <div className="relative inline-block mt-10 w-full">
-              <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “After treatment for a chipped tooth, patients must maintain a
-                regular oral care routine.”
-              </h2>
-              <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
 
             <div className="bg-gray-100 p-5 mt-10">
@@ -355,61 +342,109 @@ const Services = () => {
               </h2>
               <hr />
               <div className="flex flex-col">
-                <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q. How is a chipped tooth diagnosed?
+                <h2
+                  className="text-justify text-primary font-tinos mt-3"
+                  id="is-zoom-right"
+                >
+                  Q.{" "}
+                  <span className="underline">
+                    Is Zoom teeth whitening right for me?
+                  </span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Our dentist can diagnose a chipped tooth by visibly
-                  inspecting the patient’s mouth. They will also ask about any
-                  symptoms and the event that may have caused the chip.
-                  Sometimes determining the extent of the damage can be
-                  difficult and may require the use of magnifying glasses,
-                  X-rays, or other tests.
+                  A. Patients who have healthy teeth and gums and commit to a
+                  solid oral health routine are good candidates for professional
+                  whitening. According to the American Dental Association,
+                  whitening does not work for patients with dental implants,
+                  crowns, or other restorations for the teeth. Whitening
+                  treatment is also not recommended for pregnant or
+                  breastfeeding women.
                 </p>
 
-                <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q. How long does it take to repair a chipped tooth?
+                <h2
+                  className="text-justify text-primary font-tinos mt-3"
+                  id="does-whitening-hurt"
+                >
+                  Q.{" "}
+                  <span className="underline">
+                    Does professional whitening hurt?
+                  </span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. The length of time it takes to repair a chip will depend on
-                  the extent of damage to the tooth. Our dentist will tell the
-                  patient how long they can expect their treatment to take
-                  during their consultation. In most cases, it only takes one
-                  office visit to fix a chipped tooth.
+                  A. Zoom teeth whitening does not cause any pain or discomfort.
+                  The dentist coats the teeth with a gel, which is painless. The
+                  light to activate the product also does not cause discomfort.
+                  Patients with sensitive teeth should talk to their dentist
+                  about treatment.
                 </p>
 
-                <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q. Who is a good candidate for cosmetic contouring?
+                <h2
+                  className="text-justify text-primary font-tinos mt-3"
+                  id="zoom-cost"
+                >
+                  Q.{" "}
+                  <span className="underline">
+                    How much does a Zoom whitening dentist treatment cost?
+                  </span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Cosmetic contouring is best for people with minor cosmetic
-                  problems like small chips. The patient’s enamel needs to be
-                  thick enough since cosmetic contouring removes one to two
-                  millimeters of enamel from the tooth’s surface. If the
-                  patient’s enamel is too thin, then we may suggest a different
-                  repair method.
+                  A. Before the treatment, the dentist will go over the costs
+                  with the patient. Professional whitening costs vary, depending
+                  on each individual situation. After whitening, it is important
+                  to protect the investment to avoid staining the teeth.
                 </p>
 
-                <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q. What are the risk factors associated with a chipped tooth?
+                <h2
+                  className="text-justify text-primary font-tinos mt-3"
+                  id="is-whitening-permanent"
+                >
+                  Q.{" "}
+                  <span className="underline">
+                    Is professional whitening permanent?
+                  </span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Weakened teeth are more likely to chip than strong and
-                  healthy ones. Tooth decay and cavities are common factors that
-                  reduce tooth strength and make chips more likely to occur.
-                  Teeth grinding, eating acid-producing foods, and acid reflux
-                  can damage the tooth enamel and weaken it.
+                  A. Zoom teeth whitening is not a permanent solution for white
+                  teeth. Patients may need to schedule repeat treatments
+                  depending on their eating habits. If patients avoid foods that
+                  stain the teeth, they may not need to return for another
+                  treatment until a year or two later.
                 </p>
 
-                <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q. How is a veneer applied?
+                <h2
+                  className="text-justify text-primary font-tinos mt-3"
+                  id="is-zoom-safe"
+                >
+                  Q.{" "}
+                  <span className="underline">
+                    Is Zoom teeth whitening treatment safe?
+                  </span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. First, our dentist will take a mold of the patient’s tooth
-                  to create the veneer. Then we will clean the patient’s tooth
-                  and use dental cement to bond the veneer to the tooth. An
-                  ultraviolet light hardens the cement quickly, and the patient
-                  can leave the office with their improved smile.
+                  A. Visiting a dentist to get professional whitening in the
+                  office helps patients protect their gums and teeth enamel.
+                  Patients with sensitivity or gum irritation would benefit from
+                  treatments under their dentist's supervision. If patients opt
+                  for an over-the-counter product, they run the risk of using
+                  too much, which could cause irritation.
+                </p>
+
+                <h2
+                  className="text-justify text-primary font-tinos mt-3"
+                  id="maintain-results"
+                >
+                  Q.{" "}
+                  <span className="underline">
+                    What can I do to maintain my results from professional
+                    whitening?
+                  </span>
+                </h2>
+                <p className="font-tinos md:ps-4 mt-2">
+                  A. It is essential to keep up with excellent brushing and
+                  flossing habits after Zoom teeth whitening. The dentist may
+                  recommend a specific brand of toothpaste to help maintain
+                  results. It is also important to continue with regular dental
+                  check-ups.
                 </p>
               </div>
             </div>
@@ -472,99 +507,123 @@ const Services = () => {
               <hr />
               <div className="space-y-10">
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Abscess</h2>
+                  <h2 className="italic text-xl">Bleachorexia</h2>
                   <p>
-                    A dental abscess is a pocket of pus that forms in the tooth
-                    root from a bacterial infection.
+                    Bleachorexia is the excessive and repeated use of teeth
+                    whitening products without professional guidance, often
+                    leading to enamel erosion and gum damage.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Cosmetic Contouring</h2>
+                  <h2 className="italic text-xl">Carbamide Peroxide</h2>
                   <p>
-                    A treatment that involves removing a small amount of tooth
-                    enamel with a drill to sculpt a more aesthetic shape and
-                    create a better fit for the surrounding teeth.
+                    Carbamide peroxide is a bleaching agent that breaks down
+                    into hydrogen peroxide and urea, used in many professional
+                    and at-home teeth whitening treatments.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Facial Cellulitis</h2>
+                  <h2 className="italic text-xl">Cosmetic Dentistry</h2>
                   <p>
-                    Facial cellulitis is a condition in which an infection from
-                    an abscess or plaque in the teeth causes pain and spreads
-                    throughout the face.
+                    Cosmetic dentistry focuses on enhancing the appearance of
+                    teeth, gums, and bites, including treatments like whitening,
+                    veneers, and reshaping.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Impacted Wisdom Tooth</h2>
+                  <h2 className="italic text-xl">Deeper Teeth Stains</h2>
                   <p>
-                    An impacted wisdom tooth is a tooth that does not erupt from
-                    the gums properly and can cause pain and become infected
-                    without professional extraction.
+                    These are stains that penetrate beyond the enamel into the
+                    dentin layer, often caused by dark foods, drinks, or
+                    smoking, requiring professional whitening solutions.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Irreversible Pulpitis</h2>
+                  <h2 className="italic text-xl">Dentin Hypersensitivity</h2>
                   <p>
-                    Irreversible pulpitis is when pain in the tooth occurs
-                    spontaneously or continues after removing a hot/cold
-                    substance. Normal pulpitis stops hurting once the irritant
-                    is removed.
+                    This condition causes sharp pain in teeth due to exposed
+                    dentin, typically triggered by hot, cold, or acidic stimuli
+                    as a result of enamel wear.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Lateral Luxation</h2>
+                  <h2 className="italic text-xl">Dentist</h2>
                   <p>
-                    Lateral luxation is the displacement of a tooth in the wrong
-                    direction while it is still attached to the gums.
+                    A dentist is a licensed medical professional specializing in
+                    oral health, including diagnosis, prevention, and treatment
+                    of dental diseases and conditions.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Pericoronitis</h2>
+                  <h2 className="italic text-xl">Hydrogen Peroxide</h2>
                   <p>
-                    Pericoronitis is the inflammation of soft tissues
-                    surrounding a tooth that has not fully erupted from the
-                    gums, causing pain.
+                    Hydrogen peroxide is a common ingredient in teeth whitening
+                    solutions, known for its ability to break down stains and
+                    lighten tooth color.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Root Canal</h2>
+                  <h2 className="italic text-xl">Relief ACP</h2>
                   <p>
-                    The chamber within the root of the tooth that contains the
-                    pulp.
+                    Relief ACP, or amorphous calcium phosphate, is a dental gel
+                    that helps reduce tooth sensitivity and promote enamel
+                    repair during whitening treatments.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Tooth Avulsion</h2>
+                  <h2 className="italic text-xl">Stained Dentin</h2>
                   <p>
-                    Tooth avulsion occurs when a tooth completely displaces from
-                    the socket due to an accident or health condition. It can be
-                    replanted with immediate dental care.
+                    Stained dentin refers to discoloration within the inner
+                    layer of the tooth, usually requiring professional treatment
+                    to restore brightness.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Tooth Fracture</h2>
+                  <h2 className="italic text-xl">Surface Enamel</h2>
                   <p>
-                    A tooth fracture can result from trauma such as sports
-                    injuries, biting hard objects, or falls. Treatment depends
-                    on the severity of the crack.
+                    Surface enamel is the outermost protective layer of the
+                    tooth, vulnerable to staining and erosion but crucial for
+                    tooth strength and appearance.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Surface Teeth Stains</h2>
+                  <p>
+                    Surface teeth stains occur on the enamel due to substances
+                    like coffee, tea, wine, or tobacco, and are typically
+                    treatable with whitening solutions.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">
+                    Teeth Whitening Concentrate
+                  </h2>
+                  <p>
+                    Teeth whitening concentrate is the active bleaching agent in
+                    whitening treatments, more potent and effective when
+                    administered professionally.
                   </p>
                   <hr className="mt-4" />
                 </div>

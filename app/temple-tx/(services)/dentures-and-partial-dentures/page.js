@@ -3,6 +3,7 @@ import { FaCaretDown } from "react-icons/fa";
 import { Cinzel } from "next/font/google";
 import Link from "next/link";
 import { FaYelp } from "react-icons/fa";
+import Image from "next/image";
 
 const cinzel = Cinzel({
   subsets: ["latin"], // you can add 'latin-ext' if needed
@@ -13,30 +14,31 @@ const Services = () => {
   return (
     <>
       {/* intro section */}
-      <section className="grid md:grid-cols-[1fr_1fr_1fr] grid-cols-1 md:gap-2  md:mt-[85px]  border-y-[10px] border-dark mx-2">
-        <div className="bg-[url(/damage-my-dentures.webp)] bg-cover my-10"></div>
+      <section className="grid md:grid-cols-[1fr_1fr_1fr] grid-cols-1 md:gap-2  md:mt-[125px]  border-y-[10px] border-dark mx-2">
+        <div className="bg-[url(/dentures-and-partial-dentures.webp)] bg-cover my-10"></div>
 
-        <div className="px-10 py-10 space-y-3">
+        <div className="px-10 py-5 space-y-3">
           <h2 className="text-5xl font-cinzel text-primary">
-            What Do I Do If I Damage My Dentures
+            Dentures and Partial Dentures
           </h2>
           <p className="font-cinzel text-primary">Temple, TX</p>
           <p className="font-tinos  text-justify">
-            Many patients find dentures excellent replacements for natural
-            teeth. Over time, however, they may need to be adjusted or remade
-            from normal wear. Dental professionals advise patients against
-            fixing dentures themselves because they could damage the denture
-            beyond repair.
+            Dentures and partial dentures are most commonly associated with
+            seniors, but many young people wear them too. According to the
+            National Health and Nutrition Examination Survey, adult tooth loss
+            has been on the decline since the 1960s. Even so, many Americans
+            rely on dentures to improve not just their smiles but also their
+            speech and ability to chew food comfortably.
           </p>
           <p className="font-tinos  text-justify">
-            At Revital Dental, we can help you with fixing dentures in Temple
-            and the surrounding area. Unfortunately, accidents happen, and
-            dentures can get damaged. This may not only be uncomfortable but
-            also cause injury to your mouth. We may be able to help. Call us at
-            (254) 207-0708 to schedule an appointment today.
+            Dentures and partial dentures are available at Revital Dental in
+            Temple and the surrounding area. Dentures and partial dentures fill
+            any tooth loss gaps with false teeth. We offer a range of tooth
+            replacement options. If you are ready to learn more about the
+            available options, reach out to us by phone (254) 207-0708.
           </p>
         </div>
-        <div className="py-10">
+        <div className="py-5">
           <form
             action=""
             className="w-full mx-auto mt-10 md:mt-0 max-w-[400px]"
@@ -87,137 +89,177 @@ const Services = () => {
       {/* explanation */}
       <section className="md:grid md:grid-cols-[3fr_1fr]  md:w-[90%] w-[100%] md:mx-auto px-2 mt-3 gap-2">
         {/* left section */}
-        <div className="left-section " id="how-dentures-damaged">
+        <div className="left-section " id="why-dentures-preferred">
           {/* dark section */}
-          <div className="bg-dark p-5 text-white">
+          <div
+            className="bg-dark p-5 text-white"
+          >
             <h2 className="text-2xl font-cinzel mb-3">
-              How Dentures Get Damaged
+              Reasons to Get Dentures
             </h2>
             <hr />
             <p className="text-justify font-tinos mt-4">
-              Though dentures will last for many years, some damage is
-              inevitable and occurs gradually with regular wear. The mouth and
-              jaw change over time which can cause dentures to fit poorly. It is
-              possible for improper fit to damage dentures, as misalignment may
-              cause undue stress to the devices when the patient bites down.
+              Dentures are not the only tooth replacement option. Implants have
+              become more popular in recent years. However, not every tooth
+              replacement option is the right choice for every patient. Here are
+              several reasons people may prefer dentures to other tooth
+              replacement options:
             </p>
+
+            <ul className="font-tinos text-justify list-disc  pl-4 mt-2">
+              <li>
+                <span className="font-bold">
+                  Dentures may be an affordable solution to tooth loss:{" "}
+                </span>{" "}
+                Other tooth replacement options tend to cost more, usually
+                contingent upon the insurance provider. Traditional full
+                dentures and partial dentures are typically more cost-efficient
+                than the alternatives. This is true even when factoring in the
+                cost of replacing the dentures every 5-10 years.
+              </li>
+              <li>
+                <span className="font-bold">
+                  Lower risk associated with denture procedure:
+                </span>{" "}
+                The patient prefers to avoid the risk of a potentially painful
+                bridge failure. Dental implants require more invasive surgery,
+                by nature making them riskier. Age and potential bone loss can
+                increase risk.
+              </li>
+              <li>
+                <span className="font-bold">
+                  Dentures can be received relatively quickly:
+                </span>{" "}
+                The denture process typically takes less time than implant
+                procedures. Dental implants may take a year or more to complete.
+                Healing periods between steps may last for up to six months.
+              </li>
+            </ul>
             <p className="text-justify font-tinos mt-4">
-              Furthermore, metal clasps, more common in dental bridges, can come
-              loose or break off. Some dentures get damaged suddenly from an
-              impact. The American Dental Association recommends dentures be
-              evaluated by a professional when the prosthetic teeth are cracked,
-              broken, or missing.
-            </p>
-            <p className="text-justify font-tinos mt-4">
-              Patients may find it beneficial to use denture adhesive to help
-              get used to dentures. Dentures should be checked for fit when they
-              become loose and need more adhesive to stabilize. If dentures fall
-              out, the impact could damage and crack them.
+              The tooth replacement method the patient chooses depends on their
+              unique situation. One should examine all their options when making
+              this decision. Our team can offer the guidance you need in
+              deciding if dentures are right for you.
             </p>
           </div>
 
-          {/* question and answer section */}
           {/* quote */}
           <div className="relative inline-block mt-10">
             <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-              “The mouth and jaw change over time, which can cause dentures to
-              fit poorly.”
+              “Traditional full dentures and partial dentures are typically more
+              cost-efficient than the alternatives.”
             </h2>
             <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
           </div>
+
           {/* Q & A */}
-          <div className="mt-10" id="care-for-dentures">
+          <div className="mt-10" id="how-dentures-made">
             <h2 className="font-cinzel text-2xl text-primary">
-              Tips To Care For Dentures
+              The Denture Process
             </h2>
             <hr />
             <p className="font-tinos mt-2 text-justify">
-              As fragile items, dentures must be adequately taken care of to
-              prevent damage. Good habits increase the longevity of dentures and
-              bridges. The American College of Prosthodontists recommends
-              treating dentures like fine china. Patients should follow these
-              guidelines to take care of dentures:
+              Typically, the process starts with taking an impression of the
+              mouth. From that, the dentist creates a model using dental stone
+              as a cast. Our team may ask the patient to try several different
+              sets of sterilized dentures to determine the ideal fit and the
+              preferred color and size of teeth. After these selections, the
+              dentist may make some adjustments to the cast. Then, it is sent to
+              a dental laboratory for completion.
             </p>
-            <ul className="font-tinos text-justify list-disc  pl-4 mt-2">
-              <li>
-                When washing dentures, hold them over a folded towel or basin of
-                water. If dentures get dropped, it will soften the impact
-              </li>
-              <li>
-                Use denture brushes and cleaning products approved by the ADA
-              </li>
-              <li>
-                Soak dentures in a solution or jaw of water when not being worn.
-                Otherwise, they run the risk of being dried out
-              </li>
-              <li>
-                Refrain from using hot water to clean dentures. Hot or boiling
-                water can warp dentures
-              </li>
-              <li>
-                Clean your dentures every day. Patients should brush their gums,
-                tongue, and palate to remove plaque before inserting dentures
-              </li>
-
-              <li>Use adhesive to help dentures remain stable in the mouth</li>
-              <li>
-                Get dentures adjusted when the fit seems off. Dentures that fit
-                correctly are less likely to fall out
-              </li>
-              <li>Keep dentures away from pets and children</li>
-            </ul>
+            <p className="font-tinos mt-2 text-justify">
+              At the dental laboratory, technicians may create a wax version of
+              the gum line. These technicians make the replacement teeth from a
+              material that closely resembles real teeth known as resin.
+              Virtually, all labs seek approval from the patient and dentist
+              before proceeding with the finishing touches.
+            </p>
+            <p className="font-tinos mt-2 text-justify">
+              Following approval, the technician removes the wax and replaces it
+              with acrylic. This looks far more realistic. This process entails
+              boiling the wax out, drilling holes in the teeth, and injecting
+              the acrylic. Finally, technicians clean up the teeth and polish
+              the appliance. The entire process may require the patient to visit
+              the dentist’s office four to five times.
+            </p>
           </div>
 
-          {/* quote */}
-          <div className="relative inline-block mt-10 w-full">
+          <div className="relative inline-block mt-10">
             <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-              “Good habits increase the longevity of dentures and bridges.”
+              “Our team may ask the patient to try several different sets of
+              sterilized dentures to determine the ideal fit as well as the
+              preferred color and size of teeth.”
             </h2>
             <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
           </div>
+
           {/* Q & A */}
-          <div className="mt-10" id="damaged-dentures">
+          <div className="mt-10" id="types-of-dentures">
             <h2 className="font-cinzel text-2xl text-primary">
-              What To Do When Dentures Get Damaged
+              Types of Dentures
             </h2>
             <hr />
+
             <p className="font-tinos mt-2">
-              Accidents still happen despite all precautions. If dentures are
-              damaged, the patient should make an appointment with a dental
-              professional for repairs or adjustments. Fortunately, there are
-              proactive steps patients can take until they can get to the
-              dentist:
+              When considering dentures, patients can choose between full and
+              partial dentures. In fact, over the past few years, dentists
+              created hybrids with other dental treatments to provide patients
+              with even more options. Here is a shortlist of denture options one
+              can consider:
+            </p>
+            <ol className="font-tinos text-justify list-disc pl-4 mt-2">
+              <li>
+                <span className="font-bold">Full Dentures.</span> Most commonly
+                used by seniors, these dentures replace a complete set of teeth.
+                They sit directly on top of the gums. Some patients are good
+                candidates for immediate placement. In this instance, the
+                dentist places the previously made dentures immediately after
+                the extraction of the teeth. For everyone else, the dentist may
+                recommend waiting eight to 12 weeks after teeth removal.
+              </li>
+              <li>
+                <span className="font-bold">Partial Dentures.</span> If the
+                patient still has a number of healthy teeth left, the dentist
+                may recommend partial dentures. This usually requires the use of
+                a metal piece to which a pink-colored base is attached. The
+                metal helps to anchor the false teeth to the natural teeth to
+                prevent movement.
+              </li>
+              <li>
+                <span className="font-bold">Implant-Supported Dentures.</span>{" "}
+                This method blends dental implants with dentures. Instead of
+                anchoring all the teeth in place individually, the dentist may
+                add several dental implants that hold the full upper and/or
+                lower set in place. Dentists may use this for partial dentures
+                too. These dentures are not removable once in place. Please note
+                that not all patients are good candidates for these.
+              </li>
+              <li>
+                <span className="font-bold">
+                  Overdentures or Snap-In Dentures.
+                </span>{" "}
+                When patients prefer to retain the ability to remove dentures,
+                but like the stability of implants, they may opt for
+                overdentures. These are handy in instances where a person has no
+                teeth, as the dental implants provide an anchor that the teeth
+                can sit on. For even more excellent stability, patients may opt
+                for snap-in dentures. In this case, the implants have locator
+                receptors, and the dentures have attachments. These work
+                together to snap the dentures into place for a snug fit.
+              </li>
+            </ol>
+            <p className="font-tinos mt-2">
+              The option a patient chooses will depend on that patient's unique
+              situation and health. Our team is available to discuss all the
+              options. We will help you determine the right one for you.
             </p>
 
-            <ul className="font-tinos text-justify list-disc  pl-4 mt-2">
-              <li>
-                Use dental wax as a temporary barrier if wires are irritating
-                the gums
-              </li>
-              <li>Avoid wearing damaged dentures to prevent further injury</li>
-              <li>
-                Soak dentures in water or a cleaning solution to keep them moist
-              </li>
-              <li>
-                Transport dentures in a proper case for safety and hygiene
-              </li>
-              <li>
-                Do not use over-the-counter glues, as they may not be safe for
-                oral use
-              </li>
-            </ul>
-            <p className="font-tinos mt-2">
-              The amount of time it takes to fix dentures depends on many
-              factors. If the dentures cannot be repaired immediately, patients
-              may want to discuss other options with their dentist while waiting
-              for their repair. Some patients have a spare set of dentures just
-              in case the regular set gets damaged.
-            </p>
             {/* quotes */}
             <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “Fortunately, there are still proactive steps patients can take
-                until they can get to the dentist.”
+                “In fact, over the past few years, dentists created hybrids with
+                other dental treatments to provide patients with even more
+                options.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
@@ -238,36 +280,59 @@ const Services = () => {
               </h2>
             </div>
 
-            <div className="mt-10" id="fix-dentures-myself">
+            <div className="mt-10" id="cleaning-dentures">
               <h2 className="font-cinzel text-2xl text-primary">
-                Fixing Dentures at Home
+                How to Care for Dentures
               </h2>
               <hr />
               <p className="font-tinos mt-2 text-justify">
-                Most dentists advise against patients fixing their own dentures
-                at home. Patients should approach these repairs with caution and
-                only use them as short-term solutions. The patient risks
-                damaging the dentures further or introducing unsafe chemicals
-                into the mouth. The best course of action is for the patient to
-                call our team right away for advice on a temporary fix while
-                waiting to see the dentist.
+                The Canadian Dental Association explains that good dental
+                hygiene is essential to maintain the appearance and function of
+                new veneers. Brushing and flossing after meals and visiting the
+                dentist for regular check-ups are critical aspects of proper
+                maintenance. Skipping these steps can cause decay and cavities
+                to develop between or under the veneer shells.
               </p>
+
               <p className="font-tinos mt-2 text-justify">
-                Just as one should never use over-the-counter glues on dentures,
-                The American College of Prosthodontists does not recommend home
-                repair kits for denture repair. However, if a patient chooses to
-                use a home repair kit, they should make sure that it is
-                FDA-approved for dental use. Make an appointment to see our team
-                as soon as possible, as these kits can only offer temporary
-                solutions.
+                Dentures do require ongoing maintenance outside of the typical
+                oral hygiene routine. Many people believe they can set dentures
+                down by the side of the bed. However, this can lead to warping
+                and cracking over time.
+              </p>
+
+              <p className="font-tinos mt-2 text-justify">
+                Patients should soak dentures overnight. Avoid hot water, as
+                this may also cause warping. Never use a denture solution
+                directly in the mouth. Patients who use denture solutions should
+                rinse thoroughly before placing dentures in the mouth because
+                denture solutions should not be ingested. Our team can help you
+                determine if a solution is right for your regimen.
+              </p>
+
+              <p className="font-tinos mt-2 text-justify">
+                It is also important to note that dentures require cleaning,
+                just like regular teeth do. Whenever possible, remove dentures
+                after eating or drinking and rinse them to get rid of food
+                particles. Patients should brush dentures at least once per day.
+                Dentists recommend a soft-bristled brush as a more abrasive
+                brush may cause damage over time.
+              </p>
+
+              <p className="font-tinos mt-2 text-justify">
+                Even if no teeth remain, continued dental hygiene is essential.
+                Brush the teeth and gums and floss any remaining teeth. Patients
+                may use gauze or a soft bristled toothbrush to clean the cheeks,
+                roof of the mouth, and the tongue. Finally, people who use
+                adhesives should take care to remove it.
               </p>
             </div>
 
             {/* quotes */}
             <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “The American College of Prosthodontists does not recommend home
-                repair kits for denture repair.”
+                “Dentures do require ongoing maintenance outside of the typical
+                oral hygiene routine.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
@@ -280,64 +345,18 @@ const Services = () => {
               <div className="flex flex-col">
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#how-dentures-damaged"
+                  href="#why-dentures-preferred"
                 >
                   Q.{" "}
                   <span className="underline">
-                    How do dentures get damaged?
+                    Why are dentures a preferred treatment?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#care-for-dentures"
+                  href="#how-dentures-made"
                 >
-                  Q.{" "}
-                  <span className="underline">
-                    How can I care for my dentures?
-                  </span>
-                </a>
-                <a
-                  className="text-justify font-tinos mt-3"
-                  href="#damaged-dentures"
-                >
-                  Q.{" "}
-                  <span className="underline">
-                    What should I do if I have damaged my dentures?
-                  </span>
-                </a>
-                <a
-                  className="text-justify font-tinos mt-3"
-                  href="#fix-dentures-myself"
-                >
-                  Q.{" "}
-                  <span className="underline">
-                    Can I fix my dentures myself?
-                  </span>
-                </a>
-              </div>
-
-              <h2 className="text-4xl text-center font-cinzel mb-3 mt-3">
-                People Also Ask
-              </h2>
-              <hr />
-              <div className="flex flex-col mb-4">
-                <a
-                  className="text-justify font-tinos mt-3"
-                  href="#reline-rebase-dentures"
-                >
-                  Q.{" "}
-                  <span className="underline">
-                    How can I tell if my dentures need to be relined or rebased?
-                  </span>
-                </a>
-                <a
-                  className="text-justify font-tinos mt-3"
-                  href="#dentist-denture-maintenance"
-                >
-                  Q.{" "}
-                  <span className="underline">
-                    Can a dentist help ensure my dentures are in good condition?
-                  </span>
+                  Q. <span className="underline">How are dentures made?</span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
@@ -348,10 +367,98 @@ const Services = () => {
                     What are the different types of dentures?
                   </span>
                 </a>
+                <a
+                  className="text-justify font-tinos mt-3"
+                  href="#cleaning-dentures"
+                >
+                  Q.{" "}
+                  <span className="underline">
+                    How should I clean my dentures?
+                  </span>
+                </a>
+                <a
+                  className="text-justify font-tinos mt-3"
+                  href="#dentures-longevity"
+                >
+                  Q.{" "}
+                  <span className="underline">How long do dentures last?</span>
+                </a>
+              </div>
+              <h2 className="text-4xl text-center font-cinzel mb-3 mt-3">
+                People Also Ask
+              </h2>
+              <hr />
+              <div className="flex flex-col mb-4">
+                <a
+                  className="text-justify font-tinos mt-3"
+                  href="#removable-partial-dentures"
+                >
+                  Q.{" "}
+                  <span className="underline">
+                    How do removable partial dentures work?
+                  </span>
+                </a>
+                <a
+                  className="text-justify font-tinos mt-3"
+                  href="#partial-dentures-one-tooth"
+                >
+                  Q.{" "}
+                  <span className="underline">
+                    What are the pros and cons of partial dentures for one
+                    missing tooth?
+                  </span>
+                </a>
+                <a
+                  className="text-justify font-tinos mt-3"
+                  href="#why-dentures-preferred"
+                >
+                  Q.{" "}
+                  <span className="underline">
+                    Why are dentures a preferred treatment?
+                  </span>
+                </a>
               </div>
             </div>
 
+            <div className="mt-10" id="dentures-longevity">
+              <h2 className="font-cinzel text-2xl text-primary">
+                Common Myths and Misconceptions
+              </h2>
+              <hr />
+              <p className="font-tinos mt-2 text-justify">
+                One of the most common myths we hear about dentures is that once
+                a patient gets their dentures created and placed, they are set
+                for life. Dentures typically last for five to 10 years. Since
+                this is a long time, patients may wonder how to know when they
+                need new dentures. If the color has changed dramatically or
+                there is physical damage, dentures may need replacement. A
+                common telling sign is when they no longer fit securely.
+              </p>
+
+              <p className="font-tinos mt-2 text-justify">
+                Some people believe that if they remove all their teeth and get
+                full dentures, they will never need to set foot in a dentist’s
+                office again.This is not true and regular dental visits are
+                still necessary. Dentists are in the best position to tell
+                patients whether or not they need to get their dentures repaired
+                or replaced. In fact, the dentist may adjust dentures during
+                annual or bi-annual visits to keep them fitting correctly.
+                Dentists also pay keen attention to gum health especially if the
+                patient smokes or suffers from an illness affecting the gums.
+              </p>
+            </div>
+
+            <div className="relative inline-block mt-10 w-full">
+              <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
+                “Some people may also believe that if they remove all their
+                teeth and get full dentures, they’ll never need to set foot in a
+                dentist’s office again.”
+              </h2>
+              <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
+            </div>
+
             {/* Q & A */}
+
             <div className="bg-gray-100 p-5 mt-10">
               <h2 className="text-4xl text-center font-cinzel mb-3 text-primary">
                 Frequently Asked Questions
@@ -359,67 +466,85 @@ const Services = () => {
               <hr />
               <div className="flex flex-col">
                 <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q. Can I repair my own dentures?
+                  Q.{" "}
+                  <span className="underline">
+                    Will dentures change my appearance?
+                  </span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. You may be able to address minor, temporary fixes to your
-                  dentures, but only dental professionals can tackle any
-                  significant issues. Trying to fix dentures yourself can only
-                  damage them further. It is safer and more affordable to bring
-                  your dentures to our office.
+                  A. When patients lose their teeth, the bone loss may begin to
+                  cause the cheek to look hollow and sunken. Dentures can help
+                  to fill out space and retain the face’s original shape. Having
+                  a full set of teeth that look beautiful and healthy also
+                  improves a person’s appearance and overall confidence.
                 </p>
-
                 <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q. What can I do if a tooth falls out of my dentures?
+                  Q.{" "}
+                  <span className="underline">
+                    Is it difficult to eat with dentures?
+                  </span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. If you lose a tooth from the denture, try to save the
-                  tooth. Make an appointment with a prosthodontist for repairs.
-                  If you cannot find the tooth, there is no need to panic. The
-                  denture lab that offers repairs will typically have
-                  replacement teeth.
+                  A. Eating with dentures may feel uncomfortable for a few
+                  weeks, just as when people get braces for the first time.
+                  However, over time, it becomes easier. In the beginning, try
+                  to stay away from foods that meet any of the following
+                  criteria:
                 </p>
-
+                <div className="list-disc pl-6 font-tinos mt-2">
+                  <ul>
+                    <li>Sharp-edged</li>
+                    <li>Tough</li>
+                    <li>Sticky</li>
+                    <li>Hot</li>
+                  </ul>
+                </div>
                 <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q. What do I do if I damage my dentures?
+                  Q.{" "}
+                  <span className="underline">
+                    Are there any risks associated with dentures?
+                  </span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Do not wear damaged dentures. Call your dentist and ask for
-                  an appointment to fix your dentures. Damaged dentures are
-                  uncomfortable and can harm your oral health.
+                  A. A 2015 study published by the National Institute of Health
+                  found that seniors who wore dentures while they slept
+                  long-term faced a higher risk of developing pneumonia. The CDC
+                  also believes dentures may negatively affect nutrition. They
+                  attribute this to denture wearers avoiding fruits and
+                  vegetables because they are more difficult to chew.
                 </p>
-
                 <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q. Can I use superglue on my dentures?
+                  Q. <span className="underline">Are Adhesives Necessary?</span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Do not use any non-ADA approved glue to fix your dentures,
-                  even if it is just temporary. The bond will not hold well, and
-                  it is not safe to have these glues in your mouth. Plus, some
-                  types of superglue are water-soluble, which means that saliva
-                  will dissolve the bond.
+                  A. Patients who have lost all their natural teeth may require
+                  adhesives, while others may not. Even so, patients with only
+                  partial tooth loss may choose to use adhesives for additional
+                  support. It may also assist people suffering from neurological
+                  disabilities, dry mouth, or who take certain medications.
                 </p>
-
                 <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q. Why do dentures become warped or cracked?
+                  Q.{" "}
+                  <span className="underline">How Much Do Dentures Cost?</span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Dentures lose their shape over time when they dry out. They
-                  may also crack after being dropped onto a hard surface.
-                  Placing dentures in hot water can cause them to warp. When
-                  dentures do not fit, contact a professional.
+                  A. Dentures tend to be more affordable than other tooth
+                  replacement options. Each case is different, and the
+                  individual selections a patient makes can affect the cost.
+                  Generally speaking, dentures offer the most cost-effective
+                  full tooth replacement. When patients choose hybrid options
+                  that involve implants, the price may increase for each implant
+                  added.
                 </p>
-
                 <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q. How long should my dentures last?
+                  Q.{" "}
+                  <span className="underline">How Can I Pay for Dentures?</span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. When dentures are adequately taken care of, a set can last
-                  up to 10 years. The American College of Prosthodontists
-                  recommends getting your dentures evaluated when the prosthesis
-                  is over five years old. If the prosthetic teeth are cracked,
-                  broken, or missing, instead of fixing dentures, replacement
-                  may be necessary.
+                  A. Dental insurance may cover the cost of dentures. However,
+                  there may be a waiting period due to a pre-existing condition.
+                  Some patients rely on dental savings plans. Your insurance
+                  provider can discuss with you the details.
                 </p>
               </div>
             </div>
@@ -484,90 +609,82 @@ const Services = () => {
                 <div className="mt-5 font-tinos">
                   <h2 className="italic text-xl">Alveolar Bone</h2>
                   <p>
-                    The alveolar bone is the part of the jawbone that surrounds
-                    the roots of the teeth and helps anchor them in place. It
-                    plays a vital role in dental health and tooth stability.
+                    The alveolar bone is the bone surrounding the root of the
+                    tooth that keeps the tooth in place.
                   </p>
                   <hr className="mt-4" />
                 </div>
-
                 <div className="mt-5 font-tinos">
                   <h2 className="italic text-xl">Clasp</h2>
                   <p>
-                    A clasp is a small metal or plastic component of a removable
-                    partial denture that helps secure the denture by attaching
-                    to natural teeth.
+                    A clasp is a device that holds a removable partial denture
+                    prosthesis to the teeth.
                   </p>
                   <hr className="mt-4" />
                 </div>
-
                 <div className="mt-5 font-tinos">
                   <h2 className="italic text-xl">Denture Base</h2>
                   <p>
-                    The denture base is the pink, gum-colored portion of a
-                    denture that holds the artificial teeth and rests on the
-                    oral tissues, providing support and stability.
+                    The denture base is the part of the denture that connects
+                    the artificial teeth with the soft tissue of the gums.
                   </p>
                   <hr className="mt-4" />
                 </div>
-
                 <div className="mt-5 font-tinos">
                   <h2 className="italic text-xl">Edentulous</h2>
                   <p>
-                    Edentulous refers to a condition where a person is missing
-                    all natural teeth in one or both arches, requiring full
-                    dentures or implants for restoration.
+                    Edentulous is a term that applies to people who do not have
+                    any teeth.
                   </p>
                   <hr className="mt-4" />
                 </div>
-
                 <div className="mt-5 font-tinos">
                   <h2 className="italic text-xl">Periodontal Disease</h2>
                   <p>
-                    Periodontal disease is an infection of the tissues
-                    surrounding the teeth, commonly caused by poor oral hygiene.
-                    It can lead to gum recession, bone loss, and tooth loss if
-                    untreated.
+                    Periodontal disease is a condition that causes inflammation
+                    of the gingival tissues and membrane of the teeth, leading
+                    to tooth loss without professional treatment.
                   </p>
                   <hr className="mt-4" />
                 </div>
-
                 <div className="mt-5 font-tinos">
                   <h2 className="italic text-xl">Pontic</h2>
                   <p>
-                    A pontic is an artificial tooth used in a dental bridge to
-                    replace a missing tooth. It is supported by adjacent natural
-                    teeth or implants.
+                    Pontic is another term for an artificial tooth on a fixed
+                    partial denture.
                   </p>
                   <hr className="mt-4" />
                 </div>
-
                 <div className="mt-5 font-tinos">
                   <h2 className="italic text-xl">Rebase</h2>
                   <p>
-                    Rebase is the dental procedure of replacing the entire
-                    acrylic base of a denture while keeping the existing teeth,
-                    typically used when the denture base wears out.
+                    Rebase is the process of refitting denture prosthesis by
+                    replacing the base material.
                   </p>
                   <hr className="mt-4" />
                 </div>
-
                 <div className="mt-5 font-tinos">
                   <h2 className="italic text-xl">Reline</h2>
                   <p>
-                    Reline is a process where the inner surface of a denture is
-                    reshaped with new material to improve its fit due to gum
-                    changes or bone resorption.
+                    Reline is when a professional resurfaces the surface of the
+                    prosthesis with a new base material.
                   </p>
                   <hr className="mt-4" />
                 </div>
-
                 <div className="mt-5 font-tinos">
                   <h2 className="italic text-xl">Resin/Acrylic</h2>
                   <p>
-                    Resin or acrylic materials are used in the fabrication of
-                    dentures. These durable and biocompatible substances form
-                    the base and sometimes the artificial teeth of the denture.
+                    Resin and Acrylic are resinous materials that can be
+                    components in a denture base.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Stomatitis</h2>
+                  <p>
+                    Stomatitis is the inflammation of the tissue that is
+                    underlying a denture that does not fit properly. It can also
+                    result from other oral health factors.
                   </p>
                   <hr className="mt-4" />
                 </div>

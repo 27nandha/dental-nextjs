@@ -3,7 +3,6 @@ import { FaCaretDown } from "react-icons/fa";
 import { Cinzel } from "next/font/google";
 import Link from "next/link";
 import { FaYelp } from "react-icons/fa";
-import Image from "next/image";
 
 const cinzel = Cinzel({
   subsets: ["latin"], // you can add 'latin-ext' if needed
@@ -14,31 +13,29 @@ const Services = () => {
   return (
     <>
       {/* intro section */}
-      <section className="grid md:grid-cols-[1fr_1fr_1fr] grid-cols-1 md:gap-2 md:mt-[85px] border-y-[10px] border-dark mx-2">
-        <div className="bg-[url(/kid-friendly-dentist.webp)] bg-cover my-10"></div>
+      <section className="grid md:grid-cols-[1fr_1fr_1fr] grid-cols-1 md:gap-2  md:mt-[125px]  border-y-[10px] border-dark mx-2">
+        <div className="bg-[url(/oral-cancer-screening.webp)] bg-cover my-10"></div>
 
-        <div className="px-10 py-5 space-y-3">
+        <div className="px-10 py-10 space-y-3">
           <h2 className="text-5xl font-cinzel text-primary">
-            Kid Friendly Dentist
+            Oral Cancer Screening
           </h2>
           <p className="font-cinzel text-primary">Temple, TX</p>
           <p className="font-tinos  text-justify">
-            A kid friendly dentist is a dental professional who has the unique
-            skills and experience to provide professional dental care and
-            comfort for children and younger patients. Kid friendly dentists
-            desire to provide children with positive experiences at the dental
-            office. The office and waiting room are both designed to create a
-            kid friendly environment, with friendly staff ready to assuage any
-            fears or concerns.
+            Oral cancer screenings can identify the signs of disease before it
+            has spread. This may be beneficial to those in high-risk groups.
+            Regular oral cancer screenings can give patients the advantage of
+            treating cancer in the early stages when there is a higher chance
+            for remission.
           </p>
           <p className="font-tinos  text-justify">
-            A kid friendly dentist is available at Revital Dental in Temple and
-            the surrounding area. Get your child started on the road to good
-            oral health. Call Revital Dental today at (254) 207-0708 to set up
-            an appointment.
+            Oral cancer screenings are available at Revital Dental in Temple and
+            the surrounding area. Early detection may make cancer treatment more
+            effective. Call us at (254) 207-0708 to schedule an appointment
+            today.
           </p>
         </div>
-        <div className="py-5">
+        <div className="py-10">
           <form
             action=""
             className="w-full mx-auto mt-10 md:mt-0 max-w-[400px]"
@@ -89,100 +86,109 @@ const Services = () => {
       {/* explanation */}
       <section className="md:grid md:grid-cols-[3fr_1fr]  md:w-[90%] w-[100%] md:mx-auto px-2 mt-3 gap-2">
         {/* left section */}
-        <div className="left-section " id="kid-friendly-ages">
+        <div className="left-section " id="oral-cancer-screening-frequency">
           {/* dark section */}
           <div className="bg-dark p-5 text-white">
             <h2 className="text-2xl font-cinzel mb-3">
-              Ages Treated by a Kid Friendly Dentist
+              Why Have Regular Oral Cancer Screenings?
             </h2>
             <hr />
             <p className="text-justify font-tinos mt-4">
-              Taking your child to a dentist tuned in specifically to children’s
-              needs can help alleviate the stress and anxiety that comes with
-              visits. This allows for a positive association at a young age with
-              dental hygiene and helps curate healthy lifelong habits. Our staff
-              is warm and used to engaging with children, allowing for easy and
-              fun interactions as soon as each child walks through the door.
+              Regular oral cancer screenings can be as important as regular
+              dental checkups. Fortunately, patients can ask to get both
+              procedures done at the same time. As per the National Cancer
+              Institute, oral cancer symptoms tend not to appear until the
+              disease has spread. Early detection may make oral cancer easier to
+              treat when the chances for remission are higher.
             </p>
             <p className="text-justify font-tinos mt-4">
-              A kid friendly dentist can make dentistry a pleasant experience
-              for children of any age, even your kindergartener. Kid friendly
-              dentists have the expertise needed to make little ones feel safe
-              and sound in the dentist’s chair. It is essential for children to
-              get the dental care they need early on, so parents should never
-              delay to get them the treatment they need.
+              According to WebMD, everyone should have a dental checkup at least
+              once a year. However, experts have yet to reach a consensus on how
+              often patients should go in for an oral cancer screening. A
+              dentist may be able to conduct a comprehensive exam to determine
+              how frequently a patient should have screenings.
+            </p>
+          </div>
+
+          {/* question and answer section */}
+          {/* quote */}
+          <div className="relative inline-block mt-10">
+            <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
+              “Early detection may make oral cancer easier to treat when the
+              chances for remission are higher.”
+            </h2>
+            <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
+          </div>
+          {/* Q & A */}
+          <div className="mt-10" id="oral-cancer-risk-factors">
+            <h2 className="font-cinzel text-2xl text-primary">
+              Groups at High Risk for Oral Cancer
+            </h2>
+            <hr />
+            <p className="font-tinos mt-2 text-justify">
+              Certain groups may benefit from regular oral cancer screenings
+              more than others. Common risk factors include but are not limited
+              to:
+            </p>
+
+            <ul className="font-tinos text-justify list-disc  pl-4 mt-2">
+              <li>A history of oral cancer</li>
+              <li>Certain types of human papillomavirus (HPV)</li>
+              <li>Regular consumption of a lot of alcohol</li>
+              <li>Excessive amounts of time spent in the sun</li>
+              <li>Tobacco use, in any form</li>
+            </ul>
+            <p className="font-tinos mt-2 text-justify">
+              Patients may find it beneficial to consult a professional about
+              their medical history to better determine their risk for oral
+              cancer.
             </p>
           </div>
 
           {/* quote */}
-          <div className="relative inline-block mt-10">
+          <div className="relative inline-block mt-10 w-full">
             <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-              “A kid friendly dentist can make dentistry a pleasant experience
-              for children of any age, even your kindergartener.”
+              “Some groups may benefit from regular oral cancer screenings more
+              than others.”
             </h2>
             <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
           </div>
-
           {/* Q & A */}
-          <div className="mt-10" id="kid-friendly-unique">
+          <div className="mt-10" id="oral-cancer-screening-limits">
             <h2 className="font-cinzel text-2xl text-primary">
-              Qualities That Make a Kid Friendly Dentist Unique
+              Limitations of Oral Cancer Screenings
             </h2>
             <hr />
-            <p className="font-tinos mt-2 text-justify">
-              Our waiting room is kid friendly, ensuring our patients are at
-              optimum comfort from the moment they walk through the door. We
-              know that kids do not have the same patience as adults, so we do
-              not think they need to have the same waiting space. Child friendly
-              furniture, toys, reading materials, and other safe and fun items
-              are available to entertain little hands and minds while they wait.
-            </p>
-            <p className="font-tinos mt-2 text-justify">
-              We also know that not all supplies are created equal. Dental tools
-              made for adults are often too large to work correctly for
-              procedures in smaller mouths and can cause discomfort or even
-              damage. Our instruments and supplies are varied to fit even our
-              littlest patients' needs.
-            </p>
-          </div>
-
-          <div className="relative inline-block mt-10">
-            <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-              “Our waiting room is kid friendly, ensuring our patients are at
-              optimum comfort from the moment they walk through the door.”
-            </h2>
-            <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
-          </div>
-
-          {/* Q & A */}
-          <div className="mt-10" id="kid-friendly-conditions">
-            <h2 className="font-cinzel text-2xl text-primary">
-              Concerns Treated by a Kid Friendly Dentist
-            </h2>
-            <hr />
-
             <p className="font-tinos mt-2">
-              At Revital Dental, we check for issues that may develop from
-              pacifier use, thumb sucking, or other common childhood habits that
-              can affect dental health. We also watch for tooth decay signs that
-              may come from poor nutrition or insufficient brushing and
-              flossing.
+              Although regular oral cancer screenings are integral to
+              maintaining good health, Mayo Clinic points out that it may be
+              difficult to detect abnormal cells through a simple visual exam.
+              Thus, there is always a possibility that a small sign of cancer or
+              precancerous lesion could go undetected.
+            </p>
+
+            <ul className="font-tinos text-justify list-disc  pl-4 mt-2">
+              <li>The back of the throat</li>
+              <li>The gums</li>
+              <li>The insides of the cheeks</li>
+              <li>The outside and the inside of the lips</li>
+              <li>The roof of the mouth</li>
+              <li>The tongue</li>
+            </ul>
+            <p className="font-tinos mt-2">
+              Patients with dentures must remove the devices to allow Revital
+              Dental to check the tissue underneath, along with the area
+              underneath the jaw.
             </p>
             <p className="font-tinos mt-2">
-              It is also crucial to note that oral health is inextricably linked
-              to overall health. Any tooth decay or gum disease may lead to
-              other forms of disease later on. As such, a kid friendly dentist
-              will closely monitor a child’s gum health. A kid friendly dentist
-              must also closely monitor a child’s baby teeth, as these
-              effectively act as placeholders for the permanent teeth.
+              All in all, the screening should take less than five minutes.
             </p>
-
             {/* quotes */}
             <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “At Revital Dental,we provide general oral health examinations
-                and visits, along with more specialized treatments based on the
-                needs of our young patients.”
+                “There is no special preparation required for an oral cancer
+                screening, and patients can typically expect screening to take
+                place during a routine dental appointment.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
@@ -203,34 +209,36 @@ const Services = () => {
               </h2>
             </div>
 
-            <div className="mt-10" id="kid-friendly-treatments">
+            <div className="mt-10" id="oral-cancer-screening-expect">
               <h2 className="font-cinzel text-2xl text-primary">
-                General Treatments Provided
+                What to Expect During an Oral Cancer Screening
               </h2>
               <hr />
               <p className="font-tinos mt-2 text-justify">
-                Our team provides general oral health examinations and visits,
-                along with more specialized treatments based on the needs of our
-                young patients. We can provide sealants to help minimize the
-                potential for decay and fillings when cavities become
-                problematic in both baby teeth and permanent ones.
+                Oral cancer screening requires no special preparation, and
+                patients can typically expect screening to take place during a
+                routine dental appointment. In most cases, a basic oral cancer
+                screening will consist of the dentist taking a thorough look at
+                all the parts of the patient's mouth, including:
               </p>
               <p className="font-tinos mt-2 text-justify">
-                We also keep a close watch on how teeth are coming in behind
-                baby teeth. We can use technology to spot problems before they
-                become an issue. This allows us to perform preventive procedures
-                and to create any necessary game plans early on, such as
-                utilizing braces or retainers to minimize the effects down the
-                road.
+                Dental bonding is one of the simplest, quickest, most
+                affordable, and least invasive cosmetic dental procedures
+                available. It necessitates removing very little enamel and
+                generally only requires anesthesia when performed to fill a
+                cavity, to reshape the tooth through drilling, or to fix a chip
+                near the nerve. Any preparation is minimal. Revital Dental works
+                closely with each patient to make sure they know what to expect.
+                The entire process takes about 30 to 60 minutes per tooth and
+                can be completed in one appointment.
               </p>
             </div>
 
             {/* quotes */}
             <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “Our team provides general oral health examinations and visits,
-                along with more specialized treatments based on the needs of our
-                young patients.”
+                “Dental bonding is one of the simplest, quickest, cheapest, and
+                least invasive cosmetic dental procedures available.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
@@ -243,48 +251,47 @@ const Services = () => {
               <div className="flex flex-col">
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#kid-friendly-ages"
+                  href="#oral-cancer-screening-frequency"
                 >
                   Q.{" "}
                   <span className="underline">
-                    What ages does a kid friendly dentist treat?
+                    How frequently should I get an oral cancer screening?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#kid-friendly-unique"
+                  href="#oral-cancer-risk-factors"
                 >
                   Q.{" "}
                   <span className="underline">
-                    What makes a kid friendly dentist unique?
+                    Am I at high risk for developing oral cancer?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#kid-friendly-conditions"
+                  href="#oral-cancer-screening-limits"
                 >
                   Q.{" "}
                   <span className="underline">
-                    What conditions are treated by a kid friendly dentist?
+                    What are the limits of oral cancer screenings?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#kid-friendly-treatments"
+                  href="#oral-cancer-screening-expect"
                 >
                   Q.{" "}
                   <span className="underline">
-                    What treatments does a kid friendly dentist provide?
+                    What can I expect during my oral cancer screening?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#kid-friendly-techniques"
+                  href="#oral-cancer-additional-tests"
                 >
                   Q.{" "}
                   <span className="underline">
-                    What kind of techniques do kid friendly dentists use to calm
-                    children?
+                    Are there any additional tests after oral cancer screenings?
                   </span>
                 </a>
               </div>
@@ -296,161 +303,154 @@ const Services = () => {
               <div className="flex flex-col mb-4">
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#removable-partial-dentures"
+                  href="#causes-gum-disease"
                 >
-                  Q.{" "}
-                  <span className="underline">
-                    How do removable partial dentures work?
-                  </span>
+                  Q. <span className="underline">What causes gum disease?</span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#partial-dentures-one-tooth"
+                  href="#causes-bleeding-gums"
                 >
                   Q.{" "}
-                  <span className="underline">
-                    What are the pros and cons of partial dentures for one
-                    missing tooth?
-                  </span>
+                  <span className="underline">What causes bleeding gums?</span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#why-dentures-preferred"
+                  href="#gums-receding-reasons"
                 >
                   Q.{" "}
-                  <span className="underline">
-                    Why are dentures a preferred treatment?
-                  </span>
+                  <span className="underline">Why are my gums receding?</span>
                 </a>
               </div>
             </div>
 
-            <div className="mt-10" id="kid-friendly-techniques">
+            <div className="mt-10" id="oral-cancer-additional-tests">
               <h2 className="font-cinzel text-2xl text-primary">
-                How Kid Friendly Dentists Work
+                Additional Tests After Oral Cancer Screenings
               </h2>
               <hr />
               <p className="font-tinos mt-2 text-justify">
-                A kid friendly dentist will also be familiar with behavioral
-                techniques to help reduce fear and anxiety. These can include
-                calming techniques and methods to help diffuse the stress that
-                comes with painful or uncomfortable procedures. For instance,
-                they may use the "teach back" technique to ensure that patients
-                understand what they have learned about oral hygiene in a
-                stress-free manner.
+                Depending on the patient's situation, the dentist may perform
+                special tests in addition to the basic screening. More in-depth
+                oral cancer screenings can involve the patient rinsing their
+                mouth with blue dye to make any unusual cells more visible.
+                Additionally, the dentist may choose to shine a light in the
+                patient's mouth during the exam. This light will "highlight"
+                abnormal tissue by making it appear white.
               </p>
-
               <p className="font-tinos mt-2 text-justify">
-                A kid friendly dentist is perfect for children who are
-                intimidated by the prospect of being in the dentist’s chair. We
-                communicate with them in simple and easy-to-understand terms to
-                explain what we are doing. We are careful not to use scary
-                jargon or speak in a way that may cause a patient to feel
-                intimidated. It is important for us that our patients understand
-                what we are trying to convey and feel like they are part of the
-                process. Trust is integral in a healthy relationship, and we
-                know good communication is vital in achieving that.
+                If any of these tests find signs of oral cancer or any possibly
+                cancerous lesions, then the patient should undergo a biopsy.
+                This procedure consists of removing a sample of cells for
+                laboratory testing. The patient may also need to make a
+                follow-up appointment to see if the abnormal area has grown or
+                changed since detection.
               </p>
             </div>
-
             <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “A kid friendly dentist is perfect for children who are
-                intimidated by the prospect of being in the dentist’s chair.”
+                “Depending on the patient’s situation, the dentist may perform
+                special tests in addition to the basic screening.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
 
             {/* Q & A */}
-
             <div className="bg-gray-100 p-5 mt-10">
               <h2 className="text-4xl text-center font-cinzel mb-3 text-primary">
                 Frequently Asked Questions
               </h2>
               <hr />
               <div className="flex flex-col">
-                <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q.{" "}
-                  <span className="underline">
-                    Will a kid friendly dentist explain oral hygiene to my
-                    child?
-                  </span>
+                <h2
+                  id="clear-aligners-after-braces"
+                  className="text-justify text-primary font-tinos mt-3"
+                >
+                  Q. Can I get clear aligners if I have already had traditional
+                  braces before?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Yes, at Revital Dental, we explain to your child how they
-                  can maintain proper oral hygiene. We know this is new to our
-                  patients and that it takes practice to create habits. We give
-                  both our patients and their parents specific instructions on
-                  what the children should do, how to do it, and how often.
+                  A. Yes. It is common for patients to get clear aligners after
+                  not having worn their retainers enough after traditional
+                  braces. Clear aligners may help shift your teeth back into
+                  place and restore your smile.
                 </p>
 
-                <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q.{" "}
-                  <span className="underline">
-                    Can we tour the kid friendly dentist office before the
-                    appointment?
-                  </span>
+                <h2
+                  id="are-veneers-reversible"
+                  className="text-justify text-primary font-tinos mt-3"
+                >
+                  Q. Are veneers reversible?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Give us a call, and we may be able to schedule an office
-                  tour for you and your little one. This will allow you to meet
-                  the staff to create more of a sense of familiarity when the
-                  actual appointment comes around. It also gives your child a
-                  chance to see where they will be sitting during the
-                  appointment and ask questions about tools and other items that
-                  may be in the office.
+                  A. No. While veneers are removable, another set of veneers
+                  must always replace them. This is because veneers require
+                  removing tooth enamel, which cannot grow back.
                 </p>
 
-                <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q.{" "}
-                  <span className="underline">
-                    Can I be in the room with my child during the kid friendly
-                    dentist visit?
-                  </span>
+                <h2
+                  id="dental-bonding-lifespan"
+                  className="text-justify text-primary font-tinos mt-3"
+                >
+                  Q. How long does dental bonding last?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. While you ultimately have the choice of whether to
-                  accompany your child, keep in mind that the American Academy
-                  of Pediatric Dentistry encourages parents of older children to
-                  stay in the waiting room. Younger children may benefit from
-                  having a parent present in the room, but it is best to keep
-                  out of sight for the duration of the visit. As a silent
-                  observer, you can allow the dentist to connect with the
-                  patient and establish trust with your child.
+                  A. The answer varies on a case-by-case basis. Dental bonding
+                  may last for three to 10 years before needing a touch-up or
+                  replacement.
                 </p>
 
-                <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q.{" "}
-                  <span className="underline">
-                    Who is an ideal patient for a kid friendly dentist?
-                  </span>
+                <h2
+                  id="composite-filling-duration"
+                  className="text-justify text-primary font-tinos mt-3"
+                >
+                  Q. How long will my composite filling last?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. An ideal patient for a kid friendly dentist is a youth who
-                  may not be comfortable yet in an adult setting. Someone who
-                  needs to learn about oral hygiene and is willing to learn and
-                  practice dental health basics is a perfect candidate. The
-                  child friendly atmosphere can help an otherwise unsure youth
-                  wade into appointments in a pressure-free setting.
+                  A. For most healthy patients, composite fillings will last
+                  seven to 10 years. However, they may last longer under certain
+                  circumstances.
                 </p>
 
-                <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q.{" "}
-                  <span className="underline">
-                    What should I take to my child’s first kid friendly dentist
-                    appointment?
-                  </span>
+                <h2
+                  id="cosmetic-dentistry-teens"
+                  className="text-justify text-primary font-tinos mt-3"
+                >
+                  Q. Are teens too young for cosmetic dentistry?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. If your child has been to a dental professional in the
-                  past, bring along the records. If there are medical issues
-                  that might affect your child’s oral health, be sure to bring
-                  them as well. Have all insurance cards and information on hand
-                  so you can properly fill out the forms upon arrival and copies
-                  can be made in the office. Finally, if your child has a
-                  stuffed animal or another toy that offers emotional solace,
-                  bring it along for extra comfort.
+                  A. No. Teens are at an especially vulnerable point in their
+                  lives where their self-esteem is at its most fragile. Cosmetic
+                  dentistry may help. Revital Dental can determine whether or
+                  not any of the above treatments are right for you.
                 </p>
+
+                <h2
+                  id="oral-cancer-screening-stages"
+                  className="text-justify text-primary font-tinos mt-3"
+                >
+                  Q. What are the stages of oral cancer?
+                </h2>
+                <ul className="list-disc font-tinos md:ps-4 mt-2">
+                  <li>
+                    Stage 0: Abnormal cells are present but haven’t become
+                    cancerous
+                  </li>
+                  <li>
+                    Stage 1: Tumor is &le; 2 cm and hasn’t spread to lymph nodes
+                  </li>
+                  <li>
+                    Stage 2: Tumor is &le; 4 cm with no lymph node involvement
+                  </li>
+                  <li>
+                    Stage 3: Tumor is &gt; 4 cm or has spread to one lymph node
+                    (not distant)
+                  </li>
+                  <li>
+                    Stage 4:Tumor may be any size and has spread to distant
+                    parts of the body
+                  </li>
+                </ul>
               </div>
             </div>
 
@@ -512,125 +512,121 @@ const Services = () => {
               <hr />
               <div className="space-y-10">
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Aligner Trays</h2>
+                  <h2 className="italic text-xl">Dental Caries</h2>
                   <p>
-                    With Invisalign® treatment, the patient will receive a
-                    series of aligner trays and swap out each one for the next
-                    one in the series every two weeks in order to gradually
-                    straighten the teeth.
+                    Dental caries, commonly known as cavities, are areas of
+                    decay on the teeth caused by the buildup of plaque and acid
+                    that erode the enamel.
                   </p>
                   <hr className="mt-4" />
                 </div>
+
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">
-                    Blue Compliance Indicator (Invisalign® Teen)
-                  </h2>
+                  <h2 className="italic text-xl">Root Canal</h2>
                   <p>
-                    The blue compliance indicator is a small blue dot on the
-                    aligners that will fade from blue to clear in order to
-                    indicate if the patient is wearing the aligner for the
-                    proper amount of time and where the patient is in the
-                    Invisalign® process.
+                    A root canal is a dental procedure used to treat infection
+                    at the center of a tooth by removing the infected tissue and
+                    sealing the area.
                   </p>
                   <hr className="mt-4" />
                 </div>
+
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">ClinCheck® Software</h2>
+                  <h2 className="italic text-xl">Oral Hygiene</h2>
                   <p>
-                    ClinCheck® software allows professionals to map out the
-                    straightening process the patient’s teeth will go through
-                    with Invisalign® in great detail.
+                    Oral hygiene refers to the practice of maintaining clean
+                    teeth and gums, which involves regular brushing, flossing,
+                    and professional dental cleanings.
                   </p>
                   <hr className="mt-4" />
                 </div>
+
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Gum Line</h2>
+                  <h2 className="italic text-xl">Bruxism</h2>
                   <p>
-                    The gum line is the line in the mouth where the teeth and
-                    gums meet. If a patient struggles with gum recession, then
-                    the gum tissue around the teeth may begin to wear away.
+                    Bruxism is the involuntary grinding, gnashing, or clenching
+                    of teeth, often occurring during sleep and leading to tooth
+                    damage, headaches, and jaw pain.
                   </p>
                   <hr className="mt-4" />
                 </div>
+
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Incisal Ridges</h2>
+                  <h2 className="italic text-xl">Periodontitis</h2>
                   <p>
-                    Incisal ridges are the portion of the crown of the tooth
-                    that makes up the incisal portion and can be a direct cause
-                    of overbite if they are extended too far.
+                    Periodontitis is a severe gum infection that damages the
+                    soft tissue and bone supporting the teeth, often resulting
+                    from untreated gingivitis.
                   </p>
                   <hr className="mt-4" />
                 </div>
+
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">iTero Element® Scanner</h2>
+                  <h2 className="italic text-xl">Plaque</h2>
                   <p>
-                    An iTero Element® scanner allows professionals to create a
-                    3D image of the patient’s teeth in minutes and predict what
-                    it will take to move the teeth into proper alignment.
+                    Plaque is a sticky, colorless film of bacteria that forms on
+                    the teeth and gums, contributing to tooth decay and gum
+                    disease if not properly cleaned.
                   </p>
                   <hr className="mt-4" />
                 </div>
+
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Malocclusion</h2>
+                  <h2 className="italic text-xl">Fluoride Treatment</h2>
                   <p>
-                    Malocclusion is the condition in which the upper and lower
-                    teeth do not meet properly when the bite is closed.
-                    Conditions of malocclusion can include overbite, underbite,
-                    crossbite and open bite; all of which are treatable with
-                    Invisalign®.
+                    Fluoride treatment is a dental procedure where fluoride is
+                    applied to teeth to help prevent cavities, reduce plaque,
+                    and promote enamel remineralization.
                   </p>
                   <hr className="mt-4" />
                 </div>
+
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Overbite</h2>
+                  <h2 className="italic text-xl">Dental Implant</h2>
                   <p>
-                    An overbite is a type of malocclusion that occurs when the
-                    upper teeth jut out over the lower teeth, covering them and
-                    causing other issues.
+                    A dental implant is a metal post surgically placed in the
+                    jawbone to serve as a replacement for a missing tooth root,
+                    providing a strong base for artificial teeth.
                   </p>
                   <hr className="mt-4" />
                 </div>
+
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Polyurethane Resin</h2>
+                  <h2 className="italic text-xl">Tooth Sensitivity</h2>
                   <p>
-                    Polyurethane Resin is a USP Class VI medical grade, high
-                    molecular weight compound that makes up the Invisalign®
-                    aligners.
+                    Tooth sensitivity is a condition where the teeth become
+                    painful in response to hot, cold, or sweet stimuli due to
+                    exposed dentin or gum recession.
                   </p>
                   <hr className="mt-4" />
                 </div>
+
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">SmartForce Attachments</h2>
+                  <h2 className="italic text-xl">Sealants</h2>
                   <p>
-                    SmartForce attachments are small attachments that
-                    professionals place on the patient’s teeth before placing
-                    aligners to help move the teeth.
+                    Dental sealants are thin plastic coatings applied to the
+                    chewing surface of back teeth to prevent cavities by sealing
+                    out food and plaque.
                   </p>
                   <hr className="mt-4" />
                 </div>
+
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Smart Track® Material</h2>
+                  <h2 className="italic text-xl">Gum Recession</h2>
                   <p>
-                    Smart Track® material is in Invisalign® aligners to increase
-                    comfort, improve control of movement, increases the speed of
-                    treatment and applies a gentle force to the teeth over time.
+                    Gum recession occurs when the gum tissue pulls away from the
+                    teeth, exposing the tooth roots and leading to sensitivity
+                    and higher risk of decay.
                   </p>
                   <hr className="mt-4" />
                 </div>
+
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Smile-Scan</h2>
+                  <h2 className="italic text-xl">Tooth Extraction</h2>
                   <p>
-                    Smile-Scan analyzes the way a patient smiles by measuring
-                    the position of the mouth and eyes before giving a score.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Vivera® Retainers</h2>
-                  <p>
-                    Vivera® retainers are a type of retainer that consists of
-                    clear plastic material and helps to maintain orthodontic
-                    corrections after a treatment.
+                    Tooth extraction is the removal of a tooth from its socket
+                    in the jaw, often due to decay, infection, or crowding of
+                    teeth.
                   </p>
                   <hr className="mt-4" />
                 </div>

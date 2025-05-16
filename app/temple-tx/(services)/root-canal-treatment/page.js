@@ -14,28 +14,27 @@ const Services = () => {
   return (
     <>
       {/* intro section */}
-      <section className="grid md:grid-cols-[1fr_1fr_1fr] grid-cols-1 md:gap-2 md:mt-[85px]  border-y-[10px] border-dark mx-2">
-        <div className="bg-[url(/zoom-teeth-whitening.webp)] bg-cover my-10"></div>
+      <section className="grid md:grid-cols-[1fr_1fr_1fr] grid-cols-1 md:gap-2  md:mt-[125px]  border-y-[10px] border-dark mx-2">
+        <div className="bg-[url(/root-canal-treatment.webp)] bg-cover my-10"></div>
 
         <div className="px-10 py-5 space-y-3">
           <h2 className="text-5xl font-cinzel text-primary">
-            Zoom Teeth Whitening
+            Root Canal Treatment
           </h2>
           <p className="font-cinzel text-primary">Temple, TX</p>
           <p className="font-tinos  text-justify">
-            Beautiful, bright, white teeth are a sign of good health and a
-            youthful appearance. Many people have teeth stained from coffee,
-            smoking, or other substances, making their smile appear dull or
-            yellow. ZOOM!® teeth whitening is a professional whitening system
-            administered by a dentist that brightens teeth several shades whiter
+            A root canal is a restorative dental procedure that saves millions
+            of teeth from inflammation and infection each year. Root canal
+            treatment involves removing the damaged pulp and nerves from inside
+            the tooth to eliminate bacteria and prevent the infection from
+            spreading. If you have an infected tooth, root canal treatment may
+            be able to save it.
           </p>
           <p className="font-tinos  text-justify">
-            Zoom teeth whitening is available at Revital Dental in Temple and
-            the surrounding area. Professional whitening treatment with a Zoom
-            whitening dentist gives patients better results and a gorgeous
-            smile. Patients with a big event coming up, such as a wedding, class
-            reunion, or party, can wow their friends and family with a dazzling
-            smile. Call us at (254) 207-0708 to find out more.
+            Root canal treatment is available at Revital Dental in Temple and
+            the surrounding area. This procedure can relieve dental pain and
+            save your tooth. Call us at (254) 207-0708 to learn more about our
+            services or schedule an appointment today.
           </p>
         </div>
         <div className="py-5">
@@ -89,96 +88,128 @@ const Services = () => {
       {/* explanation */}
       <section className="md:grid md:grid-cols-[3fr_1fr]  md:w-[90%] w-[100%] md:mx-auto px-2 mt-3 gap-2">
         {/* left section */}
-        <div className="left-section " id="how-zoom-whitening-works">
+        <div className="left-section " id="what-is-root-canal">
           {/* dark section */}
           <div className="bg-dark p-5 text-white">
             <h2 className="text-2xl font-cinzel mb-3">
-              How Zoom Whitening Works
+              Understanding Root Canals
             </h2>
             <hr />
             <p className="text-justify font-tinos mt-4">
-              Zoom teeth whitening uses several powerful ingredients to reduce
-              staining and brighten smiles. It comes in a gel formula, made with
-              hydrogen peroxide. This formula is much more powerful and
-              effective than over-the-counter products. The dentist will coat
-              the teeth with this gel to start the whitening session. Then, the
-              dentist uses a special light to activate the gel and remove
-              staining on the teeth. The typical treatment session takes just
-              over an hour and includes a five-minute fluoride treatment. With
-              Zoom, patients will see whiter teeth after only a few visits.
+              Below the enamel and dentin, there is pulp at the center of a
+              tooth. The pulp contains blood vessels, nerves, and connective
+              tissue. When the pulp becomes injured or infected, the patient may
+              experience swelling, infection, and pain. Even when outwardly
+              apparent symptoms are not present, bacteria within the root canal
+              may cause decay and damage to the jawbone. In many cases, a root
+              canal may be necessary to save the tooth.
+            </p>
+            <p className="text-justify font-tinos mt-4">
+              A root canal can remove the infected or inflamed pulp to prevent
+              further issues. Various situations can call for a root canal, such
+              as repeat dental work on the same tooth, cracks or chips, deep
+              cavities, or a tooth injury. Signs that a patient may need root
+              canal treatment include bumps along the gums, darkening gums,
+              severe pain or sensitivity while biting or chewing, and swollen or
+              tender gums. People should be aware that the signs of root canal
+              infection or injury are not always obvious and that a thorough
+              examination may be necessary for diagnosis.
             </p>
           </div>
 
           {/* quote */}
           <div className="relative inline-block mt-10">
             <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-              “This formula is much more powerful and effective than
-              over-the-counter products.”
+              “A root canal can remove the infected or inflamed pulp to prevent
+              further issues.”
             </h2>
             <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
           </div>
 
           {/* Q & A */}
-          <div className="mt-10" id="zoom-vs-home-whitening">
+          <div className="mt-10" id="root-canal-benefits">
             <h2 className="font-cinzel text-2xl text-primary">
-              Advantages of Zoom Over Home Teeth Whitening
+              Root Canal Treatment Benefits
             </h2>
             <hr />
             <p className="font-tinos mt-2 text-justify">
-              Deciding between at-home whitening versus professional whitening
-              depends on a variety of factors. Home whitening kits are popular
-              today, but professional whitening is much more effective, fast,
-              and safe for patients. The biggest reason patients prefer
-              professional whitening like Zoom is because of the quick results.
-              Whitening kits from the drugstore or supermarket may not be as
-              impressive as the results from Zoom whitening. Patients who want
-              whiter teeth faster and with more dramatic results should consider
-              professional teeth whitening.
+              The goal of root canal treatment is to save and preserve the
+              natural tooth. One of the biggest benefits of root canals is
+              getting rid of pain and infection in the mouth. Additional
+              benefits include:
             </p>
-            <p className="font-tinos mt-2 text-justify">
-              Patients prefer Zoom because it is gentle enough for sensitive
-              teeth and has the added supervision of the dental provider during
-              application. Choosing a Zoom whitening dentist also helps make
-              sure the patient's teeth and gums do not experience enamel or
-              sensitivity issues. According to a study from the Journal of
-              Evidence Based Dental Practice, overaggressive tooth whitening at
-              home may cause tooth sensitivity.
-            </p>
+            <ol className="font-tinos text-justify list-disc pl-4 mt-2">
+              <li>
+                <span className="font-bold">Improved appearance:</span> After
+                root canal treatment, the patient will receive a crown or
+                filling that restores their tooth’s aesthetic appearance.
+              </li>
+              <li>
+                <span className="font-bold">
+                  Reduced risk for further decay:
+                </span>{" "}
+                Removal of the infected dental pulp prevents the bacteria from
+                spreading and damaging the surrounding teeth.
+              </li>
+              <li>
+                <span className="font-bold">Restored function:</span> Root
+                canals restore a tooth’s health to function like any other
+                tooth.
+              </li>
+              <li>
+                <span className="font-bold">Saving the natural tooth:</span>{" "}
+                Root Nothing can replace the look and function of a natural
+                tooth.
+              </li>
+            </ol>
           </div>
 
           <div className="relative inline-block mt-10">
             <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-              “Home whitening kits are popular today, but professional whitening
-              is much more effective, fast, and safe for patients.”
+              ” The goal of root canal treatment is to save and preserve the
+              natural tooth.”
             </h2>
             <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
           </div>
 
           {/* Q & A */}
-          <div className="mt-10" id="preparing-for-whitening">
+          <div className="mt-10" id="root-canal-process">
             <h2 className="font-cinzel text-2xl text-primary">
-              How To Prepare for Teeth Whitening
+              The Root Canal Process and Potential Complications
             </h2>
             <hr />
 
             <p className="font-tinos mt-2">
-              Preparing for Zoom whitening is fairly simple and easy. Our team
-              recommends that patients start with a recent dental exam and
-              cleaning. Before coming into the office on the day of the
-              procedure, patients should brush and floss. It may also be more
-              comfortable to apply lip balm before the treatments so the lips do
-              not get too dry during the whitening process. Other than that,
-              there are no special things to do before treatment. Patients
-              should be able to drive themselves to and from the procedure as no
-              anesthesia is required.
+              According to Healthline, root canal treatment typically involves
+              four steps. First, we will take an X-ray of the infected tooth and
+              numb the treatment site. Next, we will place a dental dam, or
+              small protective sheet, over the area to protect the spot from
+              saliva and bacteria during the procedure. Then we will make a
+              small incision near the tooth’s crown to expose the infected pulp
+              before removing the infected tissue and cleaning out the pathways.
+              Once the canals are clean, we may apply a topical antibiotic to
+              kill any remaining infection. Once the tooth is filled and sealed,
+              we will place a crown or other restoration to protect the tooth
+              and restore its functionality.
+            </p>
+            <p className="font-tinos mt-2">
+              As with any semi-invasive procedure, root canal treatment is not
+              without its risks. In some cases, the damage is too extensive for
+              treatment to be viable. If root canal treatment occurs in this
+              situation, it could result in tooth loss. Though rare, root canal
+              treatment can also result in abscesses. This typically only occurs
+              if the improper infected pulp removal occurs or if the antibiotics
+              are ineffective. Although there is a risk for potential
+              complications, root canal treatments are generally safe and
+              effective, with a success rate between 86-98%.
             </p>
 
             {/* quotes */}
             <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “It may also be more comfortable to apply lip balm before the
-                treatments so the lips do not get too dry during the whitening
-                process.”
+                “Although there is a risk for potential complications, root
+                canal treatments are generally safe and effective, with a
+                success rate between 86-98%.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
@@ -199,58 +230,37 @@ const Services = () => {
               </h2>
             </div>
 
-            <div className="mt-10" id="during-treatment">
+            <div className="mt-10" id="prevent-root-canal">
               <h2 className="font-cinzel text-2xl text-primary">
-                What To Expect During Treatment
+                Preventing the Need for Root Canal Treatment
               </h2>
               <hr />
               <p className="font-tinos mt-2 text-justify">
-                Before starting the treatment process, Our team will help
-                patients understand what happens at each appointment. At the
-                beginning, we will greet patients and bring them back to the
-                treatment area. Here are the steps in the Zoom whitening
-                process.
+                Although root canals are effective procedures to restore
+                infected or damaged teeth, it is best to avoid the need for a
+                root canal in the first place. Preventing the need for root
+                canal treatment is simple, maintain a good oral hygiene routine.
+                Since root canals are often necessary due to tooth decay, people
+                can help prevent this by brushing twice and flossing once every
+                day.
               </p>
-
-              <ol className="font-tinos text-justify list-disc pl-4 mt-2">
-                <li>
-                  <span className="font-bold"> Setup:</span>
-                  The dental provider will take pictures of the current shade of
-                  teeth and give information on what type of results to expect.
-                  Next, the dentist places cheek retractors into the mouth to
-                  pull back the lips and expose the teeth for the whitening
-                  treatment.
-                </li>
-                <li>
-                  <span className="font-bold">Gel Application:</span> The next
-                  part of the process involves the proprietary Zoom gel. The
-                  dentist coats the patient's teeth with the whitening gel and
-                  uses Zoom light to activate the gel. Return Treatment: For
-                  optimal results, patients should return for additional
-                  whitening treatments. Many patients complete about three
-                  treatments.
-                </li>
-                <li>
-                  <span className="font-bold">Return Treatment:</span> For
-                  optimal results, patients should return for additional
-                  whitening treatments. Many patients complete about three
-                  treatments.
-                </li>
-                <li>
-                  <span className="font-bold">After Whitening:</span> Patients
-                  may get a home touch-up whitening kit to help maintain the
-                  results. When using the home trays, coat the tray with
-                  whitening gel and wear on the teeth for about two hours.
-                  Patients should store the touch-up kit in a cool, dry place.
-                </li>
-              </ol>
+              <p className="font-tinos mt-2 text-justify">
+                It is also essential to attend regular dental appointments and
+                seek dental attention as soon as possible when pain or
+                discomfort arises. People can also take certain actions to avoid
+                tooth damage than can necessitate root canal treatment. This
+                includes avoiding acidic foods and beverages, not chewing on
+                ice, and wearing a mouthguard while playing sports and at night
+                if teeth grinding occurs.
+              </p>
             </div>
 
             {/* quotes */}
             <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “For optimal results, patients should return for additional
-                whitening treatments.”
+                “Although root canals are effective procedures to restore
+                infected or damaged teeth, it is best to avoid the need for a
+                root canal in the first place.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
@@ -263,39 +273,44 @@ const Services = () => {
               <div className="flex flex-col">
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#how-zoom-whitening-works"
+                  href="#what-is-root-canal"
+                >
+                  Q. <span className="underline">What is a root canal?</span>
+                </a>
+                <a
+                  className="text-justify font-tinos mt-3"
+                  href="#root-canal-benefits"
                 >
                   Q.{" "}
                   <span className="underline">
-                    How does Zoom Whitening work?
+                    What are the benefits of a root canal?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#zoom-vs-home-whitening"
+                  href="#root-canal-process"
                 >
                   Q.{" "}
                   <span className="underline">
-                    Why choose Zoom whitening over whitening at home?
+                    What happens during root canal treatment?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#preparing-for-whitening"
+                  href="#prevent-root-canal"
                 >
                   Q.{" "}
                   <span className="underline">
-                    What does a patient need to do to prepare for teeth
-                    whitening?
+                    How can someone prevent the need for a root canal?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#during-treatment"
+                  href="#root-canal-alternative"
                 >
                   Q.{" "}
                   <span className="underline">
-                    What happens during treatment?
+                    What is an alternative to root canal treatment?
                   </span>
                 </a>
               </div>
@@ -307,34 +322,64 @@ const Services = () => {
               <div className="flex flex-col mb-4">
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#benefits-of-dental-whitening"
+                  href="#removable-partial-dentures"
                 >
                   Q.{" "}
                   <span className="underline">
-                    What are the benefits of teeth whitening at a dentist’s
-                    office?
+                    How do removable partial dentures work?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#reasons-for-bleaching"
+                  href="#partial-dentures-one-tooth"
                 >
                   Q.{" "}
                   <span className="underline">
-                    What are the top reasons for bleaching teeth?
+                    What are the pros and cons of partial dentures for one
+                    missing tooth?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#who-should-get-whitening"
+                  href="#why-dentures-preferred"
                 >
                   Q.{" "}
                   <span className="underline">
-                    Who should receive professional teeth whitening?
+                    Why are dentures a preferred treatment?
                   </span>
                 </a>
               </div>
             </div>
+
+            <div className="mt-10" id="root-canal-alternative">
+              <h2 className="font-cinzel text-2xl text-primary">
+                Alternatives To Root Canal Treatment
+              </h2>
+              <hr />
+              <p className="font-tinos mt-2 text-justify">
+                Root canals are safe and effective procedures to save a tooth.
+                However, some situations may require alternative treatment, such
+                as extraction. Extraction involves pulling out the entire tooth.
+              </p>
+
+              <p className="font-tinos mt-2 text-justify">
+                This treatment takes more time and can necessitate further
+                procedures to surrounding teeth and supporting tissue. It is
+                always best to try and save a natural tooth when possible.
+                Extractions are best for when a tooth is too damaged to be saved
+                with a root canal.
+              </p>
+            </div>
+
+            <div className="relative inline-block mt-10 w-full">
+              <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
+                “Extractions are best for when a tooth is too damaged to be
+                saved with a root canal.”
+              </h2>
+              <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
+            </div>
+
+            {/* Q & A */}
 
             <div className="bg-gray-100 p-5 mt-10">
               <h2 className="text-4xl text-center font-cinzel mb-3 text-primary">
@@ -342,109 +387,73 @@ const Services = () => {
               </h2>
               <hr />
               <div className="flex flex-col">
-                <h2
-                  className="text-justify text-primary font-tinos mt-3"
-                  id="is-zoom-right"
-                >
+                <h2 className="text-justify text-primary font-tinos mt-3">
                   Q.{" "}
                   <span className="underline">
-                    Is Zoom teeth whitening right for me?
+                    How much does a root canal cost?
                   </span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Patients who have healthy teeth and gums and commit to a
-                  solid oral health routine are good candidates for professional
-                  whitening. According to the American Dental Association,
-                  whitening does not work for patients with dental implants,
-                  crowns, or other restorations for the teeth. Whitening
-                  treatment is also not recommended for pregnant or
-                  breastfeeding women.
+                  A. The cost of a root canal treatment will vary for each
+                  patient. Factors that may affect the cost include the extent
+                  of damage, the location, and whether insurance covers part of
+                  the procedure. People should contact their insurance provider
+                  for more information.
                 </p>
 
-                <h2
-                  className="text-justify text-primary font-tinos mt-3"
-                  id="does-whitening-hurt"
-                >
+                <h2 className="text-justify text-primary font-tinos mt-3">
                   Q.{" "}
                   <span className="underline">
-                    Does professional whitening hurt?
+                    Does insurance cover root canal treatment?
                   </span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Zoom teeth whitening does not cause any pain or discomfort.
-                  The dentist coats the teeth with a gel, which is painless. The
-                  light to activate the product also does not cause discomfort.
-                  Patients with sensitive teeth should talk to their dentist
-                  about treatment.
+                  A. Every insurance plan is different. Since root canals are
+                  considered a medically necessary treatment, most dental
+                  insurance plans will provide some treatment coverage. People
+                  will have to contact their insurance provider to learn more
+                  about coverage before seeking treatment.
                 </p>
 
-                <h2
-                  className="text-justify text-primary font-tinos mt-3"
-                  id="zoom-cost"
-                >
+                <h2 className="text-justify text-primary font-tinos mt-3">
                   Q.{" "}
                   <span className="underline">
-                    How much does a Zoom whitening dentist treatment cost?
+                    How long does it take to recover from a root canal?
                   </span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Before the treatment, the dentist will go over the costs
-                  with the patient. Professional whitening costs vary, depending
-                  on each individual situation. After whitening, it is important
-                  to protect the investment to avoid staining the teeth.
+                  A. Recovery following a root canal is often quick and
+                  painless. Though soreness and discomfort are normal in the
+                  days following treatment, most patients can return to school,
+                  work, and their daily activities the next day. Pain that
+                  extends beyond a couple of days may indicate a problem.
                 </p>
 
-                <h2
-                  className="text-justify text-primary font-tinos mt-3"
-                  id="is-whitening-permanent"
-                >
-                  Q.{" "}
-                  <span className="underline">
-                    Is professional whitening permanent?
-                  </span>
+                <h2 className="text-justify text-primary font-tinos mt-3">
+                  Q. <span className="underline">Are root canals painful?</span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Zoom teeth whitening is not a permanent solution for white
-                  teeth. Patients may need to schedule repeat treatments
-                  depending on their eating habits. If patients avoid foods that
-                  stain the teeth, they may not need to return for another
-                  treatment until a year or two later.
+                  A. Many people believe that root canals are painful. Though
+                  discomfort is common, the treatment is typically no more
+                  painful than having a cavity filled. However, nervous patients
+                  should discuss their fears with their providers beforehand.
                 </p>
 
-                <h2
-                  className="text-justify text-primary font-tinos mt-3"
-                  id="is-zoom-safe"
-                >
+                <h2 className="text-justify text-primary font-tinos mt-3">
                   Q.{" "}
                   <span className="underline">
-                    Is Zoom teeth whitening treatment safe?
+                    How should I take care of my tooth after root canal
+                    treatment?
                   </span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Visiting a dentist to get professional whitening in the
-                  office helps patients protect their gums and teeth enamel.
-                  Patients with sensitivity or gum irritation would benefit from
-                  treatments under their dentist's supervision. If patients opt
-                  for an over-the-counter product, they run the risk of using
-                  too much, which could cause irritation.
-                </p>
-
-                <h2
-                  className="text-justify text-primary font-tinos mt-3"
-                  id="maintain-results"
-                >
-                  Q.{" "}
-                  <span className="underline">
-                    What can I do to maintain my results from professional
-                    whitening?
-                  </span>
-                </h2>
-                <p className="font-tinos md:ps-4 mt-2">
-                  A. It is essential to keep up with excellent brushing and
-                  flossing habits after Zoom teeth whitening. The dentist may
-                  recommend a specific brand of toothpaste to help maintain
-                  results. It is also important to continue with regular dental
-                  check-ups.
+                  A. Although it is normal to experience swelling and
+                  inflammation after the root canal, patients can take over the
+                  counter pain medication to minimize discomfort. We recommend
+                  not chewing on the tooth to keep the area clean and prevent
+                  the tooth from breaking before we restore it completely.
+                  Patients will need to have a follow-up appointment after
+                  treatment to ensure that the healing process progresses well.
                 </p>
               </div>
             </div>
@@ -506,127 +515,59 @@ const Services = () => {
               <h2 className="text-4xl font-cinzel mb-3">Dental Terminology</h2>
               <hr />
               <div className="space-y-10">
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Bleachorexia</h2>
-                  <p>
-                    Bleachorexia is the excessive and repeated use of teeth
-                    whitening products without professional guidance, often
-                    leading to enamel erosion and gum damage.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Carbamide Peroxide</h2>
-                  <p>
-                    Carbamide peroxide is a bleaching agent that breaks down
-                    into hydrogen peroxide and urea, used in many professional
-                    and at-home teeth whitening treatments.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Cosmetic Dentistry</h2>
-                  <p>
-                    Cosmetic dentistry focuses on enhancing the appearance of
-                    teeth, gums, and bites, including treatments like whitening,
-                    veneers, and reshaping.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Deeper Teeth Stains</h2>
-                  <p>
-                    These are stains that penetrate beyond the enamel into the
-                    dentin layer, often caused by dark foods, drinks, or
-                    smoking, requiring professional whitening solutions.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Dentin Hypersensitivity</h2>
-                  <p>
-                    This condition causes sharp pain in teeth due to exposed
-                    dentin, typically triggered by hot, cold, or acidic stimuli
-                    as a result of enamel wear.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Dentist</h2>
-                  <p>
-                    A dentist is a licensed medical professional specializing in
-                    oral health, including diagnosis, prevention, and treatment
-                    of dental diseases and conditions.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Hydrogen Peroxide</h2>
-                  <p>
-                    Hydrogen peroxide is a common ingredient in teeth whitening
-                    solutions, known for its ability to break down stains and
-                    lighten tooth color.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Relief ACP</h2>
-                  <p>
-                    Relief ACP, or amorphous calcium phosphate, is a dental gel
-                    that helps reduce tooth sensitivity and promote enamel
-                    repair during whitening treatments.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Stained Dentin</h2>
-                  <p>
-                    Stained dentin refers to discoloration within the inner
-                    layer of the tooth, usually requiring professional treatment
-                    to restore brightness.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Surface Enamel</h2>
-                  <p>
-                    Surface enamel is the outermost protective layer of the
-                    tooth, vulnerable to staining and erosion but crucial for
-                    tooth strength and appearance.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Surface Teeth Stains</h2>
-                  <p>
-                    Surface teeth stains occur on the enamel due to substances
-                    like coffee, tea, wine, or tobacco, and are typically
-                    treatable with whitening solutions.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">
-                    Teeth Whitening Concentrate
-                  </h2>
-                  <p>
-                    Teeth whitening concentrate is the active bleaching agent in
-                    whitening treatments, more potent and effective when
-                    administered professionally.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
+                {[
+                  {
+                    term: "Cementum",
+                    definition:
+                      "Cementum is that bone-like tissue that forms the outer surface on the root of the tooth.",
+                  },
+                  {
+                    term: "Dental Pulp",
+                    definition:
+                      "Dental pulp is the inner-most layer of the tooth with connective tissue that contains blood vessels and nerve tissue.",
+                  },
+                  {
+                    term: "Dentin",
+                    definition:
+                      "Dentin is the inner layer of the tooth structure that is immediately under the enamel and surrounds the dental pulp.",
+                  },
+                  {
+                    term: "Direct Pulp Cap",
+                    definition:
+                      "A direct pulp cap is a procedure in which a professional treats exposed pulp with a therapeutic material to help the tooth heal.",
+                  },
+                  {
+                    term: "Enamel",
+                    definition:
+                      "The enamel is the hard calcified layer that covers the entire tooth and is subject to interaction with multiple substances.",
+                  },
+                  {
+                    term: "Endodontist",
+                    definition:
+                      "An endodontist is a specialist who focuses on treating issues, diseases and conditions that affect the inner-most layer of the tooth, the dental pulp.",
+                  },
+                  {
+                    term: "Pulpectomy",
+                    definition:
+                      "A pulpectomy is a procedure that involves the complete removal of pulp tissue from the root canal in a tooth.",
+                  },
+                  {
+                    term: "Pulpitis",
+                    definition:
+                      "Pulpitis is another term to describe the inflammation of the dental pulp due to an injury or infection.",
+                  },
+                  {
+                    term: "Pulpotomy",
+                    definition:
+                      "A pulpotomy is a procedure involving the removal of a portion of diseased or infected pulp in order to protect the healthy portions of the pulp and teeth still in the mouth.",
+                  },
+                ].map((item, index) => (
+                  <div key={index} className="mt-5 font-tinos">
+                    <h2 className="italic text-xl">{item.term}</h2>
+                    <p>{item.definition}</p>
+                    <hr className="mt-4" />
+                  </div>
+                ))}
               </div>
             </div>
 

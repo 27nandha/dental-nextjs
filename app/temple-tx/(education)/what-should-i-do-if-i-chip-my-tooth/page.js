@@ -13,23 +13,26 @@ const Services = () => {
   return (
     <>
       {/* intro section */}
-      <section className="grid md:grid-cols-[1fr_1fr_1fr] grid-cols-1 md:gap-2 md:mt-[85px]  border-y-[10px] border-dark mx-2">
-        <div className="bg-[url(/dental-anxiety.webp)] bg-cover my-10"></div>
+      <section className="grid md:grid-cols-[1fr_1fr_1fr] grid-cols-1 md:gap-2  md:mt-[125px]  border-y-[10px] border-dark mx-2">
+        <div className="bg-[url(/chip-my-tooth.webp)] bg-cover my-10"></div>
 
         <div className="px-10 py-10 space-y-3">
-          <h2 className="text-5xl font-cinzel text-primary">Dental Anxiety</h2>
+          <h2 className="text-5xl font-cinzel text-primary">
+            What Should I Do If I Chip My Tooth
+          </h2>
           <p className="font-cinzel text-primary">Temple, TX</p>
           <p className="font-tinos  text-justify">
-            Solutions to dental anxiety come in many forms. When left untreated,
-            many dental problems only get worse. We can help empower patients
-            with dental anxiety to take the necessary action to treat their
-            underlying conditions.
+            There are many reasons why a chipped tooth can occur, from an
+            accident to merely chewing. If a chipped tooth occurs, professional
+            dental care is necessary to receive proper evaluation and treatment.
+            It is essential to seek prompt treatment to prevent the problem from
+            worsening.
           </p>
           <p className="font-tinos  text-justify">
-            Solutions to dental anxiety are available at Revital Dental in
-            Temple and the surrounding area. Fear should never get in the way of
-            your health. Call us at (254) 207-0708 to learn more and schedule an
-            appointment today.
+            If you have a chipped tooth, do not hesitate to seek treatment.
+            Revital Dental in Temple and the surrounding area is here to help.
+            Call us today at (254) 207-0708 to schedule an appointment or learn
+            more about our services.
           </p>
         </div>
         <div className="py-10">
@@ -83,39 +86,27 @@ const Services = () => {
       {/* explanation */}
       <section className="md:grid md:grid-cols-[3fr_1fr]  md:w-[90%] w-[100%] md:mx-auto px-2 mt-3 gap-2">
         {/* left section */}
-        <div className="left-section " id="what-is-dental-anxiety">
+        <div className="left-section " id="chipped-tooth-common">
           {/* dark section */}
           <div className="bg-dark p-5 text-white">
             <h2 className="text-2xl font-cinzel mb-3">
-              Understanding Dental Anxiety
+              Chipped Teeth Are Common
             </h2>
             <hr />
             <p className="text-justify font-tinos mt-4">
-              Dental anxiety, also known as dental phobia, is a condition in
-              which patients have a debilitating fear of the dentist. People
-              with dental anxiety are aware that their fear is irrational, but
-              have little to no means of managing it. They may be so
-              panic-stricken by the prospect of seeing the dentist that they
-              will only go when forced by extreme pain. Other common signs of
-              dental anxiety include:
+              A chipped tooth is a common dental injury. According to the
+              American Association of Endodontists, chipped teeth account for a
+              majority of dental injuries. Although a chipped tooth can induce
+              panic and anxiety, it is typically a mild problem that we can fix
+              through various methods.
             </p>
-
-            <ul className="font-tinos text-justify list-disc  pl-4 mt-2">
-              <li>
-                Escalating feelings of nervousness in a dentist’s waiting room
-              </li>
-              <li>
-                Feelings of intense unease at the thought of a dentist placing
-                objects in the mouth during treatment
-              </li>
-              <li>Physical reactions at the thought of visiting the dentist</li>
-              <li>Trouble sleeping the night before a dental appointment</li>
-            </ul>
             <p className="text-justify font-tinos mt-4">
-              At times, dental anxiety may get severe enough to be considered
-              pathological. Patients who find that their dental anxiety severely
-              impedes their normal functioning may benefit from psychiatric
-              treatment.
+              People should remain calm so they can take the proper steps to fix
+              this problem. The best thing for patients to do after chipping a
+              tooth is to focus on their breath and slow it down. While not all
+              chipped teeth will require treatment, patients should visit our
+              dentist to ensure that they receive the necessary treatment to
+              restore and protect their teeth.
             </p>
           </div>
 
@@ -123,74 +114,73 @@ const Services = () => {
           {/* quote */}
           <div className="relative inline-block mt-10">
             <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-              “People with dental anxiety are aware that their fear is
-              irrational, but have little to no means of managing it.”
+              “According to the American Association of Endodontists, chipped
+              teeth account for a majority of dental injuries.”
             </h2>
             <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
           </div>
           {/* Q & A */}
-          <div className="mt-10" id="causes-of-dental-anxiety">
+          <div className="mt-10" id="after-chipping-tooth">
             <h2 className="font-cinzel text-2xl text-primary">
-              Causes of Dental Anxiety
+              What To Do About a Chipped Tooth
             </h2>
             <hr />
             <p className="font-tinos mt-2 text-justify">
-              Patients of all ages and backgrounds can have dental anxiety. A
-              multitude of factors may contribute to someone's unease at the
-              prospect of being in the dentist's chair, including but not
-              limited to fear of anesthesia, fear of injections, fear of pain,
-              feelings of embarrassment, and feelings of helplessness.
+              People suffering from a chipped tooth should schedule a dental
+              appointment since professional treatment is the only way to fix it
+              permanently. It is important to immediately take certain steps
+              after chipping a tooth to address pain and protect the tooth and
+              inside of the mouth from further injury. According to the American
+              Dental Association, people should rinse their mouth with warm
+              water right away to clean it.
             </p>
+
             <p className="font-tinos mt-2 text-justify">
-              All of the above are valid reasons to be anxious. Still, they do
-              not have to overtake a patient's dental experience. Patients
-              should be open and honest with their dentist about their
-              anxieties, as this is the first step to phobia management. At
-              Revital Dental, we believe communication is key to a successful
-              dentist-patient relationship.
+              After rinsing, they should apply pressure to stop any bleeding and
+              apply a cold compress to reduce swelling. People should be sure to
+              save any pieces of the chipped tooth and wrap them in wet gauze to
+              bring to our dentist. While waiting to see our dentist, people can
+              use over-the-counter pain medication to manage pain and
+              discomfort.
             </p>
           </div>
 
           {/* quote */}
           <div className="relative inline-block mt-10 w-full">
             <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-              “Patients should be open and honest with their dentist about their
-              anxieties, as this is the first step to phobia management.”
+              “It is important to immediately take certain steps after chipping
+              a tooth to address pain and protect the tooth and inside of the
+              mouth from further injury.”
             </h2>
             <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
           </div>
           {/* Q & A */}
-          <div className="mt-10" id="coping-with-dental-anxiety">
+          <div className="mt-10" id="child-vs-adult-chip">
             <h2 className="font-cinzel text-2xl text-primary">
-              Coping with Dental Anxiety
+              Chipped Tooth in a Child vs. Adult
             </h2>
             <hr />
             <p className="font-tinos mt-2">
-              Dealing with a dismissive dentist may only make the problem worse.
-              Therefore, the first step to managing dental anxiety is finding
-              the right dentist. Patients should also ask office staff about any
-              recommended coping strategies and agree on a signal to let the
-              dentist know if they need to take a break.
-            </p>
-            <p className="font-tinos mt-2">
-              Mindfulness techniques can also help. Patients may want to try
-              breathing exercises or doing body scans while in the dentist's
-              chair. Others may benefit from distracting themselves by doing
-              things like wearing headphones or occupying their hands.
-            </p>
-            <p className="font-tinos mt-2">
-              Additionally, patients should let the dentist know if they are
-              particularly sensitive to pain, even with local anesthesia. There
-              is no need for patients to feel embarrassed about asking questions
-              or being open about their fear. This is the only way to develop a
-              truly individualized plan to attack one's dental anxiety.
+              Although chipping a tooth is common for both adults and children,
+              there are different concerns for each. Chipped primary teeth are
+              especially common in children. We recommend treatments to repair
+              the damaged tooth based on the patient’s age and how badly the
+              tooth is injured.
             </p>
 
+            <p className="font-tinos mt-2">
+              When treating chipped primary teeth in children, the main concern
+              is to prevent damage to the underlying permanent tooth. Unlike an
+              adult, a child’s permanent teeth are not fully developed and will
+              require immediate attention if a chip occurs. Regardless of
+              whether the chipped tooth occurs in a child or adult, it is
+              important to see our dentist as quickly as possible for treatment.
+            </p>
             {/* quotes */}
             <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “There is no need for patients to feel embarrassed about asking
-                questions or being open about their fear.”
+                “When treating chipped primary teeth in children, the main
+                concern is to prevent damage to the underlying permanent tooth.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
@@ -211,58 +201,35 @@ const Services = () => {
               </h2>
             </div>
 
-            <div className="mt-10" id="sedation-for-dental-anxiety">
+            <div className="mt-10" id="repair-methods-chip">
               <h2 className="font-cinzel text-2xl text-primary">
-                Sedation & Dental Anxiety
+                Repairing a Chipped Tooth
               </h2>
               <hr />
               <p className="font-tinos mt-2 text-justify">
-                Some patients with more severe dental anxiety may require more
-                intensive management measures. These include:
+                There are various methods to repair a chipped tooth, depending
+                on the state of the patient’s tooth and the type of injury. In
+                some cases, our dentist can reattach the broken piece of a
+                tooth. If the damage is minimal, our dentist may only need to
+                use cosmetic contouring to polish the tooth’s surface or smooth
+                a jagged edge. Other options include veneers to cover a chip or
+                dental bonding to fill in missing tooth structure.
               </p>
-
-              <ul className="font-tinos text-justify list-disc pl-4 mt-2">
-                <li>
-                  <span className="font-bold">Relative Analgesia.</span> Also
-                  known as “laughing gas,” this method uses a combination of
-                  oxygen and nitrous oxide delivered through a face mask. It
-                  takes effect quickly, wears off fast, and allows patients to
-                  remain awake yet relaxed during the procedure.
-                </li>
-                <li>
-                  <span className="font-bold">Anxiety Medication.</span> This
-                  involves a short-acting pill prescribed by a dentist or doctor
-                  to ease dental anxiety. Taken about an hour before the
-                  appointment, it helps calm patients without putting them to
-                  sleep.
-                </li>
-                <li>
-                  <span className="font-bold">Conscious Sedation.</span>{" "}
-                  Administered via IV by a sedation dentist or anesthetist, this
-                  "twilight sedation" allows patients to drift into a light
-                  sleep while still being responsive during the treatment.
-                </li>
-                <li>
-                  <span className="font-bold">General Anesthesia.</span> The
-                  most intensive option, this involves IV medications and
-                  inhaled gases to put patients fully to sleep. It requires
-                  careful pre- and post-operative management and is used for
-                  extensive procedures.
-                </li>
-              </ul>
               <p className="font-tinos mt-2 text-justify">
-                Not all forms of sedation are appropriate for everyone or every
-                dental procedure. Our qualified team works closely with our
-                patients to take the proper measures to provide the most
-                comfortable experience possible.
+                Chips that go below the tooth’s surface may require more
+                extensive repair, such as a root canal or extraction. A root
+                canal is necessary when the damage enters the pulp and infects
+                it. Extraction is the last resort when a root canal is not
+                enough to save a tooth. Patients should contact us to find out
+                what repair options are available.
               </p>
             </div>
 
             {/* quotes */}
             <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “Some patients with more severe dental anxiety may require more
-                intensive management measures.”
+                “There are various methods to repair a chipped tooth, depending
+                on the state of the patient’s tooth and the type of injury.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
@@ -275,42 +242,47 @@ const Services = () => {
               <div className="flex flex-col">
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#what-is-dental-anxiety"
-                >
-                  Q. <span className="underline">What is dental anxiety?</span>
-                </a>
-                <a
-                  className="text-justify font-tinos mt-3"
-                  href="#causes-of-dental-anxiety"
-                >
-                  Q.{" "}
-                  <span className="underline">What causes dental anxiety?</span>
-                </a>
-                <a
-                  className="text-justify font-tinos mt-3"
-                  href="#coping-with-dental-anxiety"
+                  href="#chipped-tooth-common"
                 >
                   Q.{" "}
                   <span className="underline">
-                    How can I cope with dental anxiety?
+                    How common is a chipped tooth?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#sedation-for-dental-anxiety"
+                  href="#after-chipping-tooth"
                 >
                   Q.{" "}
                   <span className="underline">
-                    Can I be sedated for my dental anxiety?
+                    What steps should happen after chipping a tooth?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#child-dental-anxiety"
+                  href="#child-vs-adult-chip"
                 >
                   Q.{" "}
                   <span className="underline">
-                    How can I ease my child's dental anxiety?
+                    How is a child’s chipped tooth different from an adult’s?
+                  </span>
+                </a>
+                <a
+                  className="text-justify font-tinos mt-3"
+                  href="#repair-methods-chip"
+                >
+                  Q.{" "}
+                  <span className="underline">
+                    What methods are available to repair a chipped tooth?
+                  </span>
+                </a>
+                <a
+                  className="text-justify font-tinos mt-3"
+                  href="#maintain-treated-tooth"
+                >
+                  Q.{" "}
+                  <span className="underline">
+                    How should a treated chipped tooth be maintained?
                   </span>
                 </a>
               </div>
@@ -322,129 +294,122 @@ const Services = () => {
               <div className="flex flex-col mb-4">
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#dental-checkup-process"
+                  href="#emergency-dental-care"
                 >
                   Q.{" "}
                   <span className="underline">
-                    What happens during a dental check-up?
+                    When should I seek emergency dental care?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#find-a-dentist-resources"
+                  href="#what-is-dental-restoration"
                 >
                   Q.{" "}
+                  <span className="underline">What is dental restoration?</span>
+                </a>
+                <a className="text-justify font-tinos mt-3" href="#go-to-er">
+                  Q.{" "}
                   <span className="underline">
-                    What other resources can I use to find a dentist?
+                    When should I go straight to the emergency room?
                   </span>
                 </a>
               </div>
             </div>
 
-            <div className="mt-10" id="child-dental-anxiety">
+            <div className="mt-10" id="maintain-treated-tooth">
               <h2 className="font-cinzel text-2xl text-primary">
-                Children & Dental Anxiety
+                Maintaining a Treated Chipped Tooth
               </h2>
               <hr />
               <p className="font-tinos mt-2 text-justify">
-                It is not uncommon for parents to experience dental anxiety on
-                their child's behalf. Parents should maintain a calm exterior as
-                children will pick up on any anxiety displayed by their parents.
-                Parents should refrain from telling their children that
-                something will hurt or be painful, nor should they promise a
-                reward for going to the dentist. Doing so will only cause
-                children to anticipate something unpleasant and act accordingly.
-                While parents should tell their children about any upcoming
-                dental appointments, they should not overload their child with
-                too much detail about what to expect. Dentists have received the
-                training to give simple, non-threatening answers. Parents should
-                prioritize stressing the importance of dental hygiene to their
-                children instead.
+                After treatment for a chipped tooth, patients must maintain a
+                regular oral care routine. This maintenance includes brushing
+                twice a day and flossing at least once. Patients should also
+                follow all after-care instructions to take care of the repaired
+                tooth and protect it from further damage.
+              </p>
+              <p className="font-tinos mt-2 text-justify">
+                Other maintenance tips include not biting down on the treated
+                tooth and refining from chewing on hard foods and objects.
+                Following the repair, patients should also attend all follow-up
+                appointments and schedule regular dental check-ups. These
+                appointments will allow our dentist to check the repair and
+                protect patients’ overall oral health to prevent a chip from
+                happening again.
               </p>
             </div>
+
+            {/* quotes */}
             <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “Parents should maintain a calm exterior … as children will pick
-                up on any anxiety displayed by their parents.”
+                “After treatment for a chipped tooth, patients must maintain a
+                regular oral care routine.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
 
-            {/* Q & A */}
-
-            <div className="bg-gray-100 p-5 mt-10 ">
+            <div className="bg-gray-100 p-5 mt-10">
               <h2 className="text-4xl text-center font-cinzel mb-3 text-primary">
                 Frequently Asked Questions
               </h2>
               <hr />
               <div className="flex flex-col">
-                <h2
-                  id="child-dental-anxiety"
-                  className="text-justify text-primary font-tinos mt-3"
-                >
-                  Q. What can a dentist do to help my child's dental anxiety?
+                <h2 className="text-justify text-primary font-tinos mt-3">
+                  Q. How is a chipped tooth diagnosed?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Dental anxiety among children is common, so many dentists
-                  anticipate having to use calming techniques. These include
-                  distraction, non-verbal communication, simple instructions,
-                  positive reinforcement, voice control, and in some cases,
-                  sedation.
+                  A. Our dentist can diagnose a chipped tooth by visibly
+                  inspecting the patient’s mouth. They will also ask about any
+                  symptoms and the event that may have caused the chip.
+                  Sometimes determining the extent of the damage can be
+                  difficult and may require the use of magnifying glasses,
+                  X-rays, or other tests.
                 </p>
 
-                <h2
-                  id="how-common-is-dental-anxiety"
-                  className="text-justify text-primary font-tinos mt-3"
-                >
-                  Q. How common is dental anxiety?
+                <h2 className="text-justify text-primary font-tinos mt-3">
+                  Q. How long does it take to repair a chipped tooth?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. According to WebMD, between 9% and 20% of Americans avoid
-                  going to the dentist due to dental anxiety. People of all ages
-                  and backgrounds can suffer dental anxiety.
+                  A. The length of time it takes to repair a chip will depend on
+                  the extent of damage to the tooth. Our dentist will tell the
+                  patient how long they can expect their treatment to take
+                  during their consultation. In most cases, it only takes one
+                  office visit to fix a chipped tooth.
                 </p>
 
-                <h2
-                  id="other-terms-for-dental-anxiety"
-                  className="text-justify text-primary font-tinos mt-3"
-                >
-                  Q. Are there any other words for dental anxiety?
+                <h2 className="text-justify text-primary font-tinos mt-3">
+                  Q. Who is a good candidate for cosmetic contouring?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. The term "dental anxiety" is most commonly interchanged
-                  with "dental phobia." However, other synonymous terms include
-                  dentophobia, dental fear, fear of dentists, and odontophobia.
-                  These words all refer to the same phenomenon.
+                  A. Cosmetic contouring is best for people with minor cosmetic
+                  problems like small chips. The patient’s enamel needs to be
+                  thick enough since cosmetic contouring removes one to two
+                  millimeters of enamel from the tooth’s surface. If the
+                  patient’s enamel is too thin, then we may suggest a different
+                  repair method.
                 </p>
 
-                <h2
-                  id="dental-visit-if-anxious"
-                  className="text-justify text-primary font-tinos mt-3"
-                >
-                  Q. Do I really need to go to the dentist if I have dental
-                  anxiety?
+                <h2 className="text-justify text-primary font-tinos mt-3">
+                  Q. What are the risk factors associated with a chipped tooth?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Putting off necessary dental treatments can be detrimental
-                  to your overall health. Patients who refrain from going to the
-                  dentist due to dental anxiety are more likely to develop gum
-                  disease and lose teeth. These, in turn, may lead to a decrease
-                  in self-esteem and negatively affect one's overall quality of
-                  life.
+                  A. Weakened teeth are more likely to chip than strong and
+                  healthy ones. Tooth decay and cavities are common factors that
+                  reduce tooth strength and make chips more likely to occur.
+                  Teeth grinding, eating acid-producing foods, and acid reflux
+                  can damage the tooth enamel and weaken it.
                 </p>
 
-                <h2
-                  id="will-anxiety-improve"
-                  className="text-justify text-primary font-tinos mt-3"
-                >
-                  Q. Will my dental anxiety get better over time?
+                <h2 className="text-justify text-primary font-tinos mt-3">
+                  Q. How is a veneer applied?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Continued exposure and positive experiences with the
-                  dentist should lessen your dental anxiety over time. Depending
-                  on the severity of your condition, you may also benefit from
-                  seeking psychiatric help for your phobia at another facility
-                  along with the dental treatment tailored to your needs.
+                  A. First, our dentist will take a mold of the patient’s tooth
+                  to create the veneer. Then we will clean the patient’s tooth
+                  and use dental cement to bond the veneer to the tooth. An
+                  ultraviolet light hardens the cement quickly, and the patient
+                  can leave the office with their improved smile.
                 </p>
               </div>
             </div>
@@ -505,122 +470,101 @@ const Services = () => {
             <div className="bg-dark p-5 mt-10 text-white">
               <h2 className="text-4xl font-cinzel mb-3">Dental Terminology</h2>
               <hr />
-              <div className="space-y-10 ">
+              <div className="space-y-10">
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Cosmetic Dentistry</h2>
+                  <h2 className="italic text-xl">Abscess</h2>
                   <p>
-                    Cosmetic dentistry is generally used to refer to any dental
-                    work that improves the appearance (though not necessarily
-                    the function) of a person’s teeth, gums, and/or bite.
+                    A dental abscess is a pocket of pus that forms in the tooth
+                    root from a bacterial infection.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Decay</h2>
+                  <h2 className="italic text-xl">Cosmetic Contouring</h2>
                   <p>
-                    Tooth decay occurs when the enamel of the tooth begins to
-                    deteriorate due to the erosion caused by plaque and tartar
-                    on the teeth.
+                    A treatment that involves removing a small amount of tooth
+                    enamel with a drill to sculpt a more aesthetic shape and
+                    create a better fit for the surrounding teeth.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Dental Caries</h2>
+                  <h2 className="italic text-xl">Facial Cellulitis</h2>
                   <p>
-                    Dental caries, commonly known as cavities, occur when proper
-                    oral hygiene is not maintained, allowing plaque to form and
-                    create tiny holes in the teeth.
+                    Facial cellulitis is a condition in which an infection from
+                    an abscess or plaque in the teeth causes pain and spreads
+                    throughout the face.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Dental Checkup</h2>
+                  <h2 className="italic text-xl">Impacted Wisdom Tooth</h2>
                   <p>
-                    A dental checkup is an appointment where the dentist cleans
-                    your teeth, identifies any signs of infection, and removes
-                    the infection at least once every six months.
+                    An impacted wisdom tooth is a tooth that does not erupt from
+                    the gums properly and can cause pain and become infected
+                    without professional extraction.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Dental Filling</h2>
+                  <h2 className="italic text-xl">Irreversible Pulpitis</h2>
                   <p>
-                    A dental filling is used to restore the structure of a tooth
-                    by filling it with materials like metal, alloy, porcelain,
-                    or plastic to restore its function and appearance.
+                    Irreversible pulpitis is when pain in the tooth occurs
+                    spontaneously or continues after removing a hot/cold
+                    substance. Normal pulpitis stops hurting once the irritant
+                    is removed.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Dental Prophylaxis</h2>
+                  <h2 className="italic text-xl">Lateral Luxation</h2>
                   <p>
-                    Dental prophylaxis is a professional cleaning procedure that
-                    removes plaque, tartar, and stains from the teeth to
-                    maintain oral health.
+                    Lateral luxation is the displacement of a tooth in the wrong
+                    direction while it is still attached to the gums.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Dental Sealants</h2>
+                  <h2 className="italic text-xl">Pericoronitis</h2>
                   <p>
-                    Dental sealants are resinous materials applied to the
-                    chewing surfaces of the posterior teeth to prevent cavities
-                    by shielding them from plaque.
+                    Pericoronitis is the inflammation of soft tissues
+                    surrounding a tooth that has not fully erupted from the
+                    gums, causing pain.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Dentist</h2>
+                  <h2 className="italic text-xl">Root Canal</h2>
                   <p>
-                    A dentist, also known as a dental surgeon, specializes in
-                    diagnosing, preventing, and treating diseases and conditions
-                    of the oral cavity.
+                    The chamber within the root of the tooth that contains the
+                    pulp.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Gingivitis</h2>
+                  <h2 className="italic text-xl">Tooth Avulsion</h2>
                   <p>
-                    Gingivitis is the inflammation of gum tissue caused by
-                    plaque buildup and poor oral hygiene, which can lead to
-                    infection if untreated.
+                    Tooth avulsion occurs when a tooth completely displaces from
+                    the socket due to an accident or health condition. It can be
+                    replanted with immediate dental care.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Preventive Dentistry</h2>
+                  <h2 className="italic text-xl">Tooth Fracture</h2>
                   <p>
-                    Preventive dentistry focuses on maintaining oral health
-                    through measures that prevent plaque buildup, tartar
-                    formation, and infections.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Tartar</h2>
-                  <p>
-                    Tartar forms when plaque hardens and becomes difficult to
-                    remove. It requires professional treatment for removal.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Tooth Enamel</h2>
-                  <p>
-                    Tooth enamel is the visible outer surface of the tooth that
-                    serves as a protective barrier to the underlying dentin and
-                    dental pulp.
+                    A tooth fracture can result from trauma such as sports
+                    injuries, biting hard objects, or falls. Treatment depends
+                    on the severity of the crack.
                   </p>
                   <hr className="mt-4" />
                 </div>

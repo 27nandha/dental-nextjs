@@ -14,24 +14,28 @@ const Services = () => {
   return (
     <>
       {/* intro section */}
-      <section className="grid md:grid-cols-[1fr_1fr_1fr] grid-cols-1 md:gap-2  md:mt-[85px]  border-y-[10px] border-dark mx-2">
-        <div className="bg-[url(/teeth-whitening.webp)] bg-cover my-10"></div>
+      <section className="grid md:grid-cols-[1fr_1fr_1fr] grid-cols-1 md:gap-2 md:mt-[125px] border-y-[10px] border-dark mx-2">
+        <div className="bg-[url(/kid-friendly-dentist.webp)] bg-cover my-10"></div>
 
         <div className="px-10 py-5 space-y-3">
-          <h2 className="text-5xl font-cinzel text-primary">Teeth Whitening</h2>
+          <h2 className="text-5xl font-cinzel text-primary">
+            Kid Friendly Dentist
+          </h2>
           <p className="font-cinzel text-primary">Temple, TX</p>
           <p className="font-tinos  text-justify">
-            Everyone deserves a smile that they can be proud of. One of the most
-            common ways to enhance a smile is through teeth whitening.
-            Professional whitening achieves long-lasting results by removing
-            stains and discoloration.
+            A kid friendly dentist is a dental professional who has the unique
+            skills and experience to provide professional dental care and
+            comfort for children and younger patients. Kid friendly dentists
+            desire to provide children with positive experiences at the dental
+            office. The office and waiting room are both designed to create a
+            kid friendly environment, with friendly staff ready to assuage any
+            fears or concerns.
           </p>
           <p className="font-tinos  text-justify">
-            Teeth whitening can help you achieve a brighter, more beautiful
-            smile. Revital Dental offers teeth whitening procedures in Temple
-            and the surrounding area so you can smile with confidence. Call us
-            at (254) 207-0708 to learn more about our services or schedule an
-            appointment.
+            A kid friendly dentist is available at Revital Dental in Temple and
+            the surrounding area. Get your child started on the road to good
+            oral health. Call Revital Dental today at (254) 207-0708 to set up
+            an appointment.
           </p>
         </div>
         <div className="py-5">
@@ -85,98 +89,100 @@ const Services = () => {
       {/* explanation */}
       <section className="md:grid md:grid-cols-[3fr_1fr]  md:w-[90%] w-[100%] md:mx-auto px-2 mt-3 gap-2">
         {/* left section */}
-        <div className="left-section " id="benefits-of-teeth-whitening">
+        <div className="left-section " id="kid-friendly-ages">
           {/* dark section */}
           <div className="bg-dark p-5 text-white">
             <h2 className="text-2xl font-cinzel mb-3">
-              Benefits of Teeth Whitening at the Dentist’s Office
+              Ages Treated by a Kid Friendly Dentist
             </h2>
             <hr />
             <p className="text-justify font-tinos mt-4">
-              Teeth whitening at the dentist’s office is the safest and most
-              effective method of achieving whiter teeth. In-office whitening
-              occurs under carefully monitored conditions. Teeth whitening under
-              professional supervision allows for safe, controlled, pain-free
-              treatment.
+              Taking your child to a dentist tuned in specifically to children’s
+              needs can help alleviate the stress and anxiety that comes with
+              visits. This allows for a positive association at a young age with
+              dental hygiene and helps curate healthy lifelong habits. Our staff
+              is warm and used to engaging with children, allowing for easy and
+              fun interactions as soon as each child walks through the door.
             </p>
             <p className="text-justify font-tinos mt-4">
-              Professional whitening products use a stronger concentration of
-              hydrogen peroxide than over-the-counter products. Thus the
-              whitening process takes less time to achieve better results.
-              Treatment under a dentist’s care ensures that sensitive gums are
-              not irritated during the whitening process. The results should be
-              long-lasting with careful oral hygiene practices.
+              A kid friendly dentist can make dentistry a pleasant experience
+              for children of any age, even your kindergartener. Kid friendly
+              dentists have the expertise needed to make little ones feel safe
+              and sound in the dentist’s chair. It is essential for children to
+              get the dental care they need early on, so parents should never
+              delay to get them the treatment they need.
             </p>
           </div>
 
           {/* quote */}
           <div className="relative inline-block mt-10">
             <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-              “Teeth whitening under professional supervision allows for safe,
-              controlled, pain-free treatment.”
+              “A kid friendly dentist can make dentistry a pleasant experience
+              for children of any age, even your kindergartener.”
             </h2>
             <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
           </div>
 
           {/* Q & A */}
-          <div className="mt-10" id="consultation-for-teeth-whitening">
+          <div className="mt-10" id="kid-friendly-unique">
             <h2 className="font-cinzel text-2xl text-primary">
-              What to Expect at the Consultation
+              Qualities That Make a Kid Friendly Dentist Unique
             </h2>
             <hr />
             <p className="font-tinos mt-2 text-justify">
-              Before the teeth whitening procedure, people will need to attend a
-              consultation. This appointment will allow the patient to discuss
-              their dental history, overall health, and teeth goals. It is also
-              crucial to bring up any ongoing dental issues, such as teeth and
-              gum problems that will require treatment before teeth whitening
-              can occur.
+              Our waiting room is kid friendly, ensuring our patients are at
+              optimum comfort from the moment they walk through the door. We
+              know that kids do not have the same patience as adults, so we do
+              not think they need to have the same waiting space. Child friendly
+              furniture, toys, reading materials, and other safe and fun items
+              are available to entertain little hands and minds while they wait.
             </p>
             <p className="font-tinos mt-2 text-justify">
-              We will also examine the patient’s teeth to see if they will
-              benefit from whitening treatments. It is important to note that
-              existing dental work, such as crowns and veneers, will not respond
-              to conventional whitening agents. If treatments are a viable
-              option, we will help determine which whitening product or
-              technique will be the most effective.
+              We also know that not all supplies are created equal. Dental tools
+              made for adults are often too large to work correctly for
+              procedures in smaller mouths and can cause discomfort or even
+              damage. Our instruments and supplies are varied to fit even our
+              littlest patients' needs.
             </p>
           </div>
 
           <div className="relative inline-block mt-10">
             <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-              “This appointment will allow the patient to discuss their dental
-              history, overall health, and teeth goals.”
+              “Our waiting room is kid friendly, ensuring our patients are at
+              optimum comfort from the moment they walk through the door.”
             </h2>
             <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
           </div>
 
           {/* Q & A */}
-          <div className="mt-10" id="duration-of-teeth-whitening">
+          <div className="mt-10" id="kid-friendly-conditions">
             <h2 className="font-cinzel text-2xl text-primary">
-              Teeth Whitening Treatment Length
+              Concerns Treated by a Kid Friendly Dentist
             </h2>
             <hr />
 
             <p className="font-tinos mt-2">
-              Teeth whitening done in the office is the quickest method to
-              whiten teeth. People can achieve much brighter teeth more quickly
-              in-office because the concentration of bleaching solution is much
-              stronger than other options. Professional teeth whitening requires
-              an appointment.
+              At Revital Dental, we check for issues that may develop from
+              pacifier use, thumb sucking, or other common childhood habits that
+              can affect dental health. We also watch for tooth decay signs that
+              may come from poor nutrition or insufficient brushing and
+              flossing.
             </p>
             <p className="font-tinos mt-2">
-              Teeth can get three to eight shades whiter with several 30 to
-              60-minute sessions. Other tooth whitening treatments are available
-              that can whiten teeth in a single two-hour session. People
-              interested in teeth whitening should contact us for information
-              about the available treatment options.
+              It is also crucial to note that oral health is inextricably linked
+              to overall health. Any tooth decay or gum disease may lead to
+              other forms of disease later on. As such, a kid friendly dentist
+              will closely monitor a child’s gum health. A kid friendly dentist
+              must also closely monitor a child’s baby teeth, as these
+              effectively act as placeholders for the permanent teeth.
             </p>
 
             {/* quotes */}
             <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “Teeth whitening done in the office is the quickest method to
-                whiten teeth.”
+                “At Revital Dental,we provide general oral health examinations
+                and visits, along with more specialized treatments based on the
+                needs of our young patients.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
@@ -197,34 +203,34 @@ const Services = () => {
               </h2>
             </div>
 
-            <div className="mt-10" id="who-can-get-teeth-whitening">
+            <div className="mt-10" id="kid-friendly-treatments">
               <h2 className="font-cinzel text-2xl text-primary">
-                Who Should Get Teeth Whitening at the Dentist
+                General Treatments Provided
               </h2>
               <hr />
               <p className="font-tinos mt-2 text-justify">
-                Teeth whitening at the dentist is best for people with moderate
-                to severe discoloration and staining. These stains can occur due
-                to aging, smoking, medications, and certain foods and drinks.
-                People with yellow or brown discoloration on their teeth are
-                ideal candidates for professional teeth whitening. Pregnant and
-                lactating women should also not receive teeth whitening.
+                Our team provides general oral health examinations and visits,
+                along with more specialized treatments based on the needs of our
+                young patients. We can provide sealants to help minimize the
+                potential for decay and fillings when cavities become
+                problematic in both baby teeth and permanent ones.
               </p>
               <p className="font-tinos mt-2 text-justify">
-                We do not recommend teeth whitening for people with gum disease,
-                worn down enamel, and existing decay. Cavities and damage will
-                require treatment before a person can whiten their teeth. People
-                with teeth that are gray or purple may not respond to bleaching.
-                People interested in teeth whitening can speak with our team to
-                determine the best-suited options for their needs.
+                We also keep a close watch on how teeth are coming in behind
+                baby teeth. We can use technology to spot problems before they
+                become an issue. This allows us to perform preventive procedures
+                and to create any necessary game plans early on, such as
+                utilizing braces or retainers to minimize the effects down the
+                road.
               </p>
             </div>
 
             {/* quotes */}
             <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “Teeth whitening at the dentist is best for people with moderate
-                to severe discoloration and staining.”
+                “Our team provides general oral health examinations and visits,
+                along with more specialized treatments based on the needs of our
+                young patients.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
@@ -237,48 +243,48 @@ const Services = () => {
               <div className="flex flex-col">
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#benefits-of-teeth-whitening"
+                  href="#kid-friendly-ages"
                 >
                   Q.{" "}
                   <span className="underline">
-                    What are the benefits of teeth whitening at a dentist’s
-                    office?
+                    What ages does a kid friendly dentist treat?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#consultation-for-teeth-whitening"
+                  href="#kid-friendly-unique"
                 >
                   Q.{" "}
                   <span className="underline">
-                    What happens during a consultation for teeth whitening?
+                    What makes a kid friendly dentist unique?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#duration-of-teeth-whitening"
+                  href="#kid-friendly-conditions"
                 >
                   Q.{" "}
                   <span className="underline">
-                    How long does teeth whitening treatment take?
+                    What conditions are treated by a kid friendly dentist?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#who-can-get-teeth-whitening"
+                  href="#kid-friendly-treatments"
                 >
                   Q.{" "}
                   <span className="underline">
-                    Who can get their teeth whitened at the dentist?
+                    What treatments does a kid friendly dentist provide?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#maintain-teeth-whitening-results"
+                  href="#kid-friendly-techniques"
                 >
                   Q.{" "}
                   <span className="underline">
-                    How can people maintain their results?
+                    What kind of techniques do kid friendly dentists use to calm
+                    children?
                   </span>
                 </a>
               </div>
@@ -319,38 +325,43 @@ const Services = () => {
               </div>
             </div>
 
-            {/* Q & A */}
-            <div className="mt-10" id="maintain-teeth-whitening-results">
+            <div className="mt-10" id="kid-friendly-techniques">
               <h2 className="font-cinzel text-2xl text-primary">
-                Follow-Up Care
+                How Kid Friendly Dentists Work
               </h2>
               <hr />
               <p className="font-tinos mt-2 text-justify">
-                Although professional teeth whitening is not permanent, people
-                can help their results last longer with proper care and
-                maintenance. People should avoid smoking and food and drinks
-                that stain teeth, such as coffee, tea, or red wine. It is also
-                essential to brush teeth twice a day, floss daily, and use
-                mouthwash to reduce plaque.
+                A kid friendly dentist will also be familiar with behavioral
+                techniques to help reduce fear and anxiety. These can include
+                calming techniques and methods to help diffuse the stress that
+                comes with painful or uncomfortable procedures. For instance,
+                they may use the "teach back" technique to ensure that patients
+                understand what they have learned about oral hygiene in a
+                stress-free manner.
               </p>
+
               <p className="font-tinos mt-2 text-justify">
-                People can also use whitening toothpaste as per the dentist’s
-                recommendation, such as Colgate Total SF Fresh + Whitening ™
-                Toothpaste, hello® Naturally Whitening Toothpaste, or Colgate®
-                Optic White® Toothpaste. Keep up with regular dental
-                appointments for teeth cleaning. Patients can discuss touch-up
-                treatments at six-month intervals with our team.
+                A kid friendly dentist is perfect for children who are
+                intimidated by the prospect of being in the dentist’s chair. We
+                communicate with them in simple and easy-to-understand terms to
+                explain what we are doing. We are careful not to use scary
+                jargon or speak in a way that may cause a patient to feel
+                intimidated. It is important for us that our patients understand
+                what we are trying to convey and feel like they are part of the
+                process. Trust is integral in a healthy relationship, and we
+                know good communication is vital in achieving that.
               </p>
             </div>
 
             <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “Although professional teeth whitening is not permanent, people
-                can help their results last longer with proper care and
-                maintenance.”
+                “A kid friendly dentist is perfect for children who are
+                intimidated by the prospect of being in the dentist’s chair.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
+
+            {/* Q & A */}
 
             <div className="bg-gray-100 p-5 mt-10">
               <h2 className="text-4xl text-center font-cinzel mb-3 text-primary">
@@ -361,74 +372,84 @@ const Services = () => {
                 <h2 className="text-justify text-primary font-tinos mt-3">
                   Q.{" "}
                   <span className="underline">
-                    Is teeth whitening a safe procedure?
+                    Will a kid friendly dentist explain oral hygiene to my
+                    child?
                   </span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. It is considered a safe procedure. There are possible side
-                  effects, though. The teeth may become more sensitive during
-                  treatment. Gums can become irritated from the whitening
-                  process. These symptoms should go away once the whitening
-                  products are no longer being used.
+                  A. Yes, at Revital Dental, we explain to your child how they
+                  can maintain proper oral hygiene. We know this is new to our
+                  patients and that it takes practice to create habits. We give
+                  both our patients and their parents specific instructions on
+                  what the children should do, how to do it, and how often.
                 </p>
 
                 <h2 className="text-justify text-primary font-tinos mt-3">
                   Q.{" "}
                   <span className="underline">
-                    Do I need to get my teeth cleaned before a teeth whitening
-                    procedure?
+                    Can we tour the kid friendly dentist office before the
+                    appointment?
                   </span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. A professional tooth cleaning removes plaque and tartar,
-                  which makes the teeth whitening procedure more effective. It
-                  also helps to keep the color uniform while whitening. During
-                  the dental cleaning appointment, the exam can identify any
-                  tooth decay or gum diseases that need to be treated before
-                  whitening.
+                  A. Give us a call, and we may be able to schedule an office
+                  tour for you and your little one. This will allow you to meet
+                  the staff to create more of a sense of familiarity when the
+                  actual appointment comes around. It also gives your child a
+                  chance to see where they will be sitting during the
+                  appointment and ask questions about tools and other items that
+                  may be in the office.
                 </p>
 
                 <h2 className="text-justify text-primary font-tinos mt-3">
                   Q.{" "}
                   <span className="underline">
-                    Can I get teeth whitening if I have crowns or a bridge?
+                    Can I be in the room with my child during the kid friendly
+                    dentist visit?
                   </span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Whitening products only work on natural teeth. A person
-                  with implants, crowns, or bridges can speak with our team
-                  about maintaining tooth coloration across all teeth. People
-                  with previous dental work can still receive a whitening
-                  treatment.
+                  A. While you ultimately have the choice of whether to
+                  accompany your child, keep in mind that the American Academy
+                  of Pediatric Dentistry encourages parents of older children to
+                  stay in the waiting room. Younger children may benefit from
+                  having a parent present in the room, but it is best to keep
+                  out of sight for the duration of the visit. As a silent
+                  observer, you can allow the dentist to connect with the
+                  patient and establish trust with your child.
                 </p>
 
                 <h2 className="text-justify text-primary font-tinos mt-3">
                   Q.{" "}
                   <span className="underline">
-                    Can I still get teeth whitening if I have other dental
-                    concerns or issues?
+                    Who is an ideal patient for a kid friendly dentist?
                   </span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Our dental team can assess a patient’s oral health to
-                  determine the right treatment course to get the desired
-                  results. Gum disease and tooth decay may need to be treated
-                  before whitening for the desired results. A consultation from
-                  our dental team will help you find solutions for good oral
-                  health.
+                  A. An ideal patient for a kid friendly dentist is a youth who
+                  may not be comfortable yet in an adult setting. Someone who
+                  needs to learn about oral hygiene and is willing to learn and
+                  practice dental health basics is a perfect candidate. The
+                  child friendly atmosphere can help an otherwise unsure youth
+                  wade into appointments in a pressure-free setting.
                 </p>
 
                 <h2 className="text-justify text-primary font-tinos mt-3">
                   Q.{" "}
                   <span className="underline">
-                    Does dental insurance cover teeth whitening?
+                    What should I take to my child’s first kid friendly dentist
+                    appointment?
                   </span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Most dental insurance plans do not cover teeth whitening or
-                  other cosmetic procedures. Every insurance plan is different.
-                  People interested in teeth whitening should contact their
-                  insurance provider for more information.
+                  A. If your child has been to a dental professional in the
+                  past, bring along the records. If there are medical issues
+                  that might affect your child’s oral health, be sure to bring
+                  them as well. Have all insurance cards and information on hand
+                  so you can properly fill out the forms upon arrival and copies
+                  can be made in the office. Finally, if your child has a
+                  stuffed animal or another toy that offers emotional solace,
+                  bring it along for extra comfort.
                 </p>
               </div>
             </div>
@@ -489,103 +510,127 @@ const Services = () => {
             <div className="bg-dark p-5 mt-10 text-white">
               <h2 className="text-4xl font-cinzel mb-3">Dental Terminology</h2>
               <hr />
-              <div className="space-y-10 ">
+              <div className="space-y-10">
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Bleachorexia</h2>
+                  <h2 className="italic text-xl">Aligner Trays</h2>
                   <p>
-                    Bleachorexia refers to the excessive use of whitening
-                    products without dental supervision, leading to enamel
-                    erosion and gum irritation.
+                    With Invisalign® treatment, the patient will receive a
+                    series of aligner trays and swap out each one for the next
+                    one in the series every two weeks in order to gradually
+                    straighten the teeth.
                   </p>
                   <hr className="mt-4" />
                 </div>
-
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Cosmetic Dentistry</h2>
+                  <h2 className="italic text-xl">
+                    Blue Compliance Indicator (Invisalign® Teen)
+                  </h2>
                   <p>
-                    Cosmetic dentistry includes procedures that enhance the
-                    appearance of your teeth and smile, such as veneers,
-                    whitening, and bonding.
+                    The blue compliance indicator is a small blue dot on the
+                    aligners that will fade from blue to clear in order to
+                    indicate if the patient is wearing the aligner for the
+                    proper amount of time and where the patient is in the
+                    Invisalign® process.
                   </p>
                   <hr className="mt-4" />
                 </div>
-
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Cosmetic Imaging</h2>
+                  <h2 className="italic text-xl">ClinCheck® Software</h2>
                   <p>
-                    Cosmetic imaging uses digital tools to show patients a
-                    preview of their smile after cosmetic treatments, helping
-                    them make informed decisions.
+                    ClinCheck® software allows professionals to map out the
+                    straightening process the patient’s teeth will go through
+                    with Invisalign® in great detail.
                   </p>
                   <hr className="mt-4" />
                 </div>
-
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Crown Lengthening</h2>
+                  <h2 className="italic text-xl">Gum Line</h2>
                   <p>
-                    Crown lengthening is a procedure that reshapes gum tissue
-                    and bone to expose more of a tooth for cosmetic or
-                    restorative purposes.
+                    The gum line is the line in the mouth where the teeth and
+                    gums meet. If a patient struggles with gum recession, then
+                    the gum tissue around the teeth may begin to wear away.
                   </p>
                   <hr className="mt-4" />
                 </div>
-
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Dental Crown</h2>
+                  <h2 className="italic text-xl">Incisal Ridges</h2>
                   <p>
-                    A dental crown is a custom-made cap that covers a damaged or
-                    decayed tooth to restore its shape, strength, and
-                    appearance.
+                    Incisal ridges are the portion of the crown of the tooth
+                    that makes up the incisal portion and can be a direct cause
+                    of overbite if they are extended too far.
                   </p>
                   <hr className="mt-4" />
                 </div>
-
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Dentist</h2>
+                  <h2 className="italic text-xl">iTero Element® Scanner</h2>
                   <p>
-                    A dentist is a healthcare professional trained to diagnose,
-                    treat, and prevent oral health issues affecting the teeth,
-                    gums, and mouth.
+                    An iTero Element® scanner allows professionals to create a
+                    3D image of the patient’s teeth in minutes and predict what
+                    it will take to move the teeth into proper alignment.
                   </p>
                   <hr className="mt-4" />
                 </div>
-
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Full Mouth Rehabilitation</h2>
+                  <h2 className="italic text-xl">Malocclusion</h2>
                   <p>
-                    Full mouth rehabilitation combines multiple dental
-                    procedures to restore the health, function, and aesthetics
-                    of the entire mouth.
+                    Malocclusion is the condition in which the upper and lower
+                    teeth do not meet properly when the bite is closed.
+                    Conditions of malocclusion can include overbite, underbite,
+                    crossbite and open bite; all of which are treatable with
+                    Invisalign®.
                   </p>
                   <hr className="mt-4" />
                 </div>
-
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Smile Selection Guide</h2>
+                  <h2 className="italic text-xl">Overbite</h2>
                   <p>
-                    A smile selection guide helps patients visualize different
-                    smile styles to choose the one that best fits their facial
-                    features and preferences.
+                    An overbite is a type of malocclusion that occurs when the
+                    upper teeth jut out over the lower teeth, covering them and
+                    causing other issues.
                   </p>
                   <hr className="mt-4" />
                 </div>
-
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Smile Shape Guide</h2>
+                  <h2 className="italic text-xl">Polyurethane Resin</h2>
                   <p>
-                    A smile shape guide offers options for tooth shapes and
-                    smile designs, helping customize cosmetic treatments to meet
-                    aesthetic goals.
+                    Polyurethane Resin is a USP Class VI medical grade, high
+                    molecular weight compound that makes up the Invisalign®
+                    aligners.
                   </p>
                   <hr className="mt-4" />
                 </div>
-
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Tetracycline</h2>
+                  <h2 className="italic text-xl">SmartForce Attachments</h2>
                   <p>
-                    Tetracycline is an antibiotic known to cause permanent tooth
-                    discoloration, especially when taken during childhood or
-                    tooth development.
+                    SmartForce attachments are small attachments that
+                    professionals place on the patient’s teeth before placing
+                    aligners to help move the teeth.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Smart Track® Material</h2>
+                  <p>
+                    Smart Track® material is in Invisalign® aligners to increase
+                    comfort, improve control of movement, increases the speed of
+                    treatment and applies a gentle force to the teeth over time.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Smile-Scan</h2>
+                  <p>
+                    Smile-Scan analyzes the way a patient smiles by measuring
+                    the position of the mouth and eyes before giving a score.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Vivera® Retainers</h2>
+                  <p>
+                    Vivera® retainers are a type of retainer that consists of
+                    clear plastic material and helps to maintain orthodontic
+                    corrections after a treatment.
                   </p>
                   <hr className="mt-4" />
                 </div>

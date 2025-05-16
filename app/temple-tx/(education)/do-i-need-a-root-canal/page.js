@@ -13,26 +13,25 @@ const Services = () => {
   return (
     <>
       {/* intro section */}
-      <section className="grid md:grid-cols-[1fr_1fr_1fr] grid-cols-1 md:gap-2  md:mt-[85px] border-y-[10px] border-dark mx-2">
-        <div className="bg-[url(/when-is-tooth-extraction-necessary.webp)] bg-cover my-10"></div>
+      <section className="grid md:grid-cols-[1fr_1fr_1fr] grid-cols-1 md:gap-2  md:mt-[125px]  border-y-[10px] border-dark mx-2">
+        <div className="bg-[url(/do-i-need-a-root-canal.webp)] bg-cover my-10"></div>
 
         <div className="px-10 py-10 space-y-3">
           <h2 className="text-5xl font-cinzel text-primary">
-            When Is a Tooth Extraction Necessary
+            Do I Need a Root Canal
           </h2>
           <p className="font-cinzel text-primary">Temple, TX</p>
           <p className="font-tinos  text-justify">
-            Although it is best to preserve a natural tooth, there are times
-            when a tooth extraction is necessary. An extraction may be the best
-            option to maintain oral health due to trauma, disease, or crowding.
-            Tooth extraction involves the complete removal of one or more teeth
-            from the jaw bone.
+            Root canals can save or repair teeth that have been damaged by
+            infection or decay. When a tooth does not get needed root canal
+            treatment, the surrounding tissue may become infected and surrounded
+            by abscesses. Root canals consist of removing the inflamed and
+            infected nerve and pulp of the tooth.
           </p>
           <p className="font-tinos  text-justify">
-            Tooth extraction is available at Revital Dental in Temple and the
-            surrounding area. Our team can extract teeth gently and safely to
-            preserve your oral health. Call us at (254) 207-0708 to learn more
-            about our services or schedule an appointment.
+            Root canals are available at Revital Dental in Temple and the
+            surrounding area. Do not put off saving your tooth. Call us today at
+            (254) 207-0708 to schedule an appointment and learn more.
           </p>
         </div>
         <div className="py-10">
@@ -86,25 +85,30 @@ const Services = () => {
       {/* explanation */}
       <section className="md:grid md:grid-cols-[3fr_1fr]  md:w-[90%] w-[100%] md:mx-auto px-2 mt-3 gap-2">
         {/* left section */}
-        <div className="left-section " id="tooth-extraction-reasons">
+        <div className="left-section " id="pain-addressed-by-root-canal">
           {/* dark section */}
           <div className="bg-dark p-5 text-white">
-            <h2 className="text-2xl font-cinzel mb-3">A Normal Procedure</h2>
+            <h2 className="text-2xl font-cinzel mb-3">
+              Resolving Pain With Root Canals
+            </h2>
             <hr />
             <p className="text-justify font-tinos mt-4">
-              While it is best to preserve natural teeth, many reasons can
-              necessitate tooth extraction. Sometimes a filling or crown is not
-              enough to restore a tooth. The American Dental Association
-              suggests the extraction of teeth that have suffered severe trauma,
-              have extreme tooth decay or disease, or are crowding the
-              surrounding teeth. It is also normal for patients to have an
-              extraction or two before orthodontic treatment.
+              The dental issues that cause the need for root canals often make
+              patients uncomfortable. At the bare minimum, patients will
+              experience an excruciating toothache. These toothaches may be
+              spontaneous, occurring even when the patient is not using the
+              tooth. Eventually, this may evolve into a severe headache. Many
+              patients often do not make the connection between the toothache
+              and the headache.
             </p>
             <p className="text-justify font-tinos mt-4">
-              Many tooth extractions are relatively simple and performed
-              in-office. For teeth that are visible about the gum line, we will
-              numb the extraction site and remove the tooth with forceps. Broken
-              or impacted teeth require a more involved procedure.
+              A tooth that is still alive will also be sensitive to heat and
+              cold, even after the patient has removed the stimulus. The tooth
+              may be particularly susceptible to heat sensitivity. Patients with
+              teeth that are already dead and have become abscessed will cause
+              pain when the patient chews or otherwise puts pressure on the
+              tooth. Any abscesses may produce swelling or bleeding, even to the
+              point of requiring emergency care.
             </p>
           </div>
 
@@ -112,73 +116,80 @@ const Services = () => {
           {/* quote */}
           <div className="relative inline-block mt-10">
             <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-              “The American Dental Association suggests the extraction of teeth
-              that have suffered severe trauma, have extreme tooth decay or
-              disease, or are crowding the surrounding teeth.”
+              “The underlying causes of root canals can often make patients
+              uncomfortable.”
             </h2>
             <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
           </div>
           {/* Q & A */}
-          <div className="mt-10" id="infection-spread-risk">
+          <div className="mt-10" id="need-root-canal">
             <h2 className="font-cinzel text-2xl text-primary">
-              Preventing Infection
+              When to See a Dentist About Root Canals
             </h2>
             <hr />
             <p className="font-tinos mt-2 text-justify">
-              According to the National Institute of Dental and Craniofacial
-              Research, gum disease is the most common cause of tooth loss in
-              adults. Gum disease occurs when bacteria get below the gum line
-              and causes infections. Without treatment, oral bacterial leads to
-              gum recession, damage to the jawbone, loose teeth, and even tooth
-              loss.
+              Many different factors may contribute to a patient needing a root
+              canal. These conditions can manifest themselves as various
+              symptoms. These include chips or cracks in teeth, pain while
+              eating or touching the tooth, persistent pain, sensitivity to heat
+              and cold, and swollen gums.
             </p>
-
             <p className="font-tinos mt-2 text-justify">
-              Research has also shown chronic dental infections can cause
-              inflammation that contributes to cardiovascular disease, stroke,
-              and many other related diseases. While a root canal can often save
-              a tooth from decay, sometimes a tooth is beyond saving due to lost
-              structure and stability. Tooth extraction can prevent damaging
-              decay and infection from spreading.
+              Chips or cracks in the tooth allow empty spaces for bacteria to
+              settle in and cause infection and inflammation, while tooth
+              sensitivity may be a sign of severe decay or nerve damage. In
+              general, toothaches are a sign a patient should see a dentist.
+            </p>
+            <p className="font-tinos mt-2 text-justify">
+              Tooth sensitivity may linger longer when the blood vessels and
+              nerves in the tooth have become infected or damaged. Swelling may
+              also come and go. It is frequently associated with abscesses,
+              which may be accompanied by unpleasant taste and odor.
+            </p>
+            <p className="font-tinos mt-2 text-justify">
+              Infected teeth may also feel looser than healthy teeth, due to
+              nerve death softening the bone. Furthermore, teeth may turn
+              grayish-black when the roots have been damaged and the internal
+              tissue has been broken down.
             </p>
           </div>
 
           {/* quote */}
           <div className="relative inline-block mt-10 w-full">
             <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-              “Tooth extraction can prevent damaging decay and infection from
-              spreading.”
+              “These conditions can manifest themselves as various symptoms.”
             </h2>
             <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
           </div>
           {/* Q & A */}
-          <div className="mt-10" id="wisdom-tooth-removal">
+          <div className="mt-10" id="when-root-canal-necessary">
             <h2 className="font-cinzel text-2xl text-primary">
-              Overcrowded or Impacted Teeth
+              When Root Canals Are the Only Option
             </h2>
             <hr />
             <p className="font-tinos mt-2">
-              In some cases, it is beneficial to have crowded or impacted teeth
-              extracted. Impacted wisdom teeth do not have enough room to grow.
-              Extraction can prevent pain, infection, and other dental problems.
-              While not all wisdom teeth need removal, it is necessary once they
-              start causing problems. In some cases, wisdom teeth do not fully
-              break through the gums and can cause crowding issues. A partially
-              erupted wisdom tooth is especially susceptible to cavities.
+              Root canal treatments are necessary when the pulp of the tooth has
+              become inflamed or infected and needs removal. This may happen due
+              to deep decay, cracks or chips in the tooth, faulty crowns, and
+              repeated dental procedures. Patients should also be warned that
+              facial trauma may still damage the pulp even when the tooth does
+              not have visible chips or cracks. Leaving pulp inflammation or
+              infection untreated may lead to pain or the formation of an
+              abscess.
+            </p>
+            <p className="font-tinos mt-2">
+              When left untreated, teeth with damaged pulp eventually die. This
+              can negatively impact your overall oral health, as well as make it
+              difficult to eat and chew. Root canals can help preserve the
+              remaining tooth. The procedure may be followed by the placement of
+              an implant or a crown.
             </p>
 
-            <p className="font-tinos mt-2">
-              Patients may also need teeth extracted before receiving braces.
-              Orthodontics involves the process of properly aligning the teeth,
-              which may be tough without enough room. Crowded teeth increase a
-              patient’s risk of developing gum disease and cavities. Extracting
-              teeth can relieve crowding and impacted teeth.
-            </p>
             {/* quotes */}
             <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “Extraction can prevent pain, infection, and other dental
-                problems.”
+                “Root canal treatments are necessary when the pulp of the tooth
+                has become inflamed or infected and needs to be removed.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
@@ -199,34 +210,36 @@ const Services = () => {
               </h2>
             </div>
 
-            <div className="mt-10" id="when-restoration-fails">
+            <div className="mt-10" id="alternatives-to-root-canal">
               <h2 className="font-cinzel text-2xl text-primary">
-                When Tooth Restoration Is Not Enough
+                Alternatives to Root Canals
               </h2>
               <hr />
               <p className="font-tinos mt-2 text-justify">
-                Typically, the first option to restore a damaged tooth is a
-                crown or filling. If the damage is too severe, trying to save a
-                tooth may put oral health at further risk. A filling may put the
-                tooth at risk for shattering, while a tooth may not be strong
-                enough to support a crown. Root canals are also not possible
-                when there is too much tooth damage.
+                Root canals can help address any issues caused by infection and
+                decay. However, for such treatment to be successful, there must
+                be enough of the natural tooth remaining to save. While it is
+                best to save and maintain natural teeth whenever possible, some
+                teeth may be beyond repair. Teeth with severe fractures or
+                cracks extending below the gum line, for example, may be better
+                suited for extraction.
               </p>
               <p className="font-tinos mt-2 text-justify">
-                Each tooth has a limit to how many times it can be worked on
-                before it starts to fail. Redoing a crown or root canal only
-                buys so much time. After several fillings, crowns, and root
-                canals, there will not be much of the tooth left to save. At
-                that point, tooth extraction is the best option to maintain oral
-                health.
+                If extraction is necessary, patients may want to consider
+                getting dental implants. This tooth replacement option looks,
+                feels, and functions like a natural tooth and will help maintain
+                the appearance of the smile. Dental implants consist of
+                artificial tooth roots surgically placed into the jaw to hold an
+                artificial tooth (also known as a crown or pontic) in place. Our
+                team can help determine which option is best for you.
               </p>
             </div>
 
             {/* quotes */}
             <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “If the damage is too severe, trying to save a tooth may put
-                oral health at further risk.”
+                “However, for such treatment to be successful, there must be
+                enough of the natural tooth remaining to save.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
@@ -239,47 +252,48 @@ const Services = () => {
               <div className="flex flex-col">
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#tooth-extraction-reasons"
+                  href="#pain-addressed-by-root-canal"
                 >
                   Q.{" "}
                   <span className="underline">
-                    Why would a tooth need to be extracted?
+                    What kind of pain can be addressed by a root canal
+                    treatment?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#infection-spread-risk"
+                  href="#need-root-canal"
                 >
                   Q.{" "}
                   <span className="underline">
-                    Why is stopping infection from spreading important?
+                    Do I need a root canal procedure?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#wisdom-tooth-removal"
+                  href="#when-root-canal-necessary"
                 >
                   Q.{" "}
                   <span className="underline">
-                    Why do I need my wisdom teeth or other teeth removed?
+                    When are root canal treatments necessary?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#when-restoration-fails"
+                  href="#alternatives-to-root-canal"
                 >
                   Q.{" "}
                   <span className="underline">
-                    When is restoration not enough to save a tooth?
+                    Are there any alternatives to root canals?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#trauma-tooth-extraction"
+                  href="#emergency-root-canal"
                 >
                   Q.{" "}
                   <span className="underline">
-                    What sorts of trauma can necessitate tooth extraction?
+                    Do I need an emergency root canal?
                   </span>
                 </a>
               </div>
@@ -291,128 +305,137 @@ const Services = () => {
               <div className="flex flex-col mb-4">
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#prepare-tooth-extraction"
+                  href="#how-common-root-canals"
+                >
+                  Q.{" "}
+                  <span className="underline">How common are root canals?</span>
+                </a>
+                <a
+                  className="text-justify font-tinos mt-3"
+                  href="#benefits-of-root-canal"
                 >
                   Q.{" "}
                   <span className="underline">
-                    How will my doctor help me prepare for my tooth extraction?
+                    What are the benefits of a root canal?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#seek-emergency-care"
+                  href="#cope-with-dental-anxiety"
                 >
                   Q.{" "}
                   <span className="underline">
-                    When should one seek emergency dental care?
-                  </span>
-                </a>
-                <a
-                  className="text-justify font-tinos mt-3"
-                  href="#lost-tooth-action"
-                >
-                  Q.{" "}
-                  <span className="underline">
-                    What should I do if I lose teeth?
+                    How can I cope with dental anxiety?
                   </span>
                 </a>
               </div>
             </div>
 
-            <div className="mt-10" id="trauma-tooth-extraction">
+            <div className="mt-10" id="emergency-root-canal">
               <h2 className="font-cinzel text-2xl text-primary">
-                Trauma and Tooth Extraction
+                Emergency Root Canals
               </h2>
               <hr />
               <p className="font-tinos mt-2 text-justify">
-                Teeth are tough but not indestructible. Traumatic dental
-                injuries can occur from a sports injury, car accident, or even a
-                simple slip and fall. While many injuries are minor, if the
-                tooth becomes severely damaged to the point where restoration is
-                not possible, an extraction will be necessary.
-              </p>
-              <p className="font-tinos mt-2 text-justify">
-                After sustaining tooth trauma, patients should schedule an
-                appointment quickly to improve their outcomes. Our team can look
-                for signs of additional damage that may not be immediately
-                obvious. Severely fractured teeth can be very loose and unable
-                to be restored with dental work, thus making tooth extraction
-                necessary. Patients should take any dental trauma seriously,
-                even if it seems mild.
+                Since every tooth that requires a root canal is in the process
+                of dying, patients should consider every root canal an emergency
+                procedure. Delaying treatment will only increase the chances of
+                pulp necrosis, or having the pulp of the tooth die off entirely.
+                Only a root canal procedure or tooth extraction can reverse the
+                symptoms of pulp necrosis. When left untreated, pulp necrosis
+                may put patients at risk for infection, fever, jaw swelling,
+                cellulitis, abscesses (including those in the brain), sinusitis,
+                periodontitis, and bone loss. Contact our office immediately if
+                you are experiencing severe toothaches when biting down or
+                chewing, sensitivity to hot or cold temperatures (especially
+                hot), darkening or discoloration of the teeth, swelling or
+                tender gums, and pimples on the gums.
               </p>
             </div>
-
-            {/* quotes */}
             <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “While many injuries are minor, if the tooth becomes severely
-                damaged to the point where restoration is not possible, an
-                extraction will be necessary.”
+                “Since every tooth that requires a root canal is in the process
+                of dying, patients should consider every root canal an emergency
+                procedure.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
 
-            <div className="bg-gray-100 p-5 mt-10">
+            {/* Q & A */}
+
+            <div className="bg-gray-100 p-5 mt-10 ">
               <h2 className="text-4xl text-center font-cinzel mb-3 text-primary">
                 Frequently Asked Questions
               </h2>
               <hr />
               <div className="flex flex-col">
-                <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q. How is a chipped tooth diagnosed?
+                <h2
+                  id="what-happens-during-root-canal"
+                  className="text-justify text-primary font-tinos mt-3"
+                >
+                  Q. What happens during a root canal?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Our dentist can diagnose a chipped tooth by visibly
-                  inspecting the patient’s mouth. They will also ask about any
-                  symptoms and the event that may have caused the chip.
-                  Sometimes determining the extent of the damage can be
-                  difficult and may require the use of magnifying glasses,
-                  X-rays, or other tests.
+                  A. A root canal procedure may require multiple office visits.
+                  The first step is for our team to take an X-ray to see the
+                  shape of your root canals and look for any signs of infection.
+                  Then, during the actual procedure, the dentist removes the
+                  inflamed nerve and pulp of the tooth. The inside of the tooth
+                  will be cleaned and sealed.
                 </p>
 
-                <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q. How long does it take to repair a chipped tooth?
+                <h2
+                  id="is-root-canal-painful"
+                  className="text-justify text-primary font-tinos mt-3"
+                >
+                  Q. Is it painful to get a root canal?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. The length of time it takes to repair a chip will depend on
-                  the extent of damage to the tooth. Our dentist will tell the
-                  patient how long they can expect their treatment to take
-                  during their consultation. In most cases, it only takes one
-                  office visit to fix a chipped tooth.
+                  A. It is a common misconception that root canals are
+                  excruciatingly painful. With modern technology, getting a root
+                  canal is not much more uncomfortable than getting a cavity
+                  filled. Root canals can address the causes of any pain you
+                  have been experiencing due to the damaged tissues.
                 </p>
 
-                <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q. Who is a good candidate for cosmetic contouring?
+                <h2
+                  id="how-long-root-canal-takes"
+                  className="text-justify text-primary font-tinos mt-3"
+                >
+                  Q. How long does it take to get a root canal?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Cosmetic contouring is best for people with minor cosmetic
-                  problems like small chips. The patient’s enamel needs to be
-                  thick enough since cosmetic contouring removes one to two
-                  millimeters of enamel from the tooth’s surface. If the
-                  patient’s enamel is too thin, then we may suggest a different
-                  repair method.
+                  A. This varies on a case-by-case basis. However, most patients
+                  can expect one or two 90-minute appointments.
                 </p>
 
-                <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q. What are the risk factors associated with a chipped tooth?
+                <h2
+                  id="root-canal-recovery-tips"
+                  className="text-justify text-primary font-tinos mt-3"
+                >
+                  Q. What should I do while recovering from a root canal?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Weakened teeth are more likely to chip than strong and
-                  healthy ones. Tooth decay and cavities are common factors that
-                  reduce tooth strength and make chips more likely to occur.
-                  Teeth grinding, eating acid-producing foods, and acid reflux
-                  can damage the tooth enamel and weaken it.
+                  A. Avoid placing any pressure on the affected area, and eat
+                  carefully. Refrain from chewing on the side of the mouth where
+                  you had your root canal. Opt for soft foods until your tooth
+                  has healed. Usually, patients can manage any pain or
+                  discomfort during this time with over-the-counter medication.
                 </p>
 
-                <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q. How is a veneer applied?
+                <h2
+                  id="how-long-root-canal-recovery"
+                  className="text-justify text-primary font-tinos mt-3"
+                >
+                  Q. How long will it take me to recover from my root canal?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. First, our dentist will take a mold of the patient’s tooth
-                  to create the veneer. Then we will clean the patient’s tooth
-                  and use dental cement to bond the veneer to the tooth. An
-                  ultraviolet light hardens the cement quickly, and the patient
-                  can leave the office with their improved smile.
+                  A. You may be uncomfortable for a few days after the
+                  anesthesia wears off, especially if you were already dealing
+                  with swelling and inflammation. You should be able to return
+                  to your normal activities as soon as the day after the
+                  procedure. If your pain worsens or does not subside, call our
+                  office immediately.
                 </p>
               </div>
             </div>
@@ -473,13 +496,13 @@ const Services = () => {
             <div className="bg-dark p-5 mt-10 text-white">
               <h2 className="text-4xl font-cinzel mb-3">Dental Terminology</h2>
               <hr />
-              <div className="space-y-10">
+              <div className="space-y-10 ">
                 <div className="mt-5 font-tinos">
                   <h2 className="italic text-xl">Cosmetic Dentistry</h2>
                   <p>
                     Cosmetic dentistry is generally used to refer to any dental
                     work that improves the appearance (though not necessarily
-                    the function) of a person’s teeth, gums and/or bite.
+                    the function) of a person’s teeth, gums, and/or bite.
                   </p>
                   <hr className="mt-4" />
                 </div>
@@ -487,8 +510,9 @@ const Services = () => {
                 <div className="mt-5 font-tinos">
                   <h2 className="italic text-xl">Decay</h2>
                   <p>
-                    Tooth decay is when the enamel of the tooth begins to decay
-                    and cause erosion from plaque and tartar on the teeth.
+                    Tooth decay occurs when the enamel of the tooth begins to
+                    deteriorate due to the erosion caused by plaque and tartar
+                    on the teeth.
                   </p>
                   <hr className="mt-4" />
                 </div>
@@ -496,9 +520,9 @@ const Services = () => {
                 <div className="mt-5 font-tinos">
                   <h2 className="italic text-xl">Dental Caries</h2>
                   <p>
-                    Dental caries are also known as cavities and result from a
-                    lack of proper oral hygiene leaving plaque that forms tiny
-                    holes in the teeth.
+                    Dental caries, commonly known as cavities, occur when proper
+                    oral hygiene is not maintained, allowing plaque to form and
+                    create tiny holes in the teeth.
                   </p>
                   <hr className="mt-4" />
                 </div>
@@ -506,10 +530,9 @@ const Services = () => {
                 <div className="mt-5 font-tinos">
                   <h2 className="italic text-xl">Dental Checkup</h2>
                   <p>
-                    A dental checkup is an appointment that involves cleaning
-                    the teeth, identifying any signs of infection and removing
-                    said signs of infection at least once every six months in
-                    the office.
+                    A dental checkup is an appointment where the dentist cleans
+                    your teeth, identifies any signs of infection, and removes
+                    the infection at least once every six months.
                   </p>
                   <hr className="mt-4" />
                 </div>
@@ -517,9 +540,9 @@ const Services = () => {
                 <div className="mt-5 font-tinos">
                   <h2 className="italic text-xl">Dental Filling</h2>
                   <p>
-                    A dental filling involves restoring the structure of the
-                    tooth by using metal, alloy, porcelain or plastic to fill
-                    the tooth.
+                    A dental filling is used to restore the structure of a tooth
+                    by filling it with materials like metal, alloy, porcelain,
+                    or plastic to restore its function and appearance.
                   </p>
                   <hr className="mt-4" />
                 </div>
@@ -527,9 +550,9 @@ const Services = () => {
                 <div className="mt-5 font-tinos">
                   <h2 className="italic text-xl">Dental Prophylaxis</h2>
                   <p>
-                    A dental prophylaxis is a professional and detailed cleaning
-                    that involves the removal of plaque, calculus and stains
-                    from the teeth.
+                    Dental prophylaxis is a professional cleaning procedure that
+                    removes plaque, tartar, and stains from the teeth to
+                    maintain oral health.
                   </p>
                   <hr className="mt-4" />
                 </div>
@@ -537,9 +560,9 @@ const Services = () => {
                 <div className="mt-5 font-tinos">
                   <h2 className="italic text-xl">Dental Sealants</h2>
                   <p>
-                    Dental sealants contain a resinous material that we apply to
-                    the chewing surfaces of the posterior teeth to prevent
-                    dental caries.
+                    Dental sealants are resinous materials applied to the
+                    chewing surfaces of the posterior teeth to prevent cavities
+                    by shielding them from plaque.
                   </p>
                   <hr className="mt-4" />
                 </div>
@@ -547,9 +570,9 @@ const Services = () => {
                 <div className="mt-5 font-tinos">
                   <h2 className="italic text-xl">Dentist</h2>
                   <p>
-                    A dentist, also known as a dental surgeon, is a doctor who
-                    specializes in the diagnosis, prevention, and treatment of
-                    diseases and conditions of the oral cavity.
+                    A dentist, also known as a dental surgeon, specializes in
+                    diagnosing, preventing, and treating diseases and conditions
+                    of the oral cavity.
                   </p>
                   <hr className="mt-4" />
                 </div>
@@ -557,9 +580,9 @@ const Services = () => {
                 <div className="mt-5 font-tinos">
                   <h2 className="italic text-xl">Gingivitis</h2>
                   <p>
-                    Gingivitis is the inflammation of gum tissue that results
-                    from plaque, other infections in the mouth and poor oral
-                    hygiene.
+                    Gingivitis is the inflammation of gum tissue caused by
+                    plaque buildup and poor oral hygiene, which can lead to
+                    infection if untreated.
                   </p>
                   <hr className="mt-4" />
                 </div>
@@ -567,9 +590,9 @@ const Services = () => {
                 <div className="mt-5 font-tinos">
                   <h2 className="italic text-xl">Preventive Dentistry</h2>
                   <p>
-                    Preventive dentistry is the dentistry that focuses on
-                    maintaining oral health in order to prevent the spread of
-                    plaque, the formation of tartar and infections in the mouth.
+                    Preventive dentistry focuses on maintaining oral health
+                    through measures that prevent plaque buildup, tartar
+                    formation, and infections.
                   </p>
                   <hr className="mt-4" />
                 </div>
@@ -577,9 +600,8 @@ const Services = () => {
                 <div className="mt-5 font-tinos">
                   <h2 className="italic text-xl">Tartar</h2>
                   <p>
-                    Tartar forms when plaque builds up on the surface of the
-                    teeth and calcifies into a hard surface that is much more
-                    difficult to remove and will require professional treatment.
+                    Tartar forms when plaque hardens and becomes difficult to
+                    remove. It requires professional treatment for removal.
                   </p>
                   <hr className="mt-4" />
                 </div>
@@ -587,8 +609,9 @@ const Services = () => {
                 <div className="mt-5 font-tinos">
                   <h2 className="italic text-xl">Tooth Enamel</h2>
                   <p>
-                    Tooth enamel is the protective visible outer surface of a
-                    tooth that contains the dentin and dental pulp.
+                    Tooth enamel is the visible outer surface of the tooth that
+                    serves as a protective barrier to the underlying dentin and
+                    dental pulp.
                   </p>
                   <hr className="mt-4" />
                 </div>

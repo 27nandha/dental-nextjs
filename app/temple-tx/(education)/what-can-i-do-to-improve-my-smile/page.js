@@ -13,26 +13,26 @@ const Services = () => {
   return (
     <>
       {/* intro section */}
-      <section className="grid md:grid-cols-[1fr_1fr_1fr] grid-cols-1 md:gap-2  md:mt-[85px] border-y-[10px] border-dark mx-2">
-        <div className="bg-[url(/wisdom-teeth-extraction.webp)] bg-cover my-10"></div>
+      <section className="grid md:grid-cols-[1fr_1fr_1fr] grid-cols-1 md:gap-2  md:mt-[125px]  border-y-[10px] border-dark mx-2">
+        <div className="bg-[url(/what-can-i-do-to-improve-my-smile.webp)] bg-cover my-10"></div>
 
         <div className="px-10 py-10 space-y-3">
           <h2 className="text-5xl font-cinzel text-primary">
-            Wisdom Teeth Extraction
+            What Can I Do to Improve My Smile
           </h2>
           <p className="font-cinzel text-primary">Temple, TX</p>
           <p className="font-tinos  text-justify">
-            Wisdom teeth extraction can help to relieve pain in a patient’s
-            teeth that results from the wisdom teeth causing crowding issues or
-            growing incorrectly. There are many different reasons you may need
-            to extract your wisdom teeth. Wisdom teeth extraction removes the
-            third set of molars in the back of your mouth.
+            Brightening your smile can enhance your overall appearance. Most
+            people have at least one aspect of their smile that they would like
+            to improve. Fortunately, many options are available to enhance a
+            smile’s appearance — from proper maintenance to restorative and
+            cosmetic treatments.
           </p>
           <p className="font-tinos  text-justify">
-            Wisdom teeth extraction is available at Revital Dental in Temple and
-            the surrounding area. Most patients who need wisdom teeth extraction
-            are in the stages of young adulthood. Call us today at (254)
-            207-0708 to learn more and schedule an appointment.
+            Revital Dental in Temple and the surrounding area can help you
+            improve your smile. Our team will help determine the right treatment
+            to help you meet your smile goals. Contact us at (254) 207-0708 to
+            learn more about our services or schedule an appointment.
           </p>
         </div>
         <div className="py-10">
@@ -86,30 +86,28 @@ const Services = () => {
       {/* explanation */}
       <section className="md:grid md:grid-cols-[3fr_1fr]  md:w-[90%] w-[100%] md:mx-auto px-2 mt-3 gap-2">
         {/* left section */}
-        <div className="left-section " id="what-are-wisdom-teeth">
+        <div className="left-section " id="reasons-improve-smile">
           {/* dark section */}
           <div className="bg-dark p-5 text-white">
-            <h2 className="text-2xl font-cinzel mb-3">
-              Understanding Wisdom Teeth Extraction
-            </h2>
+            <h2 className="text-2xl font-cinzel mb-3">Improving Smiles</h2>
             <hr />
             <p className="text-justify font-tinos mt-4">
-              "Wisdom teeth" is the colloquial term for the third set of molars
-              that sit in the back of the mouth. They are called such because
-              they come between the more "mature" ages of 17 and 21. The
-              emergence of wisdom teeth can be uncomfortable, even if they are
-              emerging correctly. Wisdom teeth do not always necessitate
-              extraction. On the contrary, properly aligned wisdom teeth may
-              assist in chewing.
+              A beautiful smile is not only pleasing to the eye but also has
+              social and health benefits. Some common reasons people seek
+              treatment to improve their smiles include issues such as gaps,
+              chips, stains, missing teeth, and large or receding gums. Since a
+              smile is one of the first things people see, treatments to improve
+              the smile can help people feel more confident about their
+              appearance.
             </p>
             <p className="text-justify font-tinos mt-4">
-              However, if there is no adequate space for the wisdom teeth to
-              emerge or if the teeth are coming through in the wrong position,
-              they may become impacted (or trapped in the jaw or under the
-              gums). This may cause cysts, damage to neighboring teeth, gum
-              disease, infection, pain, tooth, decay, and tumors. A dentist
-              needs to monitor the patient’s wisdom teeth and determine the best
-              course of action.
+              A healthy smile can enhance people’s relationships, communication,
+              and self-esteem. The right treatment can correct damage and help
+              patients smile with pride. According to at least one study,
+              happiness with one’s smile has been directly correlated with
+              higher levels of self-confidence. No matter the dental issue,
+              there is a treatment that can help patients achieve the smile
+              results they want.
             </p>
           </div>
 
@@ -117,77 +115,70 @@ const Services = () => {
           {/* quote */}
           <div className="relative inline-block mt-10">
             <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-              “”Wisdom teeth” is the colloquial term for the third set of molars
-              that sit in the back of the mouth.”
+              “A beautiful smile is not only pleasing to the eye but also has
+              social and health benefits.”
             </h2>
             <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
           </div>
           {/* Q & A */}
-          <div className="mt-10" id="risks-of-extraction">
+          <div className="mt-10" id="importance-understanding-dentist">
             <h2 className="font-cinzel text-2xl text-primary">
-              What to Know Before Wisdom Teeth Extraction
+              Addressing Concerns
             </h2>
             <hr />
-            <p className="font-tinos mt-2">
-              Wisdom teeth extraction is a common and generally safe procedure
-              when performed by qualified doctors. However, like any surgery,
-              there is a small risk of complications. Our team takes all
-              necessary steps to reduce these risks. Patients should contact our
-              office immediately if they experience any of the following
-              symptoms after surgery:
+            <p className="font-tinos mt-2 text-justify">
+              Everyone has a unique smile, so patients need to find a dentist
+              who understands their wants and needs. Seeking professional help
+              to improve a smile is a big decision that should involve thorough
+              research and consideration. Communication throughout the treatment
+              process is an important part of ensuring that the patient is
+              comfortable throughout the process and satisfied with their
+              results.
             </p>
-            <ul className="font-tinos text-justify list-disc pl-4 mt-2">
-              <li>
-                Absent or dislodged blood clot at the extraction site after
-                surgery
-              </li>
-              <li>High temperature</li>
-              <li>Yellow or white discharge from the extraction site</li>
-              <li>Persistent pain and swelling</li>
-              <li>
-                Persistent, heavy bleeding that does not subside over time
-              </li>
-              <li>Throbbing pain in the gum or jaw</li>
-              <li>Unpleasant smell or taste in the mouth</li>
-            </ul>
-            <p className="font-tinos mt-2">
-              Most complications are minor and treatable when addressed early.
-              If any of these symptoms arise, prompt medical attention is
-              essential.
+            <p className="font-tinos mt-2 text-justify">
+              Patients should seek treatment from a dentist who values their
+              input and is open to discussing any questions or concerns. It is
+              important for patients to receive the necessary information and
+              professional input before going into the treatment process.
+              Listening to such concerns allows Revital Dental to create a
+              customized treatment plan to improve each patient’s smile.
             </p>
           </div>
 
           {/* quote */}
           <div className="relative inline-block mt-10 w-full">
             <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-              “Wisdom teeth extraction is commonly performed and generally safe
-              when carried out by qualified doctors.”
+              “Everyone has a unique smile, so it is essential for patients to
+              find a dentist who understands their wants and needs.”
             </h2>
             <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
           </div>
           {/* Q & A */}
-          <div className="mt-10" id="preparing-for-extraction">
+          <div className="mt-10" id="smile-care-techniques">
             <h2 className="font-cinzel text-2xl text-primary">
-              Preparing for Wisdom Teeth Extraction
+              Maintaining a Healthy Smile
             </h2>
             <hr />
             <p className="font-tinos mt-2">
-              The first step to wisdom teeth extraction begins with an initial
-              consultation. During this time, patients should be open and honest
-              with their doctor about their entire medical history. This
-              includes but is not limited to sharing any health problems they
-              may have, any medications and supplements they may take regularly,
-              and any lifestyle choices that may influence the success of the
-              surgery. The consultation is also a good time for patients to
-              assuage their anxieties by asking any questions about the
-              procedure.
+              A smile’s health plays an important role in its appearance. Proper
+              dental care techniques play a vital role in sustaining and
+              improving a healthy smile. Although a healthy smile is not
+              achieved overnight, developing healthy dental habits can help
+              improve the look and health of teeth. Some techniques that support
+              healthy teeth and gums include:
             </p>
-
+            <ul className="font-tinos text-justify list-disc  pl-4 mt-2">
+              <li>Brushing teeth twice a day</li>
+              <li>Flossing at least once a day</li>
+              <li>Limiting staining foods or drinks</li>
+              <li>Receiving prompt dental treatment</li>
+              <li>Scheduling regular dental check-ups</li>
+            </ul>
             {/* quotes */}
             <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “The first step to wisdom teeth extraction begins with an
-                initial consultation.”
+                “Proper dental care techniques play a vital role in sustaining
+                and improving a healthy smile.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
@@ -208,34 +199,33 @@ const Services = () => {
               </h2>
             </div>
 
-            <div className="mt-10" id="after-bone-graft">
+            <div className="mt-10" id="restorative-methods">
               <h2 className="font-cinzel text-2xl text-primary">
-                What to Expect During Wisdom Teeth Extraction
+                Restorative Methods
               </h2>
               <hr />
               <p className="font-tinos mt-2 text-justify">
-                Generally, wisdom teeth extraction begins with the doctor
-                injecting the patient with a local anesthetic to numb them to
-                the pain of the procedure. The doctor will then cut into the gum
-                tissue to expose the tooth and bone, making sure to remove any
-                bone blocking access to the tooth root. Depending on how
-                severely impacted the tooth is, the tooth may be divided into
-                sections to be removed little by little.
+                Restorative dental procedures are available to help repair the
+                appearance and function of a patient’s teeth. The primary focus
+                of restorative methods is to replace damaged or missing tooth
+                structure. There are two types of restorative methods, direct
+                and indirect. Direct dental restorations involve placing a
+                filling directly into a prepped and cleaned tooth cavity.
               </p>
               <p className="font-tinos mt-2 text-justify">
-                After extracting the tooth, the doctor will clean the extraction
-                site of any debris. Afterward, the wound may or may not need
-                stitches, and the doctor will pack gauze over the extraction
-                site to control bleeding and to aid in the formation of a blood
-                clot.
+                The creation of indirect dental restorations occurs outside of
+                the mouth cavity to fix more severe dental damage. The common
+                types of indirect restorative methods include veneers, dental
+                crowns, inlays, onlays, and dental bridges. Patients should
+                consult our dentist to learn about the available options.
               </p>
             </div>
 
             {/* quotes */}
             <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “After extracting the tooth, the doctor will clean the
-                extraction site of any debris.”
+                “Restorative dental procedures are available to help repair the
+                appearance and function of a patient’s teeth.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
@@ -248,26 +238,49 @@ const Services = () => {
               <div className="flex flex-col">
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#what-are-wisdom-teeth"
-                >
-                  Q. <span className="underline">What are wisdom teeth?</span>
-                </a>
-                <a
-                  className="text-justify font-tinos mt-3"
-                  href="#risks-of-extraction"
+                  href="#reasons-improve-smile"
                 >
                   Q.{" "}
                   <span className="underline">
-                    What are the potential risks of wisdom teeth extraction?
+                    What reasons cause people to want to improve their smile?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#preparing-for-extraction"
+                  href="#importance-understanding-dentist"
                 >
                   Q.{" "}
                   <span className="underline">
-                    How do I begin preparing for wisdom teeth extraction?
+                    Why is it important for patients to discuss their concerns
+                    with a dentist that understands them?
+                  </span>
+                </a>
+                <a
+                  className="text-justify font-tinos mt-3"
+                  href="#smile-care-techniques"
+                >
+                  Q.{" "}
+                  <span className="underline">
+                    What care techniques help maintain a healthy smile?
+                  </span>
+                </a>
+                <a
+                  className="text-justify font-tinos mt-3"
+                  href="#restorative-methods"
+                >
+                  Q.{" "}
+                  <span className="underline">
+                    What restorative methods can help patients improve their
+                    smiles?
+                  </span>
+                </a>
+                <a
+                  className="text-justify font-tinos mt-3"
+                  href="#cosmetic-treatments"
+                >
+                  Q.{" "}
+                  <span className="underline">
+                    What cosmetic treatments can patients receive?
                   </span>
                 </a>
               </div>
@@ -277,54 +290,69 @@ const Services = () => {
               </h2>
               <hr />
               <div className="flex flex-col mb-4">
-                <a className="text-justify font-tinos mt-3" href="#why-xrays">
-                  Q. <span className="underline">Why are x-rays taken?</span>
+                <a
+                  className="text-justify font-tinos mt-3"
+                  href="#common-cosmetic-services"
+                >
+                  Q.{" "}
+                  <span className="underline">
+                    What are the common cosmetic dental services?
+                  </span>
+                </a>
+                <a
+                  className="text-justify font-tinos mt-3"
+                  href="#why-see-cosmetic-dentist"
+                >
+                  Q.{" "}
+                  <span className="underline">
+                    Why should someone see a cosmetic dentist?
+                  </span>
+                </a>
+                <a
+                  className="text-justify font-tinos mt-3"
+                  href="#maintaining-smile"
+                >
+                  Q.{" "}
+                  <span className="underline">
+                    How does one maintain a healthy smile?
+                  </span>
                 </a>
               </div>
             </div>
 
-            <div className="mt-10" id="alternatives-bone-grafting">
+            <div className="mt-10" id="cosmetic-treatments">
               <h2 className="font-cinzel text-2xl text-primary">
-                Aftercare for Wisdom Teeth Extraction
+                Cosmetic Treatments
               </h2>
               <hr />
               <p className="font-tinos mt-2 text-justify">
-                Patients should expect to rest for the remainder of the day
-                following their wisdom teeth extraction. Though regular
-                activities can be resumed as soon as the day after, patients
-                should refrain from any strenuous activity for at least a week
-                following their procedure. Otherwise, they run the risk of
-                overexertion and dislodging the blood clot. Our team will
-                provide patients with a customized recovery plan for their
-                specific procedures.
+                Cosmetic treatments can help patients improve the appearance of
+                stained, discolored, worn, chipped, broken, or misshapen teeth.
+                The most common cosmetic dental treatment is teeth whitening.
+                This procedure can brighten and whiten teeth quickly and
+                effectively. Dental veneers are a cosmetic treatment that
+                consists of placing thin shells over teeth to fix crookedness,
+                chips, or discoloration.
               </p>
               <p className="font-tinos mt-2 text-justify">
-                Complications following wisdom teeth extraction are rare as long
-                as patients follow this plan. However, patients should contact
-                us immediately if they are experiencing any of the following:
+                Other popular cosmetic treatments include dental bonding and
+                enamel shaping. Dental bonding involves adhering tooth-colored
+                composite material to the surface of badly stained, broken, or
+                chipped teeth. During enamel shaping, the tooth is reshaped by
+                filing or removing the enamel. Patients interested in receiving
+                cosmetic treatment should talk to our dentist to find the right
+                one for their needs.
               </p>
-              <ul className="font-tinos text-justify list-disc pl-4 mt-2">
-                <li>Blood or pus in nasal discharge</li>
-                <li>Difficulty swallowing or breathing</li>
-                <li>Excessive bleeding</li>
-                <li>Fever</li>
-                <li>Foul taste in the mouth</li>
-                <li>Persistent numbness or loss of feeling</li>
-                <li>Pus in or oozing from the socket</li>
-                <li>Severe pain that does not subside</li>
-                <li>Swelling that does not subside after two or three days</li>
-              </ul>
             </div>
-
-            {/* quotes */}
             <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “Though regular activities can be resumed as soon as the day
-                after, patients should refrain from any strenuous activity for
-                at least a week following their procedure.”
+                “Cosmetic treatments can help patients improve the appearance of
+                stained, discolored, worn, chipped, broken, or misshapen teeth.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
+
+            {/* Q & A */}
             <div className="bg-gray-100 p-5 mt-10">
               <h2 className="text-4xl text-center font-cinzel mb-3 text-primary">
                 Frequently Asked Questions
@@ -332,60 +360,61 @@ const Services = () => {
               <hr />
               <div className="flex flex-col">
                 <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q. Will I be able to drive myself home after wisdom teeth
-                  extraction?
+                  Q. Is teeth whitening a safe procedure?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. This varies from person to person and the type of
-                  anesthesia used. Some patients who were only under a local
-                  anesthetic may feel alert enough to drive back home after
-                  their procedure, while some may not. However, those who have
-                  undergone general anesthesia will need to make arrangements
-                  for someone to drive them to and from the operation.
+                  A. When done properly, teeth whitening is a safe procedure
+                  that does not damage the tooth’s nerves or affect the enamel’s
+                  mineral content. Although it is a minimally invasive
+                  treatment, some people may experience side effects like teeth
+                  sensitivity or gum irritation. Both of these side effects
+                  should diminish over time.
                 </p>
 
                 <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q. Will I be in pain after wisdom teeth extraction?
+                  Q. Is teeth whitening permanent?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. You should expect some pain and discomfort following the
-                  procedure. However, this is generally manageable through
-                  administering ice packs and taking over-the-counter pain
-                  relievers. The dentist may prescribe you antibiotics,
-                  depending on the severity of your procedure.
+                  A. Teeth whitening is not permanent. The effects vary for each
+                  person but may last anywhere between three months to three
+                  years. Patients who receive this procedure will need to
+                  receive additional treatments to whiten intrinsic and
+                  extrinsic tooth discoloration every so often.
                 </p>
 
                 <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q. What can I eat after wisdom teeth extraction?
+                  Q. When are dental crowns necessary?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. You may not have much of an appetite after getting your
-                  wisdom teeth extracted. Still, it is essential to stay
-                  hydrated and eat well. Since you do not want to dislodge your
-                  blood clot or stitches, stick to soft, low- or no-chew foods
-                  for the first few days. Refrain from eating anything hot or
-                  hard. Do not drink from a straw or slurp too vigorously from a
-                  spoon.
+                  A. Dental crowns may be necessary for various situations to
+                  restore tooth appearance and function after a restorative
+                  dental procedure. Crowns can protect and reinforce cracked,
+                  worn down, or broken teeth. These dental restorations can also
+                  hold a dental bridge in place, cover misshapen or discolored
+                  teeth, or support a tooth with a large filling.
                 </p>
 
                 <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q. How old do I need to be to have my wisdom teeth extracted?
+                  Q. Does teeth whitening work on crowns or veneers?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Wisdom teeth can be extracted at any age, depending on the
-                  severity and type of impaction. However, complications are
-                  less likely in younger adults.
+                  A. Teeth whitening solution removes stains from the tooth
+                  enamel. Dental restorations such as crowns and veneers do not
+                  consist of enamel but consist of strong materials designed to
+                  be stain-resistant. Crowns and veneers do not respond to teeth
+                  whitening. However, they should not stain or require whitening
+                  in the first place.
                 </p>
 
                 <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q. Is there anything I should avoid while recovering from my
-                  wisdom teeth extraction?
+                  Q. What are veneers used to treat?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. You should exercise caution to avoid dislodging your blood
-                  clot or stitches for the first week. This means avoiding
-                  smoking, spitting, drinking from a straw, or anything else
-                  that might disrupt your healing.
+                  A. Veneers are a versatile dental restoration that can treat
+                  many dental issues. Typically, veneers protect and improve the
+                  appearance of teeth that have chipped, cracked, minor breaks,
+                  or have thin enamel. They can also cover stained or misshapen
+                  teeth.
                 </p>
               </div>
             </div>
@@ -448,22 +477,21 @@ const Services = () => {
               <hr />
               <div className="space-y-10">
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Anesthesia</h2>
+                  <h2 className="italic text-xl">Bleachorexia</h2>
                   <p>
-                    Anesthesia is a substance that medical professionals
-                    administer in various forms (gas, injection, or pill) to
-                    help patients not feel pain or sensations during surgical
-                    operations.
+                    Bleachorexia is a condition where individuals excessively
+                    use teeth whitening products without professional guidance,
+                    leading to enamel erosion and gum damage.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Asymptomatic Wisdom Teeth</h2>
+                  <h2 className="italic text-xl">Carbamide Peroxide</h2>
                   <p>
-                    Asymptomatic wisdom teeth are wisdom teeth that show no
-                    symptoms of irritation, inflammation, or overcrowding that
-                    would require extraction.
+                    Carbamide peroxide is a bleaching agent containing hydrogen
+                    peroxide, commonly used in teeth whitening treatments for
+                    its effectiveness in breaking down stains.
                   </p>
                   <hr className="mt-4" />
                 </div>
@@ -471,39 +499,29 @@ const Services = () => {
                 <div className="mt-5 font-tinos">
                   <h2 className="italic text-xl">Cosmetic Dentistry</h2>
                   <p>
-                    Cosmetic dentistry refers to any dental work that improves
-                    the appearance (though not necessarily the function) of a
-                    person’s teeth, gums, and/or bite.
+                    Cosmetic dentistry includes dental procedures aimed at
+                    improving the aesthetic appearance of teeth, gums, and
+                    smile, such as whitening, veneers, and reshaping.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Cysts – Fluid Filled Sacs</h2>
+                  <h2 className="italic text-xl">Deeper Teeth Stains</h2>
                   <p>
-                    Cysts are fluid-filled sacs that can also contain gas or pus
-                    and may occur anywhere on the body, including in or around
-                    the mouth and teeth.
+                    Deeper teeth stains are discolorations that affect the
+                    internal layers of the tooth and often require professional
+                    treatment due to resistance to surface whitening products.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Dental Checkup</h2>
+                  <h2 className="italic text-xl">Dentin Hypersensitivity</h2>
                   <p>
-                    A dental checkup is an appointment that involves cleaning
-                    the teeth, identifying any signs of infection, and removing
-                    them, ideally at least once every six months.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Dental Prophylaxis</h2>
-                  <p>
-                    Dental prophylaxis is a professional and thorough cleaning
-                    that involves the removal of plaque, calculus, and stains
-                    from the teeth.
+                    Dentin hypersensitivity occurs when the protective enamel
+                    layer is worn down, exposing the dentin and causing sharp
+                    pain in response to temperature or pressure changes.
                   </p>
                   <hr className="mt-4" />
                 </div>
@@ -511,76 +529,71 @@ const Services = () => {
                 <div className="mt-5 font-tinos">
                   <h2 className="italic text-xl">Dentist</h2>
                   <p>
-                    A dentist, also known as a dental surgeon, is a doctor
-                    specializing in the diagnosis, prevention, and treatment of
-                    diseases and conditions of the oral cavity.
+                    A dentist is a healthcare professional specializing in the
+                    prevention, diagnosis, and treatment of oral diseases and
+                    conditions involving the teeth and gums.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Dry Socket</h2>
+                  <h2 className="italic text-xl">Hydrogen Peroxide</h2>
                   <p>
-                    A dry socket can occur after tooth extraction when the blood
-                    clot is lost, exposing white bone in the socket. It often
-                    causes bad breath and an unpleasant taste in the mouth.
+                    Hydrogen peroxide is an active ingredient in many whitening
+                    products that breaks down stains and lightens the natural
+                    color of teeth.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Oral Surgery</h2>
+                  <h2 className="italic text-xl">Relief ACP</h2>
                   <p>
-                    Oral surgery focuses on procedures involving the mouth, jaw,
-                    gums, or teeth, and can repair, enhance, or correct various
-                    oral issues.
+                    Relief ACP (Amorphous Calcium Phosphate) is a dental gel
+                    used to reduce sensitivity and promote enamel
+                    remineralization after teeth whitening or irritation.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Pericoronitis</h2>
+                  <h2 className="italic text-xl">Stained Dentin</h2>
                   <p>
-                    Pericoronitis is the inflammation of the soft tissue
-                    surrounding the crown of a partially erupted tooth.
+                    Stained dentin refers to discoloration that affects the
+                    layer beneath enamel, often requiring in-office treatments
+                    to effectively brighten and restore tooth color.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Preventive Dentistry</h2>
+                  <h2 className="italic text-xl">Surface Enamel</h2>
                   <p>
-                    Preventive dentistry focuses on maintaining oral health to
-                    prevent plaque buildup, tartar formation, and infections.
+                    Surface enamel is the visible, outermost layer of a tooth
+                    that provides protection and aesthetic appeal. It is highly
+                    mineralized and can be stained by dietary habits.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Third Molars</h2>
+                  <h2 className="italic text-xl">Surface Teeth Stains</h2>
                   <p>
-                    Third molars, also known as wisdom teeth, often require
-                    removal to prevent pain and other dental issues.
+                    Surface teeth stains affect the enamel and are commonly
+                    caused by dark-colored foods, beverages, or smoking. These
+                    stains can often be removed with whitening products.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Vacuum Formed Mouthguard</h2>
+                  <h2 className="italic text-xl">
+                    Teeth Whitening Concentrate
+                  </h2>
                   <p>
-                    A vacuum formed mouthguard is customized to fit an
-                    individual’s teeth perfectly by molding a plastic material
-                    to their dental impression.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Wisdom Teeth Impaction</h2>
-                  <p>
-                    Wisdom teeth impaction occurs when the teeth remain under
-                    the gums and cannot be reached easily for cleaning, often
-                    causing discomfort.
+                    Teeth whitening concentrate refers to the professional-grade
+                    bleaching agents used in dental offices, offering stronger
+                    and more consistent results than over-the-counter options.
                   </p>
                   <hr className="mt-4" />
                 </div>

@@ -3,6 +3,7 @@ import { FaCaretDown } from "react-icons/fa";
 import { Cinzel } from "next/font/google";
 import Link from "next/link";
 import { FaYelp } from "react-icons/fa";
+import Image from "next/image";
 
 const cinzel = Cinzel({
   subsets: ["latin"], // you can add 'latin-ext' if needed
@@ -13,29 +14,26 @@ const Services = () => {
   return (
     <>
       {/* intro section */}
-      <section className="grid md:grid-cols-[1fr_1fr_1fr] grid-cols-1 md:gap-2  md:mt-[85px]  border-y-[10px] border-dark mx-2">
-        <div className="bg-[url(/what-can-i-do-to-improve-my-smile.webp)] bg-cover my-10"></div>
+      <section className="grid md:grid-cols-[1fr_1fr_1fr] grid-cols-1 md:gap-2  md:mt-[125px]  border-y-[10px] border-dark mx-2">
+        <div className="bg-[url(/smile-makeover.webp)] bg-cover my-10"></div>
 
-        <div className="px-10 py-10 space-y-3">
-          <h2 className="text-5xl font-cinzel text-primary">
-            What Can I Do to Improve My Smile
-          </h2>
+        <div className="px-10 py-5 space-y-3">
+          <h2 className="text-5xl font-cinzel text-primary">Smile Makeover</h2>
           <p className="font-cinzel text-primary">Temple, TX</p>
           <p className="font-tinos  text-justify">
-            Brightening your smile can enhance your overall appearance. Most
-            people have at least one aspect of their smile that they would like
-            to improve. Fortunately, many options are available to enhance a
-            smile’s appearance — from proper maintenance to restorative and
-            cosmetic treatments.
+            If you are unhappy with your smile’s appearance, a smile makeover
+            can help. Smile makeovers involve a combination of at least two
+            cosmetic dental procedures. People can choose from various
+            procedures to achieve a more beautiful smile.
           </p>
           <p className="font-tinos  text-justify">
-            Revital Dental in Temple and the surrounding area can help you
-            improve your smile. Our team will help determine the right treatment
-            to help you meet your smile goals. Contact us at (254) 207-0708 to
-            learn more about our services or schedule an appointment.
+            Smile makeovers are available at Revital Dental in Temple and the
+            surrounding area. Our team can help determine which procedures are
+            right for your needs. Call us today at (254) 207-0708 to schedule an
+            appointment or learn more about our services.
           </p>
         </div>
-        <div className="py-10">
+        <div className="py-5">
           <form
             action=""
             className="w-full mx-auto mt-10 md:mt-0 max-w-[400px]"
@@ -86,99 +84,100 @@ const Services = () => {
       {/* explanation */}
       <section className="md:grid md:grid-cols-[3fr_1fr]  md:w-[90%] w-[100%] md:mx-auto px-2 mt-3 gap-2">
         {/* left section */}
-        <div className="left-section " id="reasons-improve-smile">
+        <div className="left-section " id="what-is-root-canal">
           {/* dark section */}
           <div className="bg-dark p-5 text-white">
-            <h2 className="text-2xl font-cinzel mb-3">Improving Smiles</h2>
+            <h2 className="text-2xl font-cinzel mb-3">
+              Candidates for a Smile Makeover
+            </h2>
             <hr />
             <p className="text-justify font-tinos mt-4">
-              A beautiful smile is not only pleasing to the eye but also has
-              social and health benefits. Some common reasons people seek
-              treatment to improve their smiles include issues such as gaps,
-              chips, stains, missing teeth, and large or receding gums. Since a
-              smile is one of the first things people see, treatments to improve
-              the smile can help people feel more confident about their
-              appearance.
+              A good candidate for a smile makeover is someone who is not
+              satisfied with their smile. They may lack confidence in the
+              appearance of their teeth. Other people who may want to consider a
+              makeover of their smiles are those who are having functional
+              issues.
             </p>
             <p className="text-justify font-tinos mt-4">
-              A healthy smile can enhance people’s relationships, communication,
-              and self-esteem. The right treatment can correct damage and help
-              patients smile with pride. According to at least one study,
-              happiness with one’s smile has been directly correlated with
-              higher levels of self-confidence. No matter the dental issue,
-              there is a treatment that can help patients achieve the smile
-              results they want.
+              Misshapen teeth, crooked teeth, and gaps in the mouth can affect
+              speech and cause other complications such as difficulty and pain
+              when chewing. People can choose to have a smile makeover for many
+              reasons. Our team can create a customized treatment plan according
+              to each patient’s unique needs and goals.
             </p>
           </div>
 
-          {/* question and answer section */}
           {/* quote */}
           <div className="relative inline-block mt-10">
             <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-              “A beautiful smile is not only pleasing to the eye but also has
-              social and health benefits.”
+              “A good candidate for a smile makeover is someone who is not
+              satisfied with their smile.”
             </h2>
             <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
           </div>
+
           {/* Q & A */}
-          <div className="mt-10" id="importance-understanding-dentist">
+          <div className="mt-10" id="root-canal-benefits">
             <h2 className="font-cinzel text-2xl text-primary">
-              Addressing Concerns
+              Dental Care Plan After the Makeover
             </h2>
             <hr />
             <p className="font-tinos mt-2 text-justify">
-              Everyone has a unique smile, so patients need to find a dentist
-              who understands their wants and needs. Seeking professional help
-              to improve a smile is a big decision that should involve thorough
-              research and consideration. Communication throughout the treatment
-              process is an important part of ensuring that the patient is
-              comfortable throughout the process and satisfied with their
-              results.
+              The procedures in a smile makeover require regular oral hygiene
+              care and may need maintenance over time. For example, teeth
+              whitening is not a permanent treatment. Patients will need
+              touch-up treatments to maintain their results. While it is always
+              important to practice good oral hygiene, it is especially
+              important after a smile makeover.
             </p>
             <p className="font-tinos mt-2 text-justify">
-              Patients should seek treatment from a dentist who values their
-              input and is open to discussing any questions or concerns. It is
-              important for patients to receive the necessary information and
-              professional input before going into the treatment process.
-              Listening to such concerns allows Revital Dental to create a
-              customized treatment plan to improve each patient’s smile.
+              Proper maintenance and care will help prevent future dental issues
+              and previous problems from reappearing. Our team will provide
+              patients with tips and instructions on how to maintain their new
+              smile after. Tips for maintaining a newly restored smile include
+              brushing and flossing multiple times daily and visiting the
+              dentist for professional cleanings on a regular basis. Certain
+              procedures require special care, so it is important to follow the
+              instructions precisely.
             </p>
           </div>
 
-          {/* quote */}
-          <div className="relative inline-block mt-10 w-full">
+          <div className="relative inline-block mt-10">
             <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-              “Everyone has a unique smile, so it is essential for patients to
-              find a dentist who understands their wants and needs.”
+              “While it is always important to practice good oral hygiene, it is
+              especially important after a smile makeover.”
             </h2>
             <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
           </div>
+
           {/* Q & A */}
-          <div className="mt-10" id="smile-care-techniques">
+          <div className="mt-10" id="root-canal-process">
             <h2 className="font-cinzel text-2xl text-primary">
-              Maintaining a Healthy Smile
+              Dental Treatments for a Smile Makeover
             </h2>
             <hr />
+
             <p className="font-tinos mt-2">
-              A smile’s health plays an important role in its appearance. Proper
-              dental care techniques play a vital role in sustaining and
-              improving a healthy smile. Although a healthy smile is not
-              achieved overnight, developing healthy dental habits can help
-              improve the look and health of teeth. Some techniques that support
-              healthy teeth and gums include:
+              After examining the patient’s teeth, we will develop a customized
+              treatment plan to address their unique needs. Smile makeovers
+              involve a minimum of two procedures. There are numerous treatment
+              options to choose from depending on the patient’s issues.
             </p>
-            <ul className="font-tinos text-justify list-disc  pl-4 mt-2">
-              <li>Brushing teeth twice a day</li>
-              <li>Flossing at least once a day</li>
-              <li>Limiting staining foods or drinks</li>
-              <li>Receiving prompt dental treatment</li>
-              <li>Scheduling regular dental check-ups</li>
-            </ul>
+            <p className="font-tinos mt-2">
+              Some of the most common dental treatments include veneers,
+              bonding, implants, teeth whitening, crowns, and bridges. People
+              who are interested in receiving a smile makeover should contact us
+              to learn about the available options. A smile makeover can correct
+              various cosmetic issues, such as gaps, stains, and crooked,
+              missing, or uneven teeth. We provide comprehensive and custom
+              treatments to help smiles look their best.
+            </p>
+
             {/* quotes */}
             <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “Proper dental care techniques play a vital role in sustaining
-                and improving a healthy smile.”
+                “Some of the most common dental treatments include veneers,
+                bonding, implants, teeth whitening, crowns, and bridges.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
@@ -199,33 +198,35 @@ const Services = () => {
               </h2>
             </div>
 
-            <div className="mt-10" id="restorative-methods">
+            <div className="mt-10" id="prevent-root-canal">
               <h2 className="font-cinzel text-2xl text-primary">
-                Restorative Methods
+                Reasons to Get a Smile Makeover
               </h2>
               <hr />
               <p className="font-tinos mt-2 text-justify">
-                Restorative dental procedures are available to help repair the
-                appearance and function of a patient’s teeth. The primary focus
-                of restorative methods is to replace damaged or missing tooth
-                structure. There are two types of restorative methods, direct
-                and indirect. Direct dental restorations involve placing a
-                filling directly into a prepped and cleaned tooth cavity.
+                Certain lifestyle choices can adversely affect the appearance
+                and function of a smile. One lifestyle choice that can affect
+                the appearance of teeth is smoking. According to Healthline, the
+                nicotine and tar in cigarettes can cause teeth to become
+                yellowed and stained. Additionally, people who smoke are also at
+                higher risk of gum disease, further damaging teeth.
               </p>
               <p className="font-tinos mt-2 text-justify">
-                The creation of indirect dental restorations occurs outside of
-                the mouth cavity to fix more severe dental damage. The common
-                types of indirect restorative methods include veneers, dental
-                crowns, inlays, onlays, and dental bridges. Patients should
-                consult our dentist to learn about the available options.
+                People should also avoid eating and drinking sugary foods and
+                beverages. The sugar feeds the bacteria, which produce acid that
+                can also damage teeth, causing cavities to form or erosion to
+                occur. Fortunately, a smile makeover can give people a fresh
+                start and a new smile. It is important for people who receive a
+                smile makeover to change their lifestyle and make healthy
+                choices to maintain a healthy, beautiful smile.
               </p>
             </div>
 
             {/* quotes */}
             <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “Restorative dental procedures are available to help repair the
-                appearance and function of a patient’s teeth.”
+                “Certain lifestyle choices can adversely affect the appearance
+                and function of a smile.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
@@ -238,49 +239,40 @@ const Services = () => {
               <div className="flex flex-col">
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#reasons-improve-smile"
+                  href="#who-can-get-smile-makeover"
                 >
                   Q.{" "}
                   <span className="underline">
-                    What reasons cause people to want to improve their smile?
+                    Who can get a smile makeover?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#importance-understanding-dentist"
+                  href="#care-after-smile-makeover"
                 >
                   Q.{" "}
                   <span className="underline">
-                    Why is it important for patients to discuss their concerns
-                    with a dentist that understands them?
+                    How should people take care of their teeth after a smile
+                    makeover?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#smile-care-techniques"
+                  href="#treatments-in-smile-makeover"
                 >
                   Q.{" "}
                   <span className="underline">
-                    What care techniques help maintain a healthy smile?
+                    What dental treatments are possible in a smile makeover?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#restorative-methods"
+                  href="#causes-of-smile-makeover"
                 >
                   Q.{" "}
                   <span className="underline">
-                    What restorative methods can help patients improve their
-                    smiles?
-                  </span>
-                </a>
-                <a
-                  className="text-justify font-tinos mt-3"
-                  href="#cosmetic-treatments"
-                >
-                  Q.{" "}
-                  <span className="underline">
-                    What cosmetic treatments can patients receive?
+                    What substances and habits may cause someone to get a smile
+                    makeover?
                   </span>
                 </a>
               </div>
@@ -292,67 +284,37 @@ const Services = () => {
               <div className="flex flex-col mb-4">
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#common-cosmetic-services"
+                  href="#removable-partial-dentures"
                 >
                   Q.{" "}
                   <span className="underline">
-                    What are the common cosmetic dental services?
+                    How do removable partial dentures work?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#why-see-cosmetic-dentist"
+                  href="#partial-dentures-one-tooth"
                 >
                   Q.{" "}
                   <span className="underline">
-                    Why should someone see a cosmetic dentist?
+                    What are the pros and cons of partial dentures for one
+                    missing tooth?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#maintaining-smile"
+                  href="#why-dentures-preferred"
                 >
                   Q.{" "}
                   <span className="underline">
-                    How does one maintain a healthy smile?
+                    Why are dentures a preferred treatment?
                   </span>
                 </a>
               </div>
             </div>
 
-            <div className="mt-10" id="cosmetic-treatments">
-              <h2 className="font-cinzel text-2xl text-primary">
-                Cosmetic Treatments
-              </h2>
-              <hr />
-              <p className="font-tinos mt-2 text-justify">
-                Cosmetic treatments can help patients improve the appearance of
-                stained, discolored, worn, chipped, broken, or misshapen teeth.
-                The most common cosmetic dental treatment is teeth whitening.
-                This procedure can brighten and whiten teeth quickly and
-                effectively. Dental veneers are a cosmetic treatment that
-                consists of placing thin shells over teeth to fix crookedness,
-                chips, or discoloration.
-              </p>
-              <p className="font-tinos mt-2 text-justify">
-                Other popular cosmetic treatments include dental bonding and
-                enamel shaping. Dental bonding involves adhering tooth-colored
-                composite material to the surface of badly stained, broken, or
-                chipped teeth. During enamel shaping, the tooth is reshaped by
-                filing or removing the enamel. Patients interested in receiving
-                cosmetic treatment should talk to our dentist to find the right
-                one for their needs.
-              </p>
-            </div>
-            <div className="relative inline-block mt-10 w-full">
-              <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “Cosmetic treatments can help patients improve the appearance of
-                stained, discolored, worn, chipped, broken, or misshapen teeth.”
-              </h2>
-              <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
-            </div>
-
             {/* Q & A */}
+
             <div className="bg-gray-100 p-5 mt-10">
               <h2 className="text-4xl text-center font-cinzel mb-3 text-primary">
                 Frequently Asked Questions
@@ -360,61 +322,77 @@ const Services = () => {
               <hr />
               <div className="flex flex-col">
                 <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q. Is teeth whitening a safe procedure?
+                  Q.{" "}
+                  <span className="underline">
+                    Is a smile makeover the same as full mouth rejuvenation?
+                  </span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. When done properly, teeth whitening is a safe procedure
-                  that does not damage the tooth’s nerves or affect the enamel’s
-                  mineral content. Although it is a minimally invasive
-                  treatment, some people may experience side effects like teeth
-                  sensitivity or gum irritation. Both of these side effects
-                  should diminish over time.
+                  A. No, it is not. Full mouth rejuvenation uses many of the
+                  same cosmetic methods as a makeover, but it also consists of
+                  general and restorative services, such as TMJ or gum disease
+                  treatment. A smile makeover is more cosmetic based and is a
+                  less extensive process.
                 </p>
 
                 <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q. Is teeth whitening permanent?
+                  Q.{" "}
+                  <span className="underline">
+                    What are the most common procedures used for a smile
+                    makeover?
+                  </span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Teeth whitening is not permanent. The effects vary for each
-                  person but may last anywhere between three months to three
-                  years. Patients who receive this procedure will need to
-                  receive additional treatments to whiten intrinsic and
-                  extrinsic tooth discoloration every so often.
+                  A. Every situation is different, but certain procedures are
+                  used more commonly than others. These include veneers,
+                  tooth-colored fillings, bonding, and gum contouring. Teeth
+                  whitening is probably the most commonly used method.
                 </p>
 
                 <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q. When are dental crowns necessary?
+                  Q.{" "}
+                  <span className="underline">
+                    How long does a makeover take?
+                  </span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Dental crowns may be necessary for various situations to
-                  restore tooth appearance and function after a restorative
-                  dental procedure. Crowns can protect and reinforce cracked,
-                  worn down, or broken teeth. These dental restorations can also
-                  hold a dental bridge in place, cover misshapen or discolored
-                  teeth, or support a tooth with a large filling.
+                  A. The overall timeframe of a smile makeover varies greatly
+                  based on the types and number of procedures. Some methods,
+                  like teeth whitening, take one visit. Many of the procedures
+                  require at least two visits, and some are spaced weeks apart.
+                  Dental implants usually take the longest, as it takes numerous
+                  steps. The whole process can take months to complete.
                 </p>
 
                 <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q. Does teeth whitening work on crowns or veneers?
+                  Q.{" "}
+                  <span className="underline">
+                    Is there recovery time after a smile makeover?
+                  </span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Teeth whitening solution removes stains from the tooth
-                  enamel. Dental restorations such as crowns and veneers do not
-                  consist of enamel but consist of strong materials designed to
-                  be stain-resistant. Crowns and veneers do not respond to teeth
-                  whitening. However, they should not stain or require whitening
-                  in the first place.
+                  A. Many of the procedures do not require recovery time.
+                  Others, such as implants, may include some discomfort and
+                  swelling after the procedure. Patients may need to restrict
+                  physical activity and temporarily change eating habits until
+                  healing is complete. Our team will provide patients with
+                  instructions and tips to recover after treatment.
                 </p>
 
                 <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q. What are veneers used to treat?
+                  Q.{" "}
+                  <span className="underline">
+                    What aspects does the dentist consider when planning a smile
+                    makeover?
+                  </span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Veneers are a versatile dental restoration that can treat
-                  many dental issues. Typically, veneers protect and improve the
-                  appearance of teeth that have chipped, cracked, minor breaks,
-                  or have thin enamel. They can also cover stained or misshapen
-                  teeth.
+                  A. We consider many features besides the general state of your
+                  teeth and gums. Detailed aspects of the teeth, such as their
+                  size, color, and shape, are factored in; along with the
+                  condition of the gums. The dentist also looks at the different
+                  features of the face and the patient’s skin tone, which makes
+                  a makeover especially effective.
                 </p>
               </div>
             </div>
@@ -475,23 +453,13 @@ const Services = () => {
             <div className="bg-dark p-5 mt-10 text-white">
               <h2 className="text-4xl font-cinzel mb-3">Dental Terminology</h2>
               <hr />
-              <div className="space-y-10">
+              <div className="space-y-10 ">
                 <div className="mt-5 font-tinos">
                   <h2 className="italic text-xl">Bleachorexia</h2>
                   <p>
-                    Bleachorexia is a condition where individuals excessively
-                    use teeth whitening products without professional guidance,
-                    leading to enamel erosion and gum damage.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Carbamide Peroxide</h2>
-                  <p>
-                    Carbamide peroxide is a bleaching agent containing hydrogen
-                    peroxide, commonly used in teeth whitening treatments for
-                    its effectiveness in breaking down stains.
+                    Bleachorexia refers to the excessive use of whitening
+                    products without dental supervision, leading to enamel
+                    erosion and gum irritation.
                   </p>
                   <hr className="mt-4" />
                 </div>
@@ -499,29 +467,39 @@ const Services = () => {
                 <div className="mt-5 font-tinos">
                   <h2 className="italic text-xl">Cosmetic Dentistry</h2>
                   <p>
-                    Cosmetic dentistry includes dental procedures aimed at
-                    improving the aesthetic appearance of teeth, gums, and
-                    smile, such as whitening, veneers, and reshaping.
+                    Cosmetic dentistry includes procedures that enhance the
+                    appearance of your teeth and smile, such as veneers,
+                    whitening, and bonding.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Deeper Teeth Stains</h2>
+                  <h2 className="italic text-xl">Cosmetic Imaging</h2>
                   <p>
-                    Deeper teeth stains are discolorations that affect the
-                    internal layers of the tooth and often require professional
-                    treatment due to resistance to surface whitening products.
+                    Cosmetic imaging uses digital tools to show patients a
+                    preview of their smile after cosmetic treatments, helping
+                    them make informed decisions.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Dentin Hypersensitivity</h2>
+                  <h2 className="italic text-xl">Crown Lengthening</h2>
                   <p>
-                    Dentin hypersensitivity occurs when the protective enamel
-                    layer is worn down, exposing the dentin and causing sharp
-                    pain in response to temperature or pressure changes.
+                    Crown lengthening is a procedure that reshapes gum tissue
+                    and bone to expose more of a tooth for cosmetic or
+                    restorative purposes.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Dental Crown</h2>
+                  <p>
+                    A dental crown is a custom-made cap that covers a damaged or
+                    decayed tooth to restore its shape, strength, and
+                    appearance.
                   </p>
                   <hr className="mt-4" />
                 </div>
@@ -529,71 +507,49 @@ const Services = () => {
                 <div className="mt-5 font-tinos">
                   <h2 className="italic text-xl">Dentist</h2>
                   <p>
-                    A dentist is a healthcare professional specializing in the
-                    prevention, diagnosis, and treatment of oral diseases and
-                    conditions involving the teeth and gums.
+                    A dentist is a healthcare professional trained to diagnose,
+                    treat, and prevent oral health issues affecting the teeth,
+                    gums, and mouth.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Hydrogen Peroxide</h2>
+                  <h2 className="italic text-xl">Full Mouth Rehabilitation</h2>
                   <p>
-                    Hydrogen peroxide is an active ingredient in many whitening
-                    products that breaks down stains and lightens the natural
-                    color of teeth.
+                    Full mouth rehabilitation combines multiple dental
+                    procedures to restore the health, function, and aesthetics
+                    of the entire mouth.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Relief ACP</h2>
+                  <h2 className="italic text-xl">Smile Selection Guide</h2>
                   <p>
-                    Relief ACP (Amorphous Calcium Phosphate) is a dental gel
-                    used to reduce sensitivity and promote enamel
-                    remineralization after teeth whitening or irritation.
+                    A smile selection guide helps patients visualize different
+                    smile styles to choose the one that best fits their facial
+                    features and preferences.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Stained Dentin</h2>
+                  <h2 className="italic text-xl">Smile Shape Guide</h2>
                   <p>
-                    Stained dentin refers to discoloration that affects the
-                    layer beneath enamel, often requiring in-office treatments
-                    to effectively brighten and restore tooth color.
+                    A smile shape guide offers options for tooth shapes and
+                    smile designs, helping customize cosmetic treatments to meet
+                    aesthetic goals.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Surface Enamel</h2>
+                  <h2 className="italic text-xl">Tetracycline</h2>
                   <p>
-                    Surface enamel is the visible, outermost layer of a tooth
-                    that provides protection and aesthetic appeal. It is highly
-                    mineralized and can be stained by dietary habits.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Surface Teeth Stains</h2>
-                  <p>
-                    Surface teeth stains affect the enamel and are commonly
-                    caused by dark-colored foods, beverages, or smoking. These
-                    stains can often be removed with whitening products.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">
-                    Teeth Whitening Concentrate
-                  </h2>
-                  <p>
-                    Teeth whitening concentrate refers to the professional-grade
-                    bleaching agents used in dental offices, offering stronger
-                    and more consistent results than over-the-counter options.
+                    Tetracycline is an antibiotic known to cause permanent tooth
+                    discoloration, especially when taken during childhood or
+                    tooth development.
                   </p>
                   <hr className="mt-4" />
                 </div>

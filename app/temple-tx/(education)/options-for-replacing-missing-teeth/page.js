@@ -3,7 +3,6 @@ import { FaCaretDown } from "react-icons/fa";
 import { Cinzel } from "next/font/google";
 import Link from "next/link";
 import { FaYelp } from "react-icons/fa";
-import Image from "next/image";
 
 const cinzel = Cinzel({
   subsets: ["latin"], // you can add 'latin-ext' if needed
@@ -14,30 +13,31 @@ const Services = () => {
   return (
     <>
       {/* intro section */}
-      <section className="grid md:grid-cols-[1fr_1fr_1fr] grid-cols-1 md:gap-2  md:mt-[85px] border-y-[10px] border-dark mx-2">
-        <div className="bg-[url(/root-canal-treatment.webp)] bg-cover my-10"></div>
+      <section className="grid md:grid-cols-[1fr_1fr_1fr] grid-cols-1 md:gap-2  md:mt-[125px]  border-y-[10px] border-dark mx-2">
+        <div className="bg-[url(/options-for-replacing-missing-teeth.webp)] bg-cover my-10"></div>
 
-        <div className="px-10 py-5 space-y-3">
+        <div className="px-10 py-10 space-y-3">
           <h2 className="text-5xl font-cinzel text-primary">
-            Root Canal Treatment
+            Options for Replacing Missing Teeth
           </h2>
           <p className="font-cinzel text-primary">Temple, TX</p>
           <p className="font-tinos  text-justify">
-            A root canal is a restorative dental procedure that saves millions
-            of teeth from inflammation and infection each year. Root canal
-            treatment involves removing the damaged pulp and nerves from inside
-            the tooth to eliminate bacteria and prevent the infection from
-            spreading. If you have an infected tooth, root canal treatment may
-            be able to save it.
+            When you meet someone for the first time, one of the first things
+            this person will notice is your smile. A full set of teeth will
+            enhance your smile and appearance. Unfortunately, though teeth are
+            strong and durable, they can be damaged and fall out due to injury
+            or decay. Replacing missing teeth can restore your smile and allow
+            you to eat and speak normally again.
           </p>
           <p className="font-tinos  text-justify">
-            Root canal treatment is available at Revital Dental in Temple and
-            the surrounding area. This procedure can relieve dental pain and
-            save your tooth. Call us at (254) 207-0708 to learn more about our
-            services or schedule an appointment today.
+            Options for missing teeth are available at Revital Dental in Temple
+            and the surrounding area. You should speak to our team about which
+            options make the most sense for your budget and needs. We can
+            provide you with a solution that you can feel good about. Call us
+            today at (254) 207-0708 and schedule an appointment.
           </p>
         </div>
-        <div className="py-5">
+        <div className="py-10">
           <form
             action=""
             className="w-full mx-auto mt-10 md:mt-0 max-w-[400px]"
@@ -88,128 +88,125 @@ const Services = () => {
       {/* explanation */}
       <section className="md:grid md:grid-cols-[3fr_1fr]  md:w-[90%] w-[100%] md:mx-auto px-2 mt-3 gap-2">
         {/* left section */}
-        <div className="left-section " id="what-is-root-canal">
+        <div className="left-section " id="replace-missing-teeth">
           {/* dark section */}
           <div className="bg-dark p-5 text-white">
-            <h2 className="text-2xl font-cinzel mb-3">
-              Understanding Root Canals
-            </h2>
+            <h2 className="text-2xl font-cinzel mb-3">Available treatments</h2>
             <hr />
             <p className="text-justify font-tinos mt-4">
-              Below the enamel and dentin, there is pulp at the center of a
-              tooth. The pulp contains blood vessels, nerves, and connective
-              tissue. When the pulp becomes injured or infected, the patient may
-              experience swelling, infection, and pain. Even when outwardly
-              apparent symptoms are not present, bacteria within the root canal
-              may cause decay and damage to the jawbone. In many cases, a root
-              canal may be necessary to save the tooth.
+              The good news for patients who are missing teeth is that there are
+              effective options to correct these issues. An evaluation will
+              factor in a person's medical history, the severity of oral health
+              conditions, and how many teeth are missing to decide on the
+              preferred treatment option. Options our team might recommend
+              include:
             </p>
+
+            <ul className="font-tinos text-justify list-disc  pl-4 mt-2">
+              <li>
+                Dentures: These can be full or partial. Dentures are removable
+                and made to look like natural teeth
+              </li>
+              <li>Bleeding after brushing or flossing</li>
+              <li>
+                Implants: This process takes longer than other options, but
+                implants are more durable. Implants work well for patients who
+                are missing multiple teeth
+              </li>
+              <li>
+                Bridges: As an article on WebMD explains, this treatment fixes
+                artificial teeth to crowns over natural teeth. Bridges can stop
+                surrounding teeth from shifting.
+              </li>
+            </ul>
             <p className="text-justify font-tinos mt-4">
-              A root canal can remove the infected or inflamed pulp to prevent
-              further issues. Various situations can call for a root canal, such
-              as repeat dental work on the same tooth, cracks or chips, deep
-              cavities, or a tooth injury. Signs that a patient may need root
-              canal treatment include bumps along the gums, darkening gums,
-              severe pain or sensitivity while biting or chewing, and swollen or
-              tender gums. People should be aware that the signs of root canal
-              infection or injury are not always obvious and that a thorough
-              examination may be necessary for diagnosis.
+              All treatment options have benefits and challenges. Therefore, it
+              is essential for both the patient and the dentist to openly
+              discuss what is available. Then decide on the right fit.
+            </p>
+          </div>
+
+          {/* question and answer section */}
+          {/* quote */}
+          <div className="relative inline-block mt-10">
+            <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
+              “An evaluation will factor in a person’s medical history, the
+              severity of oral health conditions, and how many teeth are missing
+              to decide on the preferred treatment option.”
+            </h2>
+            <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
+          </div>
+          {/* Q & A */}
+          <div className="mt-10" id="durable-option-missing-teeth">
+            <h2 className="font-cinzel text-2xl text-primary">
+              Durability Comparison of Tooth Replacement Options
+            </h2>
+            <hr />
+            <p className="font-tinos mt-2 text-justify">
+              Durability is a critical factor when choosing a long-term
+              treatment option. How long something will last impacts the time it
+              takes out of your life and how much it will cost. The last thing a
+              patient wants is to return to the office every couple of years for
+              more dental work treating the same issues.
+            </p>
+            <p className="font-tinos mt-2 text-justify">
+              Implants are the most durable option. According to an article in
+              Healthline, this is the main advantage of dental implants. These
+              titanium false teeth can last up to 20 years with proper care and
+              maintenance. Implants also replace a tooth's roots and can make
+              this system as stable as natural roots.
+            </p>
+            <p className="font-tinos mt-2 text-justify">
+              Bridges will not last as long as implants, but this combination of
+              artificial teeth, crowns, and natural teeth can serve a patient
+              well for a decade or longer. It is not removable, but routine
+              visits with your doctor will help monitor the bridge for wear.
+            </p>
+            <p className="font-tinos mt-2 text-justify">
+              Dentures are a moderately durable option and typically require
+              replacement more often than implants and bridges. Patients will
+              need to replace them every seven to eight years. However, the
+              patient should be able to eat most foods with dentures.
             </p>
           </div>
 
           {/* quote */}
-          <div className="relative inline-block mt-10">
+          <div className="relative inline-block mt-10 w-full">
             <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-              “A root canal can remove the infected or inflamed pulp to prevent
-              further issues.”
+              “The last thing a patient wants is to return to the office every
+              couple of years for more dental work treating the same issues.”
             </h2>
             <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
           </div>
-
           {/* Q & A */}
-          <div className="mt-10" id="root-canal-benefits">
+          <div className="mt-10" id="age-affect-replacement-options">
             <h2 className="font-cinzel text-2xl text-primary">
-              Root Canal Treatment Benefits
+              The Role of Age on Replacing Missing Teeth
             </h2>
             <hr />
-            <p className="font-tinos mt-2 text-justify">
-              The goal of root canal treatment is to save and preserve the
-              natural tooth. One of the biggest benefits of root canals is
-              getting rid of pain and infection in the mouth. Additional
-              benefits include:
-            </p>
-            <ol className="font-tinos text-justify list-disc pl-4 mt-2">
-              <li>
-                <span className="font-bold">Improved appearance:</span> After
-                root canal treatment, the patient will receive a crown or
-                filling that restores their tooth’s aesthetic appearance.
-              </li>
-              <li>
-                <span className="font-bold">
-                  Reduced risk for further decay:
-                </span>{" "}
-                Removal of the infected dental pulp prevents the bacteria from
-                spreading and damaging the surrounding teeth.
-              </li>
-              <li>
-                <span className="font-bold">Restored function:</span> Root
-                canals restore a tooth’s health to function like any other
-                tooth.
-              </li>
-              <li>
-                <span className="font-bold">Saving the natural tooth:</span>{" "}
-                Root Nothing can replace the look and function of a natural
-                tooth.
-              </li>
-            </ol>
-          </div>
-
-          <div className="relative inline-block mt-10">
-            <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-              ” The goal of root canal treatment is to save and preserve the
-              natural tooth.”
-            </h2>
-            <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
-          </div>
-
-          {/* Q & A */}
-          <div className="mt-10" id="root-canal-process">
-            <h2 className="font-cinzel text-2xl text-primary">
-              The Root Canal Process and Potential Complications
-            </h2>
-            <hr />
-
             <p className="font-tinos mt-2">
-              According to Healthline, root canal treatment typically involves
-              four steps. First, we will take an X-ray of the infected tooth and
-              numb the treatment site. Next, we will place a dental dam, or
-              small protective sheet, over the area to protect the spot from
-              saliva and bacteria during the procedure. Then we will make a
-              small incision near the tooth’s crown to expose the infected pulp
-              before removing the infected tissue and cleaning out the pathways.
-              Once the canals are clean, we may apply a topical antibiotic to
-              kill any remaining infection. Once the tooth is filled and sealed,
-              we will place a crown or other restoration to protect the tooth
-              and restore its functionality.
+              Regardless of a person's age, it is vital to have functioning
+              teeth. Missing teeth makes chewing more difficult, can weaken oral
+              health, and can affect appearance. Our staff will consider a
+              person's age when deciding what option for replacing missing teeth
+              is right. For example, older patients may not be concerned about a
+              solution that will last for 20 years and beyond. Older adults may
+              prefer dentures for this reason and because it takes less work to
+              clean.
             </p>
             <p className="font-tinos mt-2">
-              As with any semi-invasive procedure, root canal treatment is not
-              without its risks. In some cases, the damage is too extensive for
-              treatment to be viable. If root canal treatment occurs in this
-              situation, it could result in tooth loss. Though rare, root canal
-              treatment can also result in abscesses. This typically only occurs
-              if the improper infected pulp removal occurs or if the antibiotics
-              are ineffective. Although there is a risk for potential
-              complications, root canal treatments are generally safe and
-              effective, with a success rate between 86-98%.
+              Conversely, young patients are more active and may find themselves
+              in more social situations. For this reason, they may prefer to
+              choose implants. Also, younger patients are more likely to be in
+              good overall health. Overall oral and physical health is an
+              important criteria for being a good candidate for dental implants.
             </p>
 
             {/* quotes */}
             <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “Although there is a risk for potential complications, root
-                canal treatments are generally safe and effective, with a
-                success rate between 86-98%.”
+                “Regardless of a person’s age, it is vital to have functioning
+                teeth.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
@@ -230,37 +227,34 @@ const Services = () => {
               </h2>
             </div>
 
-            <div className="mt-10" id="prevent-root-canal">
+            <div className="mt-10" id="consider-tooth-replacement">
               <h2 className="font-cinzel text-2xl text-primary">
-                Preventing the Need for Root Canal Treatment
+                Choosing the Right Options for Replacing Missing Teeth
               </h2>
               <hr />
               <p className="font-tinos mt-2 text-justify">
-                Although root canals are effective procedures to restore
-                infected or damaged teeth, it is best to avoid the need for a
-                root canal in the first place. Preventing the need for root
-                canal treatment is simple, maintain a good oral hygiene routine.
-                Since root canals are often necessary due to tooth decay, people
-                can help prevent this by brushing twice and flossing once every
-                day.
+                It is beneficial to understand the different treatment options.
+                Patients should consider the extent of their issues. For only a
+                couple of missing teeth, a bridge or implants may make the most
+                sense. For several missing teeth, partial dentures are a good
+                option. Getting full dentures is a common solution to replace
+                all missing teeth.
               </p>
               <p className="font-tinos mt-2 text-justify">
-                It is also essential to attend regular dental appointments and
-                seek dental attention as soon as possible when pain or
-                discomfort arises. People can also take certain actions to avoid
-                tooth damage than can necessitate root canal treatment. This
-                includes avoiding acidic foods and beverages, not chewing on
-                ice, and wearing a mouthguard while playing sports and at night
-                if teeth grinding occurs.
+                Patients need to budget wisely too. Implants may be the most
+                long-lasting treatment, but it can be the most expensive as
+                well. People who have less to spend should consider dentures or
+                dental bridges instead. People should look at their lifestyle
+                and determine which replacement option fits their needs and
+                preferences.
               </p>
             </div>
 
             {/* quotes */}
             <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “Although root canals are effective procedures to restore
-                infected or damaged teeth, it is best to avoid the need for a
-                root canal in the first place.”
+                “People should look at their lifestyle and determine which
+                replacement option fits their needs and preferences.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
@@ -273,44 +267,40 @@ const Services = () => {
               <div className="flex flex-col">
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#what-is-root-canal"
-                >
-                  Q. <span className="underline">What is a root canal?</span>
-                </a>
-                <a
-                  className="text-justify font-tinos mt-3"
-                  href="#root-canal-benefits"
+                  href="#replace-missing-teeth"
                 >
                   Q.{" "}
                   <span className="underline">
-                    What are the benefits of a root canal?
+                    How can a dentist replace missing teeth?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#root-canal-process"
+                  href="#durable-option-missing-teeth"
                 >
                   Q.{" "}
                   <span className="underline">
-                    What happens during root canal treatment?
+                    What is the most durable option for replacing missing teeth?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#prevent-root-canal"
+                  href="#age-affect-replacement-options"
                 >
                   Q.{" "}
                   <span className="underline">
-                    How can someone prevent the need for a root canal?
+                    How does age affect your options when it comes to replacing
+                    missing teeth?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#root-canal-alternative"
+                  href="#consider-tooth-replacement"
                 >
                   Q.{" "}
                   <span className="underline">
-                    What is an alternative to root canal treatment?
+                    What should you consider when deciding on a tooth
+                    replacement option?
                   </span>
                 </a>
               </div>
@@ -322,138 +312,121 @@ const Services = () => {
               <div className="flex flex-col mb-4">
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#removable-partial-dentures"
+                  href="#candidate-dental-implants"
                 >
                   Q.{" "}
                   <span className="underline">
-                    How do removable partial dentures work?
+                    Who is a good candidate for dental implants?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#partial-dentures-one-tooth"
+                  href="#dental-implant-procedure"
                 >
                   Q.{" "}
                   <span className="underline">
-                    What are the pros and cons of partial dentures for one
-                    missing tooth?
+                    What happens during the dental implant procedure?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#why-dentures-preferred"
+                  href="#benefits-dental-implants"
                 >
                   Q.{" "}
                   <span className="underline">
-                    Why are dentures a preferred treatment?
+                    What are the benefits of dental implants?
                   </span>
                 </a>
               </div>
             </div>
 
-            <div className="mt-10" id="root-canal-alternative">
-              <h2 className="font-cinzel text-2xl text-primary">
-                Alternatives To Root Canal Treatment
-              </h2>
-              <hr />
-              <p className="font-tinos mt-2 text-justify">
-                Root canals are safe and effective procedures to save a tooth.
-                However, some situations may require alternative treatment, such
-                as extraction. Extraction involves pulling out the entire tooth.
-              </p>
-
-              <p className="font-tinos mt-2 text-justify">
-                This treatment takes more time and can necessitate further
-                procedures to surrounding teeth and supporting tissue. It is
-                always best to try and save a natural tooth when possible.
-                Extractions are best for when a tooth is too damaged to be saved
-                with a root canal.
-              </p>
-            </div>
-
-            <div className="relative inline-block mt-10 w-full">
-              <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “Extractions are best for when a tooth is too damaged to be
-                saved with a root canal.”
-              </h2>
-              <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
-            </div>
-
             {/* Q & A */}
-
             <div className="bg-gray-100 p-5 mt-10">
               <h2 className="text-4xl text-center font-cinzel mb-3 text-primary">
                 Frequently Asked Questions
               </h2>
               <hr />
               <div className="flex flex-col">
-                <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q.{" "}
-                  <span className="underline">
-                    How much does a root canal cost?
-                  </span>
+                <h2
+                  id="candidate-for-implants"
+                  className="text-justify text-primary font-tinos mt-3"
+                >
+                  Q. Who is a good candidate for implants?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. The cost of a root canal treatment will vary for each
-                  patient. Factors that may affect the cost include the extent
-                  of damage, the location, and whether insurance covers part of
-                  the procedure. People should contact their insurance provider
-                  for more information.
+                  A. One of the nice things about dental implants is that this
+                  option can work well no matter how many missing teeth a person
+                  has. It is also a good choice for patients who do not want to
+                  worry about another replacement treatment for the next 20 to
+                  25 years.
                 </p>
 
-                <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q.{" "}
-                  <span className="underline">
-                    Does insurance cover root canal treatment?
-                  </span>
+                <h2
+                  id="replacement-pain"
+                  className="text-justify text-primary font-tinos mt-3"
+                >
+                  Q. Are these options for replacing missing teeth painful?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Every insurance plan is different. Since root canals are
-                  considered a medically necessary treatment, most dental
-                  insurance plans will provide some treatment coverage. People
-                  will have to contact their insurance provider to learn more
-                  about coverage before seeking treatment.
+                  A. Many people have anxiety about dental visits. However,
+                  getting a bridge, dentures, or implants does not involve much,
+                  if any, pain. Our dentist will give patients a local
+                  anesthetic to numb the area. Patients may feel a little
+                  soreness for a couple of days and can manage any discomfort
+                  with over-the-counter pain medication.
                 </p>
 
-                <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q.{" "}
-                  <span className="underline">
-                    How long does it take to recover from a root canal?
-                  </span>
+                <h2
+                  id="insurance-coverage"
+                  className="text-justify text-primary font-tinos mt-3"
+                >
+                  Q. Will insurance cover the replacement treatments?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Recovery following a root canal is often quick and
-                  painless. Though soreness and discomfort are normal in the
-                  days following treatment, most patients can return to school,
-                  work, and their daily activities the next day. Pain that
-                  extends beyond a couple of days may indicate a problem.
+                  A. Patients should check with their insurance provider before
+                  visiting our office. Some plans may cover part of the
+                  procedure, though others will consider the treatments
+                  cosmetic. If you are considering financing options, you may
+                  also speak with our staff.
                 </p>
 
-                <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q. <span className="underline">Are root canals painful?</span>
+                <h2
+                  id="are-replacements-essential"
+                  className="text-justify text-primary font-tinos mt-3"
+                >
+                  Q. Are replacements essential?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Many people believe that root canals are painful. Though
-                  discomfort is common, the treatment is typically no more
-                  painful than having a cavity filled. However, nervous patients
-                  should discuss their fears with their providers beforehand.
+                  A. In some cases, our dentist may be able to salvage severely
+                  decayed teeth. However, if a tooth has been completely knocked
+                  out, a replacement option may be necessary.
                 </p>
 
-                <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q.{" "}
-                  <span className="underline">
-                    How should I take care of my tooth after root canal
-                    treatment?
-                  </span>
+                <h2
+                  id="broken-dentures"
+                  className="text-justify text-primary font-tinos mt-3"
+                >
+                  Q. What happens if dentures break?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Although it is normal to experience swelling and
-                  inflammation after the root canal, patients can take over the
-                  counter pain medication to minimize discomfort. We recommend
-                  not chewing on the tooth to keep the area clean and prevent
-                  the tooth from breaking before we restore it completely.
-                  Patients will need to have a follow-up appointment after
-                  treatment to ensure that the healing process progresses well.
+                  A. If a patient discovers a crack or a break in the dentures,
+                  it is essential to call the dentist immediately. There are
+                  home repair kits available, but it is always more effective to
+                  contact the dentist. Our office has the right equipment and
+                  tools to help repair the apparatus properly.
+                </p>
+
+                <h2
+                  id="foods-for-denture-wearers"
+                  className="text-justify text-primary font-tinos mt-3"
+                >
+                  Q. What can people who wear dentures eat?
+                </h2>
+                <p className="font-tinos md:ps-4 mt-2">
+                  A. Patients should start by eating soft foods until they are
+                  used to the dentures. From there, the wearers can gradually
+                  move onto harder foods. Our dentist can give you advice on
+                  which foods might give you trouble.
                 </p>
               </div>
             </div>
@@ -515,59 +488,125 @@ const Services = () => {
               <h2 className="text-4xl font-cinzel mb-3">Dental Terminology</h2>
               <hr />
               <div className="space-y-10">
-                {[
-                  {
-                    term: "Cementum",
-                    definition:
-                      "Cementum is that bone-like tissue that forms the outer surface on the root of the tooth.",
-                  },
-                  {
-                    term: "Dental Pulp",
-                    definition:
-                      "Dental pulp is the inner-most layer of the tooth with connective tissue that contains blood vessels and nerve tissue.",
-                  },
-                  {
-                    term: "Dentin",
-                    definition:
-                      "Dentin is the inner layer of the tooth structure that is immediately under the enamel and surrounds the dental pulp.",
-                  },
-                  {
-                    term: "Direct Pulp Cap",
-                    definition:
-                      "A direct pulp cap is a procedure in which a professional treats exposed pulp with a therapeutic material to help the tooth heal.",
-                  },
-                  {
-                    term: "Enamel",
-                    definition:
-                      "The enamel is the hard calcified layer that covers the entire tooth and is subject to interaction with multiple substances.",
-                  },
-                  {
-                    term: "Endodontist",
-                    definition:
-                      "An endodontist is a specialist who focuses on treating issues, diseases and conditions that affect the inner-most layer of the tooth, the dental pulp.",
-                  },
-                  {
-                    term: "Pulpectomy",
-                    definition:
-                      "A pulpectomy is a procedure that involves the complete removal of pulp tissue from the root canal in a tooth.",
-                  },
-                  {
-                    term: "Pulpitis",
-                    definition:
-                      "Pulpitis is another term to describe the inflammation of the dental pulp due to an injury or infection.",
-                  },
-                  {
-                    term: "Pulpotomy",
-                    definition:
-                      "A pulpotomy is a procedure involving the removal of a portion of diseased or infected pulp in order to protect the healthy portions of the pulp and teeth still in the mouth.",
-                  },
-                ].map((item, index) => (
-                  <div key={index} className="mt-5 font-tinos">
-                    <h2 className="italic text-xl">{item.term}</h2>
-                    <p>{item.definition}</p>
-                    <hr className="mt-4" />
-                  </div>
-                ))}
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Abutment</h2>
+                  <p>
+                    An abutment is a component that connects to the dental
+                    implant and holds the dental crown in place, completing the
+                    restoration with a natural-looking and functional tooth.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Bone Augmentation</h2>
+                  <p>
+                    Bone augmentation is a surgical procedure that rebuilds and
+                    strengthens jawbone structure to support dental implants
+                    when bone volume is insufficient.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Dental Implant</h2>
+                  <p>
+                    A dental implant is an artificial tooth root made of
+                    titanium that is surgically placed in the jawbone to support
+                    a crown, bridge, or denture.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Osseointegration</h2>
+                  <p>
+                    Osseointegration is the biological process where the bone
+                    fuses with the surface of a titanium implant, creating a
+                    stable foundation for a prosthetic tooth.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Implant-Supported Bridge</h2>
+                  <p>
+                    An implant-supported bridge is a prosthetic used to replace
+                    multiple missing teeth and is secured by dental implants
+                    instead of natural teeth.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Dental Crown</h2>
+                  <p>
+                    A dental crown is a custom-made cap, usually crafted from
+                    porcelain or ceramic, placed over a tooth or implant to
+                    restore its shape, function, and appearance.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Ridge Expansion</h2>
+                  <p>
+                    Ridge expansion is a bone grafting procedure where the
+                    dental professional widens the jawbone to make room for
+                    dental implants when the ridge is too narrow.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Resorption</h2>
+                  <p>
+                    Resorption occurs when the jawbone begins to shrink due to
+                    the absence of tooth roots, which can complicate or delay
+                    implant placement if not treated early.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Endosteal Implant</h2>
+                  <p>
+                    Endosteal implants are the most common type of dental
+                    implants, placed directly into the jawbone and used to
+                    anchor one or more prosthetic teeth.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Eposteal Implant</h2>
+                  <p>
+                    Eposteal, or subperiosteal, implants are placed on top of
+                    the jawbone but under the gum tissue, often used for
+                    patients with minimal bone height.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Transosteal Implant</h2>
+                  <p>
+                    Transosteal implants involve metal rods or pins that pass
+                    entirely through the jawbone, typically used in patients
+                    with significant jawbone loss.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Removable Complete Denture</h2>
+                  <p>
+                    A removable complete denture is a full arch of artificial
+                    teeth that can be taken out for cleaning or while sleeping,
+                    often used when all natural teeth are missing.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
               </div>
             </div>
 

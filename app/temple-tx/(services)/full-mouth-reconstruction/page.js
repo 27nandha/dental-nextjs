@@ -14,28 +14,27 @@ const Services = () => {
   return (
     <>
       {/* intro section */}
-      <section className="grid md:grid-cols-[1fr_1fr_1fr] grid-cols-1 md:gap-2  md:mt-[85px] border-y-[10px] border-dark mx-2">
-        <div className="bg-[url(/dentures-and-partial-dentures.webp)] bg-cover my-10"></div>
+      <section className="grid md:grid-cols-[1fr_1fr_1fr] grid-cols-1 md:gap-2  md:mt-[125px] border-y-[10px] border-dark mx-2">
+        <div className="bg-[url(/full-mouth-reconstruction.webp)] bg-cover my-20"></div>
 
         <div className="px-10 py-5 space-y-3">
           <h2 className="text-5xl font-cinzel text-primary">
-            Dentures and Partial Dentures
+            Full mouth reconstruction
           </h2>
           <p className="font-cinzel text-primary">Temple, TX</p>
           <p className="font-tinos  text-justify">
-            Dentures and partial dentures are most commonly associated with
-            seniors, but many young people wear them too. According to the
-            National Health and Nutrition Examination Survey, adult tooth loss
-            has been on the decline since the 1960s. Even so, many Americans
-            rely on dentures to improve not just their smiles but also their
-            speech and ability to chew food comfortably.
+            Full mouth reconstruction is the rebuilding or replacement of
+            damaged or missing teeth. This dental treatment can help patients
+            restore their mouths from extensive damage, pervasive decay, and
+            other comprehensive problems. Correcting such damage can help you
+            enjoy a healthier and happier life.
           </p>
           <p className="font-tinos  text-justify">
-            Dentures and partial dentures are available at Revital Dental in
-            Temple and the surrounding area. Dentures and partial dentures fill
-            any tooth loss gaps with false teeth. We offer a range of tooth
-            replacement options. If you are ready to learn more about the
-            available options, reach out to us by phone (254) 207-0708.
+            Full mouth reconstruction is available from Revital Dental in Temple
+            and the surrounding area. There are numerous treatment options to
+            help restore teeth form and function. Contact us today at (254)
+            207-0708 to schedule an appointment or learn more about our
+            services.
           </p>
         </div>
         <div className="py-5">
@@ -89,177 +88,127 @@ const Services = () => {
       {/* explanation */}
       <section className="md:grid md:grid-cols-[3fr_1fr]  md:w-[90%] w-[100%] md:mx-auto px-2 mt-3 gap-2">
         {/* left section */}
-        <div className="left-section " id="why-dentures-preferred">
+        <div className="left-section " id="candidate-for-reconstruction">
           {/* dark section */}
-          <div
-            className="bg-dark p-5 text-white"
-          >
+          <div className="bg-dark p-5 text-white">
             <h2 className="text-2xl font-cinzel mb-3">
-              Reasons to Get Dentures
+              Candidates for Full Mouth Reconstruction
             </h2>
             <hr />
             <p className="text-justify font-tinos mt-4">
-              Dentures are not the only tooth replacement option. Implants have
-              become more popular in recent years. However, not every tooth
-              replacement option is the right choice for every patient. Here are
-              several reasons people may prefer dentures to other tooth
-              replacement options:
+              Patients who have dental problems throughout their entire mouths
+              and require extensive restoration are good candidates for full
+              mouth reconstruction. These problems may result from significant
+              trauma during an accident, decay, wear from grinding, or
+              habit-based damage. Other treatment candidates include people with
+              severe dental conditions from birth, such as amelogenesis,
+              dentinogenesis imperfecta, and ectodermal dysplasia.
             </p>
-
-            <ul className="font-tinos text-justify list-disc  pl-4 mt-2">
-              <li>
-                <span className="font-bold">
-                  Dentures may be an affordable solution to tooth loss:{" "}
-                </span>{" "}
-                Other tooth replacement options tend to cost more, usually
-                contingent upon the insurance provider. Traditional full
-                dentures and partial dentures are typically more cost-efficient
-                than the alternatives. This is true even when factoring in the
-                cost of replacing the dentures every 5-10 years.
-              </li>
-              <li>
-                <span className="font-bold">
-                  Lower risk associated with denture procedure:
-                </span>{" "}
-                The patient prefers to avoid the risk of a potentially painful
-                bridge failure. Dental implants require more invasive surgery,
-                by nature making them riskier. Age and potential bone loss can
-                increase risk.
-              </li>
-              <li>
-                <span className="font-bold">
-                  Dentures can be received relatively quickly:
-                </span>{" "}
-                The denture process typically takes less time than implant
-                procedures. Dental implants may take a year or more to complete.
-                Healing periods between steps may last for up to six months.
-              </li>
-            </ul>
             <p className="text-justify font-tinos mt-4">
-              The tooth replacement method the patient chooses depends on their
-              unique situation. One should examine all their options when making
-              this decision. Our team can offer the guidance you need in
-              deciding if dentures are right for you.
+              Some reconstruction treatments involve surgery, particularly
+              implants or procedures that necessitate bone grafting. This
+              typically requires that the patient is in good overall health.
+              Therefore, a full mouth reconstruction may not be an immediate
+              option for patients with other health issues.
             </p>
           </div>
 
           {/* quote */}
           <div className="relative inline-block mt-10">
             <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-              “Traditional full dentures and partial dentures are typically more
-              cost-efficient than the alternatives.”
+              “Patients who have dental problems throughout their entire mouths
+              and require extensive restoration are good candidates for full
+              mouth reconstruction.”
             </h2>
             <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
           </div>
 
           {/* Q & A */}
-          <div className="mt-10" id="how-dentures-made">
+          <div className="mt-10" id="why-need-reconstruction">
             <h2 className="font-cinzel text-2xl text-primary">
-              The Denture Process
+              Reasons Someone May Want or Need a Complete Mouth Reconstruction
             </h2>
             <hr />
             <p className="font-tinos mt-2 text-justify">
-              Typically, the process starts with taking an impression of the
-              mouth. From that, the dentist creates a model using dental stone
-              as a cast. Our team may ask the patient to try several different
-              sets of sterilized dentures to determine the ideal fit and the
-              preferred color and size of teeth. After these selections, the
-              dentist may make some adjustments to the cast. Then, it is sent to
-              a dental laboratory for completion.
+              Various functional and cosmetic conditions may justify a full
+              mouth reconstruction as a treatment. Patients should have a
+              consultation with our team to will discuss their options. Some
+              common reasons that people may want or need this procedure
+              include:
             </p>
-            <p className="font-tinos mt-2 text-justify">
-              At the dental laboratory, technicians may create a wax version of
-              the gum line. These technicians make the replacement teeth from a
-              material that closely resembles real teeth known as resin.
-              Virtually, all labs seek approval from the patient and dentist
-              before proceeding with the finishing touches.
-            </p>
-            <p className="font-tinos mt-2 text-justify">
-              Following approval, the technician removes the wax and replaces it
-              with acrylic. This looks far more realistic. This process entails
-              boiling the wax out, drilling holes in the teeth, and injecting
-              the acrylic. Finally, technicians clean up the teeth and polish
-              the appliance. The entire process may require the patient to visit
-              the dentist’s office four to five times.
-            </p>
+            <ol className="font-tinos text-justify list-disc pl-4 mt-2">
+              <li>
+                <span className="font-bold">Aesthetic improvement: </span> It is
+                not uncommon for patients to seek a complete mouth
+                reconstruction for aesthetic reasons. Discoloration, wear,
+                missing teeth, and other issues may not impact function but can
+                have an adverse cosmetic effect. Full reconstruction can help
+                patients improve their self-esteem and enjoy the smiles they
+                have always wanted.
+              </li>
+              <li>
+                <span className="font-bold">Dental decay or disease: </span>{" "}
+                Dental decay and other disease affecting the teeth can also
+                necessitate reconstruction. In most cases, decay alone can be
+                treated with less extensive procedures. However, if left
+                untreated, tooth decay can put teeth at risk of needing
+                replacement.
+              </li>
+              <li>
+                <span className="font-bold">Gum disease: </span>
+                Oral health can play a big role in the necessity for a complete
+                mouth reconstruction. Gum disease can result in losing multiple
+                teeth. This is especially likely if a problem goes unaddressed
+                for too long.
+              </li>
+              <li>
+                <span className="font-bold">Oral trauma:</span> A full mouth
+                reconstruction may be necessary to restore the proper function
+                of the teeth after significant trauma. Extensive cracking,
+                chipping, and damage can require comprehensive treatment.
+                Long-term damage from wear can also cause a person to want or
+                need this treatment.
+              </li>
+            </ol>
           </div>
 
           <div className="relative inline-block mt-10">
             <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-              “Our team may ask the patient to try several different sets of
-              sterilized dentures to determine the ideal fit as well as the
-              preferred color and size of teeth.”
+              “Various functional and cosmetic conditions may justify a full
+              mouth reconstruction as a treatment.”
             </h2>
             <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
           </div>
 
           {/* Q & A */}
-          <div className="mt-10" id="types-of-dentures">
+          <div className="mt-10" id="types-of-reconstruction">
             <h2 className="font-cinzel text-2xl text-primary">
-              Types of Dentures
+              Full Mouth Reconstruction Treatment Options
             </h2>
             <hr />
 
             <p className="font-tinos mt-2">
-              When considering dentures, patients can choose between full and
-              partial dentures. In fact, over the past few years, dentists
-              created hybrids with other dental treatments to provide patients
-              with even more options. Here is a shortlist of denture options one
-              can consider:
+              The process of a full mouth reconstruction varies from patient to
+              patient, depending on their preferences and needs. Full mouth
+              reconstructions can include almost any dental procedure and
+              combination of treatments. Some of the most common procedures
+              performed during treatment include dental implants, dentures,
+              crowns, inlays, and onlays.
             </p>
-            <ol className="font-tinos text-justify list-disc pl-4 mt-2">
-              <li>
-                <span className="font-bold">Full Dentures.</span> Most commonly
-                used by seniors, these dentures replace a complete set of teeth.
-                They sit directly on top of the gums. Some patients are good
-                candidates for immediate placement. In this instance, the
-                dentist places the previously made dentures immediately after
-                the extraction of the teeth. For everyone else, the dentist may
-                recommend waiting eight to 12 weeks after teeth removal.
-              </li>
-              <li>
-                <span className="font-bold">Partial Dentures.</span> If the
-                patient still has a number of healthy teeth left, the dentist
-                may recommend partial dentures. This usually requires the use of
-                a metal piece to which a pink-colored base is attached. The
-                metal helps to anchor the false teeth to the natural teeth to
-                prevent movement.
-              </li>
-              <li>
-                <span className="font-bold">Implant-Supported Dentures.</span>{" "}
-                This method blends dental implants with dentures. Instead of
-                anchoring all the teeth in place individually, the dentist may
-                add several dental implants that hold the full upper and/or
-                lower set in place. Dentists may use this for partial dentures
-                too. These dentures are not removable once in place. Please note
-                that not all patients are good candidates for these.
-              </li>
-              <li>
-                <span className="font-bold">
-                  Overdentures or Snap-In Dentures.
-                </span>{" "}
-                When patients prefer to retain the ability to remove dentures,
-                but like the stability of implants, they may opt for
-                overdentures. These are handy in instances where a person has no
-                teeth, as the dental implants provide an anchor that the teeth
-                can sit on. For even more excellent stability, patients may opt
-                for snap-in dentures. In this case, the implants have locator
-                receptors, and the dentures have attachments. These work
-                together to snap the dentures into place for a snug fit.
-              </li>
-            </ol>
             <p className="font-tinos mt-2">
-              The option a patient chooses will depend on that patient's unique
-              situation and health. Our team is available to discuss all the
-              options. We will help you determine the right one for you.
+              Additionally, a complete mouth reconstruction may involve bone
+              grafting, especially when implants are chosen. Dental deep
+              cleanings are also an option to combat moderate to severe gum
+              disease. People with gaps of missing teeth can choose to receive a
+              dental bridge, while porcelain veneers are an option for people
+              with misaligned or discolored teeth in the front.
             </p>
 
             {/* quotes */}
             <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “In fact, over the past few years, dentists created hybrids with
-                other dental treatments to provide patients with even more
-                options.”
+                “The process of a full mouth reconstruction varies from patient
+                to patient, depending on their preferences and needs.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
@@ -280,59 +229,31 @@ const Services = () => {
               </h2>
             </div>
 
-            <div className="mt-10" id="cleaning-dentures">
+            <div className="mt-10" id="top-vs-bottom-reconstruction">
               <h2 className="font-cinzel text-2xl text-primary">
-                How to Care for Dentures
+                Top Mouth and Bottom Mouth Reconstructions
               </h2>
               <hr />
               <p className="font-tinos mt-2 text-justify">
-                The Canadian Dental Association explains that good dental
-                hygiene is essential to maintain the appearance and function of
-                new veneers. Brushing and flossing after meals and visiting the
-                dentist for regular check-ups are critical aspects of proper
-                maintenance. Skipping these steps can cause decay and cavities
-                to develop between or under the veneer shells.
+                A common alternative to full mouth reconstruction is a partial
+                treatment of just the upper or lower mouth. The treatments for
+                both parts of the mouth are similar. However, according to the
+                Mayo Clinic, the jawbone, which is at the bottom of the mouth,
+                may require bone grafting if it is overly weakened or damaged.
               </p>
-
               <p className="font-tinos mt-2 text-justify">
-                Dentures do require ongoing maintenance outside of the typical
-                oral hygiene routine. Many people believe they can set dentures
-                down by the side of the bed. However, this can lead to warping
-                and cracking over time.
-              </p>
-
-              <p className="font-tinos mt-2 text-justify">
-                Patients should soak dentures overnight. Avoid hot water, as
-                this may also cause warping. Never use a denture solution
-                directly in the mouth. Patients who use denture solutions should
-                rinse thoroughly before placing dentures in the mouth because
-                denture solutions should not be ingested. Our team can help you
-                determine if a solution is right for your regimen.
-              </p>
-
-              <p className="font-tinos mt-2 text-justify">
-                It is also important to note that dentures require cleaning,
-                just like regular teeth do. Whenever possible, remove dentures
-                after eating or drinking and rinse them to get rid of food
-                particles. Patients should brush dentures at least once per day.
-                Dentists recommend a soft-bristled brush as a more abrasive
-                brush may cause damage over time.
-              </p>
-
-              <p className="font-tinos mt-2 text-justify">
-                Even if no teeth remain, continued dental hygiene is essential.
-                Brush the teeth and gums and floss any remaining teeth. Patients
-                may use gauze or a soft bristled toothbrush to clean the cheeks,
-                roof of the mouth, and the tongue. Finally, people who use
-                adhesives should take care to remove it.
+                This can also happen with the top of the mouth but is less
+                common. Some reconstruction of the jawbone and gums may be
+                necessary to create a healthy smile even if implants are not
+                used.
               </p>
             </div>
 
             {/* quotes */}
             <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “Dentures do require ongoing maintenance outside of the typical
-                oral hygiene routine.”
+                “A common alternative to full mouth reconstruction is a partial
+                treatment of just the upper or lower teeth.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
@@ -345,45 +266,53 @@ const Services = () => {
               <div className="flex flex-col">
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#why-dentures-preferred"
+                  href="#candidate-for-reconstruction"
                 >
                   Q.{" "}
                   <span className="underline">
-                    Why are dentures a preferred treatment?
+                    Who is a good candidate for full mouth reconstruction?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#how-dentures-made"
-                >
-                  Q. <span className="underline">How are dentures made?</span>
-                </a>
-                <a
-                  className="text-justify font-tinos mt-3"
-                  href="#types-of-dentures"
+                  href="#why-need-reconstruction"
                 >
                   Q.{" "}
                   <span className="underline">
-                    What are the different types of dentures?
+                    Why would someone want or need a complete mouth
+                    reconstruction?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#cleaning-dentures"
+                  href="#types-of-reconstruction"
                 >
                   Q.{" "}
                   <span className="underline">
-                    How should I clean my dentures?
+                    What are the different full mouth reconstruction treatments?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#dentures-longevity"
+                  href="#top-vs-bottom-reconstruction"
                 >
                   Q.{" "}
-                  <span className="underline">How long do dentures last?</span>
+                  <span className="underline">
+                    What is the difference between top and bottom mouth
+                    reconstruction?
+                  </span>
+                </a>
+                <a
+                  className="text-justify font-tinos mt-3"
+                  href="#cosmetic-reconstruction"
+                >
+                  Q.{" "}
+                  <span className="underline">
+                    Do people get cosmetic full mouth reconstruction?
+                  </span>
                 </a>
               </div>
+
               <h2 className="text-4xl text-center font-cinzel mb-3 mt-3">
                 People Also Ask
               </h2>
@@ -420,39 +349,34 @@ const Services = () => {
               </div>
             </div>
 
-            <div className="mt-10" id="dentures-longevity">
+            <div className="mt-10" id="cosmetic-reconstruction">
               <h2 className="font-cinzel text-2xl text-primary">
-                Common Myths and Misconceptions
+                Cosmetic Complete Mouth Reconstructions
               </h2>
               <hr />
               <p className="font-tinos mt-2 text-justify">
-                One of the most common myths we hear about dentures is that once
-                a patient gets their dentures created and placed, they are set
-                for life. Dentures typically last for five to 10 years. Since
-                this is a long time, patients may wonder how to know when they
-                need new dentures. If the color has changed dramatically or
-                there is physical damage, dentures may need replacement. A
-                common telling sign is when they no longer fit securely.
+                Not all full mouth reconstructions are strictly functional.
+                While restoring the mouth can help with speech, comfort, and
+                eating, WebMD states that improving a smile’s appearance can
+                also boost self-esteem. Some procedures that a part of full
+                mouth reconstructions are also considered cosmetic, such as
+                tooth replacements, veneers, gum contouring, orthodontics,
+                whitening, and more.
               </p>
-
               <p className="font-tinos mt-2 text-justify">
-                Some people believe that if they remove all their teeth and get
-                full dentures, they will never need to set foot in a dentist’s
-                office again.This is not true and regular dental visits are
-                still necessary. Dentists are in the best position to tell
-                patients whether or not they need to get their dentures repaired
-                or replaced. In fact, the dentist may adjust dentures during
-                annual or bi-annual visits to keep them fitting correctly.
-                Dentists also pay keen attention to gum health especially if the
-                patient smokes or suffers from an illness affecting the gums.
+                Many people aspire to have a beautiful smile. While a full mouth
+                reconstruction is not always necessary to achieve this, it can
+                be a good option. Even when functional improvement is necessary,
+                patients can also choose to include some cosmetic treatments to
+                enhance their smiles’ appearance.
               </p>
             </div>
 
             <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “Some people may also believe that if they remove all their
-                teeth and get full dentures, they’ll never need to set foot in a
-                dentist’s office again.”
+                “Cosmetic full mouth reconstructions can include tooth
+                replacements, veneers, gum contouring, orthodontics, whitening,
+                and more.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
@@ -468,83 +392,74 @@ const Services = () => {
                 <h2 className="text-justify text-primary font-tinos mt-3">
                   Q.{" "}
                   <span className="underline">
-                    Will dentures change my appearance?
+                    How long does a full mouth reconstruction take?
                   </span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. When patients lose their teeth, the bone loss may begin to
-                  cause the cheek to look hollow and sunken. Dentures can help
-                  to fill out space and retain the face’s original shape. Having
-                  a full set of teeth that look beautiful and healthy also
-                  improves a person’s appearance and overall confidence.
+                  A. The length of the procedure can vary depending on how
+                  extensive the treatment needs to be. We typically perform full
+                  mouth reconstructions over multiple sessions that can span
+                  anywhere from a few weeks to a year. Our team will provide
+                  patients with a time estimate before starting the treatment
+                  process.
                 </p>
+
                 <h2 className="text-justify text-primary font-tinos mt-3">
                   Q.{" "}
                   <span className="underline">
-                    Is it difficult to eat with dentures?
+                    How much does a full mouth reconstruction cost?
                   </span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Eating with dentures may feel uncomfortable for a few
-                  weeks, just as when people get braces for the first time.
-                  However, over time, it becomes easier. In the beginning, try
-                  to stay away from foods that meet any of the following
-                  criteria:
+                  A. A full mouth reconstruction is a comprehensive treatment
+                  that involves multiple procedures. The cost will vary for each
+                  patient depending on their treatment process and insurance
+                  coverage. People should contact their insurance provider for
+                  more information before seeking treatment.
                 </p>
-                <div className="list-disc pl-6 font-tinos mt-2">
-                  <ul>
-                    <li>Sharp-edged</li>
-                    <li>Tough</li>
-                    <li>Sticky</li>
-                    <li>Hot</li>
-                  </ul>
-                </div>
+
                 <h2 className="text-justify text-primary font-tinos mt-3">
                   Q.{" "}
                   <span className="underline">
-                    Are there any risks associated with dentures?
+                    Are there functional benefits to a complete mouth
+                    reconstruction?
                   </span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. A 2015 study published by the National Institute of Health
-                  found that seniors who wore dentures while they slept
-                  long-term faced a higher risk of developing pneumonia. The CDC
-                  also believes dentures may negatively affect nutrition. They
-                  attribute this to denture wearers avoiding fruits and
-                  vegetables because they are more difficult to chew.
+                  A. Yes, having a complete and healthy set of teeth can improve
+                  eating, speaking, comfort, and more. Patients with extensive
+                  dental damage or other issues may benefit functionally from a
+                  complete mouth reconstruction. Additionally, reconstruction
+                  can help with long-term oral hygiene.
                 </p>
-                <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q. <span className="underline">Are Adhesives Necessary?</span>
-                </h2>
-                <p className="font-tinos md:ps-4 mt-2">
-                  A. Patients who have lost all their natural teeth may require
-                  adhesives, while others may not. Even so, patients with only
-                  partial tooth loss may choose to use adhesives for additional
-                  support. It may also assist people suffering from neurological
-                  disabilities, dry mouth, or who take certain medications.
-                </p>
+
                 <h2 className="text-justify text-primary font-tinos mt-3">
                   Q.{" "}
-                  <span className="underline">How Much Do Dentures Cost?</span>
+                  <span className="underline">
+                    Which is the best type of full mouth reconstruction?
+                  </span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Dentures tend to be more affordable than other tooth
-                  replacement options. Each case is different, and the
-                  individual selections a patient makes can affect the cost.
-                  Generally speaking, dentures offer the most cost-effective
-                  full tooth replacement. When patients choose hybrid options
-                  that involve implants, the price may increase for each implant
-                  added.
+                  A. There is no best type of full mouth reconstruction. Every
+                  patient’s situation and needs are different. The best
+                  treatment process for one patient will not be the best for
+                  another. We will talk about all a patient’s options during
+                  their consultation.
                 </p>
+
                 <h2 className="text-justify text-primary font-tinos mt-3">
                   Q.{" "}
-                  <span className="underline">How Can I Pay for Dentures?</span>
+                  <span className="underline">
+                    Are X-rays a part of full mouth reconstructions?
+                  </span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Dental insurance may cover the cost of dentures. However,
-                  there may be a waiting period due to a pre-existing condition.
-                  Some patients rely on dental savings plans. Your insurance
-                  provider can discuss with you the details.
+                  A. X-rays are an important part of many dental treatments,
+                  including full mouth reconstructions. They allow us to
+                  identify and diagnose issues so we can provide the best
+                  treatment options. Today’s X-ray technology is safe and
+                  advanced, so patients do not have to worry about getting them
+                  done.
                 </p>
               </div>
             </div>
@@ -605,86 +520,112 @@ const Services = () => {
             <div className="bg-dark p-5 mt-10 text-white">
               <h2 className="text-4xl font-cinzel mb-3">Dental Terminology</h2>
               <hr />
-              <div className="space-y-10">
+              <div className="space-y-10 ">
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Alveolar Bone</h2>
+                  <h2 className="italic text-xl">Cosmetic Dentistry</h2>
                   <p>
-                    The alveolar bone is the bone surrounding the root of the
-                    tooth that keeps the tooth in place.
+                    Cosmetic dentistry is generally used to refer to any dental
+                    work that improves the appearance (though not necessarily
+                    the function) of a person’s teeth, gums and/or bite.
                   </p>
                   <hr className="mt-4" />
                 </div>
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Clasp</h2>
+                  <h2 className="italic text-xl">Dental Caries</h2>
                   <p>
-                    A clasp is a device that holds a removable partial denture
-                    prosthesis to the teeth.
+                    Dental caries are also known as cavities and result from a
+                    lack of proper oral hygiene leaving plaque that forms tiny
+                    holes in the teeth.
                   </p>
                   <hr className="mt-4" />
                 </div>
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Denture Base</h2>
+                  <h2 className="italic text-xl">Dental Filling</h2>
                   <p>
-                    The denture base is the part of the denture that connects
-                    the artificial teeth with the soft tissue of the gums.
+                    A dental filling involves restoring the structure of the
+                    tooth by using metal, alloy, porcelain or plastic to fill
+                    the tooth.
                   </p>
                   <hr className="mt-4" />
                 </div>
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Edentulous</h2>
+                  <h2 className="italic text-xl">Dental Sealants</h2>
                   <p>
-                    Edentulous is a term that applies to people who do not have
-                    any teeth.
+                    Dental sealants contain a resinous material that we apply to
+                    the chewing surfaces of the posterior teeth to prevent
+                    dental caries.
                   </p>
                   <hr className="mt-4" />
                 </div>
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Periodontal Disease</h2>
+                  <h2 className="italic text-xl">Gingivitis</h2>
                   <p>
-                    Periodontal disease is a condition that causes inflammation
-                    of the gingival tissues and membrane of the teeth, leading
-                    to tooth loss without professional treatment.
+                    Gingivitis is the inflammation of gum tissue that results
+                    from plaque, other infections in the mouth and poor oral
+                    hygiene.
                   </p>
                   <hr className="mt-4" />
                 </div>
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Pontic</h2>
+                  <h2 className="italic text-xl">Tartar</h2>
                   <p>
-                    Pontic is another term for an artificial tooth on a fixed
-                    partial denture.
+                    Tartar forms when plaque builds up on the surface of the
+                    teeth and calcifies into a hard surface that is much more
+                    difficult to remove and will require professional treatment.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Decay</h2>
+                  <p>
+                    Tooth decay is when the enamel of the tooth begins to decay
+                    and cause erosion from plaque and tartar on the teeth.
                   </p>
                   <hr className="mt-4" />
                 </div>
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Rebase</h2>
+                  <h2 className="italic text-xl">Dental Checkup</h2>
                   <p>
-                    Rebase is the process of refitting denture prosthesis by
-                    replacing the base material.
+                    A dental checkup is an appointment that involves cleaning
+                    the teeth, identifying any signs of infection and removing
+                    said signs of infection at least once every six months in
+                    the office.
                   </p>
                   <hr className="mt-4" />
                 </div>
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Reline</h2>
+                  <h2 className="italic text-xl">Dental Prophylaxis</h2>
                   <p>
-                    Reline is when a professional resurfaces the surface of the
-                    prosthesis with a new base material.
+                    A dental prophylaxis is a professional and detailed cleaning
+                    that involves the removal of plaque, calculus and stains
+                    from the teeth.
                   </p>
                   <hr className="mt-4" />
                 </div>
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Resin/Acrylic</h2>
+                  <h2 className="italic text-xl">Dentist</h2>
                   <p>
-                    Resin and Acrylic are resinous materials that can be
-                    components in a denture base.
+                    A dentist, also known as a dental surgeon, is a doctor who
+                    specializes in the diagnosis, prevention, and treatment of
+                    diseases and conditions of the oral cavity.
                   </p>
                   <hr className="mt-4" />
                 </div>
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Stomatitis</h2>
+                  <h2 className="italic text-xl">Preventive Dentistry</h2>
                   <p>
-                    Stomatitis is the inflammation of the tissue that is
-                    underlying a denture that does not fit properly. It can also
-                    result from other oral health factors.
+                    Preventive dentistry is the dentistry that focuses on
+                    maintaining oral health in order to prevent the spread of
+                    plaque, the formation of tartar and infections in the mouth.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Tooth Enamel</h2>
+                  <p>
+                    Tooth enamel is the protective visible outer surface of a
+                    tooth that contains the dentin and dental pulp.
                   </p>
                   <hr className="mt-4" />
                 </div>

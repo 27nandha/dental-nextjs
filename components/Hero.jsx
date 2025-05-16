@@ -10,7 +10,7 @@ const cinzel = Cinzel({
 const images = [
   {
     id: 1,
-    path: "./bg1.png",
+    path: "./bg1.jpg",
     heading: "Full dental implant",
     para: "Low cost Limited time special offer",
     btn: "read me About Thsis offer",
@@ -24,7 +24,7 @@ const images = [
   },
   {
     id: 3,
-    path: "./bg1.png",
+    path: "./bg3.jpg",
     heading: "Teeth Whitening",
     para: "Reclaim a youthful smile",
     btn: "read more about the treatment", 

@@ -3,7 +3,6 @@ import { FaCaretDown } from "react-icons/fa";
 import { Cinzel } from "next/font/google";
 import Link from "next/link";
 import { FaYelp } from "react-icons/fa";
-import Image from "next/image";
 
 const cinzel = Cinzel({
   subsets: ["latin"], // you can add 'latin-ext' if needed
@@ -14,29 +13,28 @@ const Services = () => {
   return (
     <>
       {/* intro section */}
-      <section className="grid md:grid-cols-[1fr_1fr_1fr] grid-cols-1 md:gap-2 md:mt-[85px] border-y-[10px] border-dark mx-2">
-        <div className="bg-[url(/invisalign.webp)] bg-cover my-10"></div>
+      <section className="grid md:grid-cols-[1fr_1fr_1fr] grid-cols-1 md:gap-2  md:mt-[125px]  border-y-[10px] border-dark mx-2">
+        <div className="bg-[url(/improve-your-smile-for-senior-pictures.webp)] bg-cover my-10"></div>
 
-        <div className="px-10 py-5 space-y-3">
+        <div className="px-10 py-10 space-y-3">
           <h2 className="text-5xl font-cinzel text-primary">
-            Dentures and Partial Dentures
+            Improve Your Smile for Senior Pictures
           </h2>
           <p className="font-cinzel text-primary">Temple, TX</p>
           <p className="font-tinos  text-justify">
-            Clear orthodontic aligners have been growing in popularity for many
-            years. One of the most recognizable brands is Invisalign®.
-            Invisalign is a form of orthodontics that uses clear tray aligners
-            to straighten the teeth instead of the traditional mouthful of metal
-            wires and brackets.
+            Improving your smile for senior pictures may also help you improve
+            your dental health. This may lead to feelings of increased
+            self-confidence and improved overall dental health. When it comes to
+            preparing for senior pictures, it is best to start far in advance.
           </p>
           <p className="font-tinos  text-justify">
-            If you are a candidate, Invisalign provides an almost invisible way
-            to straighten your teeth. Invisalign is available at Revital Dental
-            in Temple and the surrounding area. Call us at (254) 207-0708 to
-            schedule an appointment to see if this treatment is right for you.
+            Solutions to improve your smile for senior pictures are available at
+            Revital Dental in Temple and the surrounding area. Enhancing your
+            appearance can also help improve your dental health. Call us today
+            at (254) 207-0708 to schedule an appointment and learn more.
           </p>
         </div>
-        <div className="py-5">
+        <div className="py-10">
           <form
             action=""
             className="w-full mx-auto mt-10 md:mt-0 max-w-[400px]"
@@ -87,106 +85,134 @@ const Services = () => {
       {/* explanation */}
       <section className="md:grid md:grid-cols-[3fr_1fr]  md:w-[90%] w-[100%] md:mx-auto px-2 mt-3 gap-2">
         {/* left section */}
-        <div className="left-section " id="what-is-invisalign">
+        <div className="left-section " id="smile-benefits-senior-pictures">
           {/* dark section */}
           <div className="bg-dark p-5 text-white">
             <h2 className="text-2xl font-cinzel mb-3">
-              An Alternative to Traditional Braces
+              More Than Just a Better Smile for Senior Pictures
             </h2>
             <hr />
             <p className="text-justify font-tinos mt-4">
-              Invisalign uses clear tray aligners instead of metal wires and
-              brackets to straighten teeth. The aligners are constructed of a
-              solid piece of plastic strong enough to shift the teeth and move
-              them into the correct position. Every one or two weeks, the
-              patient receives a new tray with an updated aligner. Each tray
-              will feel slightly different as it shifts and moves the teeth.
+              Despite what the name may imply, cosmetic dentistry has more than
+              just aesthetic benefits. Cosmetic dentistry is a broad field that
+              can involve improving the alignment, color, position, shape, and
+              size of the gums and teeth. These aesthetic enhancements often
+              cross over with functional improvements. These include correcting
+              a misaligned bite, improving dental and overall health, and
+              increasing focus on oral hygiene.
             </p>
             <p className="text-justify font-tinos mt-4">
-              The idea of using removable aligners to adjust the teeth is not a
-              new concept. The idea was first introduced in the 1940s.
-              Additional improvements were made through the decades, though the
-              technology did not improve until the 1990s. The creators of
-              Invisalign developed their mass-market system in 1999.
+              Additionally, a 2018 study published in the International Journal
+              of Medical and Surgical Sciences found that malocclusion may
+              negatively affect patients' self-image. Correcting these
+              functional irregularities may lead to feelings of increased
+              self-esteem while also improving one's ability to speak and eat.
+            </p>
+            <p className="text-justify font-tinos mt-4">
+              Other cosmetic dental procedures like bonding, crowns, inlays,
+              onlays, and veneers can help repair cracked or broken teeth. By
+              providing additional support, these treatments protect the teeth
+              from further damage and can maintain the remaining tooth. All
+              cosmetic dental procedures also encourage an increased focus on
+              dental hygiene as part of upkeep. The result is improved dental
+              health, directly correlated with improved overall health.
+            </p>
+          </div>
+
+          {/* question and answer section */}
+          {/* quote */}
+          <div className="relative inline-block mt-10">
+            <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
+              “Despite what the name may imply, cosmetic dentistry has more than
+              just aesthetic benefits.”
+            </h2>
+            <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
+          </div>
+          {/* Q & A */}
+          <div className="mt-10" id="clear-aligners-vs-braces">
+            <h2 className="font-cinzel text-2xl text-primary">
+              Clear Aligners for Senior Pictures
+            </h2>
+            <hr />
+            <p className="font-tinos mt-2 text-justify">
+              Clear aligners, such as Invisalign®, have been growing in
+              popularity over recent years. For many patients, these "invisible
+              braces'' are an appealing alternative to traditional options, as
+              they are more unobtrusive aesthetically. While conventional braces
+              move teeth through brackets connected by wires, invisible aligners
+              use a series of custom-made mouthpieces consisting of clear
+              plastic or acrylic material.
+            </p>
+            <p className="font-tinos mt-2 text-justify">
+              Clear aligners are also removable, making it easier for patients
+              to brush and floss well. Thus, it may be easier to maintain a
+              thorough dental hygiene routine than with traditional braces.
+              Treatment time with clear aligners depends on a case-by-case
+              basis. On average, however, patients usually complete treatment
+              within 10 to 24 months. Consequently, it is best to schedule a
+              consultation well in advance of any senior photos.
+            </p>
+            <p className="font-tinos mt-2 text-justify">
+              Clear aligners are best-suited for teens and adults with mild or
+              moderate orthodontic issues. Those with more severe conditions,
+              however, may require more involved treatment with traditional
+              braces. Our qualified team works closely with our patients to
+              determine an individualized treatment plan for their needs.
             </p>
           </div>
 
           {/* quote */}
-          <div className="relative inline-block mt-10">
+          <div className="relative inline-block mt-10 w-full">
             <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-              “Invisalign uses clear tray aligners instead of metal wires and
-              brackets to straighten teeth.”
+              “While conventional braces move teeth through brackets connected
+              by wires, invisible aligners use a series of custom-made
+              mouthpieces consisting of clear plastic or acrylic material.”
             </h2>
             <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
           </div>
-
           {/* Q & A */}
-          <div className="mt-10" id="invisalign-steps">
+          <div className="mt-10" id="veneers-before-photos">
             <h2 className="font-cinzel text-2xl text-primary">
-              Invisalign’s Three Steps
+              Dental Veneers for Senior Pictures
             </h2>
             <hr />
-            <p className="font-tinos mt-2 text-justify">
-              The first step to getting Invisalign is by scheduling a
-              consultation with our dentist. Our staff will look at overall oral
-              health and take impressions of the mouth. Next, that impression is
-              sent to Invisalign and used to make aligners unique to the
-              patient’s mouth for a custom fit.
-            </p>
-            <p className="font-tinos mt-2 text-justify">
-              Once the aligners have been made, our staff will make sure they
-              fit well, answer any questions, and go over the treatment plan.
-              Patients will be expected to wear the aligners for 20 to 22 hours
-              a day to get results. Regular checkups with Revital Dental will
-              make sure treatment stays on track. Our staff will determine how
-              often new aligners are needed.
-            </p>
-            <p className="font-tinos mt-2 text-justify">
-              After the desired results have been achieved, the patient may be
-              expected to wear a retainer to maintain those results. This will
-              prevent teeth from gradually shifting back to their initial
-              position. Our doctor will provide specific instructions on how
-              often a retainer will need to be worn.
-            </p>
-          </div>
-
-          <div className="relative inline-block mt-10">
-            <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-              “The first step to getting Invisalign is by scheduling a
-              consultation with our dentist.”
-            </h2>
-            <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
-          </div>
-
-          {/* Q & A */}
-          <div className="mt-10" id="invisalign-pros-cons">
-            <h2 className="font-cinzel text-2xl text-primary">
-              The Pros and Cons of Invisalign
-            </h2>
-            <hr />
-
             <p className="font-tinos mt-2">
-              Invisalign is not without its pros and cons. Thanks to the fact
-              that they are next-to-invisible, both teens and adults can avoid
-              the discomfort and self-consciousness of traditional metal braces.
-              Many patients also appreciate that they can take Invisalign
-              aligners out to eat, brush and floss, or for social situations.
+              Dental veneers, also known as dental porcelain laminates, are
+              thin, tooth-colored shells that cover the front surface of the
+              teeth. They may consist of porcelain or resin composite materials,
+              and they can enhance teeth's color, shape, size, or length.
+              Veneers may be able to help patients whose teeth are chipped or
+              broken, discolored, irregularly shaped, misaligned, worn down,
+              uneven, or have gaps between them. Patients may be able to get
+              veneers for one or more teeth.
             </p>
             <p className="font-tinos mt-2">
-              However, since they are removable, they are more likely to be lost
-              or broken. Patients also need to be careful about what they drink
-              when their aligners are in. Anything but water should be avoided.
-              Liquids can seep into the plastic and stay there until the aligner
-              is removed. This can lead to staining of the aligner and even
-              tooth decay.
+              Veneers are a natural-looking tooth enhancement option that do not
+              require any prior, extensive shaping. Porcelain veneers, in
+              particular, are stain-resistant and well-tolerated by gum tissue.
+              By effectively replacing the outer layer of the teeth (or enamel),
+              veneers can give the appearance of a more symmetrical smile
+              without actually moving your teeth.
+            </p>
+            <p className="font-tinos mt-2">
+              It typically takes about three dental appointments to get veneers.
+              During the initial consultation, the patient will tell Revital
+              Dental about the results they want, and Revital Dental will
+              conduct a thorough examination to determine if veneers are right
+              for them. The second appointment consists of preparation, where
+              the teeth have their surfaces reshaped and Revital Dental makes a
+              model or impression of the teeth. In the third appointment, the
+              veneers are finally bonded to the teeth. This entire process
+              generally takes a few weeks, as does aftercare. Our team
+              recommends booking the procedure a few months in advance of any
+              senior photos.
             </p>
 
             {/* quotes */}
             <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “Thanks to the fact that they are next-to-invisible, both teens
-                and adults can avoid the discomfort and self-consciousness that
-                comes with traditional metal braces.”
+                “Veneers are a natural-looking tooth enhancement option that do
+                not require any prior, extensive shaping.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
@@ -207,66 +233,39 @@ const Services = () => {
               </h2>
             </div>
 
-            <div className="mt-10" id="invisalign-care">
+            <div className="mt-10" id="anesthesia-dental-bonding">
               <h2 className="font-cinzel text-2xl text-primary">
-                Taking Care of Invisalign Aligners
+                Dental Bonding for Senior Pictures
               </h2>
               <hr />
               <p className="font-tinos mt-2 text-justify">
-                It is essential to use and care for Invisalign aligners
-                appropriately to have a good orthodontic outcome. For Invisalign
-                to work, the aligners have to be worn for the recommended number
-                of hours a day. Patients should try to limit the number of times
-                they remove the aligners since it will not take long to exceed
-                the time they can be left off.
-              </p>
-            </div>
-            <div className="mt-10">
-              <h2 className="font-cinzel text-2xl text-primary">
-                Cleaning the Aligners
-              </h2>
-              <hr />
-              <p className="font-tinos mt-2 text-justify">
-                Patients should always rinse the aligners when they are removed.
-                Bacteria and plaque can easily attach to them, which can cause
-                an unpleasant odor and sticky feeling on the teeth. Aligners
-                should be cleaned with a clear and unscented antibacterial soap.
-                If patients use toothpaste to clean the aligners, they should
-                make sure that it is not a brand with whitening agents, as these
-                can wear away the plastic.
+                In a dental bonding procedure, patients have a tooth-colored
+                resin material applied and hardened onto their teeth to restore
+                or improve their smile. Dental bonding may address several
+                different cosmetic concerns, including chipped or cracked teeth,
+                decayed teeth, discolored teeth, misshapen teeth, and receding
+                gums. Additionally, dental bonding may help close spaces between
+                teeth or make teeth look longer. Some patients also opt for
+                dental bonding as an alternative to amalgam fillings.
               </p>
               <p className="font-tinos mt-2 text-justify">
-                Invisalign aligners need to be stored in a case when not being
-                worn. Leaving them out in the open exposes them to germs that
-                can then be transferred to the mouth.
-              </p>
-            </div>
-            <div className="mt-10">
-              <h2 className="font-cinzel text-2xl text-primary">
-                Maintain Proper Oral Hygiene
-              </h2>
-              <hr />
-              <p className="font-tinos mt-2 text-justify">
-                Proper oral hygiene is essential at any time, but it is a bit
-                easier when using Invisalign versus traditional braces. Food and
-                plaque can get trapped in conventional braces' metal brackets
-                and can be tough to brush. Since Invisalign aligners can be
-                removed, it is simple to brush and floss and replace the
-                aligners when finished.
-              </p>
-              <p className="font-tinos mt-2 text-justify">
-                Make sure to brush and floss after meals before putting the
-                aligners back in the mouth. This helps keep food particles from
-                getting stuck in the aligners, leading to bacteria growth and
-                bad breath.
+                Dental bonding is one of the simplest, quickest, most
+                affordable, and least invasive cosmetic dental procedures
+                available. It necessitates removing very little enamel and
+                generally only requires anesthesia when performed to fill a
+                cavity, to reshape the tooth through drilling, or to fix a chip
+                near the nerve. Any preparation is minimal. Revital Dental works
+                closely with each patient to make sure they know what to expect.
+                The entire process takes about 30 to 60 minutes per tooth and
+                can be completed in one appointment.
               </p>
             </div>
 
             {/* quotes */}
             <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “It is essential to use and care for Invisalign aligners
-                appropriately to have a good orthodontic outcome.”
+                “Dental bonding is one of the simplest, quickest, cheapest, and
+                least invasive cosmetic dental procedures available.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
@@ -279,44 +278,49 @@ const Services = () => {
               <div className="flex flex-col">
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#what-is-invisalign"
-                >
-                  Q. <span className="underline">What is Invisalign?</span>
-                </a>
-                <a
-                  className="text-justify font-tinos mt-3"
-                  href="#invisalign-steps"
+                  href="#smile-benefits-senior-pictures"
                 >
                   Q.{" "}
                   <span className="underline">
-                    What steps are involved with getting Invisalign?
+                    Are there any functional benefits to improving my smile for
+                    senior pictures?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#invisalign-pros-cons"
+                  href="#clear-aligners-vs-braces"
                 >
                   Q.{" "}
                   <span className="underline">
-                    What are the pros and cons of Invisalign?
+                    What is the difference between clear aligners and
+                    traditional braces?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#invisalign-care"
+                  href="#veneers-before-photos"
                 >
                   Q.{" "}
                   <span className="underline">
-                    How do I use and care for Invisalign aligners?
+                    When should I get veneers before senior photos?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#invisalign-duration"
+                  href="#anesthesia-dental-bonding"
                 >
                   Q.{" "}
                   <span className="underline">
-                    How long will I have to wear Invisalign aligners?
+                    Will I need anesthesia to have dental bonding done?
+                  </span>
+                </a>
+                <a
+                  className="text-justify font-tinos mt-3"
+                  href="#composite-fillings-time"
+                >
+                  Q.{" "}
+                  <span className="underline">
+                    How long will it take to get composite fillings?
                   </span>
                 </a>
               </div>
@@ -328,62 +332,62 @@ const Services = () => {
               <div className="flex flex-col mb-4">
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#removable-partial-dentures"
+                  href="#teeth-whitening-time"
                 >
                   Q.{" "}
                   <span className="underline">
-                    How do removable partial dentures work?
+                    How long does teeth whitening treatment take?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#partial-dentures-one-tooth"
+                  href="#restorative-methods-for-smile"
                 >
                   Q.{" "}
                   <span className="underline">
-                    What are the pros and cons of partial dentures for one
-                    missing tooth?
+                    What restorative methods can help patients improve their
+                    smiles?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#why-dentures-preferred"
+                  href="#effectiveness-of-whitening"
                 >
                   Q.{" "}
                   <span className="underline">
-                    Why are dentures a preferred treatment?
+                    How effective is professional teeth whitening treatment?
                   </span>
                 </a>
               </div>
             </div>
 
-            <div className="mt-10" id="invisalign-duration">
+            <div className="mt-10" id="composite-fillings-time">
               <h2 className="font-cinzel text-2xl text-primary">
-                Length of Treatment Time
+                Composite Fillings for Senior Pictures
               </h2>
               <hr />
               <p className="font-tinos mt-2 text-justify">
-                Only a dentist can reasonably predict the length of the
-                Invisalign treatment time. The severity of the condition, how
-                well the patient adheres to the treatment plan, and age are all
-                factors. On average, it takes less than two years to see
-                results. The treatment time for teens is typically a little
-                shorter than adults.
+                Composite fillings, or resins, are tooth-colored fillings that
+                protect small- to midsize fillings against moderate pressure
+                from the constant stress of chewing. Composites may be used both
+                on front or back teeth, in part because they look so natural.
+                They are also arguably safer than amalgam fillings, which
+                consist of metal alloys that may include mercury. However, both
+                types function in the same way.
               </p>
-
               <p className="font-tinos mt-2 text-justify">
-                Following all the recommended guidelines will ensure patients do
-                not extend the treatment time. Patients need to switch trays on
-                schedule and talk to our staff if there are any concerns. If the
-                aligners are not worn for the recommended time, the teeth may
-                start to shift back to their original positions.
+                Composite fillings are a relatively quick and easy cosmetic
+                dental procedure, with the process taking about less than 30
+                minutes per tooth. Their ability to bond to the tooth structure
+                allows them to provide even further support. Additionally, they
+                may be used to repair broken, chipped, or worn teeth.
               </p>
             </div>
-
             <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “Only a dentist can reasonably predict the length of the
-                Invisalign treatment time.”
+                “Composite fillings are a relatively quick and easy cosmetic
+                dental procedure, with the process taking about less than 30
+                minutes per tooth.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
@@ -397,105 +401,66 @@ const Services = () => {
               <hr />
               <div className="flex flex-col">
                 <h2
-                  id="what-is-invisalign"
+                  id="clear-aligners-after-braces"
                   className="text-justify text-primary font-tinos mt-3"
                 >
-                  Q. <span className="underline">What is Invisalign?</span>
+                  Q. Can I get clear aligners if I have already had traditional
+                  braces before?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Invisalign is an orthodontic technique that uses clear,
-                  plastic aligners to straighten the teeth. The aligners are
-                  created from a custom mold of the patient’s mouth, and new
-                  aligner trays are provided at specific intervals as part of
-                  the treatment process. Revital Dental will develop the
-                  treatment plan and monitor the process.
+                  A. Yes. It is common for patients to get clear aligners after
+                  not having worn their retainers enough after traditional
+                  braces. Clear aligners may help shift your teeth back into
+                  place and restore your smile.
                 </p>
 
                 <h2
-                  id="invisalign-advantages"
+                  id="are-veneers-reversible"
                   className="text-justify text-primary font-tinos mt-3"
                 >
-                  Q.{" "}
-                  <span className="underline">
-                    What are the advantages of Invisalign over traditional metal
-                    braces?
-                  </span>
+                  Q. Are veneers reversible?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Since Invisalign aligners are clear, patients can avoid the
-                  unsightly look of a mouth filled with metal brackets and
-                  wires. They are also more comfortable to wear and allow the
-                  patient fewer restrictions on foods they can eat. Since they
-                  are removable, it is easier to brush and floss your teeth.
+                  A. No. While veneers are removable, another set of veneers
+                  must always replace them. This is because veneers require
+                  removing tooth enamel, which cannot grow back.
                 </p>
 
                 <h2
-                  id="invisalign-treatment-time"
+                  id="dental-bonding-lifespan"
                   className="text-justify text-primary font-tinos mt-3"
                 >
-                  Q.{" "}
-                  <span className="underline">
-                    How long is the treatment time?
-                  </span>
+                  Q. How long does dental bonding last?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Treatment, on average, takes less than two years but can
-                  vary depending on the patient’s specific concerns. Aligners
-                  must be worn for 20-22 hours a day to see results. If a
-                  patient does not wear the aligners for the recommended amount
-                  of time, treatment results will take longer.
+                  A. The answer varies on a case-by-case basis. Dental bonding
+                  may last for three to 10 years before needing a touch-up or
+                  replacement.
                 </p>
 
                 <h2
-                  id="invisalign-pain"
+                  id="composite-filling-duration"
                   className="text-justify text-primary font-tinos mt-3"
                 >
-                  Q. <span className="underline">Does Invisalign hurt?</span>
+                  Q. How long will my composite filling last?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Unlike traditional metal braces, Invisalign’s clear
-                  aligners do not rub and poke at the soft tissues of the mouth.
-                  Patients can expect to feel some sensitivity for a day or two
-                  when a new set of aligners are put in. This means the teeth
-                  are shifting and the aligners are working. Any discomfort
-                  should go away quickly.
+                  A. For most healthy patients, composite fillings will last
+                  seven to 10 years. However, they may last longer under certain
+                  circumstances.
                 </p>
 
                 <h2
-                  id="invisalign-care"
+                  id="cosmetic-dentistry-teens"
                   className="text-justify text-primary font-tinos mt-3"
                 >
-                  Q.{" "}
-                  <span className="underline">
-                    How do you keep Invisalign aligners clean?
-                  </span>
+                  Q. Are teens too young for cosmetic dentistry?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Aligners should be cleaned with a clear and unscented
-                  antibacterial soap or toothpaste. If using toothpaste, make
-                  sure it is not a brand with whitening agents, which can wear
-                  away the plastic. Always brush and floss after meals before
-                  putting the aligners back in the mouth. This helps keep food
-                  particles from getting stuck, which can lead to bacteria
-                  growth and bad breath.
-                </p>
-
-                <h2
-                  id="invisalign-foods"
-                  className="text-justify text-primary font-tinos mt-3"
-                >
-                  Q.{" "}
-                  <span className="underline">
-                    Do I have to avoid any foods with Invisalign?
-                  </span>
-                </h2>
-                <p className="font-tinos md:ps-4 mt-2">
-                  A. If you eat with the aligners in place, make sure to avoid
-                  hard foods like raw carrots and sticky foods like gum. Hard
-                  and sticky candies should also be avoided. You will also want
-                  to avoid drinking anything other than water when the aligners
-                  are in place. Coffee and tea can stain the aligners, while
-                  soda has acidic properties that can break down the plastic.
+                  A. No. Teens are at an especially vulnerable point in their
+                  lives where their self-esteem is at its most fragile. Cosmetic
+                  dentistry may help. Revital Dental can determine whether or
+                  not any of the above treatments are right for you.
                 </p>
               </div>
             </div>
@@ -558,125 +523,124 @@ const Services = () => {
               <hr />
               <div className="space-y-10">
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Aligner Trays</h2>
+                  <h2 className="italic text-xl">Bleachorexia</h2>
                   <p>
-                    With Invisalign® treatment, the patient will receive a
-                    series of aligner trays and swap out each one for the next
-                    one in the series every two weeks in order to gradually
-                    straighten the teeth.
+                    Bleachorexia refers to the overuse or obsession with teeth
+                    whitening treatments, often done without dental supervision,
+                    leading to enamel erosion and gum damage.
                   </p>
                   <hr className="mt-4" />
                 </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Carbamide Peroxide</h2>
+                  <p>
+                    Carbamide peroxide is a whitening agent that breaks down
+                    into hydrogen peroxide and urea, used in professional and
+                    at-home teeth whitening products.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Cosmetic Dentistry</h2>
+                  <p>
+                    Cosmetic dentistry includes treatments focused on enhancing
+                    the appearance of teeth, gums, and smiles, such as
+                    whitening, veneers, and bonding.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Deeper Teeth Stains</h2>
+                  <p>
+                    Deeper teeth stains occur within the tooth structure and
+                    often result from aging, poor oral hygiene, or consumption
+                    of staining foods and beverages, requiring professional
+                    treatment.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Dentin Hypersensitivity</h2>
+                  <p>
+                    Dentin hypersensitivity is a condition where the inner layer
+                    of the tooth becomes exposed, causing pain when consuming
+                    hot, cold, sweet, or acidic substances.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Dentist</h2>
+                  <p>
+                    A dentist is a licensed medical professional trained in the
+                    prevention, diagnosis, and treatment of conditions affecting
+                    the teeth, gums, and oral cavity.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Hydrogen Peroxide</h2>
+                  <p>
+                    Hydrogen peroxide is a powerful bleaching compound commonly
+                    used in teeth whitening products to remove surface stains
+                    and brighten enamel.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Relief ACP</h2>
+                  <p>
+                    Relief ACP (amorphous calcium phosphate) is a gel that helps
+                    relieve sensitivity in teeth by remineralizing enamel and
+                    reducing discomfort.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Stained Dentin</h2>
+                  <p>
+                    Stained dentin refers to discoloration that affects the
+                    inner part of the tooth, often requiring professional
+                    whitening procedures for improvement.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Surface Enamel</h2>
+                  <p>
+                    Surface enamel is the outermost layer of a tooth that
+                    protects the underlying structures and plays a key role in
+                    maintaining a white, healthy smile.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Surface Teeth Stains</h2>
+                  <p>
+                    Surface teeth stains are external discolorations typically
+                    caused by foods, drinks, or smoking and can often be removed
+                    through dental cleanings or whitening.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
                 <div className="mt-5 font-tinos">
                   <h2 className="italic text-xl">
-                    Blue Compliance Indicator (Invisalign® Teen)
+                    Teeth Whitening Concentrate
                   </h2>
                   <p>
-                    The blue compliance indicator is a small blue dot on the
-                    aligners that will fade from blue to clear in order to
-                    indicate if the patient is wearing the aligner for the
-                    proper amount of time and where the patient is in the
-                    Invisalign® process.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">ClinCheck® Software</h2>
-                  <p>
-                    ClinCheck® software allows professionals to map out the
-                    straightening process the patient’s teeth will go through
-                    with Invisalign® in great detail.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Gum Line</h2>
-                  <p>
-                    The gum line is the line in the mouth where the teeth and
-                    gums meet. If a patient struggles with gum recession, then
-                    the gum tissue around the teeth may begin to wear away.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Incisal Ridges</h2>
-                  <p>
-                    Incisal ridges are the portion of the crown of the tooth
-                    that makes up the incisal portion and can be a direct cause
-                    of overbite if they are extended too far.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">iTero Element® Scanner</h2>
-                  <p>
-                    An iTero Element® scanner allows professionals to create a
-                    3D image of the patient’s teeth in minutes and predict what
-                    it will take to move the teeth into proper alignment.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Malocclusion</h2>
-                  <p>
-                    Malocclusion is the condition in which the upper and lower
-                    teeth do not meet properly when the bite is closed.
-                    Conditions of malocclusion can include overbite, underbite,
-                    crossbite and open bite; all of which are treatable with
-                    Invisalign®.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Overbite</h2>
-                  <p>
-                    An overbite is a type of malocclusion that occurs when the
-                    upper teeth jut out over the lower teeth, covering them and
-                    causing other issues.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Polyurethane Resin</h2>
-                  <p>
-                    Polyurethane Resin is a USP Class VI medical grade, high
-                    molecular weight compound that makes up the Invisalign®
-                    aligners.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">SmartForce Attachments</h2>
-                  <p>
-                    SmartForce attachments are small attachments that
-                    professionals place on the patient’s teeth before placing
-                    aligners to help move the teeth.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Smart Track® Material</h2>
-                  <p>
-                    Smart Track® material is in Invisalign® aligners to increase
-                    comfort, improve control of movement, increases the speed of
-                    treatment and applies a gentle force to the teeth over time.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Smile-Scan</h2>
-                  <p>
-                    Smile-Scan analyzes the way a patient smiles by measuring
-                    the position of the mouth and eyes before giving a score.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Vivera® Retainers</h2>
-                  <p>
-                    Vivera® retainers are a type of retainer that consists of
-                    clear plastic material and helps to maintain orthodontic
-                    corrections after a treatment.
+                    Teeth whitening concentrate is a high-strength bleaching
+                    gel, usually containing hydrogen or carbamide peroxide,
+                    available through professional dental services.
                   </p>
                   <hr className="mt-4" />
                 </div>

@@ -3,7 +3,6 @@ import { FaCaretDown } from "react-icons/fa";
 import { Cinzel } from "next/font/google";
 import Link from "next/link";
 import { FaYelp } from "react-icons/fa";
-import Image from "next/image";
 
 const cinzel = Cinzel({
   subsets: ["latin"], // you can add 'latin-ext' if needed
@@ -14,26 +13,31 @@ const Services = () => {
   return (
     <>
       {/* intro section */}
-      <section className="grid md:grid-cols-[1fr_1fr_1fr] grid-cols-1 md:gap-2 md:mt-[85px]  border-y-[10px] border-dark mx-2">
-        <div className="bg-[url(/smile-makeover.webp)] bg-cover my-10"></div>
+      <section className="grid md:grid-cols-[1fr_1fr_1fr] grid-cols-1 md:gap-2  md]:mt-[125px]  border-y-[10px] border-dark mx-2">
+        <div className="bg-[url(/why-are-my-gums-bleeding.webp)] bg-cover my-10"></div>
 
-        <div className="px-10 py-5 space-y-3">
-          <h2 className="text-5xl font-cinzel text-primary">Smile Makeover</h2>
+        <div className="px-10 py-10 space-y-3">
+          <h2 className="text-5xl font-cinzel text-primary">
+            Why Are My Gums Bleeding
+          </h2>
           <p className="font-cinzel text-primary">Temple, TX</p>
           <p className="font-tinos  text-justify">
-            If you are unhappy with your smile’s appearance, a smile makeover
-            can help. Smile makeovers involve a combination of at least two
-            cosmetic dental procedures. People can choose from various
-            procedures to achieve a more beautiful smile.
+            Gum disease can take a toll on your health.Along with oral health
+            issues, gum diseases can have lasting effects on the body. This
+            makes it crucial to seek professional evaluation and treatment when
+            noticing bleeding gums. In many cases, bleeding gums are often an
+            early warning sign of gum disease.
           </p>
           <p className="font-tinos  text-justify">
-            Smile makeovers are available at Revital Dental in Temple and the
-            surrounding area. Our team can help determine which procedures are
-            right for your needs. Call us today at (254) 207-0708 to schedule an
-            appointment or learn more about our services.
+            Treatment for gum disease is available at Revital Dental in Temple
+            and the surrounding area. First, our team performs an in-depth exam
+            to determine the cause of your symptoms. Next, we offer a range of
+            treatments to improve your oral health. Early diagnosis and
+            treatment can help you avoid complications. Call us at (254)
+            207-0708 to schedule an appointment with a qualified dentist.
           </p>
         </div>
-        <div className="py-5">
+        <div className="py-10">
           <form
             action=""
             className="w-full mx-auto mt-10 md:mt-0 max-w-[400px]"
@@ -84,100 +88,113 @@ const Services = () => {
       {/* explanation */}
       <section className="md:grid md:grid-cols-[3fr_1fr]  md:w-[90%] w-[100%] md:mx-auto px-2 mt-3 gap-2">
         {/* left section */}
-        <div className="left-section " id="what-is-root-canal">
+        <div className="left-section " id="bleeding-gums-causes">
           {/* dark section */}
           <div className="bg-dark p-5 text-white">
             <h2 className="text-2xl font-cinzel mb-3">
-              Candidates for a Smile Makeover
+              Diseases That Cause Gums to Bleed
             </h2>
             <hr />
             <p className="text-justify font-tinos mt-4">
-              A good candidate for a smile makeover is someone who is not
-              satisfied with their smile. They may lack confidence in the
-              appearance of their teeth. Other people who may want to consider a
-              makeover of their smiles are those who are having functional
-              issues.
+              Most forms of gum disease are caused by plaque. This sticky
+              substance traps food and bacteria against the gum line. Over time,
+              bacteria attack the gums, triggering inflammation and sensitivity.
+              Without treatment, the problem can worsen. The gums may bleed
+              while eating, brushing, or flossing. Gum problems have also been
+              linked to heart disease and stroke.
             </p>
             <p className="text-justify font-tinos mt-4">
-              Misshapen teeth, crooked teeth, and gaps in the mouth can affect
-              speech and cause other complications such as difficulty and pain
-              when chewing. People can choose to have a smile makeover for many
-              reasons. Our team can create a customized treatment plan according
-              to each patient’s unique needs and goals.
+              Often, smoking and poor oral hygiene are to blame for gum disease.
+              But some patients may be prone to gum disease even if they brush
+              and floss daily. Pregnant women are at a high risk of gum disease,
+              and so are people with diabetes. Patients who wear dentures are
+              more likely to develop gum disease too.
+            </p>
+            <p className="text-justify font-tinos mt-4">
+              In rare cases, bleeding gums can be a sign of a severe condition
+              like leukemia. Patients who notice bleeding gums should seek
+              dental care right away. Our team can determine the source of the
+              problem. If further tests are required, we help patients make the
+              necessary arrangements.
+            </p>
+          </div>
+
+          {/* question and answer section */}
+          {/* quote */}
+          <div className="relative inline-block mt-10">
+            <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
+              “Often, smoking and poor oral hygiene are to blame for gum
+              disease.”
+            </h2>
+            <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
+          </div>
+          {/* Q & A */}
+          <div className="mt-10" id="prevent-mouth-injuries">
+            <h2 className="font-cinzel text-2xl text-primary">
+              Mouth Injuries
+            </h2>
+            <hr />
+            <p className="font-tinos mt-2 text-justify">
+              Gums may also bleed after a common mouth injury. Patients may
+              notice bleeding after eating sharp foods or suffering a sports
+              injury. More minor injuries may heal on their own, but severe
+              dental bleeding can be dangerous. Seek medical care right away if
+              you experience heavy or uncontrolled bleeding.
+            </p>
+
+            <p className="font-tinos mt-2 text-justify">
+              Taking some quick and easy precautions can help prevent dental
+              injuries. For example, wearing a mouthguard protects the teeth and
+              gums while playing sports. Avoid sharp foods like chips and hard
+              candies, and never use the teeth to cut or tear objects. Keep
+              appliances like dentures and retainers in good shape, too. Wearing
+              a damaged or ill-fitting appliance can result in a serious mouth
+              injury. If your device no longer fits, contact our dental team. We
+              can provide a replacement.
             </p>
           </div>
 
           {/* quote */}
-          <div className="relative inline-block mt-10">
+          <div className="relative inline-block mt-10 w-full">
             <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-              “A good candidate for a smile makeover is someone who is not
-              satisfied with their smile.”
+              “Taking some quick and easy precautions can help prevent dental
+              injuries.”
             </h2>
             <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
           </div>
-
           {/* Q & A */}
-          <div className="mt-10" id="root-canal-benefits">
+          <div className="mt-10" id="gum-bleeding-triggers">
             <h2 className="font-cinzel text-2xl text-primary">
-              Dental Care Plan After the Makeover
+              Factors That Cause Gum Bleeding
             </h2>
             <hr />
-            <p className="font-tinos mt-2 text-justify">
-              The procedures in a smile makeover require regular oral hygiene
-              care and may need maintenance over time. For example, teeth
-              whitening is not a permanent treatment. Patients will need
-              touch-up treatments to maintain their results. While it is always
-              important to practice good oral hygiene, it is especially
-              important after a smile makeover.
+            <p className="font-tinos mt-2">
+              Smoking, vaping, and chewing tobacco all increase one's risk for
+              gum disease. The substances dry out the mouth and reduce blood
+              flow to the gums. Over time, some patients may develop gum
+              problems. Patients who notice gums bleeding should quit all
+              tobacco products at once.
             </p>
-            <p className="font-tinos mt-2 text-justify">
-              Proper maintenance and care will help prevent future dental issues
-              and previous problems from reappearing. Our team will provide
-              patients with tips and instructions on how to maintain their new
-              smile after. Tips for maintaining a newly restored smile include
-              brushing and flossing multiple times daily and visiting the
-              dentist for professional cleanings on a regular basis. Certain
-              procedures require special care, so it is important to follow the
-              instructions precisely.
-            </p>
-          </div>
-
-          <div className="relative inline-block mt-10">
-            <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-              “While it is always important to practice good oral hygiene, it is
-              especially important after a smile makeover.”
-            </h2>
-            <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
-          </div>
-
-          {/* Q & A */}
-          <div className="mt-10" id="root-canal-process">
-            <h2 className="font-cinzel text-2xl text-primary">
-              Dental Treatments for a Smile Makeover
-            </h2>
-            <hr />
 
             <p className="font-tinos mt-2">
-              After examining the patient’s teeth, we will develop a customized
-              treatment plan to address their unique needs. Smile makeovers
-              involve a minimum of two procedures. There are numerous treatment
-              options to choose from depending on the patient’s issues.
+              A poor diet can also lead to vitamin deficiencies. If the body
+              does not receive enough of certain nutrients, patients may develop
+              gum recession. Blood tests can determine whether a patient suffers
+              from nutritional deficiencies. If a nutritional deficiency is to
+              blame, supplements may resolve the problem.
             </p>
             <p className="font-tinos mt-2">
-              Some of the most common dental treatments include veneers,
-              bonding, implants, teeth whitening, crowns, and bridges. People
-              who are interested in receiving a smile makeover should contact us
-              to learn about the available options. A smile makeover can correct
-              various cosmetic issues, such as gaps, stains, and crooked,
-              missing, or uneven teeth. We provide comprehensive and custom
-              treatments to help smiles look their best.
+              Some prescription medications are associated with oral bleeding,
+              too. Blood thinners, including aspirin, can increase the risk of
+              bleeding. Patients who experience oral bleeding while taking these
+              drugs need immediate care. Contact your healthcare provider for
+              further advice.
             </p>
-
             {/* quotes */}
             <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “Some of the most common dental treatments include veneers,
-                bonding, implants, teeth whitening, crowns, and bridges.”
+                “Smoking, vaping, and chewing tobacco all increase one’s risk
+                for gum disease”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
@@ -198,35 +215,34 @@ const Services = () => {
               </h2>
             </div>
 
-            <div className="mt-10" id="prevent-root-canal">
+            <div className="mt-10" id="treat-bleeding-gums-home">
               <h2 className="font-cinzel text-2xl text-primary">
-                Reasons to Get a Smile Makeover
+                How to Stop Gums from Bleeding
               </h2>
               <hr />
               <p className="font-tinos mt-2 text-justify">
-                Certain lifestyle choices can adversely affect the appearance
-                and function of a smile. One lifestyle choice that can affect
-                the appearance of teeth is smoking. According to Healthline, the
-                nicotine and tar in cigarettes can cause teeth to become
-                yellowed and stained. Additionally, people who smoke are also at
-                higher risk of gum disease, further damaging teeth.
+                Patients with bleeding gums sometimes stop brushing and flossing
+                their teeth. Unfortunately, poor oral hygiene only worsens the
+                underlying problem. As such, patients must continue brushing
+                their teeth twice daily, even if they are experiencing gum
+                bleeding. Use a soft-bristled brush and apply gentle pressure.
+                Afterward, floss carefully to remove any debris that might be
+                stuck in the gums.
               </p>
               <p className="font-tinos mt-2 text-justify">
-                People should also avoid eating and drinking sugary foods and
-                beverages. The sugar feeds the bacteria, which produce acid that
-                can also damage teeth, causing cavities to form or erosion to
-                occur. Fortunately, a smile makeover can give people a fresh
-                start and a new smile. It is important for people who receive a
-                smile makeover to change their lifestyle and make healthy
-                choices to maintain a healthy, beautiful smile.
+                Our team may also recommend a specially formulated mouthwash or
+                a saltwater rinse. These treatments help clear up the infection
+                and shrink swollen gums. Oral rinses also flush away debris and
+                help prevent plaque buildup. Preventing plaque is an essential
+                step in the gum-disease treatment process.
               </p>
             </div>
 
             {/* quotes */}
             <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “Certain lifestyle choices can adversely affect the appearance
-                and function of a smile.”
+                “Preventing plaque is an important step in the gum-disease
+                treatment process.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
@@ -239,40 +255,45 @@ const Services = () => {
               <div className="flex flex-col">
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#who-can-get-smile-makeover"
+                  href="#bleeding-gums-causes"
+                >
+                  Q.{" "}
+                  <span className="underline">What causes bleeding gums?</span>
+                </a>
+                <a
+                  className="text-justify font-tinos mt-3"
+                  href="#prevent-mouth-injuries"
                 >
                   Q.{" "}
                   <span className="underline">
-                    Who can get a smile makeover?
+                    How can I prevent mouth injuries?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#care-after-smile-makeover"
+                  href="#gum-bleeding-triggers"
                 >
                   Q.{" "}
                   <span className="underline">
-                    How should people take care of their teeth after a smile
-                    makeover?
+                    What lifestyle factors can trigger gum bleeding?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#treatments-in-smile-makeover"
+                  href="#treat-bleeding-gums-home"
                 >
                   Q.{" "}
                   <span className="underline">
-                    What dental treatments are possible in a smile makeover?
+                    How can I treat bleeding gums at home?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#causes-of-smile-makeover"
+                  href="#after-gum-treatment"
                 >
                   Q.{" "}
                   <span className="underline">
-                    What substances and habits may cause someone to get a smile
-                    makeover?
+                    What happens after my office visit for gum bleeding?
                   </span>
                 </a>
               </div>
@@ -284,36 +305,54 @@ const Services = () => {
               <div className="flex flex-col mb-4">
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#removable-partial-dentures"
+                  href="#common-gum-disease"
+                >
+                  Q.{" "}
+                  <span className="underline">How common is gum disease?</span>
+                </a>
+                <a
+                  className="text-justify font-tinos mt-3"
+                  href="#symptoms-gum-recession"
                 >
                   Q.{" "}
                   <span className="underline">
-                    How do removable partial dentures work?
+                    What are the symptoms of gum recession?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#partial-dentures-one-tooth"
+                  href="#gum-reshaping-reasons"
                 >
                   Q.{" "}
                   <span className="underline">
-                    What are the pros and cons of partial dentures for one
-                    missing tooth?
-                  </span>
-                </a>
-                <a
-                  className="text-justify font-tinos mt-3"
-                  href="#why-dentures-preferred"
-                >
-                  Q.{" "}
-                  <span className="underline">
-                    Why are dentures a preferred treatment?
+                    Why would someone get gum reshaping?
                   </span>
                 </a>
               </div>
             </div>
 
-            {/* Q & A */}
+            <div className="mt-10" id="after-gum-treatment">
+              <h2 className="font-cinzel text-2xl text-primary">
+                Post-Visit Care
+              </h2>
+              <hr />
+              <p className="font-tinos mt-2 text-justify">
+                Good dental hygiene can reduce gum bleeding. During each office
+                visit, our team demonstrates brushing and flossing techniques.
+                We can also provide advice on mouse washes and rises, which may
+                reduce bleeding and gum disease. Individual treatment plans may
+                vary. Our team will let each patient know how to care for their
+                gums — even once they return home.
+              </p>
+            </div>
+
+            {/* quotes */}
+            <div className="relative inline-block mt-10 w-full">
+              <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
+                “Good dental hygiene can reduce gum bleeding.”
+              </h2>
+              <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
+            </div>
 
             <div className="bg-gray-100 p-5 mt-10">
               <h2 className="text-4xl text-center font-cinzel mb-3 text-primary">
@@ -322,77 +361,79 @@ const Services = () => {
               <hr />
               <div className="flex flex-col">
                 <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q.{" "}
-                  <span className="underline">
-                    Is a smile makeover the same as full mouth rejuvenation?
-                  </span>
+                  Q. Should I be concerned about bleeding gums?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. No, it is not. Full mouth rejuvenation uses many of the
-                  same cosmetic methods as a makeover, but it also consists of
-                  general and restorative services, such as TMJ or gum disease
-                  treatment. A smile makeover is more cosmetic based and is a
-                  less extensive process.
+                  A. Bleeding gums can signify an underlying health problem. If
+                  you notice that your gums are inflamed, contact your dental
+                  provider right away. A dentist can examine your gums and
+                  determine the source of the problem.
                 </p>
 
                 <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q.{" "}
-                  <span className="underline">
-                    What are the most common procedures used for a smile
-                    makeover?
-                  </span>
+                  Q. What causes gum bleeding?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Every situation is different, but certain procedures are
-                  used more commonly than others. These include veneers,
-                  tooth-colored fillings, bonding, and gum contouring. Teeth
-                  whitening is probably the most commonly used method.
+                  A. Bleeding gums are usually a sign of gingivitis. Gingivitis
+                  develops when plaque and bacteria become trapped against the
+                  gum line. Treatment can get rid of plaque and destroy the
+                  bacteria.
+                </p>
+                <p className="font-tinos md:ps-4 mt-2">
+                  A. Bleeding gums can also result from:
+                </p>
+                <ul className="list-disc list-inside font-tinos md:ps-6">
+                  <li>Pregnancy</li>
+                  <li>Prescription drugs</li>
+                  <li>Vitamin deficiencies</li>
+                  <li>Bleeding disorders</li>
+                  <li>Poor brushing habits</li>
+                  <li>Ill-fitting dental appliances</li>
+                </ul>
+                <p className="font-tinos md:ps-4 mt-2">
+                  A. Our dental team can provide an in-depth exam to determine
+                  the cause of your symptoms.
                 </p>
 
                 <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q.{" "}
-                  <span className="underline">
-                    How long does a makeover take?
-                  </span>
+                  Q. How is gum bleeding treated?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. The overall timeframe of a smile makeover varies greatly
-                  based on the types and number of procedures. Some methods,
-                  like teeth whitening, take one visit. Many of the procedures
-                  require at least two visits, and some are spaced weeks apart.
-                  Dental implants usually take the longest, as it takes numerous
-                  steps. The whole process can take months to complete.
+                  A. Our team begins by identifying the cause of your symptoms.
+                  If you have gingivitis, our team can perform a scaling and
+                  root planing procedure. This treatment removes plaque and
+                  bacteria from below the gums.
+                </p>
+                <p className="font-tinos md:ps-4 mt-2">
+                  A. If your symptoms have a different cause, we deliver the
+                  appropriate treatment. As part of your treatment, our team
+                  demonstrates proper brushing techniques and adjusts dental
+                  appliances to ensure a comfortable fit.
                 </p>
 
                 <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q.{" "}
-                  <span className="underline">
-                    Is there recovery time after a smile makeover?
-                  </span>
+                  Q. Is it normal for gums to bleed while flossing?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Many of the procedures do not require recovery time.
-                  Others, such as implants, may include some discomfort and
-                  swelling after the procedure. Patients may need to restrict
-                  physical activity and temporarily change eating habits until
-                  healing is complete. Our team will provide patients with
-                  instructions and tips to recover after treatment.
+                  A. Many patients mistakenly believe that gum bleeding is
+                  normal. But healthy gums should not bleed, even during
+                  flossing or a dental checkup. If you notice that your gums
+                  bleed while flossing, contact our team. We can check your gums
+                  for signs of gingivitis or other dental problems.
                 </p>
 
                 <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q.{" "}
-                  <span className="underline">
-                    What aspects does the dentist consider when planning a smile
-                    makeover?
-                  </span>
+                  Q. Are bleeding gums linked to pregnancy?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. We consider many features besides the general state of your
-                  teeth and gums. Detailed aspects of the teeth, such as their
-                  size, color, and shape, are factored in; along with the
-                  condition of the gums. The dentist also looks at the different
-                  features of the face and the patient’s skin tone, which makes
-                  a makeover especially effective.
+                  A. Up to 40% of pregnant women experience gum disease during
+                  pregnancy. Hormonal changes can make you more susceptible to
+                  gum disease.
+                </p>
+                <p className="font-tinos md:ps-4 mt-2">
+                  A. Make sure to keep up with dental checkups while pregnant,
+                  and notify your team of any new symptoms. Prompt treatment can
+                  keep the problem from progressing.
                 </p>
               </div>
             </div>
@@ -453,103 +494,84 @@ const Services = () => {
             <div className="bg-dark p-5 mt-10 text-white">
               <h2 className="text-4xl font-cinzel mb-3">Dental Terminology</h2>
               <hr />
-              <div className="space-y-10 ">
+              <div className="space-y-10">
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Bleachorexia</h2>
+                  <h2 className="italic text-xl">Calculus</h2>
                   <p>
-                    Bleachorexia refers to the excessive use of whitening
-                    products without dental supervision, leading to enamel
-                    erosion and gum irritation.
+                    Calculus, also known as tartar, refers to the hardened
+                    dental plaque that forms on teeth due to a lack of proper
+                    oral hygiene.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Cosmetic Dentistry</h2>
+                  <h2 className="italic text-xl">Gingival Flap Surgery</h2>
                   <p>
-                    Cosmetic dentistry includes procedures that enhance the
-                    appearance of your teeth and smile, such as veneers,
-                    whitening, and bonding.
+                    Gingival flap surgery is a procedure in which the
+                    periodontist temporarily separates the gums from the teeth
+                    to reach the root and nearby bone for treatment.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Cosmetic Imaging</h2>
+                  <h2 className="italic text-xl">
+                    Necrotizing Periodontal Diseases
+                  </h2>
                   <p>
-                    Cosmetic imaging uses digital tools to show patients a
-                    preview of their smile after cosmetic treatments, helping
-                    them make informed decisions.
+                    Necrotizing periodontal diseases involve the death of
+                    gingival tissues, often accompanied by lesions in the mouth
+                    and severe pain.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Crown Lengthening</h2>
+                  <h2 className="italic text-xl">Periapical Abscess</h2>
                   <p>
-                    Crown lengthening is a procedure that reshapes gum tissue
-                    and bone to expose more of a tooth for cosmetic or
-                    restorative purposes.
+                    A periapical abscess is an inflammatory condition where pus
+                    collects in the tissues surrounding the tip of a tooth root.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Dental Crown</h2>
+                  <h2 className="italic text-xl">Periodontal Ligament</h2>
                   <p>
-                    A dental crown is a custom-made cap that covers a damaged or
-                    decayed tooth to restore its shape, strength, and
-                    appearance.
+                    The periodontal ligament is a connective tissue that holds
+                    the tooth in place by attaching it to the surrounding bone
+                    and can be destroyed by advanced gum disease.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Dentist</h2>
+                  <h2 className="italic text-xl">Periodontitis</h2>
                   <p>
-                    A dentist is a healthcare professional trained to diagnose,
-                    treat, and prevent oral health issues affecting the teeth,
-                    gums, and mouth.
+                    Periodontitis is a severe gum infection that damages the
+                    soft tissue and destroys the bone supporting your teeth,
+                    often caused by poor oral hygiene.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Full Mouth Rehabilitation</h2>
+                  <h2 className="italic text-xl">Periodontium</h2>
                   <p>
-                    Full mouth rehabilitation combines multiple dental
-                    procedures to restore the health, function, and aesthetics
-                    of the entire mouth.
+                    The periodontium is the structure that supports the teeth,
+                    including the gums, periodontal ligament, cementum, and
+                    alveolar bone.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Smile Selection Guide</h2>
+                  <h2 className="italic text-xl">Root Scaling and Planing</h2>
                   <p>
-                    A smile selection guide helps patients visualize different
-                    smile styles to choose the one that best fits their facial
-                    features and preferences.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Smile Shape Guide</h2>
-                  <p>
-                    A smile shape guide offers options for tooth shapes and
-                    smile designs, helping customize cosmetic treatments to meet
-                    aesthetic goals.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Tetracycline</h2>
-                  <p>
-                    Tetracycline is an antibiotic known to cause permanent tooth
-                    discoloration, especially when taken during childhood or
-                    tooth development.
+                    Root scaling and planing is a non-surgical procedure where
+                    plaque and calculus are removed from below the gum line, and
+                    root surfaces are smoothed to promote healing.
                   </p>
                   <hr className="mt-4" />
                 </div>

@@ -3,7 +3,6 @@ import { FaCaretDown } from "react-icons/fa";
 import { Cinzel } from "next/font/google";
 import Link from "next/link";
 import { FaYelp } from "react-icons/fa";
-import Image from "next/image";
 
 const cinzel = Cinzel({
   subsets: ["latin"], // you can add 'latin-ext' if needed
@@ -14,29 +13,29 @@ const Services = () => {
   return (
     <>
       {/* intro section */}
-      <section className="grid md:grid-cols-[1fr_1fr_1fr] grid-cols-1 md:gap-2  md:mt-[85px]  border-y-[10px] border-dark mx-2">
-        <div className="bg-[url(/dental-implants.webp)] bg-cover my-10"></div>
+      <section className="grid md:grid-cols-[1fr_1fr_1fr] grid-cols-1 md:gap-2  md:mt-[125px]  border-y-[10px] border-dark mx-2">
+        <div className="bg-[url(/wisdom-teeth-extraction.webp)] bg-cover my-10"></div>
 
-        <div className="px-10 py-5 space-y-3">
-          <h2 className="text-5xl font-cinzel text-primary">Dental Implants</h2>
+        <div className="px-10 py-10 space-y-3">
+          <h2 className="text-5xl font-cinzel text-primary">
+            Wisdom Teeth Extraction
+          </h2>
           <p className="font-cinzel text-primary">Temple, TX</p>
           <p className="font-tinos  text-justify">
-            Patients can enjoy a more comfortable and functional bite after
-            losing teeth with dental implants. Implants act as artificial roots
-            to anchor permanent teeth replacements. If you are missing one or
-            more teeth or need to have one extracted, dental replacements can be
-            a great option to restore your smile.
+            Wisdom teeth extraction can help to relieve pain in a patient’s
+            teeth that results from the wisdom teeth causing crowding issues or
+            growing incorrectly. There are many different reasons you may need
+            to extract your wisdom teeth. Wisdom teeth extraction removes the
+            third set of molars in the back of your mouth.
           </p>
           <p className="font-tinos  text-justify">
-            Dental implants can be beneficial for people who want a tooth
-            replacement option that closely imitates natural teeth. They can be
-            a very effective long-term solution for missing teeth. Dental
-            implants are available at Revital Dental in Temple and the
-            surrounding area. Call our team at (254) 207-0708 to learn more
-            about this service and set up an appointment.
+            Wisdom teeth extraction is available at Revital Dental in Temple and
+            the surrounding area. Most patients who need wisdom teeth extraction
+            are in the stages of young adulthood. Call us today at (254)
+            207-0708 to learn more and schedule an appointment.
           </p>
         </div>
-        <div className="py-5">
+        <div className="py-10">
           <form
             action=""
             className="w-full mx-auto mt-10 md:mt-0 max-w-[400px]"
@@ -87,94 +86,108 @@ const Services = () => {
       {/* explanation */}
       <section className="md:grid md:grid-cols-[3fr_1fr]  md:w-[90%] w-[100%] md:mx-auto px-2 mt-3 gap-2">
         {/* left section */}
-        <div className="left-section " id="what-is-involved-dental-cleaning">
+        <div className="left-section " id="what-are-wisdom-teeth">
           {/* dark section */}
-          <div
-            className="bg-dark p-5 text-white"
-            id="what-happens-during-dental-implant-process"
-          >
+          <div className="bg-dark p-5 text-white">
             <h2 className="text-2xl font-cinzel mb-3">
-              The Dental Implant Process
+              Understanding Wisdom Teeth Extraction
             </h2>
             <hr />
             <p className="text-justify font-tinos mt-4">
-              Dental implants act as artificial tooth roots to support new
-              replacement teeth. During the procedure, an incision is made in
-              the patient’s gum to expose the bone where the implant will be
-              placed. We will then insert the implant and suture the gum around
-              the implant post. In some cases, a temporary denture is used
-              instead of replacement teeth.
+              "Wisdom teeth" is the colloquial term for the third set of molars
+              that sit in the back of the mouth. They are called such because
+              they come between the more "mature" ages of 17 and 21. The
+              emergence of wisdom teeth can be uncomfortable, even if they are
+              emerging correctly. Wisdom teeth do not always necessitate
+              extraction. On the contrary, properly aligned wisdom teeth may
+              assist in chewing.
             </p>
             <p className="text-justify font-tinos mt-4">
-              Following the surgery, the bone needs to heal around the dental
-              implant. This process can take several weeks or months. Once it is
-              sufficiently strong, a dentist can fit the permanent replacement
-              teeth. According to the Mayo Clinic, some extra steps may be
-              necessary. For patients with weak jawbones, a bone graft may be
-              needed to ensure sufficient strength. After the bone has healed,
-              an abutment connects a crown or dentures to the dental implant.
+              However, if there is no adequate space for the wisdom teeth to
+              emerge or if the teeth are coming through in the wrong position,
+              they may become impacted (or trapped in the jaw or under the
+              gums). This may cause cysts, damage to neighboring teeth, gum
+              disease, infection, pain, tooth, decay, and tumors. A dentist
+              needs to monitor the patient’s wisdom teeth and determine the best
+              course of action.
             </p>
           </div>
 
+          {/* question and answer section */}
           {/* quote */}
           <div className="relative inline-block mt-10">
             <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-              “Dental implants act as artificial tooth roots to support new
-              replacement teeth.”
+              “”Wisdom teeth” is the colloquial term for the third set of molars
+              that sit in the back of the mouth.”
             </h2>
             <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
           </div>
           {/* Q & A */}
-          <div className="mt-10" id="how-to-care-for-dental-implants">
+          <div className="mt-10" id="risks-of-extraction">
             <h2 className="font-cinzel text-2xl text-primary">
-              How To Care for Dental Implants
+              What to Know Before Wisdom Teeth Extraction
             </h2>
             <hr />
-            <p className="font-tinos mt-2 text-justify">
-              Caring for dental implants is very similar to caring for natural
-              teeth, especially if the replacement teeth are permanent.
-              Brushing, flossing, and rinsing with mouthwash is necessary for
-              maintaining proper oral hygiene with implants. Getting regular
-              checkups and teeth cleanings at the dentist are important for
-              taking care of replacement teeth.
+            <p className="font-tinos mt-2">
+              Wisdom teeth extraction is a common and generally safe procedure
+              when performed by qualified doctors. However, like any surgery,
+              there is a small risk of complications. Our team takes all
+              necessary steps to reduce these risks. Patients should contact our
+              office immediately if they experience any of the following
+              symptoms after surgery:
             </p>
-            <p className="font-tinos mt-2 text-justify">
-              Dental implants may require extra cleaning to keep them in optimal
-              condition. Removable, implant-supported dentures should be taken
-              out at night and soaked in a denture solution. Patients can also
-              use an oral irrigator to help clean below and around the dental
-              implants.
+            <ul className="font-tinos text-justify list-disc pl-4 mt-2">
+              <li>
+                Absent or dislodged blood clot at the extraction site after
+                surgery
+              </li>
+              <li>High temperature</li>
+              <li>Yellow or white discharge from the extraction site</li>
+              <li>Persistent pain and swelling</li>
+              <li>
+                Persistent, heavy bleeding that does not subside over time
+              </li>
+              <li>Throbbing pain in the gum or jaw</li>
+              <li>Unpleasant smell or taste in the mouth</li>
+            </ul>
+            <p className="font-tinos mt-2">
+              Most complications are minor and treatable when addressed early.
+              If any of these symptoms arise, prompt medical attention is
+              essential.
             </p>
           </div>
 
+          {/* quote */}
+          <div className="relative inline-block mt-10 w-full">
+            <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
+              “Wisdom teeth extraction is commonly performed and generally safe
+              when carried out by qualified doctors.”
+            </h2>
+            <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
+          </div>
           {/* Q & A */}
-          <div className="mt-10" id="what-happens-after-implant-procedure">
+          <div className="mt-10" id="preparing-for-extraction">
             <h2 className="font-cinzel text-2xl text-primary">
-              What To Expect After the Procedure
+              Preparing for Wisdom Teeth Extraction
             </h2>
             <hr />
+            <p className="font-tinos mt-2">
+              The first step to wisdom teeth extraction begins with an initial
+              consultation. During this time, patients should be open and honest
+              with their doctor about their entire medical history. This
+              includes but is not limited to sharing any health problems they
+              may have, any medications and supplements they may take regularly,
+              and any lifestyle choices that may influence the success of the
+              surgery. The consultation is also a good time for patients to
+              assuage their anxieties by asking any questions about the
+              procedure.
+            </p>
 
-            <p className="font-tinos mt-2">
-              Following the procedure, it is common to have swelling and
-              discomfort around the implantation site. Some patients may
-              experience minor bleeding and bruising of the skin and gums in the
-              treatment area. These side effects can be managed with pain
-              medication and antibiotics if necessary. Patients can expect such
-              side effects to subside after a few days.
-            </p>
-            <p className="font-tinos mt-2">
-              After receiving dental implants, it is best to stick to eating
-              soft foods while the bone heals. Most dental implant procedures
-              use dissolvable stitches, so patients will not have to come back
-              to get them removed. These stitches will usually fall out within
-              seven to 10 days. Following the aftercare instructions and advice
-              will help the healing process.
-            </p>
             {/* quotes */}
             <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “Following the procedure, it is common to have swelling and
-                discomfort around the implantation site.”
+                “The first step to wisdom teeth extraction begins with an
+                initial consultation.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
@@ -195,58 +208,34 @@ const Services = () => {
               </h2>
             </div>
 
-            <div className="mt-10" id="benefits-of-dental-implants">
+            <div className="mt-10" id="after-bone-graft">
               <h2 className="font-cinzel text-2xl text-primary">
-                Benefits of Dental Implants
+                What to Expect During Wisdom Teeth Extraction
               </h2>
               <hr />
               <p className="font-tinos mt-2 text-justify">
-                Dental implants can be a good choice for many patients with
-                missing teeth. Dental implants allow new teeth to feel, look,
-                and function naturally. Here are some key benefits of dental
-                implants:
+                Generally, wisdom teeth extraction begins with the doctor
+                injecting the patient with a local anesthetic to numb them to
+                the pain of the procedure. The doctor will then cut into the gum
+                tissue to expose the tooth and bone, making sure to remove any
+                bone blocking access to the tooth root. Depending on how
+                severely impacted the tooth is, the tooth may be divided into
+                sections to be removed little by little.
               </p>
-
-              <ul className="font-tinos text-justify list-disc  pl-4 mt-2">
-                <li className="mt-2">
-                  <span className="font-bold">Comfortable: </span> Dental
-                  implants act as tooth roots and stay firmly in place. This
-                  firm foundation makes them more comfortable than dentures and
-                  other replacement tooth options. Many patients report that
-                  implants feel similar to their natural teeth.
-                </li>
-                <li className="mt-2">
-                  <span className="font-bold">Functional: </span>
-                  The stability of implants makes them effective for eating,
-                  talking, and cleaning. They function similarly to the teeth
-                  they are replacing. Less permanent options may interfere more
-                  with daily life.
-                </li>
-                <li className="mt-2">
-                  <span className="font-bold">Permanent: </span>
-                  Dental implants are one of the most permanent tooth
-                  replacement options. They can last a lifetime with good care.
-                  Additionally, fixed replacement teeth on implants do not need
-                  to be removed every day for cleaning.
-                </li>
-                <li className="mt-2">
-                  <span className="font-bold">Natural-looking: </span>
-                  Implant-supported replacement teeth look like natural teeth.
-                  The visible part of the dental implant is a cosmetic crown
-                  made from a composite material that is color-matched to the
-                  patient’s tooth enamel. It can be hard to tell the difference.
-                  Many patients enjoy dental implants’ aesthetic appeal, as
-                  others cannot tell the difference between the replacement and
-                  natural teeth.
-                </li>
-              </ul>
+              <p className="font-tinos mt-2 text-justify">
+                After extracting the tooth, the doctor will clean the extraction
+                site of any debris. Afterward, the wound may or may not need
+                stitches, and the doctor will pack gauze over the extraction
+                site to control bleeding and to aid in the formation of a blood
+                clot.
+              </p>
             </div>
 
             {/* quotes */}
             <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “Dental implants allow new teeth to feel, look, and function
-                naturally.”
+                “After extracting the tooth, the doctor will clean the
+                extraction site of any debris.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
@@ -259,138 +248,144 @@ const Services = () => {
               <div className="flex flex-col">
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#what-happens-during-dental-implant-process"
+                  href="#what-are-wisdom-teeth"
+                >
+                  Q. <span className="underline">What are wisdom teeth?</span>
+                </a>
+                <a
+                  className="text-justify font-tinos mt-3"
+                  href="#risks-of-extraction"
                 >
                   Q.{" "}
                   <span className="underline">
-                    What happens during the dental implant process?
+                    What are the potential risks of wisdom teeth extraction?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#how-to-care-for-dental-implants"
+                  href="#preparing-for-extraction"
                 >
                   Q.{" "}
                   <span className="underline">
-                    How to take care of dental implants?
-                  </span>
-                </a>
-                <a
-                  className="text-justify font-tinos mt-3"
-                  href="#what-happens-after-implant-procedure"
-                >
-                  Q.{" "}
-                  <span className="underline">
-                    What happens after the dental implant procedure?
-                  </span>
-                </a>
-                <a
-                  className="text-justify font-tinos mt-3"
-                  href="#benefits-of-dental-implants"
-                >
-                  Q.{" "}
-                  <span className="underline">
-                    What are the benefits of dental implants?
+                    How do I begin preparing for wisdom teeth extraction?
                   </span>
                 </a>
               </div>
+
               <h2 className="text-4xl text-center font-cinzel mb-3 mt-3">
                 People Also Ask
               </h2>
               <hr />
               <div className="flex flex-col mb-4">
-                <a className="text-justify font-tinos mt-3" href="#">
-                  Q.{" "}
-                  <span className="underline">
-                    What can I expect the day of the implant procedure?
-                  </span>
-                </a>
-                <a className="text-justify font-tinos mt-3" href="#">
-                  Q.{" "}
-                  <span className="underline">
-                    What does the implant recovery process look like?
-                  </span>
-                </a>
-                <a className="text-justify font-tinos mt-3" href="#">
-                  Q.{" "}
-                  <span className="underline">
-                    How does the bone grafting procedure work?
-                  </span>
+                <a className="text-justify font-tinos mt-3" href="#why-xrays">
+                  Q. <span className="underline">Why are x-rays taken?</span>
                 </a>
               </div>
             </div>
 
-            {/* Q & A */}
+            <div className="mt-10" id="alternatives-bone-grafting">
+              <h2 className="font-cinzel text-2xl text-primary">
+                Aftercare for Wisdom Teeth Extraction
+              </h2>
+              <hr />
+              <p className="font-tinos mt-2 text-justify">
+                Patients should expect to rest for the remainder of the day
+                following their wisdom teeth extraction. Though regular
+                activities can be resumed as soon as the day after, patients
+                should refrain from any strenuous activity for at least a week
+                following their procedure. Otherwise, they run the risk of
+                overexertion and dislodging the blood clot. Our team will
+                provide patients with a customized recovery plan for their
+                specific procedures.
+              </p>
+              <p className="font-tinos mt-2 text-justify">
+                Complications following wisdom teeth extraction are rare as long
+                as patients follow this plan. However, patients should contact
+                us immediately if they are experiencing any of the following:
+              </p>
+              <ul className="font-tinos text-justify list-disc pl-4 mt-2">
+                <li>Blood or pus in nasal discharge</li>
+                <li>Difficulty swallowing or breathing</li>
+                <li>Excessive bleeding</li>
+                <li>Fever</li>
+                <li>Foul taste in the mouth</li>
+                <li>Persistent numbness or loss of feeling</li>
+                <li>Pus in or oozing from the socket</li>
+                <li>Severe pain that does not subside</li>
+                <li>Swelling that does not subside after two or three days</li>
+              </ul>
+            </div>
 
-            <div className="bg-gray-100 p-5 mt-10 ">
+            {/* quotes */}
+            <div className="relative inline-block mt-10 w-full">
+              <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
+                “Though regular activities can be resumed as soon as the day
+                after, patients should refrain from any strenuous activity for
+                at least a week following their procedure.”
+              </h2>
+              <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
+            </div>
+            <div className="bg-gray-100 p-5 mt-10">
               <h2 className="text-4xl text-center font-cinzel mb-3 text-primary">
                 Frequently Asked Questions
               </h2>
               <hr />
               <div className="flex flex-col">
-                <h2
-                  className="text-justify text-primary font-tinos mt-3"
-                  href="#what-is-involved-dental-cleaning"
-                >
-                  Q. How do I know if I am a candidate for dental implants?
+                <h2 className="text-justify text-primary font-tinos mt-3">
+                  Q. Will I be able to drive myself home after wisdom teeth
+                  extraction?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. According to WebMD, most healthy people are good candidates
-                  for dental implants. However, weak or unsubstantial jawbone
-                  mass may limit whether a patient can receive implants.
-                  Restorative procedures like bone grafting can overcome this
-                  issue in some cases. A dentist can determine whether a patient
-                  is a candidate during an exam and consultation.
+                  A. This varies from person to person and the type of
+                  anesthesia used. Some patients who were only under a local
+                  anesthetic may feel alert enough to drive back home after
+                  their procedure, while some may not. However, those who have
+                  undergone general anesthesia will need to make arrangements
+                  for someone to drive them to and from the operation.
                 </p>
-                <h2
-                  className="text-justify text-primary font-tinos mt-3"
-                  href="#dentist-look-for-dental-examination"
-                >
-                  Q. What is the success rate of dental implants?
+
+                <h2 className="text-justify text-primary font-tinos mt-3">
+                  Q. Will I be in pain after wisdom teeth extraction?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. According to the Cleveland Clinic, dental implants have a
-                  success rate of up to 97%. Furthermore, they can last a
-                  lifetime with proper care. Dental implants are one of the most
-                  permanent solutions for missing teeth.
+                  A. You should expect some pain and discomfort following the
+                  procedure. However, this is generally manageable through
+                  administering ice packs and taking over-the-counter pain
+                  relievers. The dentist may prescribe you antibiotics,
+                  depending on the severity of your procedure.
                 </p>
-                <h2
-                  className="text-justify text-primary font-tinos mt-3"
-                  href="#dentist-look-for-dental-examination"
-                >
-                  Q. How much do dental implants cost?
+
+                <h2 className="text-justify text-primary font-tinos mt-3">
+                  Q. What can I eat after wisdom teeth extraction?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. The cost of dental implants will vary depending on the
-                  patient’s needs, bone quantity, and the treatment area. Dental
-                  implants may qualify for some insurance coverage, but
-                  situations will vary. People interested in receiving this
-                  procedure should contact their insurance provider and receive
-                  a consultation to learn more about the cost.
+                  A. You may not have much of an appetite after getting your
+                  wisdom teeth extracted. Still, it is essential to stay
+                  hydrated and eat well. Since you do not want to dislodge your
+                  blood clot or stitches, stick to soft, low- or no-chew foods
+                  for the first few days. Refrain from eating anything hot or
+                  hard. Do not drink from a straw or slurp too vigorously from a
+                  spoon.
                 </p>
-                <h2
-                  className="text-justify text-primary font-tinos mt-3"
-                  href="#dentist-look-for-dental-examination"
-                >
-                  Q. Are dental implants removable?
+
+                <h2 className="text-justify text-primary font-tinos mt-3">
+                  Q. How old do I need to be to have my wisdom teeth extracted?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. The dental implant is permanent. The replacement teeth that
-                  sit on them can be fixed or removable. Fixed dentures are the
-                  preferred option for many patients due to their stability and
-                  comfort.
+                  A. Wisdom teeth can be extracted at any age, depending on the
+                  severity and type of impaction. However, complications are
+                  less likely in younger adults.
                 </p>
-                <h2
-                  className="text-justify text-primary font-tinos mt-3"
-                  href="#dentist-look-for-dental-examination"
-                >
-                  Q. Do I need full dentures to get implants?
+
+                <h2 className="text-justify text-primary font-tinos mt-3">
+                  Q. Is there anything I should avoid while recovering from my
+                  wisdom teeth extraction?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. No, implants may support one or more replacement teeth.
-                  Some patients receive partial dentures with multiple teeth,
-                  while others receive a full arch of teeth. Dental implants are
-                  a flexible solution for each patient’s needs.
+                  A. You should exercise caution to avoid dislodging your blood
+                  clot or stitches for the first week. This means avoiding
+                  smoking, spitting, drinking from a straw, or anything else
+                  that might disrupt your healing.
                 </p>
               </div>
             </div>
@@ -451,116 +446,141 @@ const Services = () => {
             <div className="bg-dark p-5 mt-10 text-white">
               <h2 className="text-4xl font-cinzel mb-3">Dental Terminology</h2>
               <hr />
-              <div className="space-y-10 ">
+              <div className="space-y-10">
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Abutment</h2>
+                  <h2 className="italic text-xl">Anesthesia</h2>
                   <p>
-                    An abutment is a component that attaches to the dental
-                    implant so a professional can place a dental crown to
-                    provide patients with an artificial, aesthetically pleasing
-                    and fully-functional smile.
+                    Anesthesia is a substance that medical professionals
+                    administer in various forms (gas, injection, or pill) to
+                    help patients not feel pain or sensations during surgical
+                    operations.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Bridge</h2>
+                  <h2 className="italic text-xl">Asymptomatic Wisdom Teeth</h2>
                   <p>
-                    Multiple replacement teeth that are fixed in place via
-                    attachment to dental implants, natural adjacent teeth, or a
-                    combination of the two.
+                    Asymptomatic wisdom teeth are wisdom teeth that show no
+                    symptoms of irritation, inflammation, or overcrowding that
+                    would require extraction.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Dental Crown</h2>
+                  <h2 className="italic text-xl">Cosmetic Dentistry</h2>
                   <p>
-                    A crown is an artificial tooth, usually consisting of
-                    porcelain, which covers the top of the implant to provide
-                    people with an aesthetically pleasing and fully-functional
-                    tooth.
+                    Cosmetic dentistry refers to any dental work that improves
+                    the appearance (though not necessarily the function) of a
+                    person’s teeth, gums, and/or bite.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Dental Implant</h2>
+                  <h2 className="italic text-xl">Cysts – Fluid Filled Sacs</h2>
                   <p>
-                    A dental implant is an artificial tooth root that is placed
-                    into your jaw to hold a replacement tooth or bridge. Dental
-                    implants may be an option for people who have lost a tooth
-                    or teeth due to periodontal disease, an injury, or some
-                    other reason.
+                    Cysts are fluid-filled sacs that can also contain gas or pus
+                    and may occur anywhere on the body, including in or around
+                    the mouth and teeth.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Endosteal (endosseous)</h2>
+                  <h2 className="italic text-xl">Dental Checkup</h2>
                   <p>
-                    Endosteal is a type of dental implant that a professional
-                    places in the alveolar and basal bone of the mandible that
-                    transcends only one cortical plate.
+                    A dental checkup is an appointment that involves cleaning
+                    the teeth, identifying any signs of infection, and removing
+                    them, ideally at least once every six months.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Eposteal (subperiosteal)</h2>
+                  <h2 className="italic text-xl">Dental Prophylaxis</h2>
                   <p>
-                    Eposteal is a type of dental implant that conforms to
-                    whichever edentulous surface of an alveolar bone is
-                    superior.
+                    Dental prophylaxis is a professional and thorough cleaning
+                    that involves the removal of plaque, calculus, and stains
+                    from the teeth.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Implant-Supported Bridge</h2>
+                  <h2 className="italic text-xl">Dentist</h2>
                   <p>
-                    An implant-supported bridge is a dental bridge that
-                    professionals fix in place with the use of dental implants
-                    inserted in the jaw to create a sturdy set of artificial
-                    teeth.
+                    A dentist, also known as a dental surgeon, is a doctor
+                    specializing in the diagnosis, prevention, and treatment of
+                    diseases and conditions of the oral cavity.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Osseointegration</h2>
+                  <h2 className="italic text-xl">Dry Socket</h2>
                   <p>
-                    Osseointegration is the process in which a titanium dental
-                    implant fuses with the surrounding bone over several months
-                    after an oral health professional places the implant in the
-                    jaw.
+                    A dry socket can occur after tooth extraction when the blood
+                    clot is lost, exposing white bone in the socket. It often
+                    causes bad breath and an unpleasant taste in the mouth.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Periodontal</h2>
-                  <p>Literally “around the tooth”</p>
-                  <hr className="mt-4" />
-                </div>
-
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Resorption</h2>
+                  <h2 className="italic text-xl">Oral Surgery</h2>
                   <p>
-                    Resorption is the process in which the body absorbs the
-                    calcium from the jaw since there are no tooth roots to cause
-                    the necessary stimulation and proceeds to use the calcium in
-                    other areas.
+                    Oral surgery focuses on procedures involving the mouth, jaw,
+                    gums, or teeth, and can repair, enhance, or correct various
+                    oral issues.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Transosteal (transosseous)</h2>
+                  <h2 className="italic text-xl">Pericoronitis</h2>
                   <p>
-                    Transosteal is a type of dental implant that includes
-                    threaded posts which penetrate the superior and inferior
-                    cortical bone plates of the jaw.
+                    Pericoronitis is the inflammation of the soft tissue
+                    surrounding the crown of a partially erupted tooth.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Preventive Dentistry</h2>
+                  <p>
+                    Preventive dentistry focuses on maintaining oral health to
+                    prevent plaque buildup, tartar formation, and infections.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Third Molars</h2>
+                  <p>
+                    Third molars, also known as wisdom teeth, often require
+                    removal to prevent pain and other dental issues.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Vacuum Formed Mouthguard</h2>
+                  <p>
+                    A vacuum formed mouthguard is customized to fit an
+                    individual’s teeth perfectly by molding a plastic material
+                    to their dental impression.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Wisdom Teeth Impaction</h2>
+                  <p>
+                    Wisdom teeth impaction occurs when the teeth remain under
+                    the gums and cannot be reached easily for cleaning, often
+                    causing discomfort.
                   </p>
                   <hr className="mt-4" />
                 </div>

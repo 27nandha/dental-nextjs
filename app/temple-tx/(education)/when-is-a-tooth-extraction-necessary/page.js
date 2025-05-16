@@ -3,7 +3,6 @@ import { FaCaretDown } from "react-icons/fa";
 import { Cinzel } from "next/font/google";
 import Link from "next/link";
 import { FaYelp } from "react-icons/fa";
-import Image from "next/image";
 
 const cinzel = Cinzel({
   subsets: ["latin"], // you can add 'latin-ext' if needed
@@ -14,37 +13,29 @@ const Services = () => {
   return (
     <>
       {/* intro section */}
-      <section className="grid md:grid-cols-[1fr_1fr_1fr] grid-cols-1 md:gap-2  md:mt-[85px]  border-y-[10px] border-dark mx-2">
-        <div className="bg-[url(/emergency-dentist.webp)] bg-cover my-20"></div>
+      <section className="grid md:grid-cols-[1fr_1fr_1fr] grid-cols-1 md:gap-2  md:mt-[125px]  border-y-[10px] border-dark mx-2">
+        <div className="bg-[url(/when-is-tooth-extraction-necessary.webp)] bg-cover my-10"></div>
 
-        <div className="px-10 py-5 space-y-3">
+        <div className="px-10 py-10 space-y-3">
           <h2 className="text-5xl font-cinzel text-primary">
-            Emergency Dentist
+            When Is a Tooth Extraction Necessary
           </h2>
           <p className="font-cinzel text-primary">Temple, TX</p>
           <p className="font-tinos  text-justify">
-            While patients can avoid many oral problems with preventative care
-            and regular visits to the dentist, emergency dental treatment is
-            occasionally necessary. Dentists may administer this type of care
-            during or outside of regular office hours to help patients with
-            various oral problems, such as infections or missing teeth.
-            Emergency dental treatment is care administered to relieve mouth
-            pain without prior scheduling.
+            Although it is best to preserve a natural tooth, there are times
+            when a tooth extraction is necessary. An extraction may be the best
+            option to maintain oral health due to trauma, disease, or crowding.
+            Tooth extraction involves the complete removal of one or more teeth
+            from the jaw bone.
           </p>
           <p className="font-tinos  text-justify">
-            Emergency dental treatment is available at Revital Dental in Temple
-            and the surrounding area. We use this type of treatment to care for
-            many common mouth problems to improve patients' oral health. Proper
-            care and treatment are essential for helping patients recuperate
-            from a dental emergency.
-          </p>
-          <p className="font-tinos  text-justify">
-            If you are experiencing severe mouth pain and need immediate medical
-            treatment, call us at (254) 207-0708 to make an appointment and have
-            your oral health restored.
+            Tooth extraction is available at Revital Dental in Temple and the
+            surrounding area. Our team can extract teeth gently and safely to
+            preserve your oral health. Call us at (254) 207-0708 to learn more
+            about our services or schedule an appointment.
           </p>
         </div>
-        <div className="py-5">
+        <div className="py-10">
           <form
             action=""
             className="w-full mx-auto mt-10 md:mt-0 max-w-[400px]"
@@ -95,107 +86,99 @@ const Services = () => {
       {/* explanation */}
       <section className="md:grid md:grid-cols-[3fr_1fr]  md:w-[90%] w-[100%] md:mx-auto px-2 mt-3 gap-2">
         {/* left section */}
-        <div className="left-section " id="emergency-difference">
+        <div className="left-section " id="tooth-extraction-reasons">
           {/* dark section */}
           <div className="bg-dark p-5 text-white">
-            <h2 className="text-2xl font-cinzel mb-3">
-              How Emergency Dentistry Works
-            </h2>
+            <h2 className="text-2xl font-cinzel mb-3">A Normal Procedure</h2>
             <hr />
             <p className="text-justify font-tinos mt-4">
-              Most dental practices offer routine checkups and cleanings with
-              appointments. For most minor problems, patients can call ahead to
-              schedule an appointment within a few days to resolve the issue.
-              Emergency dentistry treats patients dealing with significant
-              dental trauma who need immediate care.
+              While it is best to preserve natural teeth, many reasons can
+              necessitate tooth extraction. Sometimes a filling or crown is not
+              enough to restore a tooth. The American Dental Association
+              suggests the extraction of teeth that have suffered severe trauma,
+              have extreme tooth decay or disease, or are crowding the
+              surrounding teeth. It is also normal for patients to have an
+              extraction or two before orthodontic treatment.
+            </p>
+            <p className="text-justify font-tinos mt-4">
+              Many tooth extractions are relatively simple and performed
+              in-office. For teeth that are visible about the gum line, we will
+              numb the extraction site and remove the tooth with forceps. Broken
+              or impacted teeth require a more involved procedure.
+            </p>
+          </div>
+
+          {/* question and answer section */}
+          {/* quote */}
+          <div className="relative inline-block mt-10">
+            <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
+              “The American Dental Association suggests the extraction of teeth
+              that have suffered severe trauma, have extreme tooth decay or
+              disease, or are crowding the surrounding teeth.”
+            </h2>
+            <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
+          </div>
+          {/* Q & A */}
+          <div className="mt-10" id="infection-spread-risk">
+            <h2 className="font-cinzel text-2xl text-primary">
+              Preventing Infection
+            </h2>
+            <hr />
+            <p className="font-tinos mt-2 text-justify">
+              According to the National Institute of Dental and Craniofacial
+              Research, gum disease is the most common cause of tooth loss in
+              adults. Gum disease occurs when bacteria get below the gum line
+              and causes infections. Without treatment, oral bacterial leads to
+              gum recession, damage to the jawbone, loose teeth, and even tooth
+              loss.
+            </p>
+
+            <p className="font-tinos mt-2 text-justify">
+              Research has also shown chronic dental infections can cause
+              inflammation that contributes to cardiovascular disease, stroke,
+              and many other related diseases. While a root canal can often save
+              a tooth from decay, sometimes a tooth is beyond saving due to lost
+              structure and stability. Tooth extraction can prevent damaging
+              decay and infection from spreading.
             </p>
           </div>
 
           {/* quote */}
-          <div className="relative inline-block mt-10">
+          <div className="relative inline-block mt-10 w-full">
             <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-              “Emergency dentistry treats patients dealing with significant
-              dental trauma who need immediate care.”
+              “Tooth extraction can prevent damaging decay and infection from
+              spreading.”
             </h2>
             <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
           </div>
-
           {/* Q & A */}
-          <div className="mt-10" id="when-to-seek">
+          <div className="mt-10" id="wisdom-tooth-removal">
             <h2 className="font-cinzel text-2xl text-primary">
-              When To Visit an Emergency Dentist
+              Overcrowded or Impacted Teeth
             </h2>
             <hr />
-            <p className="font-tinos mt-2 text-justify">
-              Not all oral problems require emergency dental care, so patients
-              must examine their situation before making an appointment. Most
-              minor issues can wait a few days for a scheduled appointment.
-              However, there are several reasons to seek emergency dental care:
+            <p className="font-tinos mt-2">
+              In some cases, it is beneficial to have crowded or impacted teeth
+              extracted. Impacted wisdom teeth do not have enough room to grow.
+              Extraction can prevent pain, infection, and other dental problems.
+              While not all wisdom teeth need removal, it is necessary once they
+              start causing problems. In some cases, wisdom teeth do not fully
+              break through the gums and can cause crowding issues. A partially
+              erupted wisdom tooth is especially susceptible to cavities.
             </p>
-            <ol className="font-tinos text-justify list-disc pl-4 mt-2">
-              <li>
-                <span className="font-bold">Restorative emergencies: </span>{" "}
-                Accidents can occur at any time, and in the event of a missing
-                or chipped tooth, it is best to seek immediate care. Restorative
-                emergencies require dental care to preserve teeth, so they
-                remain functional. Dentists can then replace teeth to restore
-                the patient’s smile.
-              </li>
-              <li>
-                <span className="font-bold">Severe gum pain:</span> According to
-                WebMD, patients should visit the dentist if minor tooth, jaw, or
-                gum pain lasts more than two days. However, those who are in
-                extreme pain should visit the dentist immediately. Pain that
-                persists despite taking over-the-counter medications, such as
-                Aleve®, Tylenol®, or Advil®, could indicate a serious infection
-                or gum disease.
-              </li>
-              <li>
-                <span className="font-bold">Tooth abscess: </span> Tooth
-                abscesses are caused by pockets of pus that develop underneath
-                teeth. In addition to being extremely painful, a tooth abscess
-                can lead to a life-threatening infection if left untreated.
-                Seeking immediate care allows dentists to drain the pus that
-                causes the pain before the problem becomes more severe.
-              </li>
-              <li>
-                <span className="font-bold">Lost fillings:</span> When patients
-                lose cavity fillings or crowns, the opening is susceptible to
-                infection. Replacing lost crowns and fillings eliminates pain
-                and reduces the chance of infection setting in. Waiting to
-                receive this treatment could elevate patients’ pain.
-              </li>
-            </ol>
-          </div>
-
-          <div className="relative inline-block mt-10">
-            <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-              “…there are several reasons to seek emergency dental care.”
-            </h2>
-            <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
-          </div>
-
-          {/* Q & A */}
-          <div className="mt-10" id="why-seek">
-            <h2 className="font-cinzel text-2xl text-primary">
-              Benefits of Emergency Dental Care
-            </h2>
-            <hr />
 
             <p className="font-tinos mt-2">
-              Emergency dental treatment helps relieve mouth pain quickly and
-              effectively. Dental trauma can occur from an accident or an
-              injury. Seeking immediate care when a problem occurs prevents it
-              from becoming a more extensive issue requiring harsher treatments.
-              By taking control of dental emergencies and visiting the dentist
-              immediately, patients can drastically improve their oral health.
+              Patients may also need teeth extracted before receiving braces.
+              Orthodontics involves the process of properly aligning the teeth,
+              which may be tough without enough room. Crowded teeth increase a
+              patient’s risk of developing gum disease and cavities. Extracting
+              teeth can relieve crowding and impacted teeth.
             </p>
-
             {/* quotes */}
             <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “Seeking immediate care when a problem occurs prevents it from
-                becoming a more extensive issue requiring harsher treatments.”
+                “Extraction can prevent pain, infection, and other dental
+                problems.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
@@ -216,27 +199,34 @@ const Services = () => {
               </h2>
             </div>
 
-            <div className="mt-10" id="types-of-treatment">
+            <div className="mt-10" id="when-restoration-fails">
               <h2 className="font-cinzel text-2xl text-primary">
-                Treatments for Dental Emergencies
+                When Tooth Restoration Is Not Enough
               </h2>
               <hr />
               <p className="font-tinos mt-2 text-justify">
-                Since there are many types of dental emergencies, treatment
-                options vary. The dentist will first examine the problem to
-                determine the best course of treatment. After diagnosing the
-                issue, the dentist can either treat the infection, remove the
-                infected tooth, or replace missing tooth fragments. The dentist
-                may also prescribe pain medication or antibiotics to aid in
-                recovery.
+                Typically, the first option to restore a damaged tooth is a
+                crown or filling. If the damage is too severe, trying to save a
+                tooth may put oral health at further risk. A filling may put the
+                tooth at risk for shattering, while a tooth may not be strong
+                enough to support a crown. Root canals are also not possible
+                when there is too much tooth damage.
+              </p>
+              <p className="font-tinos mt-2 text-justify">
+                Each tooth has a limit to how many times it can be worked on
+                before it starts to fail. Redoing a crown or root canal only
+                buys so much time. After several fillings, crowns, and root
+                canals, there will not be much of the tooth left to save. At
+                that point, tooth extraction is the best option to maintain oral
+                health.
               </p>
             </div>
 
             {/* quotes */}
             <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “Since there are many types of dental emergencies, treatment
-                options vary.”
+                “If the damage is too severe, trying to save a tooth may put
+                oral health at further risk.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
@@ -249,42 +239,47 @@ const Services = () => {
               <div className="flex flex-col">
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#what-makes-different"
+                  href="#tooth-extraction-reasons"
                 >
                   Q.{" "}
                   <span className="underline">
-                    What makes emergency dentistry different?
+                    Why would a tooth need to be extracted?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#when-to-seek"
+                  href="#infection-spread-risk"
                 >
                   Q.{" "}
                   <span className="underline">
-                    When should I seek emergency dental care?
-                  </span>
-                </a>
-                <a className="text-justify font-tinos mt-3" href="#why-seek">
-                  Q.{" "}
-                  <span className="underline">
-                    Why should I seek emergency dental care?
+                    Why is stopping infection from spreading important?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#types-of-treatment"
+                  href="#wisdom-tooth-removal"
                 >
                   Q.{" "}
                   <span className="underline">
-                    What are the different types of dental emergency treatments?
+                    Why do I need my wisdom teeth or other teeth removed?
                   </span>
                 </a>
-                <a className="text-justify font-tinos mt-3" href="#what-to-do">
+                <a
+                  className="text-justify font-tinos mt-3"
+                  href="#when-restoration-fails"
+                >
                   Q.{" "}
                   <span className="underline">
-                    What should I do while waiting to get to the emergency
-                    dentist?
+                    When is restoration not enough to save a tooth?
+                  </span>
+                </a>
+                <a
+                  className="text-justify font-tinos mt-3"
+                  href="#trauma-tooth-extraction"
+                >
+                  Q.{" "}
+                  <span className="underline">
+                    What sorts of trauma can necessitate tooth extraction?
                   </span>
                 </a>
               </div>
@@ -296,61 +291,66 @@ const Services = () => {
               <div className="flex flex-col mb-4">
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#removable-partial-dentures"
+                  href="#prepare-tooth-extraction"
                 >
                   Q.{" "}
                   <span className="underline">
-                    How do removable partial dentures work?
+                    How will my doctor help me prepare for my tooth extraction?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#partial-dentures-one-tooth"
+                  href="#seek-emergency-care"
                 >
                   Q.{" "}
                   <span className="underline">
-                    What are the pros and cons of partial dentures for one
-                    missing tooth?
+                    When should one seek emergency dental care?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#why-dentures-preferred"
+                  href="#lost-tooth-action"
                 >
                   Q.{" "}
                   <span className="underline">
-                    Why are dentures a preferred treatment?
+                    What should I do if I lose teeth?
                   </span>
                 </a>
               </div>
             </div>
 
-            <div className="mt-10" id="what-to-do">
+            <div className="mt-10" id="trauma-tooth-extraction">
               <h2 className="font-cinzel text-2xl text-primary">
-                What To Do While Waiting For Emergency Dental Treatment
+                Trauma and Tooth Extraction
               </h2>
               <hr />
               <p className="font-tinos mt-2 text-justify">
-                If a patient is suffering from any kind of dental trauma, the
-                first thing to do is contact the dentist for instructions.
-                Treatment options vary depending upon the type of problem. For a
-                lost filling or crown, patients can use a small piece of
-                sugarless gum to cover the opening temporarily. Mouth pain can
-                sometimes be alleviated with over-the-counter medications, while
-                extensive dental trauma may require patients to pack their
-                mouths with gauze.
+                Teeth are tough but not indestructible. Traumatic dental
+                injuries can occur from a sports injury, car accident, or even a
+                simple slip and fall. While many injuries are minor, if the
+                tooth becomes severely damaged to the point where restoration is
+                not possible, an extraction will be necessary.
+              </p>
+              <p className="font-tinos mt-2 text-justify">
+                After sustaining tooth trauma, patients should schedule an
+                appointment quickly to improve their outcomes. Our team can look
+                for signs of additional damage that may not be immediately
+                obvious. Severely fractured teeth can be very loose and unable
+                to be restored with dental work, thus making tooth extraction
+                necessary. Patients should take any dental trauma seriously,
+                even if it seems mild.
               </p>
             </div>
 
+            {/* quotes */}
             <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “If a patient is suffering from any kind of dental trauma, the
-                first thing to do is contact the dentist for instructions.”
+                “While many injuries are minor, if the tooth becomes severely
+                damaged to the point where restoration is not possible, an
+                extraction will be necessary.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
-
-            {/* Q & A */}
 
             <div className="bg-gray-100 p-5 mt-10">
               <h2 className="text-4xl text-center font-cinzel mb-3 text-primary">
@@ -359,95 +359,60 @@ const Services = () => {
               <hr />
               <div className="flex flex-col">
                 <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q.{" "}
-                  <span className="underline">
-                    Does emergency dental care hurt?
-                  </span>
+                  Q. How is a chipped tooth diagnosed?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. While many emergency dental treatments are uncomfortable,
-                  dentists will try to keep patients comfortable as possible.
-                  More pain may occur during the recovery period. The dentist
-                  can provide pain medication to keep patients comfortable
-                  during the recovery process.
+                  A. Our dentist can diagnose a chipped tooth by visibly
+                  inspecting the patient’s mouth. They will also ask about any
+                  symptoms and the event that may have caused the chip.
+                  Sometimes determining the extent of the damage can be
+                  difficult and may require the use of magnifying glasses,
+                  X-rays, or other tests.
                 </p>
 
                 <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q.{" "}
-                  <span className="underline">
-                    Is emergency dental care preventable?
-                  </span>
+                  Q. How long does it take to repair a chipped tooth?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. According to the Texas A&M University Health Science
-                  Center, most dental emergencies are preventable with proper
-                  preventative care. If patients neglect regular oral care,
-                  minor issues can quickly escalate into major problems that
-                  require extensive intervention. However, unpreventable
-                  accidents do happen occasionally.
+                  A. The length of time it takes to repair a chip will depend on
+                  the extent of damage to the tooth. Our dentist will tell the
+                  patient how long they can expect their treatment to take
+                  during their consultation. In most cases, it only takes one
+                  office visit to fix a chipped tooth.
                 </p>
 
                 <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q.{" "}
-                  <span className="underline">
-                    How can a displaced tooth be preserved during a dental
-                    emergency?
-                  </span>
+                  Q. Who is a good candidate for cosmetic contouring?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. The American Academy of Endodontists states that a
-                  dislodged tooth can be preserved and restored with proper
-                  medical care. After locating the fragment or whole tooth, the
-                  patient should place it in a glass of milk or warm saltwater.
-                  This preserves the tooth until the dentist can replace it.
+                  A. Cosmetic contouring is best for people with minor cosmetic
+                  problems like small chips. The patient’s enamel needs to be
+                  thick enough since cosmetic contouring removes one to two
+                  millimeters of enamel from the tooth’s surface. If the
+                  patient’s enamel is too thin, then we may suggest a different
+                  repair method.
                 </p>
 
                 <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q.{" "}
-                  <span className="underline">
-                    How is a restorative emergency different from another dental
-                    emergency?
-                  </span>
+                  Q. What are the risk factors associated with a chipped tooth?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Restorative emergencies are often cosmetic and functional
-                  in nature, while other dental emergencies typically result in
-                  more pain. A chipped tooth may be uncomfortable, but depending
-                  upon its placement, cosmetic appearance or functionality may
-                  be a bigger concern than pain. Because of this, the dentist
-                  may use dental cement or glue to fasten the fragment back in
-                  place before restoring its appearance.
+                  A. Weakened teeth are more likely to chip than strong and
+                  healthy ones. Tooth decay and cavities are common factors that
+                  reduce tooth strength and make chips more likely to occur.
+                  Teeth grinding, eating acid-producing foods, and acid reflux
+                  can damage the tooth enamel and weaken it.
                 </p>
 
                 <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q.{" "}
-                  <span className="underline">
-                    What qualifies as a dental emergency?
-                  </span>
+                  Q. How is a veneer applied?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Any type of dental trauma can require emergency dental
-                  care. Whether it is caused by an infected tooth, diseased
-                  gums, or an accident, a dental emergency needs quick
-                  intervention to relieve pain. Therefore, any oral health
-                  problem that demands immediate attention qualifies as a dental
-                  emergency.
-                </p>
-
-                <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q.{" "}
-                  <span className="underline">
-                    How does emergency dental treatment benefit oral health?
-                  </span>
-                </h2>
-                <p className="font-tinos md:ps-4 mt-2">
-                  A. Ignoring dental problems can lead to deteriorating oral
-                  health. While preventative care is the first line of defense
-                  against major dental problems, emergency dental procedures may
-                  eliminate the issue once it occurs. By making patients aware
-                  of the contributing factors that led to the problem, emergency
-                  dental treatment may prevent the issue from recurring and lead
-                  to better overall health.
+                  A. First, our dentist will take a mold of the patient’s tooth
+                  to create the veneer. Then we will clean the patient’s tooth
+                  and use dental cement to bond the veneer to the tooth. An
+                  ultraviolet light hardens the cement quickly, and the patient
+                  can leave the office with their improved smile.
                 </p>
               </div>
             </div>
@@ -509,64 +474,124 @@ const Services = () => {
               <h2 className="text-4xl font-cinzel mb-3">Dental Terminology</h2>
               <hr />
               <div className="space-y-10">
-                {[
-                  {
-                    term: "Abscess",
-                    definition:
-                      "A dental abscess is a pocket of pus that forms in the tooth root from a bacterial infection.",
-                  },
-                  {
-                    term: "Dentist",
-                    definition:
-                      "A dentist, also known as a dental surgeon, is a doctor who specializes in the diagnosis, prevention, and treatment of diseases and conditions of the oral cavity.",
-                  },
-                  {
-                    term: "Dental Filling",
-                    definition:
-                      "A dental filling involves restoring the structure of the tooth by using metal, alloy, porcelain, or plastic to fill the tooth.",
-                  },
-                  {
-                    term: "Facial Cellulitis",
-                    definition:
-                      "Facial cellulitis is a condition in which an infection from an abscess or plaque in the teeth causes pain and spreads throughout the face.",
-                  },
-                  {
-                    term: "Impacted Wisdom Tooth",
-                    definition:
-                      "An impacted wisdom tooth is a tooth that does not erupt from the gums properly and can cause pain and become infected without professional extraction.",
-                  },
-                  {
-                    term: "Irreversible Pulpitis",
-                    definition:
-                      "Irreversible pulpitis is when the pain in the tooth occurs spontaneously or continues after removing the hot/cold substance. Normal pulpitis stops hurting once the stimulus is removed.",
-                  },
-                  {
-                    term: "Lateral Luxation",
-                    definition:
-                      "Lateral luxation is the displacement of a tooth that moves it in the wrong direction while it is still attached to the gums.",
-                  },
-                  {
-                    term: "Pericoronitis",
-                    definition:
-                      "Pericoronitis is the inflammation of soft tissues surrounding a tooth that does not fully erupt from the gums and causes pain.",
-                  },
-                  {
-                    term: "Tooth Avulsion",
-                    definition:
-                      "Tooth avulsion is when the tooth completely displaces from the socket due to an accident or other health issues. The tooth can be replanted if immediate care is provided.",
-                  },
-                  {
-                    term: "Tooth Fracture",
-                    definition:
-                      "A tooth fracture can result from multiple sources including an accidental elbow to the face, biting on something hard, or falling face first.",
-                  },
-                ].map((item, idx) => (
-                  <div key={idx} className="mt-5 font-tinos">
-                    <h2 className="italic text-xl">{item.term}</h2>
-                    <p>{item.definition}</p>
-                    <hr className="mt-4" />
-                  </div>
-                ))}
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Cosmetic Dentistry</h2>
+                  <p>
+                    Cosmetic dentistry is generally used to refer to any dental
+                    work that improves the appearance (though not necessarily
+                    the function) of a person’s teeth, gums and/or bite.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Decay</h2>
+                  <p>
+                    Tooth decay is when the enamel of the tooth begins to decay
+                    and cause erosion from plaque and tartar on the teeth.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Dental Caries</h2>
+                  <p>
+                    Dental caries are also known as cavities and result from a
+                    lack of proper oral hygiene leaving plaque that forms tiny
+                    holes in the teeth.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Dental Checkup</h2>
+                  <p>
+                    A dental checkup is an appointment that involves cleaning
+                    the teeth, identifying any signs of infection and removing
+                    said signs of infection at least once every six months in
+                    the office.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Dental Filling</h2>
+                  <p>
+                    A dental filling involves restoring the structure of the
+                    tooth by using metal, alloy, porcelain or plastic to fill
+                    the tooth.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Dental Prophylaxis</h2>
+                  <p>
+                    A dental prophylaxis is a professional and detailed cleaning
+                    that involves the removal of plaque, calculus and stains
+                    from the teeth.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Dental Sealants</h2>
+                  <p>
+                    Dental sealants contain a resinous material that we apply to
+                    the chewing surfaces of the posterior teeth to prevent
+                    dental caries.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Dentist</h2>
+                  <p>
+                    A dentist, also known as a dental surgeon, is a doctor who
+                    specializes in the diagnosis, prevention, and treatment of
+                    diseases and conditions of the oral cavity.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Gingivitis</h2>
+                  <p>
+                    Gingivitis is the inflammation of gum tissue that results
+                    from plaque, other infections in the mouth and poor oral
+                    hygiene.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Preventive Dentistry</h2>
+                  <p>
+                    Preventive dentistry is the dentistry that focuses on
+                    maintaining oral health in order to prevent the spread of
+                    plaque, the formation of tartar and infections in the mouth.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Tartar</h2>
+                  <p>
+                    Tartar forms when plaque builds up on the surface of the
+                    teeth and calcifies into a hard surface that is much more
+                    difficult to remove and will require professional treatment.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Tooth Enamel</h2>
+                  <p>
+                    Tooth enamel is the protective visible outer surface of a
+                    tooth that contains the dentin and dental pulp.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
               </div>
             </div>
 

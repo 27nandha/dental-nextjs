@@ -13,25 +13,23 @@ const Services = () => {
   return (
     <>
       {/* intro section */}
-      <section className="grid md:grid-cols-[1fr_1fr_1fr] grid-cols-1 md:gap-2  md:mt-[85px]  border-y-[10px] border-dark mx-2">
-        <div className="bg-[url(/oral-hygiene-basics.webp)] bg-cover my-10"></div>
+      <section className="grid md:grid-cols-[1fr_1fr_1fr] grid-cols-1 md:gap-2  md:mt-[125px]  border-y-[10px] border-dark mx-2">
+        <div className="bg-[url(/dental-anxiety.webp)] bg-cover my-10"></div>
 
         <div className="px-10 py-10 space-y-3">
-          <h2 className="text-5xl font-cinzel text-primary">
-            Oral Hygiene Basics
-          </h2>
+          <h2 className="text-5xl font-cinzel text-primary">Dental Anxiety</h2>
           <p className="font-cinzel text-primary">Temple, TX</p>
           <p className="font-tinos  text-justify">
-            Understanding oral hygiene basics allow people to better care for
-            their teeth. However, the basics extend beyond the teeth — they
-            pertain to the entirety of the mouth, including the gums, cheeks,
-            and tongue. Oral health is critical to the body’s overall health.
+            Solutions to dental anxiety come in many forms. When left untreated,
+            many dental problems only get worse. We can help empower patients
+            with dental anxiety to take the necessary action to treat their
+            underlying conditions.
           </p>
           <p className="font-tinos  text-justify">
-            Starting good oral hygiene habits early in life can set everyone up
-            for a lifetime of not only healthy smiles but also healthy bodies.
-            To get started with an oral hygiene routine, contact our Revital
-            Dental team in Temple at (254) 207-0708 to schedule an appointment.
+            Solutions to dental anxiety are available at Revital Dental in
+            Temple and the surrounding area. Fear should never get in the way of
+            your health. Call us at (254) 207-0708 to learn more and schedule an
+            appointment today.
           </p>
         </div>
         <div className="py-10">
@@ -85,38 +83,39 @@ const Services = () => {
       {/* explanation */}
       <section className="md:grid md:grid-cols-[3fr_1fr]  md:w-[90%] w-[100%] md:mx-auto px-2 mt-3 gap-2">
         {/* left section */}
-        <div className="left-section " id="importance-oral-hygiene">
+        <div className="left-section " id="what-is-dental-anxiety">
           {/* dark section */}
           <div className="bg-dark p-5 text-white">
             <h2 className="text-2xl font-cinzel mb-3">
-              The Importance of Good Oral Hygiene
+              Understanding Dental Anxiety
             </h2>
             <hr />
             <p className="text-justify font-tinos mt-4">
-              The teeth are connected to the jaw bone in the face through the
-              tooth’s roots. These roots are deeply ingrained in the bone to
-              provide structure and strength to the mouth, which is important
-              for biting, chewing, and speaking. Without an oral hygiene
-              routine, the teeth risk the buildup of bacteria, otherwise known
-              as tartar and plaque. This appears as a yellowish buildup on the
-              teeth around the gum line.
+              Dental anxiety, also known as dental phobia, is a condition in
+              which patients have a debilitating fear of the dentist. People
+              with dental anxiety are aware that their fear is irrational, but
+              have little to no means of managing it. They may be so
+              panic-stricken by the prospect of seeing the dentist that they
+              will only go when forced by extreme pain. Other common signs of
+              dental anxiety include:
             </p>
+
+            <ul className="font-tinos text-justify list-disc  pl-4 mt-2">
+              <li>
+                Escalating feelings of nervousness in a dentist’s waiting room
+              </li>
+              <li>
+                Feelings of intense unease at the thought of a dentist placing
+                objects in the mouth during treatment
+              </li>
+              <li>Physical reactions at the thought of visiting the dentist</li>
+              <li>Trouble sleeping the night before a dental appointment</li>
+            </ul>
             <p className="text-justify font-tinos mt-4">
-              Over time, if someone does not brush, floss, and rinse at home
-              regularly and maintain their regular dental checkups, this buildup
-              can start to affect the smile. If left alone, the bacteria can get
-              beneath the gums and create dental pockets. These pockets occur
-              when the gum tissue starts to pull away from the teeth. This may
-              also cause gum recession, which may eventually expose the tooth
-              roots. If the bacteria have access to the roots beneath the gum
-              line, they may gain access to the body's bloodstream.
-            </p>
-            <p className="text-justify font-tinos mt-4">
-              Once the bacteria can enter the bloodstream, the entire body may
-              be at risk. Starting and following an oral hygiene routine will
-              help prevent the buildup of bacteria and plaque on the teeth and
-              keep the body safe. To protect the health of the smile is to
-              protect the overall health of the body.
+              At times, dental anxiety may get severe enough to be considered
+              pathological. Patients who find that their dental anxiety severely
+              impedes their normal functioning may benefit from psychiatric
+              treatment.
             </p>
           </div>
 
@@ -124,109 +123,74 @@ const Services = () => {
           {/* quote */}
           <div className="relative inline-block mt-10">
             <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-              “To protect the health of the smile is to protect the overall
-              health of the body.”
+              “People with dental anxiety are aware that their fear is
+              irrational, but have little to no means of managing it.”
             </h2>
             <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
           </div>
           {/* Q & A */}
-          <div className="mt-10" id="family-oral-health-education">
+          <div className="mt-10" id="causes-of-dental-anxiety">
             <h2 className="font-cinzel text-2xl text-primary">
-              Helping Family Members With Oral Hygiene
+              Causes of Dental Anxiety
             </h2>
             <hr />
             <p className="font-tinos mt-2 text-justify">
-              Since oral health can affect body health, it is important to teach
-              children and others about oral hygiene. Someone should talk to
-              family members about the importance of dental care. If any family
-              member has anxiety about visiting the dentist, speak to the dental
-              team about options to make the experience less intimidating.
-              Either way, every member of the family should learn about oral
-              hygiene and what they can do to take care of their smile.
+              Patients of all ages and backgrounds can have dental anxiety. A
+              multitude of factors may contribute to someone's unease at the
+              prospect of being in the dentist's chair, including but not
+              limited to fear of anesthesia, fear of injections, fear of pain,
+              feelings of embarrassment, and feelings of helplessness.
             </p>
             <p className="font-tinos mt-2 text-justify">
-              Children and adults should have similar oral hygiene routines.
-              There is a common misconception that a child's oral health care is
-              different or perhaps not as important since their baby teeth will
-              fall out. Even though baby teeth are replaced by larger adult
-              teeth, they are still connected to the jaw bone in the same way.
-              With children, this buildup on baby teeth can weaken their adult
-              teeth for the rest of their lives, putting them at a higher risk
-              of decay and disease later. This is why dental professionals
-              recommend that children start visiting their dentist regularly
-              from an early age.
-            </p>
-            <p className="font-tinos mt-2 text-justify">
-              No matter the age, everyone should prioritize oral health and
-              establish an oral hygiene routine to keep themselves healthy. As
-              they age, however, their smile may indeed have different needs.
-              Along the way, they will have the help and guidance of our dental
-              team, so they should be open with them and discuss their concerns.
+              All of the above are valid reasons to be anxious. Still, they do
+              not have to overtake a patient's dental experience. Patients
+              should be open and honest with their dentist about their
+              anxieties, as this is the first step to phobia management. At
+              Revital Dental, we believe communication is key to a successful
+              dentist-patient relationship.
             </p>
           </div>
 
           {/* quote */}
           <div className="relative inline-block mt-10 w-full">
             <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-              “If any family member has anxiety about visiting the dentist,
-              speak to the dental team about options to make the experience less
-              intimidating.”
+              “Patients should be open and honest with their dentist about their
+              anxieties, as this is the first step to phobia management.”
             </h2>
             <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
           </div>
           {/* Q & A */}
-          <div className="mt-10" id="home-care-routine">
+          <div className="mt-10" id="coping-with-dental-anxiety">
             <h2 className="font-cinzel text-2xl text-primary">
-              What to Include in a Dental Care Routines
+              Coping with Dental Anxiety
             </h2>
             <hr />
             <p className="font-tinos mt-2">
-              A dental care routine will depend on the individual's current oral
-              health needs, but in general, most routines should include the
-              following:
+              Dealing with a dismissive dentist may only make the problem worse.
+              Therefore, the first step to managing dental anxiety is finding
+              the right dentist. Patients should also ask office staff about any
+              recommended coping strategies and agree on a signal to let the
+              dentist know if they need to take a break.
             </p>
-            <h2 className="mt-2 font-cinzel text-2xl text-primary">Brushing</h2>
-            <p className="font-tinos mt-2 text-justify">
-              Everyone should brush their teeth twice a day with a
-              dentist-recommended toothbrush and toothpaste. The right
-              toothbrush should have soft bristles to prevent damage to the gums
-              and tooth enamel. When brushing, use a small, pea-sized amount of
-              toothpaste and move the brush against the teeth in a gentle
-              circular motion. Move the toothbrush along the rows of the teeth
-              at a 45-degree angle to brush at the gum line as well. Dental
-              professionals recommend brushing for about two minutes. Make sure
-              to get the top and bottom rows, as well as all surfaces of the
-              teeth.
+            <p className="font-tinos mt-2">
+              Mindfulness techniques can also help. Patients may want to try
+              breathing exercises or doing body scans while in the dentist's
+              chair. Others may benefit from distracting themselves by doing
+              things like wearing headphones or occupying their hands.
             </p>
-            <h2 className="mt-2 font-cinzel text-2xl text-primary">Flossing</h2>
-            <p className="font-tinos mt-2 text-justify">
-              After brushing the surface of the teeth, everyone needs to floss
-              to clean the spaces between their teeth. Flossing should be done
-              at least once a day to remove anything that may have gotten stuck
-              between the teeth and reduce the possibility of buildup. To floss,
-              hold a piece of dental floss tightly between the hands with the
-              thumb and index finger. Gently slide the floss up and down between
-              the teeth, curving it at the base of each tooth to get beneath the
-              gum line.
-            </p>
-            <h2 className="mt-2 font-cinzel text-2xl text-primary">Rinsing</h2>
-            <p className="font-tinos mt-2 text-justify">
-              After flossing, everyone should rinse with a dentist-approved
-              mouthwash. Most mouthwashes will contain a small amount of
-              fluoride to help keep the teeth healthy between regular dental
-              checkups. Depending on the circumstances, the dentist may make a
-              recommendation. Some people may need a mouthwash to help with bad
-              breath, dry mouth, or gum disease. To rinse, follow the guidelines
-              on the mouthwash bottle. Typically this means using a small amount
-              of mouthwash poured into a clean cup to swish around the mouth for
-              about a minute before spitting it out.
+            <p className="font-tinos mt-2">
+              Additionally, patients should let the dentist know if they are
+              particularly sensitive to pain, even with local anesthesia. There
+              is no need for patients to feel embarrassed about asking questions
+              or being open about their fear. This is the only way to develop a
+              truly individualized plan to attack one's dental anxiety.
             </p>
 
             {/* quotes */}
             <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “A dental care routine will depend on current oral health
-                needs.”
+                “There is no need for patients to feel embarrassed about asking
+                questions or being open about their fear.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
@@ -247,39 +211,58 @@ const Services = () => {
               </h2>
             </div>
 
-            <div className="mt-10" id="diet-and-tooth-decay">
+            <div className="mt-10" id="sedation-for-dental-anxiety">
               <h2 className="font-cinzel text-2xl text-primary">
-                How to Keep the Smile Healthy and Prevent Tooth Decay
+                Sedation & Dental Anxiety
               </h2>
               <hr />
               <p className="font-tinos mt-2 text-justify">
-                Following a dental hygiene routine with at-home care and regular
-                dental checkups will help keep the smile healthy and prevent
-                tooth decay, but other things can be done as well. Certain foods
-                and drinks, such as sodas and sugary sweets, can put the teeth
-                at risk. The ingredients in these food items can attack the
-                enamel on the teeth and weaken it, making them more susceptible
-                to bacteria and decay.
+                Some patients with more severe dental anxiety may require more
+                intensive management measures. These include:
               </p>
+
+              <ul className="font-tinos text-justify list-disc pl-4 mt-2">
+                <li>
+                  <span className="font-bold">Relative Analgesia.</span> Also
+                  known as “laughing gas,” this method uses a combination of
+                  oxygen and nitrous oxide delivered through a face mask. It
+                  takes effect quickly, wears off fast, and allows patients to
+                  remain awake yet relaxed during the procedure.
+                </li>
+                <li>
+                  <span className="font-bold">Anxiety Medication.</span> This
+                  involves a short-acting pill prescribed by a dentist or doctor
+                  to ease dental anxiety. Taken about an hour before the
+                  appointment, it helps calm patients without putting them to
+                  sleep.
+                </li>
+                <li>
+                  <span className="font-bold">Conscious Sedation.</span>{" "}
+                  Administered via IV by a sedation dentist or anesthetist, this
+                  "twilight sedation" allows patients to drift into a light
+                  sleep while still being responsive during the treatment.
+                </li>
+                <li>
+                  <span className="font-bold">General Anesthesia.</span> The
+                  most intensive option, this involves IV medications and
+                  inhaled gases to put patients fully to sleep. It requires
+                  careful pre- and post-operative management and is used for
+                  extensive procedures.
+                </li>
+              </ul>
               <p className="font-tinos mt-2 text-justify">
-                Rather than eating and drinking sugary or acidic substances,
-                everyone should try things like cheese, fruits, vegetables, and
-                green and black teas. Cheese can combat erosion of the enamel,
-                high-fiber fruits and vegetables can stimulate saliva production
-                to help remove particles from the teeth, and certain teas combat
-                bacteria that cause plaque. Plus, these healthy food items are
-                good for the body, too, so while they are protecting the smile
-                from tooth decay, they can give the body the nutrition it
-                deserves.
+                Not all forms of sedation are appropriate for everyone or every
+                dental procedure. Our qualified team works closely with our
+                patients to take the proper measures to provide the most
+                comfortable experience possible.
               </p>
             </div>
 
             {/* quotes */}
             <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “Following a dental hygiene routine with at-home care and
-                regular dental checkups will help you keep the smile healthy and
-                prevent tooth decay.”
+                “Some patients with more severe dental anxiety may require more
+                intensive management measures.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
@@ -292,48 +275,42 @@ const Services = () => {
               <div className="flex flex-col">
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#importance-oral-hygiene"
+                  href="#what-is-dental-anxiety"
+                >
+                  Q. <span className="underline">What is dental anxiety?</span>
+                </a>
+                <a
+                  className="text-justify font-tinos mt-3"
+                  href="#causes-of-dental-anxiety"
+                >
+                  Q.{" "}
+                  <span className="underline">What causes dental anxiety?</span>
+                </a>
+                <a
+                  className="text-justify font-tinos mt-3"
+                  href="#coping-with-dental-anxiety"
                 >
                   Q.{" "}
                   <span className="underline">
-                    Why is good oral hygiene important?
+                    How can I cope with dental anxiety?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#family-oral-health-education"
+                  href="#sedation-for-dental-anxiety"
                 >
                   Q.{" "}
                   <span className="underline">
-                    Why is it important to educate the family about oral
-                    healthcare?
+                    Can I be sedated for my dental anxiety?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#home-care-routine"
+                  href="#child-dental-anxiety"
                 >
                   Q.{" "}
                   <span className="underline">
-                    What should a home oral care routine include?
-                  </span>
-                </a>
-                <a
-                  className="text-justify font-tinos mt-3"
-                  href="#diet-and-tooth-decay"
-                >
-                  Q.{" "}
-                  <span className="underline">
-                    How can a person’s diet help with tooth decay?
-                  </span>
-                </a>
-                <a
-                  className="text-justify font-tinos mt-3"
-                  href="#maintaining-healthy-smile"
-                >
-                  Q.{" "}
-                  <span className="underline">
-                    How does one maintain a healthy smile?
+                    How can I ease my child's dental anxiety?
                   </span>
                 </a>
               </div>
@@ -345,166 +322,129 @@ const Services = () => {
               <div className="flex flex-col mb-4">
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#dental-checkup-frequency"
+                  href="#dental-checkup-process"
                 >
                   Q.{" "}
                   <span className="underline">
-                    How often should someone have a dental checkup?
+                    What happens during a dental check-up?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#what-happens-dental-cleaning"
+                  href="#find-a-dentist-resources"
                 >
                   Q.{" "}
                   <span className="underline">
-                    What happens during a dental cleaning?
-                  </span>
-                </a>
-                <a
-                  className="text-justify font-tinos mt-3"
-                  href="#importance-general-dentist"
-                >
-                  Q.{" "}
-                  <span className="underline">
-                    Why is it important to find the right general dentist?
+                    What other resources can I use to find a dentist?
                   </span>
                 </a>
               </div>
             </div>
 
-            <div className="mt-10" id="maintaining-healthy-smile">
+            <div className="mt-10" id="child-dental-anxiety">
               <h2 className="font-cinzel text-2xl text-primary">
-                Health Practices for a Healthy Smile
+                Children & Dental Anxiety
               </h2>
               <hr />
               <p className="font-tinos mt-2 text-justify">
-                If the goal is to have a healthy smile for life, then there are
-                a number of things anyone can do to achieve that goal. The first
-                and quite possibly most important thing to do is to stay in
-                touch with the dental team. The dental professionals on this
-                team will come to know each individual and their smile over
-                time. They can provide guidance as the mouth ages and changes.
-                To build and maintain this connection, regular dental checkups
-                are important.
+                It is not uncommon for parents to experience dental anxiety on
+                their child's behalf. Parents should maintain a calm exterior as
+                children will pick up on any anxiety displayed by their parents.
+                Parents should refrain from telling their children that
+                something will hurt or be painful, nor should they promise a
+                reward for going to the dentist. Doing so will only cause
+                children to anticipate something unpleasant and act accordingly.
+                While parents should tell their children about any upcoming
+                dental appointments, they should not overload their child with
+                too much detail about what to expect. Dentists have received the
+                training to give simple, non-threatening answers. Parents should
+                prioritize stressing the importance of dental hygiene to their
+                children instead.
               </p>
-              <p className="font-tinos mt-2 text-justify">
-                Dental checkups are normally recommended every six months,
-                though some individuals may need them more often if they have a
-                history of oral health concerns or gum disease. Between
-                checkups, everyone should continue their at-home oral hygiene
-                routine. While a checkup is a great way to remove the buildup of
-                plaque and polish the teeth to protect them from bacteria,
-                everyone needs to remove particles and bacteria daily to keep
-                their smile healthy.
-              </p>
-              <p className="font-tinos mt-2 text-justify">
-                A daily routine should include brushing, flossing, and rinsing
-                with a mouthwash. The dentist may also recommend different or
-                additional steps depending on the smile’s health. Additional
-                recommendations may include:
-              </p>
-              <ul className="font-tinos text-justify list-disc  pl-4 mt-2">
-                <li>Drinking fluoridated water</li>
-                <li>Quitting smoking and other tobacco products</li>
-                <li>Limiting alcoholic, caffeinated or sugary drinks</li>
-                <li>Controlling other diseases that may affect the teeth</li>
-                <li>Deep cleaning</li>
-              </ul>
             </div>
             <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “While a checkup is a great way to remove the buildup of plaque
-                and polish the teeth to protect them from bacteria, everyone
-                needs to remove particles and bacteria daily to keep their smile
-                healthy.”
+                “Parents should maintain a calm exterior … as children will pick
+                up on any anxiety displayed by their parents.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
 
             {/* Q & A */}
-            <div className="bg-gray-100 p-5 mt-10">
+
+            <div className="bg-gray-100 p-5 mt-10 ">
               <h2 className="text-4xl text-center font-cinzel mb-3 text-primary">
                 Frequently Asked Questions
               </h2>
               <hr />
               <div className="flex flex-col">
                 <h2
-                  id="importance-oral-hygiene"
+                  id="child-dental-anxiety"
                   className="text-justify text-primary font-tinos mt-3"
                 >
-                  Q. Why is oral hygiene important?
+                  Q. What can a dentist do to help my child's dental anxiety?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Aside from being one of the first things people notice
-                  about others, the smile is important to the body's overall
-                  health. Maintaining oral hygiene helps protect the body from
-                  disease. By keeping the smile healthy and attending regular
-                  dental checkups, everyone can support their overall health.
+                  A. Dental anxiety among children is common, so many dentists
+                  anticipate having to use calming techniques. These include
+                  distraction, non-verbal communication, simple instructions,
+                  positive reinforcement, voice control, and in some cases,
+                  sedation.
                 </p>
 
                 <h2
-                  id="oral-care-children"
+                  id="how-common-is-dental-anxiety"
                   className="text-justify text-primary font-tinos mt-3"
                 >
-                  Q. Is oral care important for children?
+                  Q. How common is dental anxiety?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Yes. While baby teeth are temporary, how they are cared for
-                  affects future oral health. Good habits early in life can lead
-                  to a lifetime of healthy smiles.
+                  A. According to WebMD, between 9% and 20% of Americans avoid
+                  going to the dentist due to dental anxiety. People of all ages
+                  and backgrounds can suffer dental anxiety.
                 </p>
 
                 <h2
-                  id="dental-care-routine"
+                  id="other-terms-for-dental-anxiety"
                   className="text-justify text-primary font-tinos mt-3"
                 >
-                  Q. What should be included in a dental care routine?
+                  Q. Are there any other words for dental anxiety?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. A complete routine typically includes brushing at least
-                  twice daily, flossing once a day, rinsing with
-                  dentist-approved mouthwash, and attending regular dental
-                  checkups. Individual needs may vary slightly.
+                  A. The term "dental anxiety" is most commonly interchanged
+                  with "dental phobia." However, other synonymous terms include
+                  dentophobia, dental fear, fear of dentists, and odontophobia.
+                  These words all refer to the same phenomenon.
                 </p>
 
                 <h2
-                  id="what-is-dental-checkup"
+                  id="dental-visit-if-anxious"
                   className="text-justify text-primary font-tinos mt-3"
                 >
-                  Q. What is a dental checkup?
+                  Q. Do I really need to go to the dentist if I have dental
+                  anxiety?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. A dental checkup usually includes a cleaning and
-                  examination. The dental professional removes plaque and tartar
-                  and checks for any signs of decay, gum disease, or other oral
-                  health issues.
+                  A. Putting off necessary dental treatments can be detrimental
+                  to your overall health. Patients who refrain from going to the
+                  dentist due to dental anxiety are more likely to develop gum
+                  disease and lose teeth. These, in turn, may lead to a decrease
+                  in self-esteem and negatively affect one's overall quality of
+                  life.
                 </p>
 
                 <h2
-                  id="maintain-healthy-smile"
+                  id="will-anxiety-improve"
                   className="text-justify text-primary font-tinos mt-3"
                 >
-                  Q. How can anyone keep their smile healthy?
+                  Q. Will my dental anxiety get better over time?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Healthy habits such as quitting smoking, limiting dark
-                  drinks like coffee or tea, and practicing consistent oral care
-                  at home — along with regular dental visits — help maintain a
-                  clean, bright smile.
-                </p>
-
-                <h2
-                  id="cleaning-vs-deep-cleaning"
-                  className="text-justify text-primary font-tinos mt-3"
-                >
-                  Q. Are dental cleanings and deep cleanings different?
-                </h2>
-                <p className="font-tinos md:ps-4 mt-2">
-                  A. Yes. Both involve cleaning the teeth, but deep cleanings
-                  also include scaling and root planing below the gum line. Deep
-                  cleaning is usually recommended for those with gum disease or
-                  heavy buildup.
+                  A. Continued exposure and positive experiences with the
+                  dentist should lessen your dental anxiety over time. Depending
+                  on the severity of your condition, you may also benefit from
+                  seeking psychiatric help for your phobia at another facility
+                  along with the dental treatment tailored to your needs.
                 </p>
               </div>
             </div>
@@ -565,23 +505,33 @@ const Services = () => {
             <div className="bg-dark p-5 mt-10 text-white">
               <h2 className="text-4xl font-cinzel mb-3">Dental Terminology</h2>
               <hr />
-              <div className="space-y-10">
+              <div className="space-y-10 ">
                 <div className="mt-5 font-tinos">
                   <h2 className="italic text-xl">Cosmetic Dentistry</h2>
                   <p>
-                    Cosmetic dentistry refers to dental procedures that enhance
-                    the appearance of the teeth, gums, or bite. Common
-                    treatments include teeth whitening, veneers, and bonding.
+                    Cosmetic dentistry is generally used to refer to any dental
+                    work that improves the appearance (though not necessarily
+                    the function) of a person’s teeth, gums, and/or bite.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Tooth Decay</h2>
+                  <h2 className="italic text-xl">Decay</h2>
                   <p>
-                    Tooth decay occurs when bacteria in plaque produce acid that
-                    erodes tooth enamel, leading to cavities and infection if
-                    left untreated.
+                    Tooth decay occurs when the enamel of the tooth begins to
+                    deteriorate due to the erosion caused by plaque and tartar
+                    on the teeth.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Dental Caries</h2>
+                  <p>
+                    Dental caries, commonly known as cavities, occur when proper
+                    oral hygiene is not maintained, allowing plaque to form and
+                    create tiny holes in the teeth.
                   </p>
                   <hr className="mt-4" />
                 </div>
@@ -589,9 +539,9 @@ const Services = () => {
                 <div className="mt-5 font-tinos">
                   <h2 className="italic text-xl">Dental Checkup</h2>
                   <p>
-                    A dental checkup is a routine appointment where a dentist
-                    examines oral health, removes plaque and tartar, and checks
-                    for signs of gum disease or cavities.
+                    A dental checkup is an appointment where the dentist cleans
+                    your teeth, identifies any signs of infection, and removes
+                    the infection at least once every six months.
                   </p>
                   <hr className="mt-4" />
                 </div>
@@ -599,59 +549,29 @@ const Services = () => {
                 <div className="mt-5 font-tinos">
                   <h2 className="italic text-xl">Dental Filling</h2>
                   <p>
-                    A dental filling is used to restore a tooth damaged by
-                    decay. It involves cleaning the cavity and filling it with
-                    materials like composite, porcelain, or amalgam.
+                    A dental filling is used to restore the structure of a tooth
+                    by filling it with materials like metal, alloy, porcelain,
+                    or plastic to restore its function and appearance.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Prophylaxis</h2>
+                  <h2 className="italic text-xl">Dental Prophylaxis</h2>
                   <p>
                     Dental prophylaxis is a professional cleaning procedure that
-                    removes plaque, tartar, and stains from teeth to prevent
-                    oral diseases.
+                    removes plaque, tartar, and stains from the teeth to
+                    maintain oral health.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Sealants</h2>
+                  <h2 className="italic text-xl">Dental Sealants</h2>
                   <p>
-                    Dental sealants are thin protective coatings applied to the
-                    chewing surfaces of molars to prevent cavities by blocking
-                    bacteria and food.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Gingivitis</h2>
-                  <p>
-                    Gingivitis is a mild form of gum disease that causes
-                    redness, swelling, and bleeding gums. It is reversible with
-                    proper oral hygiene and professional care.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Tartar</h2>
-                  <p>
-                    Tartar, also known as calculus, is hardened plaque that
-                    sticks to the teeth and can only be removed by a dental
-                    professional during cleanings.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Tooth Enamel</h2>
-                  <p>
-                    Tooth enamel is the hard, outermost layer of a tooth that
-                    protects it from decay and damage. It cannot regenerate once
-                    worn down.
+                    Dental sealants are resinous materials applied to the
+                    chewing surfaces of the posterior teeth to prevent cavities
+                    by shielding them from plaque.
                   </p>
                   <hr className="mt-4" />
                 </div>
@@ -659,9 +579,48 @@ const Services = () => {
                 <div className="mt-5 font-tinos">
                   <h2 className="italic text-xl">Dentist</h2>
                   <p>
-                    A dentist is a licensed medical professional who diagnoses,
-                    treats, and helps prevent diseases and conditions affecting
-                    the oral cavity.
+                    A dentist, also known as a dental surgeon, specializes in
+                    diagnosing, preventing, and treating diseases and conditions
+                    of the oral cavity.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Gingivitis</h2>
+                  <p>
+                    Gingivitis is the inflammation of gum tissue caused by
+                    plaque buildup and poor oral hygiene, which can lead to
+                    infection if untreated.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Preventive Dentistry</h2>
+                  <p>
+                    Preventive dentistry focuses on maintaining oral health
+                    through measures that prevent plaque buildup, tartar
+                    formation, and infections.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Tartar</h2>
+                  <p>
+                    Tartar forms when plaque hardens and becomes difficult to
+                    remove. It requires professional treatment for removal.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Tooth Enamel</h2>
+                  <p>
+                    Tooth enamel is the visible outer surface of the tooth that
+                    serves as a protective barrier to the underlying dentin and
+                    dental pulp.
                   </p>
                   <hr className="mt-4" />
                 </div>

@@ -3,6 +3,7 @@ import { FaCaretDown } from "react-icons/fa";
 import { Cinzel } from "next/font/google";
 import Link from "next/link";
 import { FaYelp } from "react-icons/fa";
+import Image from "next/image";
 
 const cinzel = Cinzel({
   subsets: ["latin"], // you can add 'latin-ext' if needed
@@ -13,29 +14,29 @@ const Services = () => {
   return (
     <>
       {/* intro section */}
-      <section className="grid md:grid-cols-[1fr_1fr_1fr] grid-cols-1 md:gap-2 md:mt-[85px]  border-y-[10px] border-dark mx-2">
-        <div className="bg-[url(/oral-cancer-screening.webp)] bg-cover my-10"></div>
+      <section className="grid md:grid-cols-[1fr_1fr_1fr] grid-cols-1 md:gap-2  md:mt-[125px]  border-y-[10px] border-dark mx-2">
+        <div className="bg-[url(/dental-implants.webp)] bg-cover my-10"></div>
 
-        <div className="px-10 py-10 space-y-3">
-          <h2 className="text-5xl font-cinzel text-primary">
-            Oral Cancer Screening
-          </h2>
+        <div className="px-10 py-5 space-y-3">
+          <h2 className="text-5xl font-cinzel text-primary">Dental Implants</h2>
           <p className="font-cinzel text-primary">Temple, TX</p>
           <p className="font-tinos  text-justify">
-            Oral cancer screenings can identify the signs of disease before it
-            has spread. This may be beneficial to those in high-risk groups.
-            Regular oral cancer screenings can give patients the advantage of
-            treating cancer in the early stages when there is a higher chance
-            for remission.
+            Patients can enjoy a more comfortable and functional bite after
+            losing teeth with dental implants. Implants act as artificial roots
+            to anchor permanent teeth replacements. If you are missing one or
+            more teeth or need to have one extracted, dental replacements can be
+            a great option to restore your smile.
           </p>
           <p className="font-tinos  text-justify">
-            Oral cancer screenings are available at Revital Dental in Temple and
-            the surrounding area. Early detection may make cancer treatment more
-            effective. Call us at (254) 207-0708 to schedule an appointment
-            today.
+            Dental implants can be beneficial for people who want a tooth
+            replacement option that closely imitates natural teeth. They can be
+            a very effective long-term solution for missing teeth. Dental
+            implants are available at Revital Dental in Temple and the
+            surrounding area. Call our team at (254) 207-0708 to learn more
+            about this service and set up an appointment.
           </p>
         </div>
-        <div className="py-10">
+        <div className="py-5">
           <form
             action=""
             className="w-full mx-auto mt-10 md:mt-0 max-w-[400px]"
@@ -86,109 +87,94 @@ const Services = () => {
       {/* explanation */}
       <section className="md:grid md:grid-cols-[3fr_1fr]  md:w-[90%] w-[100%] md:mx-auto px-2 mt-3 gap-2">
         {/* left section */}
-        <div className="left-section " id="oral-cancer-screening-frequency">
+        <div className="left-section " id="what-is-involved-dental-cleaning">
           {/* dark section */}
-          <div className="bg-dark p-5 text-white">
+          <div
+            className="bg-dark p-5 text-white"
+            id="what-happens-during-dental-implant-process"
+          >
             <h2 className="text-2xl font-cinzel mb-3">
-              Why Have Regular Oral Cancer Screenings?
+              The Dental Implant Process
             </h2>
             <hr />
             <p className="text-justify font-tinos mt-4">
-              Regular oral cancer screenings can be as important as regular
-              dental checkups. Fortunately, patients can ask to get both
-              procedures done at the same time. As per the National Cancer
-              Institute, oral cancer symptoms tend not to appear until the
-              disease has spread. Early detection may make oral cancer easier to
-              treat when the chances for remission are higher.
+              Dental implants act as artificial tooth roots to support new
+              replacement teeth. During the procedure, an incision is made in
+              the patient’s gum to expose the bone where the implant will be
+              placed. We will then insert the implant and suture the gum around
+              the implant post. In some cases, a temporary denture is used
+              instead of replacement teeth.
             </p>
             <p className="text-justify font-tinos mt-4">
-              According to WebMD, everyone should have a dental checkup at least
-              once a year. However, experts have yet to reach a consensus on how
-              often patients should go in for an oral cancer screening. A
-              dentist may be able to conduct a comprehensive exam to determine
-              how frequently a patient should have screenings.
+              Following the surgery, the bone needs to heal around the dental
+              implant. This process can take several weeks or months. Once it is
+              sufficiently strong, a dentist can fit the permanent replacement
+              teeth. According to the Mayo Clinic, some extra steps may be
+              necessary. For patients with weak jawbones, a bone graft may be
+              needed to ensure sufficient strength. After the bone has healed,
+              an abutment connects a crown or dentures to the dental implant.
             </p>
           </div>
 
-          {/* question and answer section */}
           {/* quote */}
           <div className="relative inline-block mt-10">
             <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-              “Early detection may make oral cancer easier to treat when the
-              chances for remission are higher.”
+              “Dental implants act as artificial tooth roots to support new
+              replacement teeth.”
             </h2>
             <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
           </div>
           {/* Q & A */}
-          <div className="mt-10" id="oral-cancer-risk-factors">
+          <div className="mt-10" id="how-to-care-for-dental-implants">
             <h2 className="font-cinzel text-2xl text-primary">
-              Groups at High Risk for Oral Cancer
+              How To Care for Dental Implants
             </h2>
             <hr />
             <p className="font-tinos mt-2 text-justify">
-              Certain groups may benefit from regular oral cancer screenings
-              more than others. Common risk factors include but are not limited
-              to:
+              Caring for dental implants is very similar to caring for natural
+              teeth, especially if the replacement teeth are permanent.
+              Brushing, flossing, and rinsing with mouthwash is necessary for
+              maintaining proper oral hygiene with implants. Getting regular
+              checkups and teeth cleanings at the dentist are important for
+              taking care of replacement teeth.
             </p>
-
-            <ul className="font-tinos text-justify list-disc  pl-4 mt-2">
-              <li>A history of oral cancer</li>
-              <li>Certain types of human papillomavirus (HPV)</li>
-              <li>Regular consumption of a lot of alcohol</li>
-              <li>Excessive amounts of time spent in the sun</li>
-              <li>Tobacco use, in any form</li>
-            </ul>
             <p className="font-tinos mt-2 text-justify">
-              Patients may find it beneficial to consult a professional about
-              their medical history to better determine their risk for oral
-              cancer.
+              Dental implants may require extra cleaning to keep them in optimal
+              condition. Removable, implant-supported dentures should be taken
+              out at night and soaked in a denture solution. Patients can also
+              use an oral irrigator to help clean below and around the dental
+              implants.
             </p>
           </div>
 
-          {/* quote */}
-          <div className="relative inline-block mt-10 w-full">
-            <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-              “Some groups may benefit from regular oral cancer screenings more
-              than others.”
-            </h2>
-            <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
-          </div>
           {/* Q & A */}
-          <div className="mt-10" id="oral-cancer-screening-limits">
+          <div className="mt-10" id="what-happens-after-implant-procedure">
             <h2 className="font-cinzel text-2xl text-primary">
-              Limitations of Oral Cancer Screenings
+              What To Expect After the Procedure
             </h2>
             <hr />
-            <p className="font-tinos mt-2">
-              Although regular oral cancer screenings are integral to
-              maintaining good health, Mayo Clinic points out that it may be
-              difficult to detect abnormal cells through a simple visual exam.
-              Thus, there is always a possibility that a small sign of cancer or
-              precancerous lesion could go undetected.
-            </p>
 
-            <ul className="font-tinos text-justify list-disc  pl-4 mt-2">
-              <li>The back of the throat</li>
-              <li>The gums</li>
-              <li>The insides of the cheeks</li>
-              <li>The outside and the inside of the lips</li>
-              <li>The roof of the mouth</li>
-              <li>The tongue</li>
-            </ul>
             <p className="font-tinos mt-2">
-              Patients with dentures must remove the devices to allow Revital
-              Dental to check the tissue underneath, along with the area
-              underneath the jaw.
+              Following the procedure, it is common to have swelling and
+              discomfort around the implantation site. Some patients may
+              experience minor bleeding and bruising of the skin and gums in the
+              treatment area. These side effects can be managed with pain
+              medication and antibiotics if necessary. Patients can expect such
+              side effects to subside after a few days.
             </p>
             <p className="font-tinos mt-2">
-              All in all, the screening should take less than five minutes.
+              After receiving dental implants, it is best to stick to eating
+              soft foods while the bone heals. Most dental implant procedures
+              use dissolvable stitches, so patients will not have to come back
+              to get them removed. These stitches will usually fall out within
+              seven to 10 days. Following the aftercare instructions and advice
+              will help the healing process.
             </p>
             {/* quotes */}
             <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “There is no special preparation required for an oral cancer
-                screening, and patients can typically expect screening to take
-                place during a routine dental appointment.”
+                “Following the procedure, it is common to have swelling and
+                discomfort around the implantation site.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
@@ -209,36 +195,58 @@ const Services = () => {
               </h2>
             </div>
 
-            <div className="mt-10" id="oral-cancer-screening-expect">
+            <div className="mt-10" id="benefits-of-dental-implants">
               <h2 className="font-cinzel text-2xl text-primary">
-                What to Expect During an Oral Cancer Screening
+                Benefits of Dental Implants
               </h2>
               <hr />
               <p className="font-tinos mt-2 text-justify">
-                Oral cancer screening requires no special preparation, and
-                patients can typically expect screening to take place during a
-                routine dental appointment. In most cases, a basic oral cancer
-                screening will consist of the dentist taking a thorough look at
-                all the parts of the patient's mouth, including:
+                Dental implants can be a good choice for many patients with
+                missing teeth. Dental implants allow new teeth to feel, look,
+                and function naturally. Here are some key benefits of dental
+                implants:
               </p>
-              <p className="font-tinos mt-2 text-justify">
-                Dental bonding is one of the simplest, quickest, most
-                affordable, and least invasive cosmetic dental procedures
-                available. It necessitates removing very little enamel and
-                generally only requires anesthesia when performed to fill a
-                cavity, to reshape the tooth through drilling, or to fix a chip
-                near the nerve. Any preparation is minimal. Revital Dental works
-                closely with each patient to make sure they know what to expect.
-                The entire process takes about 30 to 60 minutes per tooth and
-                can be completed in one appointment.
-              </p>
+
+              <ul className="font-tinos text-justify list-disc  pl-4 mt-2">
+                <li className="mt-2">
+                  <span className="font-bold">Comfortable: </span> Dental
+                  implants act as tooth roots and stay firmly in place. This
+                  firm foundation makes them more comfortable than dentures and
+                  other replacement tooth options. Many patients report that
+                  implants feel similar to their natural teeth.
+                </li>
+                <li className="mt-2">
+                  <span className="font-bold">Functional: </span>
+                  The stability of implants makes them effective for eating,
+                  talking, and cleaning. They function similarly to the teeth
+                  they are replacing. Less permanent options may interfere more
+                  with daily life.
+                </li>
+                <li className="mt-2">
+                  <span className="font-bold">Permanent: </span>
+                  Dental implants are one of the most permanent tooth
+                  replacement options. They can last a lifetime with good care.
+                  Additionally, fixed replacement teeth on implants do not need
+                  to be removed every day for cleaning.
+                </li>
+                <li className="mt-2">
+                  <span className="font-bold">Natural-looking: </span>
+                  Implant-supported replacement teeth look like natural teeth.
+                  The visible part of the dental implant is a cosmetic crown
+                  made from a composite material that is color-matched to the
+                  patient’s tooth enamel. It can be hard to tell the difference.
+                  Many patients enjoy dental implants’ aesthetic appeal, as
+                  others cannot tell the difference between the replacement and
+                  natural teeth.
+                </li>
+              </ul>
             </div>
 
             {/* quotes */}
             <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “Dental bonding is one of the simplest, quickest, cheapest, and
-                least invasive cosmetic dental procedures available.”
+                “Dental implants allow new teeth to feel, look, and function
+                naturally.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
@@ -251,206 +259,139 @@ const Services = () => {
               <div className="flex flex-col">
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#oral-cancer-screening-frequency"
+                  href="#what-happens-during-dental-implant-process"
                 >
                   Q.{" "}
                   <span className="underline">
-                    How frequently should I get an oral cancer screening?
+                    What happens during the dental implant process?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#oral-cancer-risk-factors"
+                  href="#how-to-care-for-dental-implants"
                 >
                   Q.{" "}
                   <span className="underline">
-                    Am I at high risk for developing oral cancer?
+                    How to take care of dental implants?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#oral-cancer-screening-limits"
+                  href="#what-happens-after-implant-procedure"
                 >
                   Q.{" "}
                   <span className="underline">
-                    What are the limits of oral cancer screenings?
+                    What happens after the dental implant procedure?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#oral-cancer-screening-expect"
+                  href="#benefits-of-dental-implants"
                 >
                   Q.{" "}
                   <span className="underline">
-                    What can I expect during my oral cancer screening?
-                  </span>
-                </a>
-                <a
-                  className="text-justify font-tinos mt-3"
-                  href="#oral-cancer-additional-tests"
-                >
-                  Q.{" "}
-                  <span className="underline">
-                    Are there any additional tests after oral cancer screenings?
+                    What are the benefits of dental implants?
                   </span>
                 </a>
               </div>
-
               <h2 className="text-4xl text-center font-cinzel mb-3 mt-3">
                 People Also Ask
               </h2>
               <hr />
               <div className="flex flex-col mb-4">
-                <a
-                  className="text-justify font-tinos mt-3"
-                  href="#causes-gum-disease"
-                >
-                  Q. <span className="underline">What causes gum disease?</span>
-                </a>
-                <a
-                  className="text-justify font-tinos mt-3"
-                  href="#causes-bleeding-gums"
-                >
+                <a className="text-justify font-tinos mt-3" href="#">
                   Q.{" "}
-                  <span className="underline">What causes bleeding gums?</span>
+                  <span className="underline">
+                    What can I expect the day of the implant procedure?
+                  </span>
                 </a>
-                <a
-                  className="text-justify font-tinos mt-3"
-                  href="#gums-receding-reasons"
-                >
+                <a className="text-justify font-tinos mt-3" href="#">
                   Q.{" "}
-                  <span className="underline">Why are my gums receding?</span>
+                  <span className="underline">
+                    What does the implant recovery process look like?
+                  </span>
+                </a>
+                <a className="text-justify font-tinos mt-3" href="#">
+                  Q.{" "}
+                  <span className="underline">
+                    How does the bone grafting procedure work?
+                  </span>
                 </a>
               </div>
             </div>
 
-            <div className="mt-10" id="oral-cancer-additional-tests">
-              <h2 className="font-cinzel text-2xl text-primary">
-                Additional Tests After Oral Cancer Screenings
-              </h2>
-              <hr />
-              <p className="font-tinos mt-2 text-justify">
-                Depending on the patient's situation, the dentist may perform
-                special tests in addition to the basic screening. More in-depth
-                oral cancer screenings can involve the patient rinsing their
-                mouth with blue dye to make any unusual cells more visible.
-                Additionally, the dentist may choose to shine a light in the
-                patient's mouth during the exam. This light will "highlight"
-                abnormal tissue by making it appear white.
-              </p>
-              <p className="font-tinos mt-2 text-justify">
-                If any of these tests find signs of oral cancer or any possibly
-                cancerous lesions, then the patient should undergo a biopsy.
-                This procedure consists of removing a sample of cells for
-                laboratory testing. The patient may also need to make a
-                follow-up appointment to see if the abnormal area has grown or
-                changed since detection.
-              </p>
-            </div>
-            <div className="relative inline-block mt-10 w-full">
-              <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “Depending on the patient’s situation, the dentist may perform
-                special tests in addition to the basic screening.”
-              </h2>
-              <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
-            </div>
-
             {/* Q & A */}
-            <div className="bg-gray-100 p-5 mt-10">
+
+            <div className="bg-gray-100 p-5 mt-10 ">
               <h2 className="text-4xl text-center font-cinzel mb-3 text-primary">
                 Frequently Asked Questions
               </h2>
               <hr />
               <div className="flex flex-col">
                 <h2
-                  id="clear-aligners-after-braces"
                   className="text-justify text-primary font-tinos mt-3"
+                  href="#what-is-involved-dental-cleaning"
                 >
-                  Q. Can I get clear aligners if I have already had traditional
-                  braces before?
+                  Q. How do I know if I am a candidate for dental implants?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Yes. It is common for patients to get clear aligners after
-                  not having worn their retainers enough after traditional
-                  braces. Clear aligners may help shift your teeth back into
-                  place and restore your smile.
+                  A. According to WebMD, most healthy people are good candidates
+                  for dental implants. However, weak or unsubstantial jawbone
+                  mass may limit whether a patient can receive implants.
+                  Restorative procedures like bone grafting can overcome this
+                  issue in some cases. A dentist can determine whether a patient
+                  is a candidate during an exam and consultation.
                 </p>
-
                 <h2
-                  id="are-veneers-reversible"
                   className="text-justify text-primary font-tinos mt-3"
+                  href="#dentist-look-for-dental-examination"
                 >
-                  Q. Are veneers reversible?
+                  Q. What is the success rate of dental implants?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. No. While veneers are removable, another set of veneers
-                  must always replace them. This is because veneers require
-                  removing tooth enamel, which cannot grow back.
+                  A. According to the Cleveland Clinic, dental implants have a
+                  success rate of up to 97%. Furthermore, they can last a
+                  lifetime with proper care. Dental implants are one of the most
+                  permanent solutions for missing teeth.
                 </p>
-
                 <h2
-                  id="dental-bonding-lifespan"
                   className="text-justify text-primary font-tinos mt-3"
+                  href="#dentist-look-for-dental-examination"
                 >
-                  Q. How long does dental bonding last?
+                  Q. How much do dental implants cost?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. The answer varies on a case-by-case basis. Dental bonding
-                  may last for three to 10 years before needing a touch-up or
-                  replacement.
+                  A. The cost of dental implants will vary depending on the
+                  patient’s needs, bone quantity, and the treatment area. Dental
+                  implants may qualify for some insurance coverage, but
+                  situations will vary. People interested in receiving this
+                  procedure should contact their insurance provider and receive
+                  a consultation to learn more about the cost.
                 </p>
-
                 <h2
-                  id="composite-filling-duration"
                   className="text-justify text-primary font-tinos mt-3"
+                  href="#dentist-look-for-dental-examination"
                 >
-                  Q. How long will my composite filling last?
+                  Q. Are dental implants removable?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. For most healthy patients, composite fillings will last
-                  seven to 10 years. However, they may last longer under certain
-                  circumstances.
+                  A. The dental implant is permanent. The replacement teeth that
+                  sit on them can be fixed or removable. Fixed dentures are the
+                  preferred option for many patients due to their stability and
+                  comfort.
                 </p>
-
                 <h2
-                  id="cosmetic-dentistry-teens"
                   className="text-justify text-primary font-tinos mt-3"
+                  href="#dentist-look-for-dental-examination"
                 >
-                  Q. Are teens too young for cosmetic dentistry?
+                  Q. Do I need full dentures to get implants?
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. No. Teens are at an especially vulnerable point in their
-                  lives where their self-esteem is at its most fragile. Cosmetic
-                  dentistry may help. Revital Dental can determine whether or
-                  not any of the above treatments are right for you.
+                  A. No, implants may support one or more replacement teeth.
+                  Some patients receive partial dentures with multiple teeth,
+                  while others receive a full arch of teeth. Dental implants are
+                  a flexible solution for each patient’s needs.
                 </p>
-
-                <h2
-                  id="oral-cancer-screening-stages"
-                  className="text-justify text-primary font-tinos mt-3"
-                >
-                  Q. What are the stages of oral cancer?
-                </h2>
-                <ul className="list-disc font-tinos md:ps-4 mt-2">
-                  <li>
-                    Stage 0: Abnormal cells are present but haven’t become
-                    cancerous
-                  </li>
-                  <li>
-                    Stage 1: Tumor is &le; 2 cm and hasn’t spread to lymph nodes
-                  </li>
-                  <li>
-                    Stage 2: Tumor is &le; 4 cm with no lymph node involvement
-                  </li>
-                  <li>
-                    Stage 3: Tumor is &gt; 4 cm or has spread to one lymph node
-                    (not distant)
-                  </li>
-                  <li>
-                    Stage 4:Tumor may be any size and has spread to distant
-                    parts of the body
-                  </li>
-                </ul>
               </div>
             </div>
 
@@ -510,73 +451,35 @@ const Services = () => {
             <div className="bg-dark p-5 mt-10 text-white">
               <h2 className="text-4xl font-cinzel mb-3">Dental Terminology</h2>
               <hr />
-              <div className="space-y-10">
+              <div className="space-y-10 ">
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Dental Caries</h2>
+                  <h2 className="italic text-xl">Abutment</h2>
                   <p>
-                    Dental caries, commonly known as cavities, are areas of
-                    decay on the teeth caused by the buildup of plaque and acid
-                    that erode the enamel.
+                    An abutment is a component that attaches to the dental
+                    implant so a professional can place a dental crown to
+                    provide patients with an artificial, aesthetically pleasing
+                    and fully-functional smile.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Root Canal</h2>
+                  <h2 className="italic text-xl">Bridge</h2>
                   <p>
-                    A root canal is a dental procedure used to treat infection
-                    at the center of a tooth by removing the infected tissue and
-                    sealing the area.
+                    Multiple replacement teeth that are fixed in place via
+                    attachment to dental implants, natural adjacent teeth, or a
+                    combination of the two.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Oral Hygiene</h2>
+                  <h2 className="italic text-xl">Dental Crown</h2>
                   <p>
-                    Oral hygiene refers to the practice of maintaining clean
-                    teeth and gums, which involves regular brushing, flossing,
-                    and professional dental cleanings.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Bruxism</h2>
-                  <p>
-                    Bruxism is the involuntary grinding, gnashing, or clenching
-                    of teeth, often occurring during sleep and leading to tooth
-                    damage, headaches, and jaw pain.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Periodontitis</h2>
-                  <p>
-                    Periodontitis is a severe gum infection that damages the
-                    soft tissue and bone supporting the teeth, often resulting
-                    from untreated gingivitis.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Plaque</h2>
-                  <p>
-                    Plaque is a sticky, colorless film of bacteria that forms on
-                    the teeth and gums, contributing to tooth decay and gum
-                    disease if not properly cleaned.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Fluoride Treatment</h2>
-                  <p>
-                    Fluoride treatment is a dental procedure where fluoride is
-                    applied to teeth to help prevent cavities, reduce plaque,
-                    and promote enamel remineralization.
+                    A crown is an artificial tooth, usually consisting of
+                    porcelain, which covers the top of the implant to provide
+                    people with an aesthetically pleasing and fully-functional
+                    tooth.
                   </p>
                   <hr className="mt-4" />
                 </div>
@@ -584,49 +487,80 @@ const Services = () => {
                 <div className="mt-5 font-tinos">
                   <h2 className="italic text-xl">Dental Implant</h2>
                   <p>
-                    A dental implant is a metal post surgically placed in the
-                    jawbone to serve as a replacement for a missing tooth root,
-                    providing a strong base for artificial teeth.
+                    A dental implant is an artificial tooth root that is placed
+                    into your jaw to hold a replacement tooth or bridge. Dental
+                    implants may be an option for people who have lost a tooth
+                    or teeth due to periodontal disease, an injury, or some
+                    other reason.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Tooth Sensitivity</h2>
+                  <h2 className="italic text-xl">Endosteal (endosseous)</h2>
                   <p>
-                    Tooth sensitivity is a condition where the teeth become
-                    painful in response to hot, cold, or sweet stimuli due to
-                    exposed dentin or gum recession.
+                    Endosteal is a type of dental implant that a professional
+                    places in the alveolar and basal bone of the mandible that
+                    transcends only one cortical plate.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Sealants</h2>
+                  <h2 className="italic text-xl">Eposteal (subperiosteal)</h2>
                   <p>
-                    Dental sealants are thin plastic coatings applied to the
-                    chewing surface of back teeth to prevent cavities by sealing
-                    out food and plaque.
+                    Eposteal is a type of dental implant that conforms to
+                    whichever edentulous surface of an alveolar bone is
+                    superior.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Gum Recession</h2>
+                  <h2 className="italic text-xl">Implant-Supported Bridge</h2>
                   <p>
-                    Gum recession occurs when the gum tissue pulls away from the
-                    teeth, exposing the tooth roots and leading to sensitivity
-                    and higher risk of decay.
-                  </p>
-                  <hr className="mt-4" />
-                </div>
-
-                <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Tooth Extraction</h2>
-                  <p>
-                    Tooth extraction is the removal of a tooth from its socket
-                    in the jaw, often due to decay, infection, or crowding of
+                    An implant-supported bridge is a dental bridge that
+                    professionals fix in place with the use of dental implants
+                    inserted in the jaw to create a sturdy set of artificial
                     teeth.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Osseointegration</h2>
+                  <p>
+                    Osseointegration is the process in which a titanium dental
+                    implant fuses with the surrounding bone over several months
+                    after an oral health professional places the implant in the
+                    jaw.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Periodontal</h2>
+                  <p>Literally “around the tooth”</p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Resorption</h2>
+                  <p>
+                    Resorption is the process in which the body absorbs the
+                    calcium from the jaw since there are no tooth roots to cause
+                    the necessary stimulation and proceeds to use the calcium in
+                    other areas.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Transosteal (transosseous)</h2>
+                  <p>
+                    Transosteal is a type of dental implant that includes
+                    threaded posts which penetrate the superior and inferior
+                    cortical bone plates of the jaw.
                   </p>
                   <hr className="mt-4" />
                 </div>

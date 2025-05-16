@@ -3,6 +3,7 @@ import { FaCaretDown } from "react-icons/fa";
 import { Cinzel } from "next/font/google";
 import Link from "next/link";
 import { FaYelp } from "react-icons/fa";
+import Image from "next/image";
 
 const cinzel = Cinzel({
   subsets: ["latin"], // you can add 'latin-ext' if needed
@@ -13,31 +14,29 @@ const Services = () => {
   return (
     <>
       {/* intro section */}
-      <section className="grid md:grid-cols-[1fr_1fr_1fr] grid-cols-1 md:gap-2  md:mt-[85px]  border-y-[10px] border-dark mx-2">
-        <div className="bg-[url(/why-are-my-gums-bleeding.webp)] bg-cover my-10"></div>
+      <section className="grid md:grid-cols-[1fr_1fr_1fr] grid-cols-1 md:gap-2  md:mt-[125px]  border-y-[10px] border-dark mx-2">
+        <div className="bg-[url(/teethxpress.webp)] bg-cover my-10"></div>
 
-        <div className="px-10 py-10 space-y-3">
-          <h2 className="text-5xl font-cinzel text-primary">
-            Why Are My Gums Bleeding
-          </h2>
+        <div className="px-10 py-5 space-y-3">
+          <h2 className="text-5xl font-cinzel text-primary">TeethXpress</h2>
           <p className="font-cinzel text-primary">Temple, TX</p>
           <p className="font-tinos  text-justify">
-            Gum disease can take a toll on your health.Along with oral health
-            issues, gum diseases can have lasting effects on the body. This
-            makes it crucial to seek professional evaluation and treatment when
-            noticing bleeding gums. In many cases, bleeding gums are often an
-            early warning sign of gum disease.
+            Advances in dental technology have made replacing missing teeth
+            easier than ever. Dental implants are a top option, offering
+            replacements that look and feel natural. TeethXpress® is a procedure
+            that allows the placement of multiple implants and implant-supported
+            bridges quickly and with minimal discomfort.
           </p>
           <p className="font-tinos  text-justify">
-            Treatment for gum disease is available at Revital Dental in Temple
-            and the surrounding area. First, our team performs an in-depth exam
-            to determine the cause of your symptoms. Next, we offer a range of
-            treatments to improve your oral health. Early diagnosis and
-            treatment can help you avoid complications. Call us at (254)
-            207-0708 to schedule an appointment with a qualified dentist.
+            TeethXpress is available at Revital Dental in Temple and the
+            surrounding area. Our dentists are certified TeethXpress
+            providers.TeethXpress also includes the use of high-quality implants
+            made by BioHorizons, the company that developed the method. Schedule
+            an appointment by calling us at (254) 207-0708 to find out if this
+            procedure can help you.
           </p>
         </div>
-        <div className="py-10">
+        <div className="py-5">
           <form
             action=""
             className="w-full mx-auto mt-10 md:mt-0 max-w-[400px]"
@@ -88,113 +87,129 @@ const Services = () => {
       {/* explanation */}
       <section className="md:grid md:grid-cols-[3fr_1fr]  md:w-[90%] w-[100%] md:mx-auto px-2 mt-3 gap-2">
         {/* left section */}
-        <div className="left-section " id="bleeding-gums-causes">
+        <div className="left-section " id="teethxpress-procedure">
           {/* dark section */}
           <div className="bg-dark p-5 text-white">
             <h2 className="text-2xl font-cinzel mb-3">
-              Diseases That Cause Gums to Bleed
+              The TeethXpress Treatment Process
             </h2>
             <hr />
             <p className="text-justify font-tinos mt-4">
-              Most forms of gum disease are caused by plaque. This sticky
-              substance traps food and bacteria against the gum line. Over time,
-              bacteria attack the gums, triggering inflammation and sensitivity.
-              Without treatment, the problem can worsen. The gums may bleed
-              while eating, brushing, or flossing. Gum problems have also been
-              linked to heart disease and stroke.
+              TeethXpress is an innovative method of replacing a full arch of
+              teeth on the lower or upper jaw or both. During the process, we
+              will surgically insert between four and six implant posts. Then
+              the replacement teeth are affixed to these posts. We may make a
+              new set of replacement teeth or use the patient's existing
+              dentures.
             </p>
             <p className="text-justify font-tinos mt-4">
-              Often, smoking and poor oral hygiene are to blame for gum disease.
-              But some patients may be prone to gum disease even if they brush
-              and floss daily. Pregnant women are at a high risk of gum disease,
-              and so are people with diabetes. Patients who wear dentures are
-              more likely to develop gum disease too.
-            </p>
-            <p className="text-justify font-tinos mt-4">
-              In rare cases, bleeding gums can be a sign of a severe condition
-              like leukemia. Patients who notice bleeding gums should seek
-              dental care right away. Our team can determine the source of the
-              problem. If further tests are required, we help patients make the
-              necessary arrangements.
+              The TeethXpress procedure was explicitly created to be minimally
+              invasive and uses specially designed implant posts available in a
+              wide variety of shapes and sizes. Patients with some levels of
+              bone loss may be able to undergo the process without having to
+              receive a bone graft. However, if bone loss is significant, the
+              procedure may involve additional steps.
             </p>
           </div>
 
-          {/* question and answer section */}
           {/* quote */}
+          <div className="relative inline-block mt-10">
+            <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
+              “The TeethXpress procedure was explicitly created to be minimally
+              invasive and uses specially designed implant posts available in a
+              wide variety of shapes and sizes.”
+            </h2>
+            <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
+          </div>
+
+          {/* Q & A */}
+          <div className="mt-10" id="benefits-of-teethxpress">
+            <h2 className="font-cinzel text-2xl text-primary">
+              Benefits of TeethXpress
+            </h2>
+            <hr />
+            <p className="font-tinos mt-2 text-justify">
+              Traditional dental implants offer a teeth replacement option that
+              is most similar to one's natural teeth. TeethXpress provides the
+              benefits of traditional implants, plus several additional
+              advantages:
+            </p>
+            <ol className="font-tinos text-justify list-disc pl-4 mt-2">
+              <li>
+                <span className="font-bold">Speed:</span>
+                Patients can undergo the TeethXpress process in as little as one
+                appointment. Dentists can insert the implants and place the
+                teeth replacements in the space of three to four hours. Though
+                some patients may need several appointments to achieve desired
+                results, TeethXpress is still likely to be faster than more
+                traditional options.
+              </li>
+              <li>
+                <span className="font-bold">Easier Recovery:</span> Another
+                common benefit tends to be less pain following the procedure.
+                The process is more streamlined and designed to minimize trauma.
+                Typically, patients recover quickly with the aid of prescription
+                or over-the-counter analgesics and an ice pack during the first
+                day or two following the procedure.
+              </li>
+              <li>
+                <span className="font-bold">Multiple Teeth Replacement:</span>{" "}
+                Originally designed to replace a large number of missing teeth,
+                TeethXpress is most often used to replace a full arch. For
+                people needing a complete replacement, TeethXpress can be a
+                superior alternative to more traditional options.
+              </li>
+            </ol>
+            <p className="font-tinos mt-2 text-justify">
+              According to the American Academy of Implant Dentistry, implants
+              are an essential factor in reducing the bone loss that typically
+              occurs in the jaw after tooth loss. TeethXpress provides a
+              quicker, easier way to get the benefits of implants. It also
+              allows those with complete tooth loss to get implants.
+            </p>
+          </div>
+
           <div className="relative inline-block mt-10">
             <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-              “Often, smoking and poor oral hygiene are to blame for gum
-              disease.”
+              “TeethXpress provides a quicker, easier way to get the benefits of
+              implants.”
             </h2>
             <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
           </div>
+
           {/* Q & A */}
-          <div className="mt-10" id="prevent-mouth-injuries">
+          <div className="mt-10" id="teethxpress-candidate">
             <h2 className="font-cinzel text-2xl text-primary">
-              Mouth Injuries
+              Candidates for TeethXpress
             </h2>
             <hr />
-            <p className="font-tinos mt-2 text-justify">
-              Gums may also bleed after a common mouth injury. Patients may
-              notice bleeding after eating sharp foods or suffering a sports
-              injury. More minor injuries may heal on their own, but severe
-              dental bleeding can be dangerous. Seek medical care right away if
-              you experience heavy or uncontrolled bleeding.
-            </p>
-
-            <p className="font-tinos mt-2 text-justify">
-              Taking some quick and easy precautions can help prevent dental
-              injuries. For example, wearing a mouthguard protects the teeth and
-              gums while playing sports. Avoid sharp foods like chips and hard
-              candies, and never use the teeth to cut or tear objects. Keep
-              appliances like dentures and retainers in good shape, too. Wearing
-              a damaged or ill-fitting appliance can result in a serious mouth
-              injury. If your device no longer fits, contact our dental team. We
-              can provide a replacement.
-            </p>
-          </div>
-
-          {/* quote */}
-          <div className="relative inline-block mt-10 w-full">
-            <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-              “Taking some quick and easy precautions can help prevent dental
-              injuries.”
-            </h2>
-            <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
-          </div>
-          {/* Q & A */}
-          <div className="mt-10" id="gum-bleeding-triggers">
-            <h2 className="font-cinzel text-2xl text-primary">
-              Factors That Cause Gum Bleeding
-            </h2>
-            <hr />
-            <p className="font-tinos mt-2">
-              Smoking, vaping, and chewing tobacco all increase one's risk for
-              gum disease. The substances dry out the mouth and reduce blood
-              flow to the gums. Over time, some patients may develop gum
-              problems. Patients who notice gums bleeding should quit all
-              tobacco products at once.
-            </p>
 
             <p className="font-tinos mt-2">
-              A poor diet can also lead to vitamin deficiencies. If the body
-              does not receive enough of certain nutrients, patients may develop
-              gum recession. Blood tests can determine whether a patient suffers
-              from nutritional deficiencies. If a nutritional deficiency is to
-              blame, supplements may resolve the problem.
+              TeethXpress may be a good option for those who need to replace all
+              teeth in one or both jaws. Also, our team can work with patients
+              to schedule TeethXpress as part of a treatment plan involving
+              all-teeth extraction. Additionally, patients who have been wearing
+              full dentures for some time may opt for TeethXpress. They often
+              find that this teeth replacement option gives them more
+              functionality and less hassle than dealing with dentures, which
+              need frequent upkeep and replacement.
             </p>
             <p className="font-tinos mt-2">
-              Some prescription medications are associated with oral bleeding,
-              too. Blood thinners, including aspirin, can increase the risk of
-              bleeding. Patients who experience oral bleeding while taking these
-              drugs need immediate care. Contact your healthcare provider for
-              further advice.
+              Patients who already have reduced jaw bone mass can also benefit
+              from TeethXpress. Opting for traditional implants would likely
+              mean these patients would need to undergo a separate bone graft
+              procedure and wait for a few months afterward to receive implants.
+              TeethXpress allows many patients with bone loss to enjoy the
+              functionality and stability of implants without needing a bone
+              graft.
             </p>
+
             {/* quotes */}
             <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “Smoking, vaping, and chewing tobacco all increase one’s risk
-                for gum disease”
+                “TeethXpress allows many patients with bone loss to enjoy the
+                functionality and stability of implants without needing a bone
+                graft.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
@@ -215,34 +230,43 @@ const Services = () => {
               </h2>
             </div>
 
-            <div className="mt-10" id="treat-bleeding-gums-home">
+            <div className="mt-10" id="teethxpress-aftercare">
               <h2 className="font-cinzel text-2xl text-primary">
-                How to Stop Gums from Bleeding
+                After the TeethXpress Procedure
               </h2>
               <hr />
               <p className="font-tinos mt-2 text-justify">
-                Patients with bleeding gums sometimes stop brushing and flossing
-                their teeth. Unfortunately, poor oral hygiene only worsens the
-                underlying problem. As such, patients must continue brushing
-                their teeth twice daily, even if they are experiencing gum
-                bleeding. Use a soft-bristled brush and apply gentle pressure.
-                Afterward, floss carefully to remove any debris that might be
-                stuck in the gums.
+                TeethXpress is associated with less discomfort than other
+                implants procedures. However, your mouth will be sore after.
+                Typically, patients experience bruising and swelling that is
+                strongest around the third day after surgery. You may experience
+                some bleeding which should subside a week after the procedure.
+                If these symptoms worsen rather than subside, contact our office
+                immediately.
               </p>
               <p className="font-tinos mt-2 text-justify">
-                Our team may also recommend a specially formulated mouthwash or
-                a saltwater rinse. These treatments help clear up the infection
-                and shrink swollen gums. Oral rinses also flush away debris and
-                help prevent plaque buildup. Preventing plaque is an essential
-                step in the gum-disease treatment process.
+                Our team will provide aftercare instructions that should be
+                followed exactly. The dentist will likely advise you to avoid
+                smoking and brush the white part of your new teeth gently with a
+                soft-bristled toothbrush. Do not use anything to clean
+                underneath the teeth. Drink a lot of fluids and take this time
+                to get plenty of rest. Patients may use a cold pack to ease
+                swelling.
+              </p>
+              <p className="font-tinos mt-2 text-justify">
+                Adhere to the dentist's care guidelines and take any medication
+                as directed. This will further help speed recovery. Also, our
+                team will advise you on a hygiene regimen and recommend
+                continuing with routine dental visits to promote long-term oral
+                health.
               </p>
             </div>
 
             {/* quotes */}
             <div className="relative inline-block mt-10 w-full">
               <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “Preventing plaque is an important step in the gum-disease
-                treatment process.”
+                “Our team will provide aftercare instructions that should be
+                followed exactly.”
               </h2>
               <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
@@ -255,45 +279,38 @@ const Services = () => {
               <div className="flex flex-col">
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#bleeding-gums-causes"
-                >
-                  Q.{" "}
-                  <span className="underline">What causes bleeding gums?</span>
-                </a>
-                <a
-                  className="text-justify font-tinos mt-3"
-                  href="#prevent-mouth-injuries"
+                  href="#teethxpress-procedure"
                 >
                   Q.{" "}
                   <span className="underline">
-                    How can I prevent mouth injuries?
+                    What happens during a TeethXpress procedure?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#gum-bleeding-triggers"
+                  href="#benefits-of-teethxpress"
                 >
                   Q.{" "}
                   <span className="underline">
-                    What lifestyle factors can trigger gum bleeding?
+                    What are the benefits of TeethXpress?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#treat-bleeding-gums-home"
+                  href="#teethxpress-candidate"
                 >
                   Q.{" "}
                   <span className="underline">
-                    How can I treat bleeding gums at home?
+                    Am I a good candidate for TeethXpress?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#after-gum-treatment"
+                  href="#teethxpress-aftercare"
                 >
                   Q.{" "}
                   <span className="underline">
-                    What happens after my office visit for gum bleeding?
+                    What should I expect after the procedure?
                   </span>
                 </a>
               </div>
@@ -305,53 +322,33 @@ const Services = () => {
               <div className="flex flex-col mb-4">
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#common-gum-disease"
-                >
-                  Q.{" "}
-                  <span className="underline">How common is gum disease?</span>
-                </a>
-                <a
-                  className="text-justify font-tinos mt-3"
-                  href="#symptoms-gum-recession"
+                  href="#removable-partial-dentures"
                 >
                   Q.{" "}
                   <span className="underline">
-                    What are the symptoms of gum recession?
+                    How do removable partial dentures work?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#gum-reshaping-reasons"
+                  href="#partial-dentures-one-tooth"
                 >
                   Q.{" "}
                   <span className="underline">
-                    Why would someone get gum reshaping?
+                    What are the pros and cons of partial dentures for one
+                    missing tooth?
+                  </span>
+                </a>
+                <a
+                  className="text-justify font-tinos mt-3"
+                  href="#why-dentures-preferred"
+                >
+                  Q.{" "}
+                  <span className="underline">
+                    Why are dentures a preferred treatment?
                   </span>
                 </a>
               </div>
-            </div>
-
-            <div className="mt-10" id="after-gum-treatment">
-              <h2 className="font-cinzel text-2xl text-primary">
-                Post-Visit Care
-              </h2>
-              <hr />
-              <p className="font-tinos mt-2 text-justify">
-                Good dental hygiene can reduce gum bleeding. During each office
-                visit, our team demonstrates brushing and flossing techniques.
-                We can also provide advice on mouse washes and rises, which may
-                reduce bleeding and gum disease. Individual treatment plans may
-                vary. Our team will let each patient know how to care for their
-                gums — even once they return home.
-              </p>
-            </div>
-
-            {/* quotes */}
-            <div className="relative inline-block mt-10 w-full">
-              <h2 className="text-2xl font-cinzel bg-secondary text-white p-5 mt-5 rounded-2xl">
-                “Good dental hygiene can reduce gum bleeding.”
-              </h2>
-              <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
             </div>
 
             <div className="bg-gray-100 p-5 mt-10">
@@ -360,80 +357,105 @@ const Services = () => {
               </h2>
               <hr />
               <div className="flex flex-col">
-                <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q. Should I be concerned about bleeding gums?
+                <h2
+                  className="text-justify text-primary font-tinos mt-3"
+                  id="teethxpress-duration"
+                >
+                  Q.{" "}
+                  <span className="underline">
+                    How long does the TeethXpress process take?
+                  </span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Bleeding gums can signify an underlying health problem. If
-                  you notice that your gums are inflamed, contact your dental
-                  provider right away. A dentist can examine your gums and
-                  determine the source of the problem.
+                  A. Typically, the process takes about three to four hours.
+                  This time can vary depending on the specific treatment plan
+                  your dentist recommends. In some cases, patients may need
+                  additional procedures for optimal results.
                 </p>
 
-                <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q. What causes gum bleeding?
+                <h2
+                  className="text-justify text-primary font-tinos mt-3"
+                  id="teethxpress-anesthesia"
+                >
+                  Q.{" "}
+                  <span className="underline">
+                    Does the TeethXpress placement use any anesthesia?
+                  </span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Bleeding gums are usually a sign of gingivitis. Gingivitis
-                  develops when plaque and bacteria become trapped against the
-                  gum line. Treatment can get rid of plaque and destroy the
-                  bacteria.
-                </p>
-                <p className="font-tinos md:ps-4 mt-2">
-                  A. Bleeding gums can also result from:
-                </p>
-                <ul className="list-disc list-inside font-tinos md:ps-6">
-                  <li>Pregnancy</li>
-                  <li>Prescription drugs</li>
-                  <li>Vitamin deficiencies</li>
-                  <li>Bleeding disorders</li>
-                  <li>Poor brushing habits</li>
-                  <li>Ill-fitting dental appliances</li>
-                </ul>
-                <p className="font-tinos md:ps-4 mt-2">
-                  A. Our dental team can provide an in-depth exam to determine
-                  the cause of your symptoms.
+                  A. Dentists usually employ a local anesthetic to manage pain
+                  during the procedure. Some patients may benefit from sedation
+                  or additional pain management techniques. Talk to your dentist
+                  about circumstances that could affect the type of anesthesia
+                  that is right for you.
                 </p>
 
-                <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q. How is gum bleeding treated?
+                <h2
+                  className="text-justify text-primary font-tinos mt-3"
+                  id="teethxpress-time-off"
+                >
+                  Q.{" "}
+                  <span className="underline">
+                    Will I have to schedule time off from work after getting
+                    TeethXpress?
+                  </span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Our team begins by identifying the cause of your symptoms.
-                  If you have gingivitis, our team can perform a scaling and
-                  root planing procedure. This treatment removes plaque and
-                  bacteria from below the gums.
-                </p>
-                <p className="font-tinos md:ps-4 mt-2">
-                  A. If your symptoms have a different cause, we deliver the
-                  appropriate treatment. As part of your treatment, our team
-                  demonstrates proper brushing techniques and adjusts dental
-                  appliances to ensure a comfortable fit.
+                  A. Many patients take a day or two off following the
+                  procedure, especially if they are taking painkillers or
+                  experiencing discomfort. Others may feel well enough to return
+                  to work the next day.
                 </p>
 
-                <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q. Is it normal for gums to bleed while flossing?
+                <h2
+                  className="text-justify text-primary font-tinos mt-3"
+                  id="teethxpress-cost"
+                >
+                  Q.{" "}
+                  <span className="underline">
+                    How much does TeethXpress cost?
+                  </span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Many patients mistakenly believe that gum bleeding is
-                  normal. But healthy gums should not bleed, even during
-                  flossing or a dental checkup. If you notice that your gums
-                  bleed while flossing, contact our team. We can check your gums
-                  for signs of gingivitis or other dental problems.
+                  A. There is no fixed cost, as each case varies based on the
+                  patient’s needs and treatment plan. Options to help pay
+                  include partial insurance coverage or a flexible spending
+                  account. Though the cost may seem high, TeethXpress is a
+                  long-term investment in your dental health.
                 </p>
 
-                <h2 className="text-justify text-primary font-tinos mt-3">
-                  Q. Are bleeding gums linked to pregnancy?
+                <h2
+                  className="text-justify text-primary font-tinos mt-3"
+                  id="teethxpress-recovery"
+                >
+                  Q.{" "}
+                  <span className="underline">
+                    What can I do to speed recovery after TeethXpress?
+                  </span>
                 </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Up to 40% of pregnant women experience gum disease during
-                  pregnancy. Hormonal changes can make you more susceptible to
-                  gum disease.
+                  A. Your provider may prescribe a medicated mouthwash for the
+                  first two weeks. During recovery, stick to soft foods and
+                  follow your dentist’s post-operative instructions carefully. A
+                  low-strength water flosser may be introduced after healing
+                  begins.
                 </p>
+
+                <h2
+                  className="text-justify text-primary font-tinos mt-3"
+                  id="teethxpress-oral-health"
+                >
+                  Q.{" "}
+                  <span className="underline">
+                    Can getting TeethXpress improve my oral health?
+                  </span>
+                </h2>
                 <p className="font-tinos md:ps-4 mt-2">
-                  A. Make sure to keep up with dental checkups while pregnant,
-                  and notify your team of any new symptoms. Prompt treatment can
-                  keep the problem from progressing.
+                  A. TeethXpress offers the same bone-preserving benefits as
+                  traditional dental implants and can reduce long-term oral
+                  health issues. It's a durable and effective replacement
+                  solution, but a consultation is needed to evaluate if it's
+                  right for your situation.
                 </p>
               </div>
             </div>
@@ -494,84 +516,103 @@ const Services = () => {
             <div className="bg-dark p-5 mt-10 text-white">
               <h2 className="text-4xl font-cinzel mb-3">Dental Terminology</h2>
               <hr />
-              <div className="space-y-10">
+              <div className="space-y-10 ">
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Calculus</h2>
+                  <h2 className="italic text-xl">Allograft</h2>
                   <p>
-                    Calculus, also known as tartar, refers to the hardened
-                    dental plaque that forms on teeth due to a lack of proper
-                    oral hygiene.
+                    An allograft involves transplanting bone or tissue from a
+                    donor of the same species, often used in dental surgeries
+                    like bone grafting for implants.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Gingival Flap Surgery</h2>
+                  <h2 className="italic text-xl">Alveolar Ridge</h2>
                   <p>
-                    Gingival flap surgery is a procedure in which the
-                    periodontist temporarily separates the gums from the teeth
-                    to reach the root and nearby bone for treatment.
+                    The alveolar ridge is the bony ridge that holds the teeth,
+                    located in both the upper and lower jaws. It's crucial for
+                    supporting dentures and implants.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">
-                    Necrotizing Periodontal Diseases
-                  </h2>
+                  <h2 className="italic text-xl">Autograft</h2>
                   <p>
-                    Necrotizing periodontal diseases involve the death of
-                    gingival tissues, often accompanied by lesions in the mouth
-                    and severe pain.
+                    An autograft uses the patient’s own bone or tissue,
+                    typically taken from the chin or jaw, for procedures such as
+                    ridge augmentation or sinus lifts.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Periapical Abscess</h2>
+                  <h2 className="italic text-xl">Cap Splint</h2>
                   <p>
-                    A periapical abscess is an inflammatory condition where pus
-                    collects in the tissues surrounding the tip of a tooth root.
+                    A cap splint is a custom dental device used to immobilize
+                    fractured jawbones or support healing after maxillofacial
+                    surgery.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Periodontal Ligament</h2>
+                  <h2 className="italic text-xl">Dentin Hypersensitivity</h2>
                   <p>
-                    The periodontal ligament is a connective tissue that holds
-                    the tooth in place by attaching it to the surrounding bone
-                    and can be destroyed by advanced gum disease.
+                    This condition causes sharp pain in teeth when exposed to
+                    hot, cold, sweet, or acidic foods due to exposed dentin from
+                    enamel loss.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Periodontitis</h2>
+                  <h2 className="italic text-xl">Full Mouth Reconstruction</h2>
                   <p>
-                    Periodontitis is a severe gum infection that damages the
-                    soft tissue and destroys the bone supporting your teeth,
-                    often caused by poor oral hygiene.
+                    Full mouth reconstruction involves rebuilding or replacing
+                    all teeth in the mouth using crowns, bridges, implants, and
+                    more to restore function and aesthetics.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Periodontium</h2>
+                  <h2 className="italic text-xl">Implant-Supported Denture</h2>
                   <p>
-                    The periodontium is the structure that supports the teeth,
-                    including the gums, periodontal ligament, cementum, and
-                    alveolar bone.
+                    These dentures are securely anchored using dental implants,
+                    offering a more stable and natural-feeling alternative to
+                    traditional dentures.
                   </p>
                   <hr className="mt-4" />
                 </div>
 
                 <div className="mt-5 font-tinos">
-                  <h2 className="italic text-xl">Root Scaling and Planing</h2>
+                  <h2 className="italic text-xl">Occlusion</h2>
                   <p>
-                    Root scaling and planing is a non-surgical procedure where
-                    plaque and calculus are removed from below the gum line, and
-                    root surfaces are smoothed to promote healing.
+                    Occlusion refers to the way upper and lower teeth come
+                    together when you bite. Misaligned occlusion can lead to jaw
+                    pain, tooth wear, and TMJ disorders.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Orthognathic Surgery</h2>
+                  <p>
+                    This corrective jaw surgery helps align the jaws for better
+                    function and facial symmetry, often used in cases of severe
+                    bite issues.
+                  </p>
+                  <hr className="mt-4" />
+                </div>
+
+                <div className="mt-5 font-tinos">
+                  <h2 className="italic text-xl">Tooth Resorption</h2>
+                  <p>
+                    A rare condition where the body begins to break down and
+                    absorb the structure of a tooth, often requiring endodontic
+                    treatment or extraction.
                   </p>
                   <hr className="mt-4" />
                 </div>
