@@ -11,7 +11,7 @@ import React from "react";
 const page = () => {
   return <div>
     <Navbar/>
-    <div className= "relative w-full  overflow-hidden md:mt-[125px] mt-[73px]">
+    <div className= "relative w-full  overflow-hidden md:mt-[85px] mt-[73px]">
         <DentalServiceSection/>
         <DrK/>
         <DrSangeeta/>

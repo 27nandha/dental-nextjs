@@ -43,7 +43,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className="relative w-full md:h-[85vh] h-[80vh]  overflow-hidden md:mt-[125px] mt-[73px]">
+    <div className="relative w-full md:h-[85vh] h-[80vh]  overflow-hidden md:mt-[85px] mt-[73px]">
       {/* Carousel */}
       <div
         className="flex transition-transform duration-700 ease-in-out h-full"

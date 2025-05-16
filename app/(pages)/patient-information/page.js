@@ -20,7 +20,7 @@ const page = () => {
     <div>
       {" "}
       <Navbar />
-      <section className="grid md:grid-cols-[1fr_1fr_1fr] grid-cols-1 md:gap-2  md:mt-[125px]  border-y-[10px] border-dark mx-2">
+      <section className="grid md:grid-cols-[1fr_1fr_1fr] grid-cols-1 md:gap-2  md:mt-[85px]  border-y-[10px] border-dark mx-2">
         <div className="bg-[url(/patient-info-main-2.jpg)] bg-cover my-10"></div>
 
         <div className="px-10 py-10 space-y-3">
@@ -207,6 +207,7 @@ const page = () => {
                 </div>
               </>
             ),
+            
           },
           {
             src: "/patient-info/financial-policy.jpg",
