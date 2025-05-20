@@ -4,6 +4,7 @@ import { Cinzel } from "next/font/google";
 import Link from "next/link";
 import { FaYelp } from "react-icons/fa";
 import Image from "next/image";
+import Form from "@/components/Form";
 
 const cinzel = Cinzel({
   subsets: ["latin"], // you can add 'latin-ext' if needed
@@ -37,50 +38,7 @@ const Services = () => {
           </p>
         </div>
         <div className="py-5">
-          <form
-            action=""
-            className="w-full mx-auto mt-10 md:mt-0 max-w-[400px]"
-          >
-            <div className="text-2xl text-center font-cinzel text-white bg-[#192c2f] py-3">
-              REQUEST AN APPOINMENT
-            </div>
-            <div className="text-center font-cinzel text-white bg-[#284b50] px-4 py-5">
-              <input
-                type="text"
-                className="bg-white px-2 py-3 mb-3 text-gray-500 w-full focus:outline-none focus:border-b-[#ff9f29] border-b-4 border-b-white"
-                placeholder="First & Last Name (Required)"
-              />
-
-              <input
-                type="text`"
-                className="bg-white px-2 py-3 mb-3 text-gray-500 w-full focus:outline-none focus:border-b-[#ff9f29] border-b-4 border-b-white"
-                placeholder="Email (Required)"
-              />
-
-              <input
-                type="text"
-                className="bg-white px-2 py-3 mb-3 text-gray-500 w-full focus:outline-none focus:border-b-[#ff9f29] border-b-4 border-b-white"
-                placeholder="Phone Number (Required)"
-              />
-
-              <select
-                name=""
-                id=""
-                className="w-full px-2 py-4 bg-white text-gray-500"
-              >
-                <option value="">one</option>
-                <option value="">two</option>
-                <option value="">three</option>
-              </select>
-
-              <button className="bg-[#ff9f29] mt-4 px-4 py-2  uppercase rounded-full">
-                Request Appointment
-              </button>
-              <button className="bg-[#ff9f29] mt-4  px-4 py-2 uppercase rounded-full">
-                express online booking
-              </button>
-            </div>
-          </form>
+         <Form/>
         </div>
       </section>
 

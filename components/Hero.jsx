@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { Cinzel } from "next/font/google";
 import Link from "next/link";
+import Form from "./Form";
 
 const cinzel = Cinzel({
   weight: "400",
@@ -95,7 +96,7 @@ export default function Hero() {
             </Link>
           </div>
         </div>
-        <form action="" className="w-[400px]">
+        {/* <form action="" className="w-[400px]">
           <div className="text-2xl text-center rounded-t-sm font-cinzel text-white bg-[#192c2f] py-3">
             REQUEST AN APPOINMENT
           </div>
@@ -132,7 +133,8 @@ export default function Hero() {
               express online booking
             </button>
           </div>
-        </form>
+        </form> */}
+        <Form/>
       </div>
 
       {/* Mobile Trigger Button */}
