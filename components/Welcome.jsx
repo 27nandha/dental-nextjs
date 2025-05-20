@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React from "react";
 
 const Welcome = () => {
@@ -32,7 +33,7 @@ const Welcome = () => {
           </p>
         </div>
 
-        <div className="flex justify-center items-center flex-col">
+        <div className="flex justify-between items-center flex-col">
           <img
             src="./service.jpg"
             className="md:w-[50%] w-[80%] rounded-full"
@@ -55,12 +56,15 @@ const Welcome = () => {
             procedures and techniques so that patients can benefit from the
             latest in dental care.
           </p>
-          <button className="bg-primary w-[80%] text-white py-2 rounded-full mt-5">
+          <Link
+            href="/about"
+            className="bg-primary w-[80%] text-center  text-white py-2 rounded-full mt-5"
+          >
             About Us
-          </button>
+          </Link>
         </div>
 
-        <div className="flex justify-center items-center flex-col">
+        <div className="flex justify-between items-center flex-col">
           <img
             src="./hhh.jpg"
             className="md:w-[50%] w-[80%] rounded-full"
@@ -88,7 +92,7 @@ const Welcome = () => {
           </button>
         </div>
 
-        <div className="flex justify-center items-center flex-col">
+        <div className="flex justify-between items-center flex-col">
           <img
             src="./pat.jpg"
             className="md:w-[50%] w-[80%] rounded-full"
@@ -111,9 +115,12 @@ const Welcome = () => {
             Revital Dental today at 254-207-0708 to see why we are the dentist
             of choice in the Temple area.
           </p>
-          <button className="bg-primary w-[80%] py-2 text-white rounded-full mt-5">
+          <Link
+            href="patient-information"
+            className="bg-primary w-[80%] py-2 text-center text-white rounded-full mt-5"
+          >
             Patient
-          </button>
+          </Link>
         </div>
       </div>
     </>

@@ -179,7 +179,7 @@ const Navbar = () => {
           {/* Mobile Menu */}
 
           {isOpen && (
-            <div className="fixed top-0 left-0 w-full h-screen overflow-y-auto bg-primary z-50 text-white">
+            <div className="fixed top-0 right-0 w-full h-screen font-tinos overflow-y-auto bg-primary z-50 text-lg font-light text-white">
               {/* Close Button */}
               <div className="flex justify-end p-4">
                 <button onClick={() => setIsOpen(false)}>
@@ -199,7 +199,7 @@ const Navbar = () => {
                   <Link href="/about">About</Link>
                 </li>
                 <li className="px-6 py-4 border-b border-white hover:bg-primary cursor-pointer">
-                  Patient Information
+                  <Link href="/patient-information">Patient Information</Link>
                 </li>
 
                 {/* Services Dropdown */}
@@ -238,9 +238,6 @@ const Navbar = () => {
                   )}
                 </li>
 
-                <li className="px-6 py-4 border-b border-white hover:bg-primary cursor-pointer">
-                  Patient Education
-                </li>
                 <li className="px-6 py-4 border-b border-white hover:bg-primary cursor-pointer">
                   <Link href="/contact">Contact</Link>
                 </li>
