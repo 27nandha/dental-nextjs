@@ -3,6 +3,7 @@ import { FaCaretDown } from "react-icons/fa";
 import { Cinzel } from "next/font/google";
 import Link from "next/link";
 import { FaYelp } from "react-icons/fa";
+import Form from "@/components/Form";
 
 const cinzel = Cinzel({
   subsets: ["latin"], // you can add 'latin-ext' if needed
