@@ -1,11 +1,15 @@
 "use client";
 import { useEffect, useState } from "react";
 import { FaCalendarAlt, FaGlobe } from "react-icons/fa";
-import { LanguageSwitcher } from "@/components/language-switcher"; // adjust import as needed
+import { LanguageSwitcher } from "@/components/language-switcher";
+import Modal from "@/components/Modal";
+import Form from "@/components/Form";
+// adjust import as needed
 
 export default function ScrollBanner() {
   const [showBanner, setShowBanner] = useState(false);
   const [showLanguages, setShowLanguages] = useState(false);
+  const [showForm, setShowForm] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,7 +37,10 @@ export default function ScrollBanner() {
             <div className="text-center">
               <p className="text-lg font-serif">Book Your Appointment Today!</p>
             </div>
-            <button className="bg-orange-400 hover:bg-white hover:text-orange-400 border text-white font-semibold rounded-full px-5 py-2 flex items-center space-x-2">
+            <button
+              onClick={() => setShowForm(true)}
+              className="bg-orange-400 hover:bg-white hover:text-orange-400 border text-white font-semibold rounded-full px-5 py-2 flex items-center space-x-2"
+            >
               <FaCalendarAlt />
               <span>Request Appointment</span>
             </button>
@@ -58,6 +65,9 @@ export default function ScrollBanner() {
       </div>
 
       {/* Floating Language Button */}
+      <Modal isOpen={showForm} onClose={() => setShowForm(false)}>
+        <Form />
+      </Modal>
     </>
   );
 }
