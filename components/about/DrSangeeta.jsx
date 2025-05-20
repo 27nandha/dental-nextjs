@@ -16,7 +16,7 @@ const DrSangeeta = () => {
   return (
     <div>
       <section
-        className={`flex flex-col items-center bg-emerald-700 text-white p-6 ${tinos.className} shadow-lg`}
+        className={`flex flex-col items-center bg-teal-900  text-white p-6 ${tinos.className} shadow-lg`}
       >
         {/* First Section: Doctor's Image and Bio */}
         <div className="flex flex-col md:flex-row items-center w-full">

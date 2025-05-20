@@ -70,7 +70,7 @@ const Navbar = () => {
               {/* Location & Phone */}
               <div className="flex font-tinos space-x-4 mb-4">
                 <a
-                  href="https://maps.google.com/?q=4311 S 31st Ste 145 Temple, TX 76502"
+                  href="https://www.google.com/maps/place/Revital+Dental/@31.0575554,-97.3734765,17z/data=!3m1!4b1!4m6!3m5!1s0x86456b77cbcefa79:0xcf1db0a8e3bdced7!8m2!3d31.0575554!4d-97.3734765!16s%2Fg%2F11q598fxmn?entry=ttu&g_ep=EgoyMDI1MDUxNS4wIKXMDSoASAFQAw%3D%3D"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-primary flex  text-white hover:border hover:text-primary hover:border-primary px-4 py-2 justify-center items-center text-center rounded-full text-sm font-medium transition-all duration-300 ease-in-out hover:bg-white hover:scale-101"

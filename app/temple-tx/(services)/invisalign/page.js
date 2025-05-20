@@ -18,9 +18,7 @@ const Services = () => {
         <div className="bg-[url(/invisalign.webp)] bg-cover my-10"></div>
 
         <div className="px-10 py-5 space-y-3">
-          <h2 className="text-5xl font-cinzel text-primary">
-            Dentures and Partial Dentures
-          </h2>
+          <h2 className="text-5xl font-cinzel text-primary">Invisalign</h2>
           <p className="font-cinzel text-primary">Temple, TX</p>
           <p className="font-tinos  text-justify">
             Clear orthodontic aligners have been growing in popularity for many

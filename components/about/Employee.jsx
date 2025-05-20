@@ -34,7 +34,7 @@ const Employee = () => {
         <div className="w-full md:w-2/3 pr-0 md:pr-6 order-last md:order-first ">
           {/* Heading */}
           <h2
-            className={`text-4xl pt-2 ${cinzel.className} font-bold uppercase`}
+            className={`text-4xl pt-2 text-primary ${cinzel.className} font-bold uppercase`}
           >
             Erik Perez
           </h2>
@@ -80,7 +80,7 @@ const Employee = () => {
         <div className="w-full md:w-2/3 pr-0 md:pr-6 order-last md:order-first ">
           {/* Heading */}
           <h2
-            className={`text-4xl pt-2 ${cinzel.className} font-bold uppercase`}
+            className={`text-4xl pt-2 text-primary  ${cinzel.className} font-bold uppercase`}
           >
             Ashtyn Gonzalez
           </h2>
@@ -125,7 +125,7 @@ const Employee = () => {
         <div className="w-full md:w-2/3 pr-0 md:pr-6 order-last md:order-first ">
           {/* Heading */}
           <h2
-            className={`text-4xl pt-2 ${cinzel.className} font-bold uppercase`}
+            className={`text-4xl pt-2 text-primary ${cinzel.className} font-bold uppercase`}
           >
             Arcelia Gonzalez
           </h2>

@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { Cinzel } from "next/font/google";
+import Link from "next/link";
 
 const cinzel = Cinzel({
   weight: "400",
@@ -13,7 +14,8 @@ const images = [
     path: "./bg1.jpg",
     heading: "Full dental implant",
     para: "Low cost Limited time special offer",
-    btn: "read me About Thsis offer",
+    btn: "read more About Thsis offer",
+    link: "temple-tx/dental-implants",
   },
   {
     id: 2,
@@ -21,13 +23,15 @@ const images = [
     heading: "invisalign",
     para: "Why wait to smile ?",
     btn: "read more",
+    link: "temple-tx/invisalign",
   },
   {
     id: 3,
     path: "./bg3.jpg",
     heading: "Teeth Whitening",
     para: "Reclaim a youthful smile",
-    btn: "read more about the treatment", 
+    btn: "read more about the treatment",
+    link: "temple-tx/teeth-whitening",
   },
 ];
 
@@ -84,9 +88,11 @@ export default function Hero() {
             {images[currentIndex].para}
           </p>
           <div className="text-end">
-            <button className="bg-[#ff9f29] mt-4 px-4 py-2 text-white  uppercase rounded-full">
-              {images[currentIndex].btn}
-            </button>
+            <Link href={images[currentIndex].link}>
+              <button className="bg-[#ff9f29] mt-4 px-4 py-2 text-white  uppercase rounded-full">
+                {images[currentIndex].btn}
+              </button>
+            </Link>
           </div>
         </div>
         <form action="" className="w-[400px]">
