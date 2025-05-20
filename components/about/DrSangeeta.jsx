@@ -58,7 +58,7 @@ const DrSangeeta = () => {
               then moved to US and accomplished her Doctor of Dental Medicine
               degree from Rutgers University, New Jersey 2013.
             </p>
-            <p className="mt-4 text-gray-200">
+            <p className="mt-4 text-gray-200 text-justify">
               But behind this successful dentist, there's a story of a woman who
               is deeply committed to her family. At home, she is the
               affectionate mother of two lively young daughters, aged six and

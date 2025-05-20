@@ -143,7 +143,7 @@ const Navbar = () => {
                     className="hover:text-primary transform   transition-all duration-300 ease-in-out "
                     onMouseOver={activateeducation}
                   >
-                    <Link href="/PatientEducation">Patient Education</Link>
+                    Patient Education
                   </button>
 
                   <div

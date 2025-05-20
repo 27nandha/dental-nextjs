@@ -3,6 +3,7 @@ import DrK from "@/components/about/DrK";
 import DrSangeeta from "@/components/about/DrSangeeta";
 import Employee from "@/components/about/Employee";
 import GallerySection from "@/components/about/Gallery";
+import Book from "@/components/Book";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import ScrollAppointmentBanner from "@/components/ScrollAppointmentBanner";
@@ -19,6 +20,7 @@ const page = () => {
         <GallerySection/>
         <Employee/>
     </div>
+    <Book/>
     <Footer/>
     <ScrollAppointmentBanner/>
   </div>;

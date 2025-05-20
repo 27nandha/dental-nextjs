@@ -6,6 +6,7 @@ import React from "react";
 import { Tinos } from "next/font/google";
 import { Cinzel } from "next/font/google";
 import Image from "next/image";
+import Link from "next/link";
 const tinos = Tinos({
   weight: "400",
   subsets: ["latin"],
@@ -106,41 +107,52 @@ const page = () => {
             Payment Methods – Cheque or Cash Accepted
           </p>
           <div className="flex flex-row mt-3">
-            <Image
-              src="/patient-info/icon-payment-visa.png"
-              alt="Payment Methods"
-              width={50}
-              height={20}
-              className="mt-4  md:mt-0"
-            />
-            <Image
-              src="/patient-info/icon-payment-discover.png"
-              alt="Payment Methods"
-              width={50}
-              height={20}
-              className="mt-4 ml-4 md:mt-0"
-            />
-            <Image
-              src="/patient-info/icon-payment-american-express.png"
-              alt="Payment Methods"
-              width={50}
-              height={20}
-              className="mt-4 ml-4 md:mt-0"
-            />
-            <Image
-              src="/patient-info/icon-payment-master-card.png"
-              alt="Payment Methods"
-              width={50}
-              height={20}
-              className="mt-4 ml-4 md:mt-0"
-            />
-            <Image
-              src="/patient-info/icon-payment-check.png"
-              alt="Payment Methods"
-              width={50}
-              height={20}
-              className="mt-4 ml-4 md:mt-0"
-            />
+            <Link href="https://www.visa.co.in/">
+              <Image
+                src="/patient-info/icon-payment-visa.png"
+                alt="Payment Methods"
+                width={50}
+                height={20}
+                className="mt-4  md:mt-0"
+              />
+            </Link>
+            <Link href="https://www.discover.com/">
+              <Image
+                src="/patient-info/icon-payment-discover.png"
+                alt="Payment Methods"
+                width={50}
+                height={20}
+                className="mt-4 ml-4 md:mt-0"
+              />
+            </Link>
+            <Link href="https://www.americanexpress.com/en-in/">
+              <Image
+                src="/patient-info/icon-payment-american-express.png"
+                alt="Payment Methods"
+                width={50}
+                height={20}
+                className="mt-4 ml-4 md:mt-0"
+              />
+            </Link>
+            <Link href="https://www.mastercard.co.in/en-in.html">
+              <Image
+                src="/patient-info/icon-payment-master-card.png"
+                alt="Payment Methods"
+                width={50}
+                height={20}
+                className="mt-4 ml-4 md:mt-0"
+              />
+            </Link>
+            <Link href="patient-information">
+              <Image
+                src="/patient-info/icon-payment-check.png"
+                alt="Payment Methods"
+                width={50}
+                height={20}
+                className="mt-4 ml-4 md:mt-0"
+              />
+            </Link>
+
             <Image
               src="/patient-info/icon-payment-cash.png"
               alt="Payment Methods"
@@ -148,18 +160,30 @@ const page = () => {
               height={20}
               className="mt-4 ml-4 md:mt-0"
             />
-            <Image
-              src="/patient-info/icon-payment-carecredit.png"
-              alt="Payment Methods"
-              width={200}
-              height={10}
-              className="mt-4 ml-4 md:mt-0"
-            />
+            <Link href="https://www.carecredit.com/">
+              <Image
+                src="/patient-info/icon-payment-carecredit.png"
+                alt="Payment Methods"
+                width={200}
+                height={10}
+                className="mt-4 ml-4 md:mt-0"
+              />
+            </Link>
           </div>
           <hr className="m-10" />
         </div>
         <div></div>
       </section>
+      <div className="font-cinzel">
+        <h1 className="flex flex-col text-primary justify-center text-center pt-10 text-4xl md:text-6xl">
+          Welcome To
+          <br />
+          <span className="text-black"> Revital Dental</span>
+        </h1>
+      </div>
+      <div className="flex flex-col text-primary justify-center text-center text-4xl">
+        <p>.......</p>
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4 md:px-10 py-10">
         {/* Card Template */}
         {[
@@ -190,24 +214,8 @@ const page = () => {
           {
             src: "/patient-info/dental-insurance-1.jpg",
             title: "Dental Insurance",
-            description: (
-              <>
-                We accept a variety of insurance providers and endeavor to
-                accommodate our patients' request. Please call our office at
-                254-207-0708 to see if we are currently working with your
-                insurance provider.
-                <br />
-                <div className="pt-5">
-                  Our pricing structure is designed to ensure that patients are
-                  able to receive the high quality dental care they deserve. If
-                  your dental insurance will not cover all of your dental
-                  treatments, we will work with you to identify a payment
-                  solution. We are health care professionals first and will work
-                  with you to make sure you receive the treatment you need.
-                </div>
-              </>
-            ),
-            
+            description:
+              " We accept a variety of insurance providers and endeavor to accommodate our patients' request. Please call our office at 254-207-0708 to see if we are currently working with your insurance provider.Our pricing structure is designed to ensure that patients are able to receive the high quality dental care they deserve. If your dental insurance will not cover all of your dental treatments, we will work with you to identify a payment solution. We are health care professionals first and will work with you to make sure you receive the treatment you need. ",
           },
           {
             src: "/patient-info/financial-policy.jpg",

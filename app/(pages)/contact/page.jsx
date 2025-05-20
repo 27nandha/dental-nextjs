@@ -55,11 +55,15 @@ const Page = () => {
       <div className="mb-20 relative z-10 max-w-6xl mx-auto -mt-24 bg-white rounded-xl shadow-xl p-8 flex flex-col md:flex-row">
         {/* Left Side - Form */}
         <div className="w-full  md:w-2/3 p-8">
-          <h2
-            className={`text-4xl ${cinzel.className} text-orange-500 font-semibold mb-6 pb-10`}
-          >
-            Get In Touch
-          </h2>
+          <div className="w-full flex justify-between ">
+            <h2
+              className={`text-4xl ${cinzel.className} text-orange-500 font-semibold mb-6 pb-10`}
+            >
+              Get In Touch
+            </h2>
+
+            <img src="/icon-message.png" alt="" className="h-fit" />
+          </div>
 
           <form className="space-y-6">
             {/* Name & Phone */}
