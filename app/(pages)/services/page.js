@@ -215,9 +215,7 @@ const page = () => {
               </button>
 
               <ul className=" text-sm font-tinos text-gray-700 space-y-1 list-disc pl-5">
-                <Link href="/find-a-dentist-in-temple">
-                  Find a Dentist in Temple, TX
-                </Link>
+                <Link href="/find-a-dentist">Find a Dentist in Temple, TX</Link>
               </ul>
             </div>
           </div>

@@ -1,10 +1,10 @@
 import React from "react";
 import { FaCaretDown } from "react-icons/fa";
-import { Cinzel } from "next/font/google";
+
 import Link from "next/link";
 import { FaYelp } from "react-icons/fa";
 import Form from "@/components/Form";
-
+import { Cinzel } from "next/font/google";
 const cinzel = Cinzel({
   subsets: ["latin"], // you can add 'latin-ext' if needed
   display: "swap",
@@ -34,7 +34,7 @@ const Services = () => {
           </p>
         </div>
         <div className="py-10">
-          <Form/>
+          <Form />
         </div>
       </section>
 
