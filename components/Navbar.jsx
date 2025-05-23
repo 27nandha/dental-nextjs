@@ -81,7 +81,7 @@ const Navbar = () => {
                   <div>4311 S 31st Ste 145 Temple, TX 76502</div>
                 </a>
                 <a
-                  href="tel:2547737777"
+                  href="tel:2542070708"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-white text-primary border border-primary px-4 py-2 justify-center text-center rounded-full text-sm font-medium transition-all duration-300 ease-in-out hover:bg-primary hover:text-white hover:border-primary hover:scale-103"
@@ -107,12 +107,13 @@ const Navbar = () => {
                   <Link href="/patient-information">Patient Information</Link>
                 </li>
                 <li className="relative p-2 m-1 hover:bg-gray-200">
-                  <button
+                  <Link
                     className="hover:text-primary transform   transition-all duration-300 ease-in-out cursor-pointer"
                     onMouseOver={activateservices}
+                    href="/services"
                   >
                     Services
-                  </button>
+                  </Link>
 
                   <div
                     onMouseLeave={deactiveservices}
@@ -221,7 +222,7 @@ const Navbar = () => {
                       {services.map((item, i) => (
                         <li
                           key={i}
-                          className="px-8 py-3 border-t border-white hover:bg-primary cursor-pointer"
+                          className="px-8 py-3 border-t border-white hover:bg-orange-200 cursor-pointer"
                         >
                           <Link
                             href={`/temple-tx/${item.link}`}

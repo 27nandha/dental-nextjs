@@ -1,4 +1,3 @@
-// data/servicesData.ts
 
 export const services = [
   { name: "Dental Checkup", link: "dental-checkup" },

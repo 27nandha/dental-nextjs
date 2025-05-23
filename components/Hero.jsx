@@ -13,6 +13,7 @@ const images = [
   {
     id: 1,
     path: "./bg1.jpg",
+    m_path: "./bg1m.png",
     heading: "Full dental implant",
     para: "Low cost Limited time special offer",
     btn: "read more About Thsis offer",
@@ -21,6 +22,7 @@ const images = [
   {
     id: 2,
     path: "./bg2.jpg",
+    m_path: "./bg3m.jpg",
     heading: "invisalign",
     para: "Why wait to smile ?",
     btn: "read more",
@@ -29,6 +31,7 @@ const images = [
   {
     id: 3,
     path: "./bg3.jpg",
+    m_path: "./bg2m.jpg",
     heading: "Teeth Whitening",
     para: "Reclaim a youthful smile",
     btn: "read more about the treatment",
@@ -50,18 +53,39 @@ export default function Hero() {
   return (
     <div className="relative w-full md:h-[85vh] h-[80vh]  overflow-hidden md:mt-[85px] mt-[73px]">
       {/* Carousel */}
-      <div
-        className="flex transition-transform duration-700 ease-in-out h-full"
-        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-      >
-        {images.map((img, idx) => (
-          <img
-            key={idx}
-            src={img.path}
-            alt={`Slide ${idx + 1}`}
-            className="w-full h-full object-cover flex-shrink-0"
-          />
-        ))}
+
+      {/* Mobile Carousel */}
+      <div className="block md:hidden overflow-hidden w-full h-full">
+        <div
+          className="flex transition-transform duration-700 ease-in-out h-full"
+          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+        >
+          {images.map((img, idx) => (
+            <img
+              key={idx}
+              src={img.m_path}
+              alt={`Mobile Slide ${idx + 1}`}
+              className="w-full h-full object-cover flex-shrink-0"
+            />
+          ))}
+        </div>
+      </div>
+
+      {/* Desktop Carousel */}
+      <div className="hidden md:block overflow-hidden w-full h-full">
+        <div
+          className="flex transition-transform duration-700 ease-in-out h-full"
+          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+        >
+          {images.map((img, idx) => (
+            <img
+              key={idx}
+              src={img.path}
+              alt={`Desktop Slide ${idx + 1}`}
+              className="w-full h-full object-cover flex-shrink-0"
+            />
+          ))}
+        </div>
       </div>
 
       {/* Dots */}
@@ -96,56 +120,19 @@ export default function Hero() {
             </Link>
           </div>
         </div>
-        {/* <form action="" className="w-[400px]">
-          <div className="text-2xl text-center rounded-t-sm font-cinzel text-white bg-[#192c2f] py-3">
-            REQUEST AN APPOINMENT
-          </div>
-          <div className="text-center font-cinzel rounded-b-sm text-white bg-[#284b50] px-4 py-5">
-            <input
-              type="text"
-              className="bg-white px-2 py-3 mb-3 text-gray-500 w-full border-b-4 border-b-white focus:outline-none focus:border-b-[#ff9f29] transition-all duration-300 ease-in-out"
-              placeholder="First & Last Name (Required)"
-            />
 
-            <input
-              type="text"
-              className="bg-white px-2 py-3 mb-3 text-gray-500 w-full border-b-4 border-b-white focus:outline-none focus:border-b-[#ff9f29] transition-all duration-300 ease-in-out"
-              placeholder="Email (Required)"
-            />
-
-            <input
-              type="text"
-              className="bg-white px-2 py-3 mb-3 text-gray-500 w-full border-b-4 border-b-white focus:outline-none focus:border-b-[#ff9f29] transition-all duration-300 ease-in-out"
-              placeholder="Phone Number (Required)"
-            />
-
-            <select className="w-full px-2 py-4 mb-3 bg-white text-gray-500 focus:outline-none focus:ring-2 focus:ring-[#ff9f29] transition duration-300">
-              <option value="">one</option>
-              <option value="">two</option>
-              <option value="">three</option>
-            </select>
-
-            <button className="bg-[#ff9f29] mt-4 px-4 py-2 uppercase rounded-full hover:bg-[#e5891c] transition-all duration-300 ease-in-out">
-              Request Appointment
-            </button>
-
-            <button className="bg-[#ff9f29] mt-4 px-4 py-2 uppercase rounded-full hover:bg-[#e5891c] transition-all duration-300 ease-in-out">
-              express online booking
-            </button>
-          </div>
-        </form> */}
-        <Form/>
+        <Form />
       </div>
 
       {/* Mobile Trigger Button */}
       <div className="md:hidden bg-black/70 w-[100%] absolute bottom-0 top-0  z-20 ">
-        <h1 className=" mt-15 text-2xl text-center font-cinzel text-white ">
+        <h1 className=" mt-15 text-4xl text-center font-cinzel text-white ">
           {images[currentIndex].heading}
         </h1>
         <h2 className=" text-xl mt-5  text-white text-center">
           {images[currentIndex].para}
         </h2>
-        <div className="  w-[80%] mx-auto flex flex-col justify-center text-white">
+        <div className="  w-[80%] mx-auto  flex flex-col justify-center text-white">
           <button
             className="bg-[#ff9f29] mt-40 text-lg font-semibold px-4 py-2 uppercase rounded-full"
             href="tel:2542070708"

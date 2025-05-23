@@ -4,7 +4,6 @@ import { FaCalendarAlt, FaGlobe } from "react-icons/fa";
 import { LanguageSwitcher } from "@/components/language-switcher";
 import Modal from "@/components/Modal";
 import Form from "@/components/Form";
-// adjust import as needed
 
 export default function ScrollBanner() {
   const [showBanner, setShowBanner] = useState(false);

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Form = () => {
@@ -26,18 +27,27 @@ const Form = () => {
         />
 
         <select className="w-full px-2 py-4 mb-3 bg-white text-gray-500 focus:outline-none focus:ring-2 focus:ring-[#ff9f29] transition duration-300">
-          <option value="">one</option>
-          <option value="">two</option>
-          <option value="">three</option>
+          <option value="">How Did You Hear About Us?</option>
+          <option value="">Google</option>
+          <option value="">Discovered Online</option>
+          <option value="">Word of Mouth</option>
+          <option value="">Facebook or Other Social Media</option>
+          <option value="">Other</option>
         </select>
 
-        <button className="bg-[#ff9f29] mt-4 px-4 py-2 uppercase rounded-full hover:bg-[#e5891c] transition-all duration-300 ease-in-out">
+        <Link
+          href=""
+          className="bg-[#ff9f29] m-5 px-4 py-2 uppercase rounded-full hover:bg-[#e5891c] transition-all duration-300 ease-in-out"
+        >
           Request Appointment
-        </button>
-
-        <button className="bg-[#ff9f29] mt-4 px-4 py-2 uppercase rounded-full hover:bg-[#e5891c] transition-all duration-300 ease-in-out">
+        </Link>
+        <div className="m-5"></div>
+        <Link
+          href="https://book.modento.io/revital-dental/patient-details"
+          className="bg-[#ff9f29] mt-4 px-4 py-2 uppercase rounded-full hover:bg-[#e5891c] transition-all duration-300 ease-in-out"
+        >
           express online booking
-        </button>
+        </Link>
       </div>
     </form>
   );
