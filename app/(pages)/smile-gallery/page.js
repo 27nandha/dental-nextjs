@@ -49,7 +49,7 @@ export default function SmileGallery() {
   return (
     <div>
       <Navbar />
-      <div className="bg-white py-12 px-4 md:mt-[125px] sm:px-6 lg:px-8">
+      <div className="bg-white py-12 px-4 mt-[80px] md:mt-[125px] sm:px-6 lg:px-8">
         <h2
           className={`text-4xl ${cinzel.className} text-center text-primary mb-10`}
         >
@@ -61,6 +61,17 @@ export default function SmileGallery() {
           ))}
         </div>
       </div>
+      <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-2">
+        <VideoCard
+          src="/videos/smile-makeover-1.mp4"
+          title="A Dentist Giving Dental Service To A Patient"
+        />
+        <VideoCard
+          src="/videos/smile-makeover-2.mp4"
+          title="Dentist Explaining The Dentures"
+        />
+      </div>
+
       <Book />
       <Footer />
       <ScrollAppointmentBanner />
@@ -119,6 +130,26 @@ function ImageCard({ item }) {
           </h3>
         </div>
       </div>
+    </div>
+  );
+}
+
+function VideoCard({ src, title }) {
+  return (
+    <div className="bg-gray-50 shadow-md rounded-xl overflow-hidden p-4">
+      <video
+        controls
+        className="w-full rounded-lg"
+        preload="metadata"
+        muted
+        playsInline
+      >
+        <source src={src} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <h3 className="text-xl font-tinos text-center text-gray-800 mt-4">
+        {title}
+      </h3>
     </div>
   );
 }
