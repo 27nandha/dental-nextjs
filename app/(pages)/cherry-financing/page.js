@@ -18,10 +18,10 @@ const CherryPage = () => {
       <Navbar />
 
       <section
-        className={`flex flex-col md:flex-row items-center md:mt-[125px] bg-white px-6 py-10 shadow-xl gap-6 ${cinzel.className}`}
+        className={`flex flex-col md:flex-row items-center md:mt-[125px] mt-[80px] bg-white px-6 py-10 shadow-xl gap-6 ${cinzel.className}`}
       >
         {/* Image Section */}
-        <div className="w-full md:w-1/3 h-[420px] relative">
+        <div className="w-full md:w-1/3 md:h-[420px] h-[200px] relative">
           <Image
             src="/cherry-logo.jpg"
             alt="Cherry Financing"
@@ -80,7 +80,7 @@ const CherryPage = () => {
           </div>
 
           {/* Right Column: Form */}
-          <div className="md:w-1/2">
+          <div className="hidden lg:block w-fit">
             <Form />
           </div>
         </div>
