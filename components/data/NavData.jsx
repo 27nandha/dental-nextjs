@@ -1,4 +1,3 @@
-
 export const services = [
   { name: "Dental Checkup", link: "dental-checkup" },
   {
@@ -23,6 +22,10 @@ export const services = [
   { name: "Teeth Whitening", link: "teeth-whitening" },
   { name: "TeethXpress", link: "teethxpress" },
   { name: "Zoom Teeth Whitening", link: "zoom-teeth-whitening" },
+  { name: "Smile Makeover", link: "smile-makeover" },
+  { name: "Laser Dentistry", link: "laser-dentistry" },
+  { name: "Lumineers", link: "lumineers" },
+  { name: "Snap-On Smile", link: "snap-on-smile" },
 ];
 
 // data/educationData.ts
@@ -68,4 +71,9 @@ export const educationLinks = [
     link: "will-i-need-a-bone-graft-for-dental-implants",
   },
   { name: "Wisdom Teeth Extraction", link: "wisdom-teeth-extraction" },
+  { name: "Alternative to Braces for Teens", link: "braces-for-teens" },
+  {
+    name: "Which Is Better: Invisalign or Braces",
+    link: "invisalign-or-braces",
+  },
 ];

@@ -82,11 +82,11 @@ const services = [
       },
     ],
   },
-  // {
-  //   title: "ORTHODONTIC SERVICES",
-  //   icon: "/icon-clear-braces.png",
-  //   items: [{ label: "Invisalign Clear Aligners", href: "/invisalign" }],
-  // },
+  {
+    title: "ORTHODONTIC SERVICES",
+    icon: "/icon-clear-braces.png",
+    items: [{ label: "Invisalign Clear Aligners", href: "/invisalign" }],
+  },
   {
     title: "TEETH WHITENING SERVICES",
     icon: "/icon-teeth-whitening.png",
@@ -99,19 +99,19 @@ const services = [
       },
     ],
   },
-  {
-    title: "ROOT CANAL & TOOTH EXTRACTION",
-    icon: "/icon-root-canal.png",
-    items: [
-      { label: "Do I Need a Root Canal?", href: "/do-i-need-a-root-canal" },
-      { label: "Root Canal Treatment", href: "/root-canal-treatment" },
-      { label: "Wisdom Teeth Extraction", href: "/wisdom-teeth-extraction" },
-      {
-        label: "Tooth Extraction",
-        href: "/when-is-a-tooth-extraction-necessary",
-      },
-    ],
-  },
+  // {
+  //   title: "ROOT CANAL & TOOTH EXTRACTION",
+  //   icon: "/icon-root-canal.png",
+  //   items: [
+  //     { label: "Do I Need a Root Canal?", href: "/do-i-need-a-root-canal" },
+  //     { label: "Root Canal Treatment", href: "/root-canal-treatment" },
+  //     { label: "Wisdom Teeth Extraction", href: "/wisdom-teeth-extraction" },
+  //     {
+  //       label: "Tooth Extraction",
+  //       href: "/when-is-a-tooth-extraction-necessary",
+  //     },
+  //   ],
+  // },
   // {
   //   title: "EMERGENCY DENTAL SERVICES",
   //   icon: "/icon-dental-emergency.png",
@@ -140,7 +140,7 @@ const page = () => {
       <div className="md:mt-[125px] mt-[70px] ">
         <div className="md:flex md:justify-between bg-gray-800 p-10">
           <div className="font-cinzel text-white text-center">
-            <h1 className="text-5xl">Dental Services</h1>
+            <h1 className="text-6xl">Dental Services</h1>
             <p className="text-3xl">Temple, Tx</p>
             <p className="text-5xl ">.......</p>
           </div>
@@ -149,7 +149,7 @@ const page = () => {
               <CiSearch />
               <input
                 placeholder="Search"
-                className="bg-white outline-none text-sm p-1 w-sm "
+                className="bg-white outline-none text-sm p-1 w-md "
               />
             </div>
             <div className="flex justify-center md:justify-end pt-2">
@@ -210,13 +210,14 @@ const page = () => {
                 />
               </div>
 
-              <button className="bg-orange-500 text-white py-1 rounded hover:bg-orange-600 text-sm">
+              <button className="bg-orange-500 text-white py-1 my-3 rounded hover:bg-orange-600 text-sm">
                 Search
               </button>
 
               <ul className=" text-sm font-tinos text-gray-700 space-y-1 list-disc pl-5">
-                <li>Search our Sitemap</li>
-                <li>Find a Dentist in Temple, TX</li>
+                <Link href="/find-a-dentist-in-temple">
+                  Find a Dentist in Temple, TX
+                </Link>
               </ul>
             </div>
           </div>

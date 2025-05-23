@@ -170,7 +170,16 @@ const Navbar = () => {
                     </div>
                   </div>
                 </li>
-                <li className="hover:text-primary px-1 transform p-3 hover:bg-gray-200 transition-all duration-300 ease-in-out cursor-pointer">
+                <li className="hover:text-primary px-2 transform p-3  hover:bg-gray-200 transition-all duration-300 ease-in-out cursor-pointer">
+                  <Link href="/cherry-financing">Cherry Financing</Link>
+                </li>
+                <li className="hover:text-primary px-2 transform p-3 hover:bg-gray-200 transition-all duration-300 ease-in-out cursor-pointer">
+                  <Link href="/smile-gallery">Smile Gallery</Link>
+                </li>
+                <li className="hover:text-primary px-2 transform p-3 hover:bg-gray-200 transition-all duration-300 ease-in-out cursor-pointer">
+                  <Link href="/reviews">Reviews</Link>
+                </li>
+                <li className="hover:text-primary px-2 transform p-3 hover:bg-gray-200 transition-all duration-300 ease-in-out cursor-pointer">
                   <Link href="/contact">Contact Us</Link>
                 </li>
               </ul>
