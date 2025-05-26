@@ -40,7 +40,7 @@ const Services = () => {
           </p>
         </div>
         <div className="py-10">
-       <Form/>
+          <Form />
         </div>
       </section>
 
@@ -78,7 +78,10 @@ const Services = () => {
             <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
           </div>
           {/* Q & A */}
-          <div className="mt-10" id="how-dental-bridges-work-with-dental-crowns">
+          <div
+            className="mt-10"
+            id="how-dental-bridges-work-with-dental-crowns"
+          >
             <h2 className="font-cinzel text-2xl text-primary">
               How Dental Bridges Work with Dental Crowns
             </h2>
@@ -683,6 +686,23 @@ const Services = () => {
                 </Link>
               </li>
             </ul>
+          </div>
+          <div className="flex flex-col justify-center items-center bg-primary px-8 p-5 w-[90%] mx-auto mt-5 rounded-lg">
+            <h3 className="font-cinzel text-center text-4xl text-white">
+              Call Us
+            </h3>
+            <h3 className="font-cinzel text-4xl text-center text-white">
+              Today
+            </h3>
+
+            <img
+              src="/phone-number-qrcode.png"
+              alt=""
+              className="w-[150px] pt-3 h-[150px] "
+            />
+            <p className="text-center font-tinos text-white pt-3">
+              Scan here to call Revital <br /> Dental on mobile
+            </p>
           </div>
         </div>
       </section>

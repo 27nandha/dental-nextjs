@@ -249,6 +249,15 @@ const Navbar = () => {
                 </li>
 
                 <li className="px-6 py-4 border-b border-white hover:bg-primary cursor-pointer">
+                  <Link href="/cherry-financing">Cherry Financing</Link>
+                </li>
+                <li className="px-6 py-4 border-b border-white hover:bg-primary cursor-pointer">
+                  <Link href="/smile-gallery">Smile Gallery</Link>
+                </li>
+                <li className="px-6 py-4 border-b border-white hover:bg-primary cursor-pointer">
+                  <Link href="/reviews">Reviews</Link>
+                </li>
+                <li className="px-6 py-4 border-b border-white hover:bg-primary cursor-pointer">
                   <Link href="/contact">Contact</Link>
                 </li>
               </ul>

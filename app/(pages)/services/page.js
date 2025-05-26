@@ -180,7 +180,12 @@ const page = () => {
                 <ul className="text-md text-gray-900 font-tinos list-disc pl-10 space-y-1">
                   {service.items.map((item, i) => (
                     <li key={i}>
-                      <Link href={`/temple-tx/${item.href}`}>{item.label}</Link>
+                      <Link
+                        href={`/temple-tx/${item.href}`}
+                        className=" hover:border-b-2"
+                      >
+                        {item.label}
+                      </Link>
                     </li>
                   ))}
                 </ul>
