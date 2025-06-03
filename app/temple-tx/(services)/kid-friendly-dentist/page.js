@@ -16,7 +16,7 @@ const Services = () => {
     <>
       {/* intro section */}
       <section className="grid md:grid-cols-[1fr_1fr_1fr] grid-cols-1 md:gap-2 md:mt-[125px] border-y-[10px] border-dark mx-2">
-        <div className="bg-[url(/kid-friendly-dentist.webp)] bg-cover my-10"></div>
+        <div className="bg-[url(/services/kid-friendly-dentist.webp)] bg-cover my-10"></div>
 
         <div className="px-10 py-5 space-y-3">
           <h2 className="text-5xl font-cinzel text-primary">
@@ -251,33 +251,33 @@ const Services = () => {
                 People Also Ask
               </h2>
               <hr />
-              <div className="flex flex-col mb-4">
+              <div className="flex flex-col">
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#removable-partial-dentures"
+                  href="laser-dentistry#laser-dentistry-procedures"
                 >
                   Q.{" "}
                   <span className="underline">
-                    How do removable partial dentures work?
+                    What procedures can be performed with laser dentistry?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#partial-dentures-one-tooth"
+                  href="laser-dentistry#laser-dentistry-procedures"
                 >
                   Q.{" "}
                   <span className="underline">
-                    What are the pros and cons of partial dentures for one
-                    missing tooth?
+                    What are the benefits of laser dentistry?
                   </span>
                 </a>
                 <a
                   className="text-justify font-tinos mt-3"
-                  href="#why-dentures-preferred"
+                  href="laser-dentistry#laser-dentistry-procedures"
                 >
                   Q.{" "}
                   <span className="underline">
-                    Why are dentures a preferred treatment?
+                    How often should I have a dental checkup with laser
+                    treatments?
                   </span>
                 </a>
               </div>
@@ -425,42 +425,52 @@ const Services = () => {
               </p>
               <div className="flex justify-evenly content-center gap-2 mt-5">
                 <div className="flex justify-center flex-col items-center">
-                  <img
-                    src="/dentist-map.webp"
-                    alt=""
-                    className="w-[200px] h-[200px]"
-                  />
+                  <Link href="https://www.google.com/maps/dir/United+States/Revital+Dental,+4311+S+31st+St+Ste+145,+Temple,+TX+76502,+United+States/@35.1131018,-107.0696339,6.09z/data=!4m13!4m12!1m5!1m1!1s0x54eab584e432360b:0x1c3bb99243deb742!2m2!1d-106.5348379!2d38.7945952!1m5!1m1!1s0x86456b77cbcefa79:0xcf1db0a8e3bdced7!2m2!1d-97.3734765!2d31.0575554?entry=ttu&g_ep=EgoyMDI1MDUyOC4wIKXMDSoASAFQAw%3D%3D">
+                    <img
+                      src="/dentist-map.webp"
+                      alt=""
+                      className="w-[200px] h-[200px]"
+                    />
+                  </Link>
                   <a href="" className="mt-2 underline text-center">
                     Let Us Help – Click for Directions to Revital Dental
                   </a>
                 </div>
                 <div className="flex justify-center flex-col items-center">
-                  <img
-                    src="/dental-checkup-qrcode.png"
-                    alt=""
-                    className="w-[200px] h-[200px]"
-                  />
+                  <Link href="/dental-checkup-qrcode.png">
+                    <img
+                      src="/dental-checkup-qrcode.png"
+                      alt=""
+                      className="w-[200px] h-[200px]"
+                    />
+                  </Link>
                   <p className="mt-2 text-center">
                     Scan here to view this page, Dental Checkup, on mobile
                   </p>
                 </div>
               </div>
               <div className="flex flex-col md:flex-row justify-evenly content-center items-center gap-2 mt-5">
-                <img
-                  src="/find-best-dentist-nav.webp"
-                  alt=""
-                  className="w-[200px] h-[200px]"
-                />
-                <img
-                  src="/general-dentistry-services-nav.webp"
-                  alt=""
-                  className="w-[200px] h-[200px]"
-                />
-                <img
-                  src="/dental-cleaning-and-examinations-nav.webp"
-                  alt=""
-                  className="w-[200px] h-[200px]"
-                />
+                <Link href="/find-a-dentist">
+                  <img
+                    src="/find-best-dentist-nav.webp"
+                    alt=""
+                    className="w-[200px] h-[200px]"
+                  />
+                </Link>
+                <Link href="/patient-information">
+                  <img
+                    src="/patient-info-nav.jpeg"
+                    alt=""
+                    className="w-[200px] h-[200px]"
+                  />
+                </Link>
+                <Link href="/smile-gallery">
+                  <img
+                    src="/smile-gallery-nav.jpeg"
+                    alt=""
+                    className="w-[200px] h-[200px]"
+                  />
+                </Link>
               </div>
             </div>
 
@@ -625,20 +635,27 @@ const Services = () => {
                   <hr />
                   <ul className="font-tinos mt-3 list-disc px-3">
                     <li className="mt-2">
-                      <Link href="#" className="hover:underline">
-                        American Dental Association (ADA). Glossary of Dental
-                        Clinical Terms. 2022
+                      American Dental Association (ADA).
+                      <Link
+                        href="https://www.ada.org/publications/cdt/glossary-dental-terms"
+                        className="underline"
+                      >
+                        Glossary of Dental Clinical Terms. 2022
                       </Link>
                     </li>
                     <li className="mt-2">
-                      <Link href="#" className="hover:underline">
-                        American Academy of Cosmetic Dentistry® (AACD). Home
-                        Page. 2022
+                      American Academy of Cosmetic Dentistry® (AACD).
+                      <Link href="http://aacd.com/" className="underline">
+                        Home Page. 2022
                       </Link>
                     </li>
                     <li className="mt-2">
-                      <Link href="#" className="hover:underline">
-                        WebMD. WebMD’s Oral Care Guide. 2022
+                      WebMD.
+                      <Link
+                        href="https://www.webmd.com/oral-health/default.htm"
+                        className="underline"
+                      >
+                        WebMD’s Oral Care Guide. 2022
                       </Link>
                     </li>
                   </ul>
@@ -649,30 +666,38 @@ const Services = () => {
                   <hr />
                   <ul className="font-tinos mt-3 list-disc px-3">
                     <li className="mt-2">
-                      <Link href="#" className="hover:underline">
-                        Revital Dental was established in 2022.
-                      </Link>
+                      <div>Revital Dental was established in 2022.</div>
                     </li>
                     <li className="mt-2">
-                      <Link href="#" className="hover:underline">
+                      <p>
                         We accept the following payment methods: American
                         Express, Cash, Check, Discover, MasterCard, and Visa
-                      </Link>
+                      </p>
                     </li>
                     <li className="mt-2">
-                      <Link href="#" className="hover:underline">
+                      <p>
                         We serve patients from the following counties: Bell
                         County, McLennan County and Coryell County
-                      </Link>
+                      </p>
                     </li>
                     <li className="mt-2">
-                      <Link href="#" className="hover:underline">
-                        Norton Safe Web. View Details
-                      </Link>
+                      <p>
+                        Norton Safe Web.{" "}
+                        <Link
+                          href="https://safeweb.norton.com/"
+                          className="underline"
+                        >
+                          View Details
+                        </Link>
+                      </p>
                     </li>
                     <li className="mt-2">
-                      <Link href="#" className="hover:underline">
-                        Trend Micro Site Safety Center. View Details
+                      Trend Micro Site Safety Center.
+                      <Link
+                        href="https://global.sitesafety.trendmicro.com/?url=/revitaldentaltx.com"
+                        className="underline"
+                      >
+                        View Details
                       </Link>
                     </li>
                   </ul>
@@ -680,11 +705,13 @@ const Services = () => {
 
                 {/* QR code on right */}
                 <div className="mt-12 flex flex-col justify-center items-center md:w-[250px]">
-                  <img
-                    src="/map-directions-qrcode.webp"
-                    className="w-[150px] h-[150px]"
-                    alt="Revital Dental Directions QR"
-                  />
+                  <Link href="/map-directions-qrcode.webp">
+                    <img
+                      src="/map-directions-qrcode.webp"
+                      className="w-[150px] h-[150px]"
+                      alt="Revital Dental Directions QR"
+                    />
+                  </Link>
                   <p className="font-tinos text-center mt-3">
                     Scan here to open directions to Revital Dental on mobile
                   </p>
@@ -696,84 +723,60 @@ const Services = () => {
 
         {/* Right section */}
         <div className="right-section ">
-          <div className="bg-gray-100 px-8 p-5 w-[90%] mx-auto">
-            <h2 className="text-2xl  text-primary font-cinzel ">
-              Related Topics
-            </h2>
-            <hr />
-            <ul className="font-tinos mt-2 list-disc px-3">
-              <li className="mt-5">
-                <Link href="#" className="hover:underline">
-                  Dental Bonding
-                </Link>
-              </li>
-              <li className="mt-5">
-                <Link href="#" className="hover:underline">
-                  Dental Cleaning and Examinations
-                </Link>
-              </li>
-              <li className="mt-5">
-                <Link href="#" className="hover:underline">
-                  Dental Sealants
-                </Link>
-              </li>
-              <li className="mt-5">
-                <Link href="#" className="hover:underline">
-                  Oral Cancer Screening
-                </Link>
-              </li>
-              <li className="mt-5">
-                <Link href="#" className="hover:underline">
-                  Preventative Dental Care
-                </Link>
-              </li>
-              <li className="mt-5">
-                <Link href="#" className="hover:underline">
-                  Why Dental Sealants Play an Important Part in Protecting Your
-                  Child’s Teeth
-                </Link>
-              </li>
-            </ul>
-          </div>
           <div className="bg-gray-100 px-8 p-5 w-[90%] mx-auto mt-5">
-            <h2 className="text-2xl  text-primary font-cinzel ">
+            <h2 className="text-2xl text-primary font-cinzel">
               Related Topics
             </h2>
             <hr />
             <ul className="font-tinos mt-2 list-disc px-3">
               <li className="mt-5">
-                <Link href="#" className="hover:underline">
-                  Dental Bonding
+                <Link
+                  href="/temple-tx/smile-makeover"
+                  className="hover:underline"
+                >
+                  Smile Makeover
                 </Link>
               </li>
               <li className="mt-5">
-                <Link href="#" className="hover:underline">
-                  Dental Cleaning and Examinations
+                <Link href="/temple-tx/lumineers" className="hover:underline">
+                  Lumineers
                 </Link>
               </li>
               <li className="mt-5">
-                <Link href="#" className="hover:underline">
-                  Dental Sealants
+                <Link
+                  href="/temple-tx/snap-on-smile"
+                  className="hover:underline"
+                >
+                  Snap-On Smile
                 </Link>
               </li>
               <li className="mt-5">
-                <Link href="#" className="hover:underline">
-                  Oral Cancer Screening
+                <Link href="/temple-tx/teethxpress" className="hover:underline">
+                  TeethXpress
                 </Link>
               </li>
               <li className="mt-5">
-                <Link href="#" className="hover:underline">
-                  Preventative Dental Care
+                <Link
+                  href="/temple-tx/dental-veneers-and-dental-laminates"
+                  className="hover:underline"
+                >
+                  Dental Veneers & Laminates
+                </Link>
+              </li>
+              <hr />
+              <li className="mt-5">
+                <Link href="/dental-office" className="hover:underline">
+                  Dental Office Temple, TX
                 </Link>
               </li>
               <li className="mt-5">
-                <Link href="#" className="hover:underline">
-                  Why Dental Sealants Play an Important Part in Protecting Your
-                  Child’s Teeth
+                <Link href="/find-a-dentist" className="hover:underline">
+                  Find a Dentist in Temple, TX
                 </Link>
               </li>
             </ul>
           </div>
+
           <div className="flex flex-col justify-center items-center bg-primary px-8 p-5 w-[90%] mx-auto mt-5 rounded-lg">
             <h3 className="font-cinzel text-center text-4xl text-white">
               Call Us

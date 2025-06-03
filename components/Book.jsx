@@ -31,7 +31,7 @@ const Book = () => {
 
           <button
             onClick={() => setShowForm(true)}
-            className="bg-primary w-[60%] py-2 text-center text-white rounded-full mt-3"
+            className="bg-primary hover:cursor-pointer w-[60%] py-2 text-center text-white rounded-full mt-3"
           >
             <span>Request Appointment</span>
           </button>

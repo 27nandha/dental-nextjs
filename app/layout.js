@@ -1,7 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import GoogleTranslateScripts from "@/components/GoogleTranslateScripts"; // 👈 import the client component
-
+import { Toaster } from "react-hot-toast";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -28,6 +28,7 @@ export default function RootLayout({ children }) {
         {/* ✅ Fix: Insert script via client component */}
         <div id="google_translate_element"></div>
         {children}
+        <Toaster position="top-right" reverseOrder={false} />
       </body>
     </html>
   );

@@ -14,7 +14,7 @@ const AlternativesToBraces = () => {
     <>
       {/* Intro section */}
       <section className="grid md:grid-cols-[1fr_1fr_1fr] grid-cols-1 md:gap-2 md:mt-[125px] border-y-[10px] border-dark mx-2">
-        <div className="bg-[url(/alternatives-to-braces.jpg)] bg-cover my-10"></div>
+        <div className="bg-[url(/educations/alternatives-to-braces.jpg)] bg-cover my-10"></div>
 
         <div className="px-10 py-10 space-y-3">
           <h2 className="text-5xl font-cinzel text-primary">
@@ -200,22 +200,26 @@ const AlternativesToBraces = () => {
             </h2>
             <hr />
             <div className="flex flex-col mb-4">
-              <a className="text-justify font-tinos mt-3" href="#">
-                Q.{" "}
-                <span className="underline">
-                  Are clear aligners effective for teens?
-                </span>
+              <a
+                className="text-justify font-tinos mt-3"
+                href="dental-anxiety/#what-is-dental-anxiety"
+              >
+                Q. <span className="underline">What is dental anxiety?</span>
               </a>
-              <a className="text-justify font-tinos mt-3" href="#">
+              <a
+                className="text-justify font-tinos mt-3"
+                href="dental-anxiety/#causes-of-dental-anxiety"
+              >
                 Q.{" "}
-                <span className="underline">
-                  How long does treatment with alternatives take?
-                </span>
+                <span className="underline">What causes dental anxiety?</span>
               </a>
-              <a className="text-justify font-tinos mt-3" href="#">
+              <a
+                className="text-justify font-tinos mt-3"
+                href="dental-anxiety/#coping-with-dental-anxiety"
+              >
                 Q.{" "}
                 <span className="underline">
-                  Are alternatives to braces more expensive?
+                  How can I cope with dental anxiety?
                 </span>
               </a>
             </div>
@@ -303,42 +307,52 @@ const AlternativesToBraces = () => {
             </p>
             <div className="flex justify-evenly content-center gap-2 mt-5">
               <div className="flex justify-center flex-col items-center">
-                <img
-                  src="/dentist-map.webp"
-                  alt=""
-                  className="w-[200px] h-[200px]"
-                />
+                <Link href="https://www.google.com/maps/dir/United+States/Revital+Dental,+4311+S+31st+St+Ste+145,+Temple,+TX+76502,+United+States/@35.1131018,-107.0696339,6.09z/data=!4m13!4m12!1m5!1m1!1s0x54eab584e432360b:0x1c3bb99243deb742!2m2!1d-106.5348379!2d38.7945952!1m5!1m1!1s0x86456b77cbcefa79:0xcf1db0a8e3bdced7!2m2!1d-97.3734765!2d31.0575554?entry=ttu&g_ep=EgoyMDI1MDUyOC4wIKXMDSoASAFQAw%3D%3D">
+                  <img
+                    src="/dentist-map.webp"
+                    alt=""
+                    className="w-[200px] h-[200px]"
+                  />
+                </Link>
                 <a href="" className="mt-2 underline text-center">
                   Let Us Help – Click for Directions to Revital Dental
                 </a>
               </div>
               <div className="flex justify-center flex-col items-center">
-                <img
-                  src="/dental-checkup-qrcode.png"
-                  alt=""
-                  className="w-[200px] h-[200px]"
-                />
+                <Link href="/dental-checkup-qrcode.png">
+                  <img
+                    src="/dental-checkup-qrcode.png"
+                    alt=""
+                    className="w-[200px] h-[200px]"
+                  />
+                </Link>
                 <p className="mt-2 text-center">
                   Scan here to view this page, Dental Checkup, on mobile
                 </p>
               </div>
             </div>
             <div className="flex flex-col md:flex-row justify-evenly content-center items-center gap-2 mt-5">
-              <img
-                src="/find-best-dentist-nav.webp"
-                alt=""
-                className="w-[200px] h-[200px]"
-              />
-              <img
-                src="/general-dentistry-services-nav.webp"
-                alt=""
-                className="w-[200px] h-[200px]"
-              />
-              <img
-                src="/dental-cleaning-and-examinations-nav.webp"
-                alt=""
-                className="w-[200px] h-[200px]"
-              />
+              <Link href="/find-a-dentist">
+                <img
+                  src="/find-best-dentist-nav.webp"
+                  alt=""
+                  className="w-[200px] h-[200px]"
+                />
+              </Link>
+              <Link href="/patient-information">
+                <img
+                  src="/patient-info-nav.jpeg"
+                  alt=""
+                  className="w-[200px] h-[200px]"
+                />
+              </Link>
+              <Link href="/smile-gallery">
+                <img
+                  src="/smile-gallery-nav.jpeg"
+                  alt=""
+                  className="w-[200px] h-[200px]"
+                />
+              </Link>
             </div>
           </div>
 
@@ -440,6 +454,7 @@ const AlternativesToBraces = () => {
           {/* Related Links and QR */}
           <div className="bg-dark p-5 mt-10 text-white">
             <div className="flex flex-col md:flex-row gap-10">
+              {/* Left side content */}
               <div className="flex-1">
                 <h2 className="text-4xl font-cinzel mb-3">
                   Helpful Related Links
@@ -447,65 +462,83 @@ const AlternativesToBraces = () => {
                 <hr />
                 <ul className="font-tinos mt-3 list-disc px-3">
                   <li className="mt-2">
-                    <Link href="#" className="hover:underline">
-                      American Dental Association (ADA). Orthodontic Treatment
-                      Options. 2022
+                    American Dental Association (ADA).
+                    <Link
+                      href="https://www.ada.org/publications/cdt/glossary-dental-terms"
+                      className="underline"
+                    >
+                      Glossary of Dental Clinical Terms. 2022
                     </Link>
                   </li>
                   <li className="mt-2">
-                    <Link href="#" className="hover:underline">
-                      American Association of Orthodontists (AAO). Clear
-                      Aligners for Teens. 2022
+                    American Academy of Cosmetic Dentistry® (AACD).
+                    <Link href="http://aacd.com/" className="underline">
+                      Home Page. 2022
                     </Link>
                   </li>
                   <li className="mt-2">
-                    <Link href="#" className="hover:underline">
-                      WebMD. Orthodontics for Teens Guide. 2022
+                    WebMD.
+                    <Link
+                      href="https://www.webmd.com/oral-health/default.htm"
+                      className="underline"
+                    >
+                      WebMD’s Oral Care Guide. 2022
                     </Link>
                   </li>
                 </ul>
 
                 <h2 className="text-4xl font-cinzel mb-3 mt-10">
-                  About Our Business and Website Security
+                  About our business and website security
                 </h2>
                 <hr />
                 <ul className="font-tinos mt-3 list-disc px-3">
                   <li className="mt-2">
-                    <Link href="#" className="hover:underline">
-                      Revital Dental was established in 2022.
-                    </Link>
+                    <div>Revital Dental was established in 2022.</div>
                   </li>
                   <li className="mt-2">
-                    <Link href="#" className="hover:underline">
+                    <p>
                       We accept the following payment methods: American Express,
                       Cash, Check, Discover, MasterCard, and Visa
-                    </Link>
+                    </p>
                   </li>
                   <li className="mt-2">
-                    <Link href="#" className="hover:underline">
+                    <p>
                       We serve patients from the following counties: Bell
-                      County, McLennan County, and Coryell County
-                    </Link>
+                      County, McLennan County and Coryell County
+                    </p>
                   </li>
                   <li className="mt-2">
-                    <Link href="#" className="hover:underline">
-                      Norton Safe Web. View Details
-                    </Link>
+                    <p>
+                      Norton Safe Web.{" "}
+                      <Link
+                        href="https://safeweb.norton.com/"
+                        className="underline"
+                      >
+                        View Details
+                      </Link>
+                    </p>
                   </li>
                   <li className="mt-2">
-                    <Link href="#" className="hover:underline">
-                      Trend Micro Site Safety Center. View Details
+                    Trend Micro Site Safety Center.
+                    <Link
+                      href="https://global.sitesafety.trendmicro.com/?url=/revitaldentaltx.com"
+                      className="underline"
+                    >
+                      View Details
                     </Link>
                   </li>
                 </ul>
               </div>
 
+              {/* QR code on right */}
               <div className="mt-12 flex flex-col justify-center items-center md:w-[250px]">
-                <img
-                  src="/map-directions-qrcode.webp"
-                  className="w-[150px] h-[150px]"
-                  alt="Revital Dental Directions QR"
-                />
+                <Link href="/map-directions-qrcode.webp">
+                  <img
+                    src="/map-directions-qrcode.webp"
+                    className="w-[150px] h-[150px]"
+                    alt="Revital Dental Directions QR"
+                  />
+                </Link>
                 <p className="font-tinos text-center mt-3">
                   Scan here to open directions to Revital Dental on mobile
                 </p>
@@ -516,44 +549,66 @@ const AlternativesToBraces = () => {
 
         {/* Right section */}
         <div className="right-section">
-          <div className="bg-gray-100 px-8 p-5 w-[90%] mx-auto">
+          <div className="bg-gray-100 px-8 p-5 w-[90%] mx-auto mt-5">
             <h2 className="text-2xl text-primary font-cinzel">
               Related Topics
             </h2>
             <hr />
             <ul className="font-tinos mt-2 list-disc px-3">
               <li className="mt-5">
-                <Link href="#" className="hover:underline">
-                  Orthodontic Treatment
+                <Link
+                  href="/temple-tx/dental-checkup"
+                  className="hover:underline"
+                >
+                  Dental Checkup
                 </Link>
               </li>
               <li className="mt-5">
-                <Link href="#" className="hover:underline">
-                  Clear Aligners
+                <Link
+                  href="/temple-tx/dental-implants"
+                  className="hover:underline"
+                >
+                  Dental Implants
                 </Link>
               </li>
               <li className="mt-5">
-                <Link href="#" className="hover:underline">
-                  Lingual Braces
+                <Link
+                  href="/temple-tx/teeth-whitening"
+                  className="hover:underline"
+                >
+                  Teeth Whitening
                 </Link>
               </li>
               <li className="mt-5">
-                <Link href="#" className="hover:underline">
-                  Ceramic Braces
+                <Link
+                  href="/temple-tx/root-canal-treatment"
+                  className="hover:underline"
+                >
+                  Root Canal Treatment
                 </Link>
               </li>
               <li className="mt-5">
-                <Link href="#" className="hover:underline">
-                  Preventive Dental Care
+                <Link
+                  href="/temple-tx/dental-crowns-and-dental-bridges"
+                  className="hover:underline"
+                >
+                  Dental Crowns and Bridges
+                </Link>
+              </li>
+              <hr />
+              <li className="mt-5">
+                <Link href="/dental-office" className="hover:underline">
+                  Dental Office Temple, TX
                 </Link>
               </li>
               <li className="mt-5">
-                <Link href="#" className="hover:underline">
-                  Teen Dental Health
+                <Link href="/find-a-dentist" className="hover:underline">
+                  Find a Dentist in Temple, TX
                 </Link>
               </li>
             </ul>
           </div>
+
           <div className="flex flex-col justify-center items-center bg-primary px-8 p-5 w-[90%] mx-auto mt-5 rounded-lg">
             <h3 className="font-cinzel text-center text-4xl text-white">
               Call Us

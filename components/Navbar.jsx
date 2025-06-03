@@ -127,7 +127,7 @@ const Navbar = () => {
                       {services.map((item, i) => (
                         <Link
                           key={i}
-                          href={`/temple-tx/${item.link}`}
+                          href={`/${item.link}`}
                           onClick={() => {
                             setActiveserv(false); // Close dropdown // Hide entire mobile menu
                           }}
@@ -158,7 +158,7 @@ const Navbar = () => {
                       {educationLinks.map((item, i) => (
                         <Link
                           key={i}
-                          href={`/temple-tx/${item.link}`}
+                          href={`/${item.link}`}
                           onClick={() => {
                             setActiveedu(false); // Close dropdown // Hide entire mobile menu
                           }}
@@ -234,7 +234,7 @@ const Navbar = () => {
                           className="px-8 py-3 border-t border-white hover:bg-orange-200 cursor-pointer"
                         >
                           <Link
-                            href={`/temple-tx/${item.link}`}
+                            href={`/${item.link}`}
                             onClick={() => {
                               setIsOpen(false); // Close dropdown // Hide entire mobile menu
                             }}

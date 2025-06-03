@@ -38,7 +38,7 @@ export default function ScrollBanner() {
             </div>
             <button
               onClick={() => setShowForm(true)}
-              className="bg-orange-400 hover:bg-white hover:text-orange-400 border text-white font-semibold rounded-full px-5 py-2 flex items-center space-x-2"
+              className="bg-orange-400 hover:cursor-pointer hover:bg-white hover:text-orange-400 border text-white font-semibold rounded-full px-5 py-2 flex items-center space-x-2"
             >
               <FaCalendarAlt />
               <span>Request Appointment</span>
@@ -48,7 +48,7 @@ export default function ScrollBanner() {
         <div className="fixed bottom-10 right-4 z-50">
           <button
             onClick={toggleLanguageMenu}
-            className="bg-orange-500 text-white rounded-full p-4 shadow-5xl hover:bg-orange-600 focus:outline-none"
+            className="bg-orange-500 hover:cursor-pointer text-white rounded-full p-4 shadow-5xl hover:bg-orange-600 focus:outline-none"
             aria-label="Change Language"
           >
             <FaGlobe className="text-xl" />

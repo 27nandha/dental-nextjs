@@ -87,9 +87,9 @@ const Welcome = () => {
             comprehensive approach sets patients of Revital Dental on the road
             to recovery and long term oral health.
           </p>
-          <button className="bg-primary w-[80%] py-2 text-white rounded-full mt-5">
+          <Link href="/services" className="bg-primary text-center w-[80%] py-2 text-white rounded-full mt-5">
             View Our Services
-          </button>
+          </Link>
         </div>
 
         <div className="flex justify-between items-center flex-col">

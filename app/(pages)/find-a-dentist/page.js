@@ -219,99 +219,6 @@ const Services = () => {
                 <FaCaretDown className="absolute left-5 -bottom-8 text-6xl text-secondary" />
               </div>
 
-              <div className="bg-dark p-5 mt-10 text-white">
-                <h2 className="text-4xl text-center font-cinzel mb-3">
-                  Questions Answered on This Page
-                </h2>
-                <hr />
-                <div className="flex flex-col">
-                  <a
-                    className="text-justify font-tinos mt-3"
-                    href="#type-of-dentist"
-                  >
-                    Q.{" "}
-                    <span className="underline">
-                      How can someone determine what type of dentist or service
-                      they need?
-                    </span>
-                  </a>
-                  <a
-                    className="text-justify font-tinos mt-3"
-                    href="#general-dentist"
-                  >
-                    Q.{" "}
-                    <span className="underline">
-                      What should someone look for in a general dentist?
-                    </span>
-                  </a>
-                  <a
-                    className="text-justify font-tinos mt-3"
-                    href="#right-fit-dentist"
-                  >
-                    Q.{" "}
-                    <span className="underline">
-                      What factors should someone consider when looking for a
-                      dentist who is the right fit?
-                    </span>
-                  </a>
-                  <a
-                    className="text-justify font-tinos mt-3"
-                    href="#find-dentist-tools"
-                  >
-                    Q.{" "}
-                    <span className="underline">
-                      What tools or resources can help someone find a new
-                      dentist?
-                    </span>
-                  </a>
-                  <a
-                    className="text-justify font-tinos mt-3"
-                    href="#patient-review-sites"
-                  >
-                    Q.{" "}
-                    <span className="underline">
-                      Are patient review sites a credible source of information?
-                    </span>
-                  </a>
-                </div>
-
-                <h2 className="text-4xl text-center font-cinzel mb-3 mt-3">
-                  People Also Ask
-                </h2>
-                <hr />
-                <div className="flex flex-col mb-4">
-                  <a
-                    className="text-justify font-tinos mt-3"
-                    href="#oral-hygiene-importance"
-                  >
-                    Q.{" "}
-                    <span className="underline">
-                      Why is good oral hygiene important?
-                    </span>
-                  </a>
-                  <a
-                    className="text-justify font-tinos mt-3"
-                    href="#dental-provider-type"
-                  >
-                    Q.{" "}
-                    <span className="underline">
-                      How can someone know what type of dental provider they
-                      need?
-                    </span>
-                  </a>
-                  <a
-                    className="text-justify font-tinos mt-3"
-                    href="#preventative-care"
-                  >
-                    Q.{" "}
-                    <span className="underline">
-                      Why is preventative care important? How can it save you
-                      money?
-                    </span>
-                  </a>
-                </div>
-              </div>
-
               <div className="mt-10" id="patient-review-sites">
                 <h2 className="font-cinzel text-2xl text-primary">
                   Weighing Patient Reviews
@@ -706,80 +613,58 @@ const Services = () => {
 
           {/* Right section */}
           <div className="right-section ">
-            <div className="bg-gray-100 px-8 p-5 w-[90%] mx-auto">
-              <h2 className="text-2xl  text-primary font-cinzel ">
-                Related Topics
-              </h2>
-              <hr />
-              <ul className="font-tinos mt-2 list-disc px-3">
-                <li className="mt-5">
-                  <Link href="#" className="hover:underline">
-                    Dental Bonding
-                  </Link>
-                </li>
-                <li className="mt-5">
-                  <Link href="#" className="hover:underline">
-                    Dental Cleaning and Examinations
-                  </Link>
-                </li>
-                <li className="mt-5">
-                  <Link href="#" className="hover:underline">
-                    Dental Sealants
-                  </Link>
-                </li>
-                <li className="mt-5">
-                  <Link href="#" className="hover:underline">
-                    Oral Cancer Screening
-                  </Link>
-                </li>
-                <li className="mt-5">
-                  <Link href="#" className="hover:underline">
-                    Preventative Dental Care
-                  </Link>
-                </li>
-                <li className="mt-5">
-                  <Link href="#" className="hover:underline">
-                    Why Dental Sealants Play an Important Part in Protecting
-                    Your Child’s Teeth
-                  </Link>
-                </li>
-              </ul>
-            </div>
             <div className="bg-gray-100 px-8 p-5 w-[90%] mx-auto mt-5">
-              <h2 className="text-2xl  text-primary font-cinzel ">
+              <h2 className="text-2xl text-primary font-cinzel">
                 Related Topics
               </h2>
               <hr />
               <ul className="font-tinos mt-2 list-disc px-3">
                 <li className="mt-5">
-                  <Link href="#" className="hover:underline">
-                    Dental Bonding
+                  <Link
+                    href="/temple-tx/smile-makeover"
+                    className="hover:underline"
+                  >
+                    Smile Makeover
                   </Link>
                 </li>
                 <li className="mt-5">
-                  <Link href="#" className="hover:underline">
-                    Dental Cleaning and Examinations
+                  <Link href="/temple-tx/lumineers" className="hover:underline">
+                    Lumineers
                   </Link>
                 </li>
                 <li className="mt-5">
-                  <Link href="#" className="hover:underline">
-                    Dental Sealants
+                  <Link
+                    href="/temple-tx/snap-on-smile"
+                    className="hover:underline"
+                  >
+                    Snap-On Smile
                   </Link>
                 </li>
                 <li className="mt-5">
-                  <Link href="#" className="hover:underline">
-                    Oral Cancer Screening
+                  <Link
+                    href="/temple-tx/teethxpress"
+                    className="hover:underline"
+                  >
+                    TeethXpress
                   </Link>
                 </li>
                 <li className="mt-5">
-                  <Link href="#" className="hover:underline">
-                    Preventative Dental Care
+                  <Link
+                    href="/temple-tx/dental-veneers-and-dental-laminates"
+                    className="hover:underline"
+                  >
+                    Dental Veneers & Laminates
+                  </Link>
+                </li>
+                <hr />
+                <li className="mt-5">
+                  <Link href="/dental-office" className="hover:underline">
+                    Dental Office Temple, TX
                   </Link>
                 </li>
                 <li className="mt-5">
-                  <Link href="#" className="hover:underline">
-                    Why Dental Sealants Play an Important Part in Protecting
-                    Your Child’s Teeth
+                  <Link href="/find-a-dentist" className="hover:underline">
+                    Find a Dentist in Temple, TX
                   </Link>
                 </li>
               </ul>

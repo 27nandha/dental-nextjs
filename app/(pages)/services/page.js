@@ -99,19 +99,19 @@ const services = [
       },
     ],
   },
-  // {
-  //   title: "ROOT CANAL & TOOTH EXTRACTION",
-  //   icon: "/icon-root-canal.png",
-  //   items: [
-  //     { label: "Do I Need a Root Canal?", href: "/do-i-need-a-root-canal" },
-  //     { label: "Root Canal Treatment", href: "/root-canal-treatment" },
-  //     { label: "Wisdom Teeth Extraction", href: "/wisdom-teeth-extraction" },
-  //     {
-  //       label: "Tooth Extraction",
-  //       href: "/when-is-a-tooth-extraction-necessary",
-  //     },
-  //   ],
-  // },
+  {
+    title: "ROOT CANAL & TOOTH EXTRACTION",
+    icon: "/icon-root-canal.png",
+    items: [
+      { label: "Do I Need a Root Canal?", href: "/do-i-need-a-root-canal" },
+      { label: "Root Canal Treatment", href: "/root-canal-treatment" },
+      { label: "Wisdom Teeth Extraction", href: "/wisdom-teeth-extraction" },
+      {
+        label: "Tooth Extraction",
+        href: "/when-is-a-tooth-extraction-necessary",
+      },
+    ],
+  },
   // {
   //   title: "EMERGENCY DENTAL SERVICES",
   //   icon: "/icon-dental-emergency.png",
@@ -138,13 +138,13 @@ const page = () => {
     <div>
       <Navbar />
       <div className="md:mt-[125px] mt-[70px] ">
-        <div className="md:flex md:justify-between bg-gray-800 p-10">
-          <div className="font-cinzel text-white text-center">
+        <div className="md:flex justify-center text-center bg-gray-800 p-10">
+          <div className="font-cinzel text-white justify-center text-center">
             <h1 className="text-6xl">Dental Services</h1>
             <p className="text-3xl">Temple, Tx</p>
             <p className="text-5xl ">.......</p>
           </div>
-          <div>
+          {/* <div>
             <div className="flex flex-row bg-white text h-10 text-center justify-end items-center p-2">
               <CiSearch />
               <input
@@ -157,7 +157,7 @@ const page = () => {
                 search
               </button>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="bg-gray-800 py-10 px-10">
@@ -193,7 +193,7 @@ const page = () => {
             ))}
 
             {/* Search card */}
-            <div className="bg-white rounded-md p-5 shadow flex flex-col justify-between">
+            {/* <div className="bg-white rounded-md p-5 shadow flex flex-col justify-between">
               <div className="flex justify-center  mb-3">
                 <Image
                   src="/icon-get-help.png"
@@ -222,7 +222,7 @@ const page = () => {
               <ul className=" text-sm font-tinos text-gray-700 space-y-1 list-disc pl-5">
                 <Link href="/find-a-dentist">Find a Dentist in Temple, TX</Link>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
 

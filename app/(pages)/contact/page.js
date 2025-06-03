@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import { Cinzel, Tinos } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import {
@@ -25,15 +26,59 @@ const tinos = Tinos({
 });
 
 const Page = () => {
+  const [formData, setFormData] = useState({
+    fullname: "",
+    email: "",
+    mobile: "",
+    message: "",
+  });
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState("");
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setError("");
+
+    try {
+      const response = await fetch(
+        "http://127.0.0.1:8000/api/contact-with-message",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error("Something went wrong!");
+      }
+
+      const data = await response.json();
+      console.log("Response:", data);
+      setSubmitted(true);
+      setFormData({ fullname: "", email: "", mobile: "", message: "" });
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
   return (
     <div>
       <Navbar />
       <div className="bg-teal-950 w-full h-[80vh] md:h-[85vh] flex md:items-center pt-16">
         <div className="p-10 text-white">
-          <h3 className={`${cinzel.className} text-xl md:text-3xl`}>
-            Revital Dental
-          </h3>
-          <h1 className={`${cinzel.className} text-4xl md:text-5xl`}>
+          <h3 className={`font-cinzel text-xl md:text-3xl`}>Revital Dental</h3>
+          <h1 className={`font-cinzel text-4xl md:text-5xl`}>
             Location & Contact Information
           </h1>
           <p
@@ -54,25 +99,26 @@ const Page = () => {
       </div>
       <div className="mb-20 relative z-10 max-w-6xl mx-auto -mt-24 bg-white rounded-xl shadow-xl p-8 flex flex-col md:flex-row">
         {/* Left Side - Form */}
-        <div className="w-full  md:w-2/3 p-8">
-          <div className="w-full flex justify-between ">
-            <h2
-              className={`text-4xl ${cinzel.className} text-orange-500 font-semibold mb-6 pb-10`}
-            >
+        <div className="w-full md:w-2/3 p-8">
+          <div className="w-full flex justify-between">
+            <h2 className="text-4xl text-orange-500 font-semibold mb-6 pb-10">
               Get In Touch
             </h2>
-
-            <img src="/icon-message.png" alt="" className="h-fit" />
+            <img src="/icon-message.png" alt="Message Icon" className="h-fit" />
           </div>
 
-          <form className="space-y-6">
+          <form className="space-y-6" onSubmit={handleSubmit}>
             {/* Name & Phone */}
             <div className="flex flex-col md:flex-row gap-4">
               <div className="w-full flex items-center border-b border-gray-400">
                 <FaUser className="text-xl mr-2 text-gray-800" />
                 <input
                   type="text"
+                  name="fullname"
+                  value={formData.fullname}
+                  onChange={handleChange}
                   placeholder="First & Last Name (Required)"
+                  required
                   className="w-full focus:outline-none py-2"
                 />
               </div>
@@ -80,7 +126,11 @@ const Page = () => {
                 <FaPhoneAlt className="text-xl mr-2 text-gray-800" />
                 <input
                   type="text"
+                  name="mobile"
+                  value={formData.mobile}
+                  onChange={handleChange}
                   placeholder="Phone Number (Required)"
+                  required
                   className="w-full focus:outline-none py-2"
                 />
               </div>
@@ -91,7 +141,11 @@ const Page = () => {
               <FaEnvelope className="text-xl mr-2 text-gray-800" />
               <input
                 type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
                 placeholder="Email (Required)"
+                required
                 className="w-full focus:outline-none py-2"
               />
             </div>
@@ -100,22 +154,35 @@ const Page = () => {
             <div className="flex items-start border-b border-gray-400">
               <FaComment className="text-xl mr-2 text-gray-800 mt-2" />
               <textarea
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
                 placeholder="How can we help you?"
                 className="w-full focus:outline-none py-2 resize-none"
                 rows="3"
+                required
               />
             </div>
 
             {/* Submit */}
             <button
               type="submit"
-              className="bg-orange-500 text-white font-semibold py-2 w-full rounded-full hover:bg-orange-600"
+              className="bg-orange-500 text-white font-semibold py-2 w-full rounded-full hover:bg-orange-600 disabled:opacity-50"
+              disabled={isSubmitting}
             >
-              Submit
+              {isSubmitting ? "Submitting..." : "Submit"}
             </button>
+
+            {submitted && (
+              <p className="text-green-600 font-semibold">
+                Message sent successfully!
+              </p>
+            )}
+            {error && (
+              <p className="text-red-600 font-semibold">Error: {error}</p>
+            )}
           </form>
         </div>
-
         {/* Right Side - Contact Info */}
         <div className="w-full md:w-1/3 bg-[#12343b] text-white p-0 m-0 flex flex-col ">
           <img
