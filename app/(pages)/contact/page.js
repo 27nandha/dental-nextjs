@@ -48,7 +48,7 @@ const Page = () => {
 
     try {
       const response = await fetch(
-        "http://127.0.0.1:8000/api/contact-with-message",
+        `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/contact-with-message`,
         {
           method: "POST",
           headers: {

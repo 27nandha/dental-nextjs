@@ -13,7 +13,7 @@ export default function BlogPage() {
   const [currentPage, setCurrentPage] = useState(1);
   const [count, setCount] = useState(0);
   const [pageSize, setPageSize] = useState(6); // must match Django
-  const baseUrl = "http://127.0.0.1:8000/api/blog";
+  const baseUrl = `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/blog`;
 
   const totalPages = Math.ceil(count / pageSize);
 
@@ -52,7 +52,7 @@ export default function BlogPage() {
             >
               <div className="relative h-48 w-full">
                 <img
-                  src={`http://127.0.0.1:8000${blog.image}`}
+                  src={`${process.env.NEXT_PUBLIC_BACKEND_URL}${blog.image}`}
                   alt={blog.title}
                   className="rounded-t-lg w-full h-full object-cover"
                 />

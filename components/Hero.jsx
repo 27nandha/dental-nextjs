@@ -15,11 +15,10 @@ export default function Hero() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showMobileForm, setShowMobileForm] = useState(false);
   const [showForm, setShowForm] = useState(false);
-
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/carousel") // Replace with your actual API URL
+    fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/carousel`)
       .then((res) => res.json())
-      .then((data) => setImages(data)) // <--- updated here!
+      .then((data) => setImages(data))
       .catch((err) => console.error("Error fetching carousel:", err));
   }, []);
 
@@ -46,7 +45,7 @@ export default function Hero() {
           {images.map((img, idx) => (
             <img
               key={idx}
-              src={`http://127.0.0.1:8000${img.image}`} // adjust if needed
+              src={`${process.env.NEXT_PUBLIC_BACKEND_URL}${img.image}`}// adjust if needed
               alt={`Slide ${idx + 1}`}
               className="w-full h-full object-cover flex-shrink-0"
             />

@@ -8,17 +8,22 @@ const Form = () => {
   const [mobile, setMobile] = useState("");
   const [referencedby, setReferencedby] = useState("");
 
+  // Load environment variables
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     const payload = { fullname, email, mobile, referencedby };
 
     try {
-      const response = await fetch("http://localhost:8000/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      });
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/contact`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        }
+      );
 
       if (!response.ok) throw new Error("Form submission failed");
 
